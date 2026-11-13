@@ -1,0 +1,4063 @@
+{
+  "format": "cse-quiz",
+  "version": 1,
+  "exportedAt": "2026-11-13T22:14:56.124Z",
+  "topics": [
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Fractions",
+      "topic_order": 1,
+      "questions": {
+        "1": {
+          "question": "What is 3/4 + 2/5?",
+          "choices": {
+            "A": "5/9",
+            "B": "23/20",
+            "C": "6/20",
+            "D": "15/8"
+          },
+          "correct": "B",
+          "reason": "Hanapin ang LCD ng 4 at 5, which is 20. 15/20 + 8/20 = 23/20."
+        },
+        "2": {
+          "question": "Subtract: 7/8 − 1/3",
+          "choices": {
+            "A": "6/5",
+            "B": "13/24",
+            "C": "7/24",
+            "D": "17/24"
+          },
+          "correct": "B",
+          "reason": "LCD ng 8 at 3 ay 24. 21/24 − 8/24 = 13/24."
+        },
+        "3": {
+          "question": "Multiply: 4/9 × 3/8",
+          "choices": {
+            "A": "1/6",
+            "B": "12/72",
+            "C": "7/17",
+            "D": "1/3"
+          },
+          "correct": "A",
+          "reason": "Cancel common factors: 4 at 8 magiging 1 at 2; 3 at 9 magiging 1 at 3. Multiply: (1×1)/(3×2) = 1/6."
+        },
+        "4": {
+          "question": "Divide: 5/6 ÷ 2/3",
+          "choices": {
+            "A": "10/18",
+            "B": "5/4",
+            "C": "4/5",
+            "D": "7/9"
+          },
+          "correct": "B",
+          "reason": "Keep, Change, Flip: 5/6 × 3/2 = 15/12, simplify by dividing by 3 = 5/4."
+        },
+        "5": {
+          "question": "Simplify 48/64 to lowest terms.",
+          "choices": {
+            "A": "2/3",
+            "B": "3/4",
+            "C": "4/5",
+            "D": "6/8"
+          },
+          "correct": "B",
+          "reason": "I-divide pareho sa GCF na 16: 48÷16=3, at 64÷16=4."
+        },
+        "6": {
+          "question": "Convert 3 4/7 into an improper fraction.",
+          "choices": {
+            "A": "19/7",
+            "B": "25/7",
+            "C": "12/7",
+            "D": "21/7"
+          },
+          "correct": "B",
+          "reason": "Multiply denominator sa whole number tapos add numerator: (7×3)+4=25, kopyahin ang denominator na 7."
+        },
+        "7": {
+          "question": "Convert 37/5 into a mixed number.",
+          "choices": {
+            "A": "7 2/5",
+            "B": "6 7/5",
+            "C": "7 1/5",
+            "D": "8 2/5"
+          },
+          "correct": "A",
+          "reason": "37 ÷ 5 = 7 remainder 2. Kaya 7 2/5."
+        },
+        "8": {
+          "question": "Add: 2 1/3 + 1 3/4",
+          "choices": {
+            "A": "3 4/7",
+            "B": "4 1/12",
+            "C": "3 11/12",
+            "D": "4 5/12"
+          },
+          "correct": "B",
+          "reason": "Add whole numbers: 2+1=3. Add fractions (LCD 12): 4/12+9/12=13/12=1 1/12. Total: 3+1 1/12=4 1/12."
+        },
+        "9": {
+          "question": "Subtract: 5 − 2 3/8",
+          "choices": {
+            "A": "3 3/8",
+            "B": "2 5/8",
+            "C": "3 5/8",
+            "D": "2 3/8"
+          },
+          "correct": "B",
+          "reason": "Gawing 4 8/8 ang 5. Subtract: 4−2=2, at 8/8−3/8=5/8."
+        },
+        "10": {
+          "question": "Which fraction is the largest?",
+          "choices": {
+            "A": "2/3",
+            "B": "5/8",
+            "C": "7/12",
+            "D": "3/4"
+          },
+          "correct": "D",
+          "reason": "Gawing LCD 24 lahat: 16/24, 15/24, 14/24, 18/24. Pinakamalaki ang 18/24 (3/4)."
+        },
+        "11": {
+          "question": "What is 3/5 of 120?",
+          "choices": {
+            "A": "60",
+            "B": "72",
+            "C": "80",
+            "D": "90"
+          },
+          "correct": "B",
+          "reason": "3/5 × 120 = 3 × 24 = 72."
+        },
+        "12": {
+          "question": "Multiply: 1 1/2 × 2 2/3",
+          "choices": {
+            "A": "2 2/6",
+            "B": "4",
+            "C": "3 1/3",
+            "D": "4 1/2"
+          },
+          "correct": "B",
+          "reason": "Convert sa improper: 3/2 × 8/3 = 24/6 = 4."
+        },
+        "13": {
+          "question": "Divide: 4 1/2 ÷ 1 1/2",
+          "choices": {
+            "A": "2",
+            "B": "3",
+            "C": "3 1/2",
+            "D": "6"
+          },
+          "correct": "B",
+          "reason": "Improper fractions: 9/2 ÷ 3/2 = 9/2 × 2/3 = 9/3 = 3."
+        },
+        "14": {
+          "question": "What is the reciprocal of 2 3/5?",
+          "choices": {
+            "A": "5/13",
+            "B": "13/5",
+            "C": "2 5/3",
+            "D": "5/6"
+          },
+          "correct": "A",
+          "reason": "Gawing improper muna: 2 3/5 = 13/5, tapos baliktarin = 5/13."
+        },
+        "15": {
+          "question": "Convert 0.375 into a fraction in lowest terms.",
+          "choices": {
+            "A": "3/8",
+            "B": "3/4",
+            "C": "5/8",
+            "D": "37/100"
+          },
+          "correct": "A",
+          "reason": "375/1000, i-divide pareho sa 125 = 3/8."
+        },
+        "16": {
+          "question": "Convert 7/20 into a decimal.",
+          "choices": {
+            "A": "0.035",
+            "B": "0.35",
+            "C": "0.72",
+            "D": "3.5"
+          },
+          "correct": "B",
+          "reason": "Multiply numerator at denominator sa 5 para maging hundredths: 35/100 = 0.35."
+        },
+        "17": {
+          "question": "Evaluate: 1/2 + 1/3 + 1/6",
+          "choices": {
+            "A": "3/11",
+            "B": "1",
+            "C": "5/6",
+            "D": "2/3"
+          },
+          "correct": "B",
+          "reason": "LCD ay 6: 3/6+2/6+1/6 = 6/6 = 1."
+        },
+        "18": {
+          "question": "Subtract: 4 1/6 − 1 5/6",
+          "choices": {
+            "A": "3 4/6",
+            "B": "2 1/3",
+            "C": "2 2/3",
+            "D": "3 1/3"
+          },
+          "correct": "B",
+          "reason": "Manghiram sa 4: 3 7/6 − 1 5/6 = 2 2/6, simplify = 2 1/3."
+        },
+        "19": {
+          "question": "What is half of 3/7?",
+          "choices": {
+            "A": "3/14",
+            "B": "6/7",
+            "C": "1.5/3.5",
+            "D": "3/3.5"
+          },
+          "correct": "A",
+          "reason": "1/2 × 3/7 = 3/14."
+        },
+        "20": {
+          "question": "If 2/3 of a number is 24, what is the number?",
+          "choices": {
+            "A": "16",
+            "B": "36",
+            "C": "48",
+            "D": "72"
+          },
+          "correct": "B",
+          "reason": "2/3 x = 24 → x = 24 × 3/2 = 36."
+        },
+        "21": {
+          "question": "Simplify: (2/3) / (4/9)",
+          "choices": {
+            "A": "8/27",
+            "B": "3/2",
+            "C": "2/3",
+            "D": "6/12"
+          },
+          "correct": "B",
+          "reason": "2/3 ÷ 4/9 = 2/3 × 9/4 = 18/12 = 3/2."
+        },
+        "22": {
+          "question": "Arrange from smallest to largest: 1/2, 2/5, 3/4",
+          "choices": {
+            "A": "1/2, 2/5, 3/4",
+            "B": "2/5, 1/2, 3/4",
+            "C": "3/4, 1/2, 2/5",
+            "D": "2/5, 3/4, 1/2"
+          },
+          "correct": "B",
+          "reason": "Decimals: 0.40, 0.50, 0.75. Kaya 2/5 ang pinakamaliit at 3/4 ang pinakamalaki."
+        },
+        "23": {
+          "question": "A pizza is cut into 12 slices. If Maria ate 1/4 of it and John ate 1/3 of it, how many slices are left?",
+          "choices": {
+            "A": "5",
+            "B": "6",
+            "C": "7",
+            "D": "4"
+          },
+          "correct": "A",
+          "reason": "Maria: 1/4 × 12 = 3. John: 1/3 × 12 = 4. Total eaten = 7. Left: 12 − 7 = 5."
+        },
+        "24": {
+          "question": "What fraction of an hour is 45 minutes?",
+          "choices": {
+            "A": "2/3",
+            "B": "3/4",
+            "C": "4/5",
+            "D": "5/6"
+          },
+          "correct": "B",
+          "reason": "May 60 minutes sa 1 hour: 45/60, divide both by 15 = 3/4."
+        },
+        "25": {
+          "question": "Evaluate: (2/3)²",
+          "choices": {
+            "A": "4/3",
+            "B": "2/9",
+            "C": "4/9",
+            "D": "6/9"
+          },
+          "correct": "C",
+          "reason": "I-square pareho ang numerator at denominator: 2²/3² = 4/9."
+        },
+        "26": {
+          "question": "Which fraction is equivalent to 5/7?",
+          "choices": {
+            "A": "15/28",
+            "B": "25/35",
+            "C": "10/21",
+            "D": "20/30"
+          },
+          "correct": "B",
+          "reason": "Multiply numerator at denominator sa 5: (5×5)/(7×5) = 25/35."
+        },
+        "27": {
+          "question": "Solve for x: x/15 = 4/5",
+          "choices": {
+            "A": "10",
+            "B": "12",
+            "C": "8",
+            "D": "14"
+          },
+          "correct": "B",
+          "reason": "Cross-multiply: 5x = 60 → x = 12."
+        },
+        "28": {
+          "question": "Find the average of 1/2 and 3/4.",
+          "choices": {
+            "A": "5/4",
+            "B": "5/8",
+            "C": "2/3",
+            "D": "4/6"
+          },
+          "correct": "B",
+          "reason": "Add muna: 2/4+3/4=5/4, tapos divide by 2 (×1/2) = 5/8."
+        },
+        "29": {
+          "question": "A tank is 3/5 full. After adding 20 liters, it becomes 4/5 full. What is the full capacity of the tank?",
+          "choices": {
+            "A": "80 liters",
+            "B": "100 liters",
+            "C": "120 liters",
+            "D": "60 liters"
+          },
+          "correct": "B",
+          "reason": "Ang nadagdag na 4/5 − 3/5 = 1/5 ay katumbas ng 20 liters. Kaya ang buong tank (5/5) ay 20×5 = 100 liters."
+        },
+        "30": {
+          "question": "Evaluate: 3 ÷ 1/4 + 2",
+          "choices": {
+            "A": "14",
+            "B": "2 3/4",
+            "C": "10",
+            "D": "8"
+          },
+          "correct": "A",
+          "reason": "Unahin ang division (PEMDAS): 3×4=12, tapos +2 = 14."
+        }
+      }
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Percentages",
+      "topic_order": 2,
+      "questions": {
+        "1": {
+          "question": "What is 25% of 360?",
+          "choices": {
+            "A": "72",
+            "B": "80",
+            "C": "90",
+            "D": "120"
+          },
+          "correct": "C",
+          "reason": "Ang 25% ay 1/4. Kaya 360 ÷ 4 = 90."
+        },
+        "2": {
+          "question": "45 is what percent of 150?",
+          "choices": {
+            "A": "25%",
+            "B": "30%",
+            "C": "35%",
+            "D": "40%"
+          },
+          "correct": "B",
+          "reason": "45/150 = 3/10 = 0.30 = 30%."
+        },
+        "3": {
+          "question": "18 is 15% of what number?",
+          "choices": {
+            "A": "100",
+            "B": "120",
+            "C": "150",
+            "D": "270"
+          },
+          "correct": "B",
+          "reason": "18 ÷ 0.15 = 120."
+        },
+        "4": {
+          "question": "Convert 0.085 to a percentage.",
+          "choices": {
+            "A": "85%",
+            "B": "8.5%",
+            "C": "0.85%",
+            "D": "850%"
+          },
+          "correct": "B",
+          "reason": "I-move ang decimal point ng dalawang beses pakanan (multiply by 100) = 8.5%."
+        },
+        "5": {
+          "question": "Convert 5/8 to a percentage.",
+          "choices": {
+            "A": "58%",
+            "B": "62.5%",
+            "C": "65%",
+            "D": "60.5%"
+          },
+          "correct": "B",
+          "reason": "5 ÷ 8 = 0.625 × 100 = 62.5%."
+        },
+        "6": {
+          "question": "A shirt originally costs ₱800 and is on sale at 20% off. What is the sale price?",
+          "choices": {
+            "A": "₱160",
+            "B": "₱600",
+            "C": "₱640",
+            "D": "₱780"
+          },
+          "correct": "C",
+          "reason": "Discount: 800×0.20 = 160. Sale price: 800 − 160 = ₱640."
+        },
+        "7": {
+          "question": "The price of rice increased from ₱40 per kilo to ₱50 per kilo. What is the percentage increase?",
+          "choices": {
+            "A": "10%",
+            "B": "20%",
+            "C": "25%",
+            "D": "30%"
+          },
+          "correct": "C",
+          "reason": "(New − Old)/Old = (50 − 40)/40 = 10/40 = 0.25 = 25%."
+        },
+        "8": {
+          "question": "A population decreased from 5,000 to 4,200. What is the percentage decrease?",
+          "choices": {
+            "A": "16%",
+            "B": "19%",
+            "C": "20%",
+            "D": "8%"
+          },
+          "correct": "A",
+          "reason": "(5000 − 4200)/5000 = 800/5000 = 8/50 = 16/100 = 16%."
+        },
+        "9": {
+          "question": "What is 150% of 60?",
+          "choices": {
+            "A": "30",
+            "B": "90",
+            "C": "120",
+            "D": "150"
+          },
+          "correct": "B",
+          "reason": "1.50 × 60 = 90."
+        },
+        "10": {
+          "question": "What is 0.5% of 400?",
+          "choices": {
+            "A": "200",
+            "B": "20",
+            "C": "2",
+            "D": "0.2"
+          },
+          "correct": "C",
+          "reason": "Ang 1% ng 400 ay 4, kaya ang kalahati nito (0.5%) ay 2."
+        },
+        "11": {
+          "question": "In a class of 40 students, 85% passed the exam. How many students failed?",
+          "choices": {
+            "A": "6",
+            "B": "8",
+            "C": "34",
+            "D": "15"
+          },
+          "correct": "A",
+          "reason": "Kung 85% ang pumasa, 15% ang bumagsak. 0.15 × 40 = 6 students."
+        },
+        "12": {
+          "question": "A salesman earns a 6% commission on all sales. If he sold ₱150,000 worth of appliances, how much is his commission?",
+          "choices": {
+            "A": "₱900",
+            "B": "₱6,000",
+            "C": "₱9,000",
+            "D": "₱15,000"
+          },
+          "correct": "C",
+          "reason": "150,000 × 0.06 = ₱9,000."
+        },
+        "13": {
+          "question": "If an item costs ₱1,120 inclusive of 12% VAT, what was its original price before VAT?",
+          "choices": {
+            "A": "₱985.60",
+            "B": "₱1,000",
+            "C": "₱1,008",
+            "D": "₱950"
+          },
+          "correct": "B",
+          "reason": "1,120 ÷ 1.12 = ₱1,000."
+        },
+        "14": {
+          "question": "Successive discounts of 20% and 10% are equivalent to what single discount?",
+          "choices": {
+            "A": "30%",
+            "B": "28%",
+            "C": "25%",
+            "D": "22%"
+          },
+          "correct": "B",
+          "reason": "Ipagpalagay na ₱100 ang presyo: bawas 20% = ₱80. Bawas 10% sa 80 (₱8) = ₱72. Total discount: 100 − 72 = 28%."
+        },
+        "15": {
+          "question": "Maria's monthly salary of ₱25,000 was increased by 8%. What is her new salary?",
+          "choices": {
+            "A": "₱25,800",
+            "B": "₱26,500",
+            "C": "₱27,000",
+            "D": "₱28,000"
+          },
+          "correct": "C",
+          "reason": "Increase: 25,000 × 0.08 = 2,000. New salary: 25,000 + 2,000 = ₱27,000."
+        },
+        "16": {
+          "question": "After a 30% discount, a bag was sold for ₱1,400. What was its original price?",
+          "choices": {
+            "A": "₱1,820",
+            "B": "₱2,000",
+            "C": "₱2,100",
+            "D": "₱1,700"
+          },
+          "correct": "B",
+          "reason": "Ang ₱1,400 ay 70% ng original price. 1,400 ÷ 0.70 = ₱2,000."
+        },
+        "17": {
+          "question": "Simple interest: How much interest will ₱10,000 earn in 3 years at 5% annual simple interest?",
+          "choices": {
+            "A": "₱500",
+            "B": "₱1,500",
+            "C": "₱11,500",
+            "D": "₱1,050"
+          },
+          "correct": "B",
+          "reason": "I = P × r × t = 10,000 × 0.05 × 3 = ₱1,500."
+        },
+        "18": {
+          "question": "Out of 250 applicants, 40 are hired. What percentage of applicants were hired?",
+          "choices": {
+            "A": "12%",
+            "B": "16%",
+            "C": "20%",
+            "D": "25%"
+          },
+          "correct": "B",
+          "reason": "40/250 = 4/25 = 16/100 = 16%."
+        },
+        "19": {
+          "question": "What percent of 80 is 100?",
+          "choices": {
+            "A": "80%",
+            "B": "120%",
+            "C": "125%",
+            "D": "150%"
+          },
+          "correct": "C",
+          "reason": "100/80 = 5/4 = 1.25 = 125%."
+        },
+        "20": {
+          "question": "A solution contains 30 mL of alcohol and 120 mL of water. What percentage of the solution is alcohol?",
+          "choices": {
+            "A": "25%",
+            "B": "20%",
+            "C": "30%",
+            "D": "15%"
+          },
+          "correct": "B",
+          "reason": "Total solution = 30 + 120 = 150 mL. Alcohol % = 30/150 = 1/5 = 20%."
+        },
+        "21": {
+          "question": "If A is 25% more than B, then B is what percent less than A?",
+          "choices": {
+            "A": "25%",
+            "B": "20%",
+            "C": "15%",
+            "D": "30%"
+          },
+          "correct": "B",
+          "reason": "Kung B = 100, A = 125. Ang diperensya ay 25. 25/125 = 1/5 = 20%."
+        },
+        "22": {
+          "question": "Express 3 1/4% as a decimal.",
+          "choices": {
+            "A": "3.25",
+            "B": "0.325",
+            "C": "0.0325",
+            "D": "0.00325"
+          },
+          "correct": "C",
+          "reason": "3.25% ÷ 100 = 0.0325."
+        },
+        "23": {
+          "question": "A store buys a watch for ₱500 and sells it for ₱650. What is the markup percentage based on cost?",
+          "choices": {
+            "A": "15%",
+            "B": "23%",
+            "C": "30%",
+            "D": "35%"
+          },
+          "correct": "C",
+          "reason": "Profit = 650 − 500 = 150. Markup % = 150/500 = 30/100 = 30%."
+        },
+        "24": {
+          "question": "What is 40% of 40% of 500?",
+          "choices": {
+            "A": "40",
+            "B": "80",
+            "C": "160",
+            "D": "200"
+          },
+          "correct": "B",
+          "reason": "40% ng 500 = 200. Tapos 40% ng 200 = 80."
+        },
+        "25": {
+          "question": "John spent 35% of his allowance on food and 25% on books. If he has ₱800 left, how much was his total allowance?",
+          "choices": {
+            "A": "₱1,600",
+            "B": "₱2,000",
+            "C": "₱2,400",
+            "D": "₱1,200"
+          },
+          "correct": "B",
+          "reason": "Nagastos = 35% + 25% = 60%. Natira = 40%. Kaya 800 ÷ 0.40 = ₱2,000."
+        },
+        "26": {
+          "question": "Which is greater: 30% of 90 or 40% of 70?",
+          "choices": {
+            "A": "30% of 90",
+            "B": "40% of 70",
+            "C": "They are equal",
+            "D": "Cannot be determined"
+          },
+          "correct": "B",
+          "reason": "0.30 × 90 = 27, habang 0.40 × 70 = 28. Mas malaki ang 28."
+        },
+        "27": {
+          "question": "A student answered 68 questions correctly out of 80. What is his score in percent?",
+          "choices": {
+            "A": "80%",
+            "B": "82%",
+            "C": "85%",
+            "D": "88%"
+          },
+          "correct": "C",
+          "reason": "68/80 = 17/20 = 85/100 = 85%."
+        },
+        "28": {
+          "question": "What number is 20% less than 150?",
+          "choices": {
+            "A": "120",
+            "B": "130",
+            "C": "30",
+            "D": "125"
+          },
+          "correct": "A",
+          "reason": "150 − (0.20 × 150) = 150 − 30 = 120."
+        },
+        "29": {
+          "question": "If 60% of a number is 72, what is 25% of that same number?",
+          "choices": {
+            "A": "24",
+            "B": "30",
+            "C": "36",
+            "D": "40"
+          },
+          "correct": "B",
+          "reason": "Ang buong number ay 72 ÷ 0.60 = 120. Ang 25% ng 120 ay 120 ÷ 4 = 30."
+        },
+        "30": {
+          "question": "A gadget depreciates in value by 10% every year. If it costs ₱20,000 today, how much will it be worth after 2 years?",
+          "choices": {
+            "A": "₱16,000",
+            "B": "₱16,200",
+            "C": "₱18,000",
+            "D": "₱15,800"
+          },
+          "correct": "B",
+          "reason": "Year 1: 20,000 × 0.90 = 18,000. Year 2: 18,000 × 0.90 = ₱16,200."
+        }
+      }
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Ratios and Proportions",
+      "topic_order": 3,
+      "questions": {
+        "1": {
+          "question": "Simplify the ratio 24 : 36 to lowest terms.",
+          "choices": {
+            "A": "4 : 6",
+            "B": "2 : 3",
+            "C": "3 : 4",
+            "D": "6 : 9"
+          },
+          "correct": "B",
+          "reason": "I-divide pareho sa GCF na 12: 24÷12 = 2, 36÷12 = 3."
+        },
+        "2": {
+          "question": "Solve for x: 5 : 8 = x : 32",
+          "choices": {
+            "A": "16",
+            "B": "20",
+            "C": "24",
+            "D": "25"
+          },
+          "correct": "B",
+          "reason": "Multiply means and extremes: 8x = 5×32 → 8x = 160 → x = 20."
+        },
+        "3": {
+          "question": "In a class of 45 students, the ratio of boys to girls is 4 : 5. How many boys are there?",
+          "choices": {
+            "A": "15",
+            "B": "20",
+            "C": "25",
+            "D": "30"
+          },
+          "correct": "B",
+          "reason": "Total parts = 4+5 = 9. Bawat part = 45÷9 = 5. Boys: 4×5 = 20."
+        },
+        "4": {
+          "question": "Divide ₱1,200 in the ratio 1 : 2 : 3. What is the largest share?",
+          "choices": {
+            "A": "₱200",
+            "B": "₱400",
+            "C": "₱600",
+            "D": "₱800"
+          },
+          "correct": "C",
+          "reason": "Total parts = 1+2+3 = 6. Bawat part = 1,200÷6 = 200. Largest share (3 parts) = 3×200 = ₱600."
+        },
+        "5": {
+          "question": "A recipe calls for 3 cups of flour for every 2 cups of sugar. If you use 12 cups of flour, how much sugar is needed?",
+          "choices": {
+            "A": "6 cups",
+            "B": "8 cups",
+            "C": "9 cups",
+            "D": "10 cups"
+          },
+          "correct": "B",
+          "reason": "3:2 = 12:x → 3x = 24 → x = 8."
+        },
+        "6": {
+          "question": "If 6 workers can finish a job in 10 days, how many days will it take 15 workers to finish the same job at the same rate?",
+          "choices": {
+            "A": "4 days",
+            "B": "5 days",
+            "C": "25 days",
+            "D": "8 days"
+          },
+          "correct": "A",
+          "reason": "Inverse proportion (mas maraming tao, mas mabilis matapos): 6×10 = 15×x → 60 = 15x → x = 4 days."
+        },
+        "7": {
+          "question": "The ratio of two numbers is 3 : 7, and their sum is 80. What is the smaller number?",
+          "choices": {
+            "A": "21",
+            "B": "24",
+            "C": "30",
+            "D": "56"
+          },
+          "correct": "B",
+          "reason": "Total parts = 3+7 = 10. 80÷10 = 8 per part. Smaller number = 3×8 = 24."
+        },
+        "8": {
+          "question": "Express the ratio of 45 minutes to 2 hours in simplest form.",
+          "choices": {
+            "A": "45 : 2",
+            "B": "3 : 8",
+            "C": "9 : 4",
+            "D": "1 : 3"
+          },
+          "correct": "B",
+          "reason": "Gawing parehong minutes: 2 hours = 120 mins. Ratio: 45:120, divide by 15 = 3:8."
+        },
+        "9": {
+          "question": "A car travels 180 km on 15 liters of gasoline. How far can it travel on 25 liters?",
+          "choices": {
+            "A": "250 km",
+            "B": "300 km",
+            "C": "320 km",
+            "D": "275 km"
+          },
+          "correct": "B",
+          "reason": "180 ÷ 15 = 12 km/L. Kaya sa 25 L: 12×25 = 300 km."
+        },
+        "10": {
+          "question": "The angles of a triangle are in the ratio 2 : 3 : 4. What is the measure of the largest angle?",
+          "choices": {
+            "A": "40°",
+            "B": "60°",
+            "C": "80°",
+            "D": "90°"
+          },
+          "correct": "C",
+          "reason": "Ang total angles ng triangle ay 180°. Total parts = 2+3+4 = 9. 180÷9 = 20° per part. Largest = 4×20 = 80°."
+        },
+        "11": {
+          "question": "If A : B = 2 : 3 and B : C = 4 : 5, what is A : C?",
+          "choices": {
+            "A": "2 : 5",
+            "B": "8 : 15",
+            "C": "6 : 15",
+            "D": "3 : 4"
+          },
+          "correct": "B",
+          "reason": "Gawing pareho ang B (LCD ng 3 at 4 ay 12): A:B = 8:12 at B:C = 12:15. Kaya A:C = 8:15."
+        },
+        "12": {
+          "question": "Solve for x: (x + 2)/6 = 5/3",
+          "choices": {
+            "A": "6",
+            "B": "8",
+            "C": "10",
+            "D": "12"
+          },
+          "correct": "B",
+          "reason": "Cross-multiply: 3(x+2) = 30 → x+2 = 10 → x = 8."
+        },
+        "13": {
+          "question": "On a map, 1 cm represents 25 km. Two cities are 4.5 cm apart on the map. What is their actual distance?",
+          "choices": {
+            "A": "100 km",
+            "B": "112.5 km",
+            "C": "125 km",
+            "D": "90 km"
+          },
+          "correct": "B",
+          "reason": "4.5 × 25 = 112.5 km."
+        },
+        "14": {
+          "question": "A pet store has 18 dogs and 24 cats. What is the ratio of cats to the total number of pets?",
+          "choices": {
+            "A": "3 : 4",
+            "B": "4 : 3",
+            "C": "4 : 7",
+            "D": "3 : 7"
+          },
+          "correct": "C",
+          "reason": "Total pets = 18+24 = 42. Ratio ng cats to total = 24:42, divide by 6 = 4:7."
+        },
+        "15": {
+          "question": "If 4 notebooks cost ₱140, how much do 10 notebooks cost?",
+          "choices": {
+            "A": "₱300",
+            "B": "₱350",
+            "C": "₱400",
+            "D": "₱280"
+          },
+          "correct": "B",
+          "reason": "Bawat notebook ay 140÷4 = ₱35. Kaya 10 notebooks = 35×10 = ₱350."
+        },
+        "16": {
+          "question": "A supply of food lasts 30 days for 20 soldiers. If 10 more soldiers join them, how long will the food last?",
+          "choices": {
+            "A": "15 days",
+            "B": "20 days",
+            "C": "25 days",
+            "D": "45 days"
+          },
+          "correct": "B",
+          "reason": "Inverse proportion: 20×30 = 30×x → 600 = 30x → x = 20 days."
+        },
+        "17": {
+          "question": "Simplify the ratio: 1/2 : 1/3",
+          "choices": {
+            "A": "2 : 3",
+            "B": "3 : 2",
+            "C": "1 : 6",
+            "D": "6 : 1"
+          },
+          "correct": "B",
+          "reason": "I-multiply pareho sa LCD na 6: (1/2×6) : (1/3×6) = 3:2."
+        },
+        "18": {
+          "question": "The ratio of wins to losses of a basketball team is 5 : 2. If they won 35 games, how many games did they play in total?",
+          "choices": {
+            "A": "14",
+            "B": "42",
+            "C": "49",
+            "D": "50"
+          },
+          "correct": "C",
+          "reason": "35÷5 = 7 per part. Losses = 2×7 = 14. Total games = 35+14 = 49."
+        },
+        "19": {
+          "question": "Two numbers are in the ratio 5 : 9. If their difference is 36, what is the larger number?",
+          "choices": {
+            "A": "45",
+            "B": "63",
+            "C": "81",
+            "D": "90"
+          },
+          "correct": "C",
+          "reason": "Difference in parts = 9−5 = 4. 36÷4 = 9 per part. Larger number = 9×9 = 81."
+        },
+        "20": {
+          "question": "Simplify the ratio 0.4 : 1.2.",
+          "choices": {
+            "A": "1 : 3",
+            "B": "1 : 4",
+            "C": "2 : 6",
+            "D": "4 : 12"
+          },
+          "correct": "A",
+          "reason": "Multiply by 10 para mawala ang decimal: 4:12, divide by 4 = 1:3."
+        },
+        "21": {
+          "question": "A pole 6 meters high casts a shadow 4 meters long. At the same time, a tree casts a shadow 10 meters long. How tall is the tree?",
+          "choices": {
+            "A": "12 m",
+            "B": "15 m",
+            "C": "16 m",
+            "D": "18 m"
+          },
+          "correct": "B",
+          "reason": "6/4 = h/10 → 4h = 60 → h = 15 m."
+        },
+        "22": {
+          "question": "The ratio of doctors to nurses in a hospital is 2 : 9. If there are 72 nurses, how many doctors are there?",
+          "choices": {
+            "A": "14",
+            "B": "16",
+            "C": "18",
+            "D": "20"
+          },
+          "correct": "B",
+          "reason": "72÷9 = 8 per part. Doctors = 2×8 = 16."
+        },
+        "23": {
+          "question": "In a bag of marbles, the ratio of red to blue is 3 : 4, and blue to green is 2 : 5. What is the ratio of red to blue to green?",
+          "choices": {
+            "A": "3 : 4 : 5",
+            "B": "3 : 4 : 10",
+            "C": "6 : 8 : 10",
+            "D": "3 : 2 : 5"
+          },
+          "correct": "B",
+          "reason": "Gawing 4 ang blue sa pangalawang ratio (2:5 times 2 = 4:10). Kaya 3:4:10."
+        },
+        "24": {
+          "question": "Which of the following forms a true proportion with 4 : 7?",
+          "choices": {
+            "A": "12 : 28",
+            "B": "16 : 28",
+            "C": "8 : 21",
+            "D": "20 : 42"
+          },
+          "correct": "B",
+          "reason": "Multiply pareho sa 4: 4×4 = 16, 7×4 = 28."
+        },
+        "25": {
+          "question": "A gear with 20 teeth turns a gear with 50 teeth. If the smaller gear makes 15 revolutions, how many revolutions does the larger gear make?",
+          "choices": {
+            "A": "6",
+            "B": "10",
+            "C": "37.5",
+            "D": "5"
+          },
+          "correct": "A",
+          "reason": "Inverse proportion: 20×15 = 50×x → 300 = 50x → x = 6."
+        },
+        "26": {
+          "question": "Divide 100 into two parts in the ratio 3 : 2.",
+          "choices": {
+            "A": "70 and 30",
+            "B": "60 and 40",
+            "C": "75 and 25",
+            "D": "80 and 20"
+          },
+          "correct": "B",
+          "reason": "Total parts = 5. 100÷5 = 20. Parts: 3×20 = 60 at 2×20 = 40."
+        },
+        "27": {
+          "question": "If x : 12 = 3 : x, find the positive value of x.",
+          "choices": {
+            "A": "4",
+            "B": "6",
+            "C": "9",
+            "D": "36"
+          },
+          "correct": "B",
+          "reason": "x² = 12×3 = 36 → x = √36 = 6."
+        },
+        "28": {
+          "question": "A mixture of concrete uses cement, sand, and gravel in the ratio 1 : 2 : 4. How many bags of gravel are needed for 35 total bags of mixture?",
+          "choices": {
+            "A": "15",
+            "B": "20",
+            "C": "25",
+            "D": "10"
+          },
+          "correct": "B",
+          "reason": "Total parts = 1+2+4 = 7. 35÷7 = 5. Gravel = 4×5 = 20 bags."
+        },
+        "29": {
+          "question": "If 8 apples cost ₱200, how many apples can you buy with ₱450?",
+          "choices": {
+            "A": "16",
+            "B": "18",
+            "C": "20",
+            "D": "22"
+          },
+          "correct": "B",
+          "reason": "Bawat apple ay 200÷8 = ₱25. Kaya 450÷25 = 18 apples."
+        },
+        "30": {
+          "question": "The ratio of a father's age to his son's age is 7 : 2. In 10 years, the sum of their ages will be 65. How old is the son now?",
+          "choices": {
+            "A": "10",
+            "B": "12",
+            "C": "14",
+            "D": "20"
+          },
+          "correct": "A",
+          "reason": "Kung sum nila sa 10 years ay 65, ang sum nila ngayon ay 65−20 = 45. Total parts = 7+2 = 9. 45÷9 = 5. Son's age = 2×5 = 10."
+        }
+      }
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Word Problems",
+      "topic_order": 4,
+      "questions": {
+        "1": {
+          "question": "Age Problem: Ana is 6 years older than Ben. Five years ago, the sum of their ages was 28. How old is Ana now?",
+          "choices": {
+            "A": "16",
+            "B": "22",
+            "C": "20",
+            "D": "18"
+          },
+          "correct": "B",
+          "reason": "Sum ngayon = 28+10 = 38. Kung B+(B+6) = 38 → 2B = 32 → B = 16. Ana = 16+6 = 22."
+        },
+        "2": {
+          "question": "Work Problem: Pedro can paint a fence in 4 hours, while Juan can paint the same fence in 6 hours. How long will it take them working together?",
+          "choices": {
+            "A": "2 hours",
+            "B": "2.4 hours",
+            "C": "5 hours",
+            "D": "3 hours"
+          },
+          "correct": "B",
+          "reason": "Formula: (A×B)/(A+B) = (4×6)/(4+6) = 24/10 = 2.4 hours."
+        },
+        "3": {
+          "question": "Distance/Rate: A train travels at 80 km/h for 2.5 hours, then at 60 km/h for 1.5 hours. What is the total distance traveled?",
+          "choices": {
+            "A": "260 km",
+            "B": "290 km",
+            "C": "300 km",
+            "D": "240 km"
+          },
+          "correct": "B",
+          "reason": "(80×2.5) + (60×1.5) = 200 + 90 = 290 km."
+        },
+        "4": {
+          "question": "Number Problem: The sum of three consecutive even integers is 72. What is the largest integer?",
+          "choices": {
+            "A": "22",
+            "B": "24",
+            "C": "26",
+            "D": "28"
+          },
+          "correct": "C",
+          "reason": "Middle number = 72÷3 = 24. Ang tatlo ay 22, 24, at 26. Largest = 26."
+        },
+        "5": {
+          "question": "Coin Problem: Carlo has 20 coins consisting of ₱5 and ₱10 coins totaling ₱145. How many ₱10 coins does he have?",
+          "choices": {
+            "A": "9",
+            "B": "11",
+            "C": "10",
+            "D": "12"
+          },
+          "correct": "A",
+          "reason": "Kung lahat ay ₱5, total ay ₱100. Sobra ng ₱45. Bawat palit ng ₱5 sa ₱10 ay dagdag ₱5: 45÷5 = 9 na ₱10 coins."
+        },
+        "6": {
+          "question": "Geometry (Perimeter): The length of a rectangle is 4 meters more than its width. If the perimeter is 40 meters, what is its area?",
+          "choices": {
+            "A": "96 sq. m",
+            "B": "84 sq. m",
+            "C": "100 sq. m",
+            "D": "64 sq. m"
+          },
+          "correct": "A",
+          "reason": "L+W = 40÷2 = 20. Kung W+(W+4) = 20 → W = 8, L = 12. Area = 12×8 = 96."
+        },
+        "7": {
+          "question": "Average Problem: The average of 4 tests is 85. What score must the student get on the 5th test to raise the average to 87?",
+          "choices": {
+            "A": "90",
+            "B": "93",
+            "C": "95",
+            "D": "97"
+          },
+          "correct": "C",
+          "reason": "Target total = 87×5 = 435. Current total = 85×4 = 340. Needed: 435−340 = 95."
+        },
+        "8": {
+          "question": "Distance (Opposite Direction): Two cars leave the same station at the same time in opposite directions at 50 km/h and 70 km/h. After how many hours will they be 420 km apart?",
+          "choices": {
+            "A": "3 hours",
+            "B": "3.5 hours",
+            "C": "4 hours",
+            "D": "4.5 hours"
+          },
+          "correct": "B",
+          "reason": "Combined speed = 50+70 = 120 km/h. Time = 420÷120 = 3.5 hours."
+        },
+        "9": {
+          "question": "Age Problem: A mother is three times as old as her daughter. In 12 years, she will be twice as old as her daughter. How old is the daughter now?",
+          "choices": {
+            "A": "10",
+            "B": "12",
+            "C": "15",
+            "D": "18"
+          },
+          "correct": "B",
+          "reason": "3x+12 = 2(x+12) → 3x+12 = 2x+24 → x = 12."
+        },
+        "10": {
+          "question": "Mixture Problem: How many liters of pure water must be added to 20 liters of a 30% salt solution to make it a 20% salt solution?",
+          "choices": {
+            "A": "5 L",
+            "B": "10 L",
+            "C": "15 L",
+            "D": "20 L"
+          },
+          "correct": "B",
+          "reason": "Salt = 20×0.30 = 6 L. Para maging 20% ang 6 L: 6÷0.20 = 30 L total. Added water = 30−20 = 10 L."
+        },
+        "11": {
+          "question": "Work Problem: Pipe A can fill a tank in 3 hours, while Drain B can empty it in 6 hours. If both are open, how long to fill the tank?",
+          "choices": {
+            "A": "4 hours",
+            "B": "6 hours",
+            "C": "9 hours",
+            "D": "2 hours"
+          },
+          "correct": "B",
+          "reason": "1/3 − 1/6 = 1/6 per hour, kaya 6 hours bago mapuno."
+        },
+        "12": {
+          "question": "Number Problem: Twice a number decreased by 7 is equal to 29. What is the number?",
+          "choices": {
+            "A": "11",
+            "B": "18",
+            "C": "22",
+            "D": "36"
+          },
+          "correct": "B",
+          "reason": "2x−7 = 29 → 2x = 36 → x = 18."
+        },
+        "13": {
+          "question": "Business/Profit: A vendor bought 50 mangoes for ₱600. If 5 mangoes spoiled and he sold the rest at ₱15 each, how much was his net profit?",
+          "choices": {
+            "A": "₱75",
+            "B": "₱150",
+            "C": "₱675",
+            "D": "₱50"
+          },
+          "correct": "A",
+          "reason": "Good mangoes = 50−5 = 45. Revenue = 45×15 = ₱675. Profit = 675−600 = ₱75."
+        },
+        "14": {
+          "question": "Geometry (Circle): What is the area of a circle with a diameter of 14 cm? (Use π ≈ 22/7)",
+          "choices": {
+            "A": "44 sq. cm",
+            "B": "154 sq. cm",
+            "C": "616 sq. cm",
+            "D": "88 sq. cm"
+          },
+          "correct": "B",
+          "reason": "Radius = 14÷2 = 7 cm. Area = πr² = (22/7)×7×7 = 154."
+        },
+        "15": {
+          "question": "Motion (Upstream/Downstream): A boat travels 15 km/h in still water. If the river current flows at 3 km/h, how long will it take to travel 36 km upstream?",
+          "choices": {
+            "A": "2 hours",
+            "B": "3 hours",
+            "C": "2.4 hours",
+            "D": "4 hours"
+          },
+          "correct": "B",
+          "reason": "Upstream speed = 15−3 = 12 km/h. Time = 36÷12 = 3 hours."
+        },
+        "16": {
+          "question": "Consecutive Integers: The sum of four consecutive integers is 94. What is the smallest integer?",
+          "choices": {
+            "A": "21",
+            "B": "22",
+            "C": "23",
+            "D": "24"
+          },
+          "correct": "B",
+          "reason": "x+(x+1)+(x+2)+(x+3) = 94 → 4x+6 = 94 → 4x = 88 → x = 22."
+        },
+        "17": {
+          "question": "Geometry (Triangle): What is the area of a right triangle with legs measuring 9 cm and 12 cm?",
+          "choices": {
+            "A": "108 sq. cm",
+            "B": "54 sq. cm",
+            "C": "36 sq. cm",
+            "D": "21 sq. cm"
+          },
+          "correct": "B",
+          "reason": "Area = (1/2)×base×height = (1/2)×9×12 = 54."
+        },
+        "18": {
+          "question": "Probability: A standard die is rolled once. What is the probability of rolling a number greater than 4?",
+          "choices": {
+            "A": "1/6",
+            "B": "1/3",
+            "C": "1/2",
+            "D": "2/3"
+          },
+          "correct": "B",
+          "reason": "Ang mga numerong lampas sa 4 ay 5 at 6 (2 outcomes). 2/6 = 1/3."
+        },
+        "19": {
+          "question": "Combinatorics: How many different 3-digit numbers can be formed using the digits 1, 2, 3, and 4 if repetition is NOT allowed?",
+          "choices": {
+            "A": "12",
+            "B": "24",
+            "C": "64",
+            "D": "16"
+          },
+          "correct": "B",
+          "reason": "4×3×2 = 24 ways."
+        },
+        "20": {
+          "question": "Venn Diagram: In a survey of 50 people, 30 drink coffee, 25 drink tea, and 10 drink both. How many drink NEITHER?",
+          "choices": {
+            "A": "5",
+            "B": "10",
+            "C": "15",
+            "D": "0"
+          },
+          "correct": "A",
+          "reason": "Drink at least one = 30+25−10 = 45. Neither = 50−45 = 5."
+        },
+        "21": {
+          "question": "Time Calculation: A flight departs Manila at 10:45 PM and arrives in Tokyo 4 hours and 35 minutes later (ignoring time zone differences). What time is arrival?",
+          "choices": {
+            "A": "2:20 AM",
+            "B": "3:20 AM",
+            "C": "3:10 AM",
+            "D": "2:80 AM"
+          },
+          "correct": "B",
+          "reason": "10:45 PM + 4 hrs = 2:45 AM. Dagdag 35 mins = 3:20 AM."
+        },
+        "22": {
+          "question": "Algebra: If 3x + 5 = 20, what is the value of 6x − 3?",
+          "choices": {
+            "A": "27",
+            "B": "30",
+            "C": "33",
+            "D": "15"
+          },
+          "correct": "A",
+          "reason": "3x = 15 → x = 5. Substitute: 6(5)−3 = 27."
+        },
+        "23": {
+          "question": "Number Series: Find the next number: 3, 7, 15, 31, 63, ___",
+          "choices": {
+            "A": "95",
+            "B": "126",
+            "C": "127",
+            "D": "128"
+          },
+          "correct": "C",
+          "reason": "Pattern ay (×2)+1: 63×2+1 = 127."
+        },
+        "24": {
+          "question": "Number Series: Find the next number: 2, 6, 12, 20, 30, ___",
+          "choices": {
+            "A": "40",
+            "B": "42",
+            "C": "44",
+            "D": "36"
+          },
+          "correct": "B",
+          "reason": "Ang idinadagdag ay +4, +6, +8, +10, kaya ang susunod ay +12: 30+12 = 42."
+        },
+        "25": {
+          "question": "Pythagorean Theorem: A 13-foot ladder leans against a wall with its base 5 feet away from the wall. How high up the wall does the ladder reach?",
+          "choices": {
+            "A": "8 ft",
+            "B": "10 ft",
+            "C": "12 ft",
+            "D": "14 ft"
+          },
+          "correct": "C",
+          "reason": "a²+5² = 13² → a² = 169−25 = 144 → a = 12 ft."
+        },
+        "26": {
+          "question": "Salary/Overtime: Liza earns ₱120/hour for regular 40 hours/week and 1.5 times her rate for overtime. If she worked 46 hours, what is her gross pay?",
+          "choices": {
+            "A": "₱5,520",
+            "B": "₱5,880",
+            "C": "₱6,000",
+            "D": "₱5,760"
+          },
+          "correct": "B",
+          "reason": "Regular: 40×120 = 4,800. OT rate = 120×1.5 = 180. OT pay: 6×180 = 1,080. Total = ₱5,880."
+        },
+        "27": {
+          "question": "Perimeter/Fencing: How many meters of fencing are needed to enclose a square garden with an area of 144 sq. meters?",
+          "choices": {
+            "A": "36 m",
+            "B": "48 m",
+            "C": "72 m",
+            "D": "12 m"
+          },
+          "correct": "B",
+          "reason": "Side = √144 = 12 m. Perimeter = 4×12 = 48 m."
+        },
+        "28": {
+          "question": "Average Speed: A car travels 60 km at 30 km/h and returns the same 60 km at 60 km/h. What is its average speed for the entire trip?",
+          "choices": {
+            "A": "45 km/h",
+            "B": "40 km/h",
+            "C": "50 km/h",
+            "D": "42 km/h"
+          },
+          "correct": "B",
+          "reason": "Total distance = 120 km. Total time = (60÷30)+(60÷60) = 2+1 = 3 hrs. Average speed = 120÷3 = 40 km/h."
+        },
+        "29": {
+          "question": "Handshake Problem: There are 8 people in a room. If everyone shakes hands with everyone else once, how many handshakes occur?",
+          "choices": {
+            "A": "28",
+            "B": "56",
+            "C": "64",
+            "D": "36"
+          },
+          "correct": "A",
+          "reason": "Formula: n(n−1)/2 = (8×7)/2 = 28."
+        },
+        "30": {
+          "question": "Sharing Bill: Five friends agreed to split a ₱1,500 dinner bill equally. One friend forgot his wallet, so the remaining friends split the bill equally among themselves. How much MORE did each of the four friends pay?",
+          "choices": {
+            "A": "₱375",
+            "B": "₱75",
+            "C": "₱300",
+            "D": "₱100"
+          },
+          "correct": "B",
+          "reason": "Original share: 1500÷5 = ₱300. New share: 1500÷4 = ₱375. Dagdag: 375−300 = ₱75."
+        }
+      }
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Tables and Graphs",
+      "topic_order": 5,
+      "questions": {
+        "1": {
+          "question": "DATA — Quarterly Sales Report (in ₱ thousands): Manila: Q1=450, Q2=500, Q3=480, Q4=620; Cebu: Q1=320, Q2=350, Q3=400, Q4=430; Davao: Q1=280, Q2=300, Q3=310, Q4=360; Baguio: Q1=150, Q2=200, Q3=170, Q4=230.\n\nWhat were the total annual sales of the Cebu branch?",
+          "choices": {
+            "A": "₱1,400,000",
+            "B": "₱1,500,000",
+            "C": "₱1,550,000",
+            "D": "₱1,600,000"
+          },
+          "correct": "B",
+          "reason": "320+350+400+430 = 1,500 (in thousands = ₱1,500,000)."
+        },
+        "2": {
+          "question": "DATA — Quarterly Sales Report (in ₱ thousands): Manila: Q1=450, Q2=500, Q3=480, Q4=620; Cebu: Q1=320, Q2=350, Q3=400, Q4=430; Davao: Q1=280, Q2=300, Q3=310, Q4=360; Baguio: Q1=150, Q2=200, Q3=170, Q4=230.\n\nWhich quarter had the highest combined sales across all four branches?",
+          "choices": {
+            "A": "Q1",
+            "B": "Q2",
+            "C": "Q3",
+            "D": "Q4"
+          },
+          "correct": "D",
+          "reason": "Q4 total = 620+430+360+230 = 1,640, pinakamataas kumpara sa Q1 (1,200), Q2 (1,350), at Q3 (1,360)."
+        },
+        "3": {
+          "question": "DATA — Quarterly Sales Report (in ₱ thousands): Manila: Q1=450, Q2=500, Q3=480, Q4=620; Cebu: Q1=320, Q2=350, Q3=400, Q4=430; Davao: Q1=280, Q2=300, Q3=310, Q4=360; Baguio: Q1=150, Q2=200, Q3=170, Q4=230.\n\nWhat is the average quarterly sales of the Baguio branch?",
+          "choices": {
+            "A": "₱180,000",
+            "B": "₱187,500",
+            "C": "₱190,000",
+            "D": "₱200,000"
+          },
+          "correct": "B",
+          "reason": "Total Baguio = 150+200+170+230 = 750. Average = 750÷4 = 187.5 thousand = ₱187,500."
+        },
+        "4": {
+          "question": "DATA — Quarterly Sales Report (in ₱ thousands): Manila: Q1=450, Q2=500, Q3=480, Q4=620; Cebu: Q1=320, Q2=350, Q3=400, Q4=430; Davao: Q1=280, Q2=300, Q3=310, Q4=360; Baguio: Q1=150, Q2=200, Q3=170, Q4=230.\n\nBy what percentage did Manila's sales increase from Q1 to Q4?",
+          "choices": {
+            "A": "35.5%",
+            "B": "37.8%",
+            "C": "40.2%",
+            "D": "27.4%"
+          },
+          "correct": "B",
+          "reason": "(620−450)/450 = 170/450 ≈ 0.3778 = 37.8%."
+        },
+        "5": {
+          "question": "DATA — Quarterly Sales Report (in ₱ thousands): Manila: Q1=450, Q2=500, Q3=480, Q4=620; Cebu: Q1=320, Q2=350, Q3=400, Q4=430; Davao: Q1=280, Q2=300, Q3=310, Q4=360; Baguio: Q1=150, Q2=200, Q3=170, Q4=230.\n\nWhat is the ratio of Davao's Q2 sales to Manila's Q2 sales?",
+          "choices": {
+            "A": "3 : 5",
+            "B": "2 : 3",
+            "C": "3 : 4",
+            "D": "5 : 8"
+          },
+          "correct": "A",
+          "reason": "300:500 = 3:5."
+        },
+        "6": {
+          "question": "DATA — Quarterly Sales Report (in ₱ thousands): Manila: Q1=450, Q2=500, Q3=480, Q4=620; Cebu: Q1=320, Q2=350, Q3=400, Q4=430; Davao: Q1=280, Q2=300, Q3=310, Q4=360; Baguio: Q1=150, Q2=200, Q3=170, Q4=230.\n\nIn Q3, what percentage of the total company sales came from Cebu?",
+          "choices": {
+            "A": "25.4%",
+            "B": "29.4%",
+            "C": "31.2%",
+            "D": "28.0%"
+          },
+          "correct": "B",
+          "reason": "Q3 total = 480+400+310+170 = 1,360. Cebu % = 400/1360 ≈ 29.4%."
+        },
+        "7": {
+          "question": "DATA — Household Monthly Budget (Total Monthly Income: ₱40,000): Housing/Rent 30%, Food & Groceries 25%, Utilities & Internet 15%, Transportation 10%, Savings 12%, Miscellaneous 8%.\n\nHow much money is allocated for Food & Groceries each month?",
+          "choices": {
+            "A": "₱8,000",
+            "B": "₱10,000",
+            "C": "₱12,000",
+            "D": "₱6,000"
+          },
+          "correct": "B",
+          "reason": "40,000×0.25 = ₱10,000."
+        },
+        "8": {
+          "question": "DATA — Household Monthly Budget (Total Monthly Income: ₱40,000): Housing/Rent 30%, Food & Groceries 25%, Utilities & Internet 15%, Transportation 10%, Savings 12%, Miscellaneous 8%.\n\nHow much more is spent on Housing/Rent than on Utilities & Internet?",
+          "choices": {
+            "A": "₱4,000",
+            "B": "₱6,000",
+            "C": "₱8,000",
+            "D": "₱12,000"
+          },
+          "correct": "B",
+          "reason": "Difference in % = 30%−15% = 15%. 40,000×0.15 = ₱6,000."
+        },
+        "9": {
+          "question": "DATA — Household Monthly Budget (Total Monthly Income: ₱40,000): Housing/Rent 30%, Food & Groceries 25%, Utilities & Internet 15%, Transportation 10%, Savings 12%, Miscellaneous 8%.\n\nHow much will the household save in one full year (12 months) if they stick to this budget?",
+          "choices": {
+            "A": "₱48,000",
+            "B": "₱57,600",
+            "C": "₱60,000",
+            "D": "₱52,400"
+          },
+          "correct": "B",
+          "reason": "Monthly savings = 40,000×0.12 = ₱4,800. Annual = 4,800×12 = ₱57,600."
+        },
+        "10": {
+          "question": "DATA — Household Monthly Budget (Total Monthly Income: ₱40,000): Housing/Rent 30%, Food & Groceries 25%, Utilities & Internet 15%, Transportation 10%, Savings 12%, Miscellaneous 8%.\n\nWhat central angle in a pie chart represents Transportation (10%)?",
+          "choices": {
+            "A": "10°",
+            "B": "36°",
+            "C": "45°",
+            "D": "30°"
+          },
+          "correct": "B",
+          "reason": "Ang buong bilog ay 360°. 360°×0.10 = 36°."
+        },
+        "11": {
+          "question": "DATA — Household Monthly Budget (Total Monthly Income: ₱40,000): Housing/Rent 30%, Food & Groceries 25%, Utilities & Internet 15%, Transportation 10%, Savings 12%, Miscellaneous 8%.\n\nIf the monthly income increases to ₱50,000 and percentages remain the same, how much goes to Miscellaneous?",
+          "choices": {
+            "A": "₱3,200",
+            "B": "₱4,000",
+            "C": "₱4,500",
+            "D": "₱5,000"
+          },
+          "correct": "B",
+          "reason": "50,000×0.08 = ₱4,000."
+        },
+        "12": {
+          "question": "DATA — Household Monthly Budget (Total Monthly Income: ₱40,000): Housing/Rent 30%, Food & Groceries 25%, Utilities & Internet 15%, Transportation 10%, Savings 12%, Miscellaneous 8%.\n\nWhat is the combined amount spent on Food, Transportation, and Utilities?",
+          "choices": {
+            "A": "₱18,000",
+            "B": "₱20,000",
+            "C": "₱22,000",
+            "D": "₱24,000"
+          },
+          "correct": "B",
+          "reason": "Combined % = 25%+10%+15% = 50%. Kalahati ng ₱40,000 ay ₱20,000."
+        },
+        "13": {
+          "question": "DATA — Enrollment by College (Male/Female): Engineering 420/180, Business 250/350, Education 120/380, IT/Computer Science 310/190.\n\nWhich college has the highest total student enrollment?",
+          "choices": {
+            "A": "Engineering only",
+            "B": "Business only",
+            "C": "Both Engineering and Business",
+            "D": "IT / Computer Science"
+          },
+          "correct": "C",
+          "reason": "Engineering = 420+180 = 600; Business = 250+350 = 600. Pareho silang pinakamataas."
+        },
+        "14": {
+          "question": "DATA — Enrollment by College (Male/Female): Engineering 420/180, Business 250/350, Education 120/380, IT/Computer Science 310/190.\n\nWhat is the total number of female students across all four colleges?",
+          "choices": {
+            "A": "1,000",
+            "B": "1,100",
+            "C": "1,200",
+            "D": "900"
+          },
+          "correct": "B",
+          "reason": "180+350+380+190 = 1,100."
+        },
+        "15": {
+          "question": "DATA — Enrollment by College (Male/Female): Engineering 420/180, Business 250/350, Education 120/380, IT/Computer Science 310/190.\n\nIn the College of Education, what percentage of the students are male?",
+          "choices": {
+            "A": "20%",
+            "B": "24%",
+            "C": "30%",
+            "D": "31.6%"
+          },
+          "correct": "B",
+          "reason": "Total Education = 120+380 = 500. Male % = 120/500 = 24/100 = 24%."
+        },
+        "16": {
+          "question": "DATA — Enrollment by College (Male/Female): Engineering 420/180, Business 250/350, Education 120/380, IT/Computer Science 310/190.\n\nWhat is the overall ratio of Male to Female students in the entire university?",
+          "choices": {
+            "A": "1 : 1",
+            "B": "11 : 10",
+            "C": "10 : 11",
+            "D": "6 : 5"
+          },
+          "correct": "A",
+          "reason": "Total Male = 420+250+120+310 = 1,100. Total Female = 1,100. Ratio = 1,100:1,100 = 1:1."
+        },
+        "17": {
+          "question": "DATA — Enrollment by College (Male/Female): Engineering 420/180, Business 250/350, Education 120/380, IT/Computer Science 310/190.\n\nHow many more male students are in IT than in Education?",
+          "choices": {
+            "A": "170",
+            "B": "190",
+            "C": "210",
+            "D": "150"
+          },
+          "correct": "B",
+          "reason": "310−120 = 190."
+        },
+        "18": {
+          "question": "DATA — Enrollment by College (Male/Female): Engineering 420/180, Business 250/350, Education 120/380, IT/Computer Science 310/190.\n\nWhat percentage of the university's total population is enrolled in IT / Computer Science?",
+          "choices": {
+            "A": "20.5%",
+            "B": "22.7%",
+            "C": "25.0%",
+            "D": "18.2%"
+          },
+          "correct": "B",
+          "reason": "Total university = 1,100+1,100 = 2,200. IT total = 310+190 = 500. 500/2200 = 5/22 ≈ 22.7%."
+        },
+        "19": {
+          "question": "DATA — Monthly Temperature & Rainfall: Jan: 25°C, 20mm; Mar: 28°C, 15mm; May: 32°C, 110mm; Jul: 27°C, 340mm; Sep: 27°C, 290mm; Nov: 26°C, 125mm.\n\nWhich month recorded the highest average temperature?",
+          "choices": {
+            "A": "March",
+            "B": "May",
+            "C": "July",
+            "D": "September"
+          },
+          "correct": "B",
+          "reason": "Sa table, May ang may pinakamataas na temperatura na 32°C."
+        },
+        "20": {
+          "question": "DATA — Monthly Temperature & Rainfall: Jan: 25°C, 20mm; Mar: 28°C, 15mm; May: 32°C, 110mm; Jul: 27°C, 340mm; Sep: 27°C, 290mm; Nov: 26°C, 125mm.\n\nWhat is the range (difference between highest and lowest) of rainfall recorded in the table?",
+          "choices": {
+            "A": "320 mm",
+            "B": "325 mm",
+            "C": "340 mm",
+            "D": "290 mm"
+          },
+          "correct": "B",
+          "reason": "Highest (July = 340) minus Lowest (March = 15) = 325 mm."
+        },
+        "21": {
+          "question": "DATA — Monthly Temperature & Rainfall: Jan: 25°C, 20mm; Mar: 28°C, 15mm; May: 32°C, 110mm; Jul: 27°C, 340mm; Sep: 27°C, 290mm; Nov: 26°C, 125mm.\n\nWhat is the average rainfall for the six listed months?",
+          "choices": {
+            "A": "140 mm",
+            "B": "150 mm",
+            "C": "160 mm",
+            "D": "175 mm"
+          },
+          "correct": "B",
+          "reason": "Sum = 20+15+110+340+290+125 = 900 mm. Average = 900÷6 = 150 mm."
+        },
+        "22": {
+          "question": "DATA — Monthly Temperature & Rainfall: Jan: 25°C, 20mm; Mar: 28°C, 15mm; May: 32°C, 110mm; Jul: 27°C, 340mm; Sep: 27°C, 290mm; Nov: 26°C, 125mm.\n\nBetween which two listed months did rainfall experience the steepest increase?",
+          "choices": {
+            "A": "January to March",
+            "B": "March to May",
+            "C": "May to July",
+            "D": "July to September"
+          },
+          "correct": "C",
+          "reason": "Mula 110 mm naging 340 mm (tumaas ng +230 mm)."
+        },
+        "23": {
+          "question": "DATA — Monthly Temperature & Rainfall: Jan: 25°C, 20mm; Mar: 28°C, 15mm; May: 32°C, 110mm; Jul: 27°C, 340mm; Sep: 27°C, 290mm; Nov: 26°C, 125mm.\n\nWhat is the median average temperature among the six listed months?",
+          "choices": {
+            "A": "26.5°C",
+            "B": "27°C",
+            "C": "27.5°C",
+            "D": "28°C"
+          },
+          "correct": "B",
+          "reason": "Ayusin mula pinakamababa: 25, 26, 27, 27, 28, 32. Ang dalawang gitna ay parehong 27, kaya 27°C."
+        },
+        "24": {
+          "question": "DATA — Monthly Temperature & Rainfall: Jan: 25°C, 20mm; Mar: 28°C, 15mm; May: 32°C, 110mm; Jul: 27°C, 340mm; Sep: 27°C, 290mm; Nov: 26°C, 125mm.\n\nWhat percent of the total 6-month rainfall occurred in July and September combined?",
+          "choices": {
+            "A": "60%",
+            "B": "65%",
+            "C": "70%",
+            "D": "75%"
+          },
+          "correct": "C",
+          "reason": "July+Sept = 340+290 = 630 mm. Total = 900 mm. 630/900 = 7/10 = 70%."
+        },
+        "25": {
+          "question": "DATA — CSE Passers by Region (2024 / 2025 / 2026): NCR 12,000 / 13,500 / 15,000; Region IV-A 8,000 / 8,800 / 9,600; Region VI 5,000 / 5,500 / 6,200; Region VII 6,000 / 6,300 / 6,800.\n\nHow many total passers did NCR produce from 2024 to 2026?",
+          "choices": {
+            "A": "39,500",
+            "B": "40,500",
+            "C": "41,500",
+            "D": "42,000"
+          },
+          "correct": "B",
+          "reason": "12,000+13,500+15,000 = 40,500."
+        },
+        "26": {
+          "question": "DATA — CSE Passers by Region (2024 / 2025 / 2026): NCR 12,000 / 13,500 / 15,000; Region IV-A 8,000 / 8,800 / 9,600; Region VI 5,000 / 5,500 / 6,200; Region VII 6,000 / 6,300 / 6,800.\n\nWhich region had a consistent annual increase of exactly 800 passers per year?",
+          "choices": {
+            "A": "NCR",
+            "B": "Region IV-A",
+            "C": "Region VI",
+            "D": "Region VII"
+          },
+          "correct": "B",
+          "reason": "8,000 → 8,800 (+800) at 8,800 → 9,600 (+800)."
+        },
+        "27": {
+          "question": "DATA — CSE Passers by Region (2024 / 2025 / 2026): NCR 12,000 / 13,500 / 15,000; Region IV-A 8,000 / 8,800 / 9,600; Region VI 5,000 / 5,500 / 6,200; Region VII 6,000 / 6,300 / 6,800.\n\nWhat was the percentage growth of passers in Region VI from 2024 to 2026?",
+          "choices": {
+            "A": "20%",
+            "B": "22%",
+            "C": "24%",
+            "D": "25%"
+          },
+          "correct": "C",
+          "reason": "(6,200−5,000)/5,000 = 1,200/5,000 = 24/100 = 24%."
+        },
+        "28": {
+          "question": "DATA — CSE Passers by Region (2024 / 2025 / 2026): NCR 12,000 / 13,500 / 15,000; Region IV-A 8,000 / 8,800 / 9,600; Region VI 5,000 / 5,500 / 6,200; Region VII 6,000 / 6,300 / 6,800.\n\nIn 2025, how many more passers were there in NCR than in Region VI and Region VII combined?",
+          "choices": {
+            "A": "1,500",
+            "B": "1,700",
+            "C": "2,000",
+            "D": "1,200"
+          },
+          "correct": "B",
+          "reason": "Region VI + VII (2025) = 5,500+6,300 = 11,800. NCR (2025) = 13,500−11,800 = 1,700."
+        },
+        "29": {
+          "question": "DATA — CSE Passers by Region (2024 / 2025 / 2026): NCR 12,000 / 13,500 / 15,000; Region IV-A 8,000 / 8,800 / 9,600; Region VI 5,000 / 5,500 / 6,200; Region VII 6,000 / 6,300 / 6,800.\n\nWhat was the total number of passers across all four listed regions in 2024?",
+          "choices": {
+            "A": "30,000",
+            "B": "31,000",
+            "C": "32,000",
+            "D": "33,000"
+          },
+          "correct": "B",
+          "reason": "12,000+8,000+5,000+6,000 = 31,000."
+        },
+        "30": {
+          "question": "DATA — CSE Passers by Region (2024 / 2025 / 2026): NCR 12,000 / 13,500 / 15,000; Region IV-A 8,000 / 8,800 / 9,600; Region VI 5,000 / 5,500 / 6,200; Region VII 6,000 / 6,300 / 6,800.\n\nIn 2026, what is the ratio of Region IV-A passers to Region VII passers?",
+          "choices": {
+            "A": "24 : 17",
+            "B": "12 : 9",
+            "C": "16 : 11",
+            "D": "4 : 3"
+          },
+          "correct": "A",
+          "reason": "9,600:6,800, i-divide pareho sa 400: 96÷4 = 24 at 68÷4 = 17 → 24:17."
+        }
+      }
+    },
+    {
+      "subject": "Analytical Ability",
+      "subject_icon": "🧠",
+      "topic": "Number Series",
+      "topic_order": 1,
+      "questions": {
+        "1": {
+          "question": "Find the next number: 5, 11, 17, 23, 29, ___",
+          "choices": {
+            "A": "33",
+            "B": "35",
+            "C": "36",
+            "D": "37"
+          },
+          "correct": "B",
+          "reason": "Ang pattern ay +6 bawat step (29 + 6 = 35)."
+        },
+        "2": {
+          "question": "Find the next number: 100, 91, 82, 73, 64, ___",
+          "choices": {
+            "A": "53",
+            "B": "54",
+            "C": "55",
+            "D": "56"
+          },
+          "correct": "C",
+          "reason": "Binabawasan ng 9 (−9) bawat step (64 − 9 = 55)."
+        },
+        "3": {
+          "question": "Find the next number: 3, 6, 12, 24, 48, ___",
+          "choices": {
+            "A": "72",
+            "B": "84",
+            "C": "96",
+            "D": "108"
+          },
+          "correct": "C",
+          "reason": "Dina-double o ×2 ang bawat numero (48 × 2 = 96)."
+        },
+        "4": {
+          "question": "Find the next number: 243, 81, 27, 9, 3, ___",
+          "choices": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "1.5"
+          },
+          "correct": "B",
+          "reason": "Dina-divide sa 3 (÷3) bawat step (3 ÷ 3 = 1)."
+        },
+        "5": {
+          "question": "Find the next number: 2, 5, 10, 17, 26, ___",
+          "choices": {
+            "A": "35",
+            "B": "36",
+            "C": "37",
+            "D": "38"
+          },
+          "correct": "C",
+          "reason": "Ang idinadagdag ay sunod-sunod na odd numbers: +3, +5, +7, +9, kaya ang susunod ay +11 (26 + 11 = 37)."
+        },
+        "6": {
+          "question": "Find the next number: 1, 4, 9, 16, 25, 36, ___",
+          "choices": {
+            "A": "42",
+            "B": "48",
+            "C": "49",
+            "D": "64"
+          },
+          "correct": "C",
+          "reason": "Ito ay listahan ng perfect squares (1², 2², 3², 4², 5², 6²), kaya ang kasunod ay 7² = 49."
+        },
+        "7": {
+          "question": "Find the next number: 1, 8, 27, 64, 125, ___",
+          "choices": {
+            "A": "196",
+            "B": "216",
+            "C": "256",
+            "D": "343"
+          },
+          "correct": "B",
+          "reason": "Ito ay perfect cubes (1³, 2³, 3³, 4³, 5³), kaya ang susunod ay 6³ = 216."
+        },
+        "8": {
+          "question": "Find the next number: 2, 3, 5, 8, 13, 21, ___",
+          "choices": {
+            "A": "29",
+            "B": "32",
+            "C": "34",
+            "D": "35"
+          },
+          "correct": "C",
+          "reason": "Fibonacci sequence: i-add ang dalawang naunang numero para makuha ang kasunod (13 + 21 = 34)."
+        },
+        "9": {
+          "question": "Find the next number: 4, 9, 19, 39, 79, ___",
+          "choices": {
+            "A": "149",
+            "B": "158",
+            "C": "159",
+            "D": "169"
+          },
+          "correct": "C",
+          "reason": "Ang pattern ay (×2) + 1: 79 × 2 + 1 = 159."
+        },
+        "10": {
+          "question": "Find the next number: 10, 20, 15, 30, 25, 50, ___",
+          "choices": {
+            "A": "40",
+            "B": "45",
+            "C": "75",
+            "D": "100"
+          },
+          "correct": "B",
+          "reason": "Alternating pattern na ×2, tapos −5: 50 − 5 = 45."
+        },
+        "11": {
+          "question": "Find the next number: 2, 6, 18, 54, ___",
+          "choices": {
+            "A": "108",
+            "B": "144",
+            "C": "162",
+            "D": "216"
+          },
+          "correct": "C",
+          "reason": "Minu-multiply sa 3 (×3) bawat step (54 × 3 = 162)."
+        },
+        "12": {
+          "question": "Find the next number: 7, 10, 8, 11, 9, 12, ___",
+          "choices": {
+            "A": "10",
+            "B": "13",
+            "C": "14",
+            "D": "15"
+          },
+          "correct": "A",
+          "reason": "Alternating na +3, tapos −2: 12 − 2 = 10."
+        },
+        "13": {
+          "question": "Find the next number: 1, 2, 6, 24, 120, ___",
+          "choices": {
+            "A": "240",
+            "B": "480",
+            "C": "600",
+            "D": "720"
+          },
+          "correct": "D",
+          "reason": "Factorials (1!, 2!, 3!, 4!, 5!), o multiply by 2, 3, 4, 5, kaya ang susunod ay ×6: 120 × 6 = 720."
+        },
+        "14": {
+          "question": "Find the next number: 50, 49, 46, 41, 34, ___",
+          "choices": {
+            "A": "25",
+            "B": "26",
+            "C": "27",
+            "D": "29"
+          },
+          "correct": "A",
+          "reason": "Ang binabawas ay −1, −3, −5, −7, kaya ang susunod ay −9: 34 − 9 = 25."
+        },
+        "15": {
+          "question": "Find the next number: 15, 18, 24, 33, 45, ___",
+          "choices": {
+            "A": "57",
+            "B": "58",
+            "C": "60",
+            "D": "63"
+          },
+          "correct": "C",
+          "reason": "Ang idinadagdag ay multiples of 3: +3, +6, +9, +12, kaya ang susunod ay +15: 45 + 15 = 60."
+        },
+        "16": {
+          "question": "Find the next number: 2, 3, 5, 7, 11, 13, 17, ___",
+          "choices": {
+            "A": "18",
+            "B": "19",
+            "C": "21",
+            "D": "23"
+          },
+          "correct": "B",
+          "reason": "Ito ay listahan ng sunod-sunod na prime numbers. Ang prime number pagkatapos ng 17 ay 19."
+        },
+        "17": {
+          "question": "Find the next number: 64, 32, 48, 24, 36, 18, ___",
+          "choices": {
+            "A": "9",
+            "B": "24",
+            "C": "27",
+            "D": "36"
+          },
+          "correct": "C",
+          "reason": "Alternating na ÷2 at ×1.5 (kalahati ng number ang idadagdag): 18 + 9 = 27."
+        },
+        "18": {
+          "question": "Find the next number: 0, 3, 8, 15, 24, ___",
+          "choices": {
+            "A": "33",
+            "B": "35",
+            "C": "36",
+            "D": "37"
+          },
+          "correct": "B",
+          "reason": "Pattern ay n² − 1 (1²−1, 2²−1, 3²−1, 4²−1, 5²−1), kaya ang pang-anim ay 6² − 1 = 35."
+        },
+        "19": {
+          "question": "Find the next number: 120, 60, 20, 5, ___",
+          "choices": {
+            "A": "0",
+            "B": "1",
+            "C": "2",
+            "D": "2.5"
+          },
+          "correct": "B",
+          "reason": "Dina-divide sa sunod-sunod na numero: ÷2, ÷3, ÷4, kaya ang susunod ay ÷5: 5 ÷ 5 = 1."
+        },
+        "20": {
+          "question": "Find the next number: 3, 4, 7, 11, 18, 29, ___",
+          "choices": {
+            "A": "45",
+            "B": "47",
+            "C": "49",
+            "D": "51"
+          },
+          "correct": "B",
+          "reason": "Lucas sequence (pareho ng Fibonacci): i-add ang dalawang naunang numero (18 + 29 = 47)."
+        },
+        "21": {
+          "question": "Find the next number: 1/2, 2/3, 3/4, 4/5, ___",
+          "choices": {
+            "A": "5/6",
+            "B": "4/6",
+            "C": "5/7",
+            "D": "6/7"
+          },
+          "correct": "A",
+          "reason": "Nadadagdagan ng +1 pareho ang numerator at denominator."
+        },
+        "22": {
+          "question": "Find the next number: 10, 11, 13, 16, 20, 25, ___",
+          "choices": {
+            "A": "30",
+            "B": "31",
+            "C": "32",
+            "D": "33"
+          },
+          "correct": "B",
+          "reason": "Ang idinadagdag ay +1, +2, +3, +4, +5, kaya +6 ang kasunod (25 + 6 = 31)."
+        },
+        "23": {
+          "question": "Find the next number: 4, 16, 36, 64, 100, ___",
+          "choices": {
+            "A": "121",
+            "B": "144",
+            "C": "169",
+            "D": "196"
+          },
+          "correct": "B",
+          "reason": "Squares ng even numbers (2², 4², 6², 8², 10²), kaya ang kasunod ay 12² = 144."
+        },
+        "24": {
+          "question": "Find the missing number: 81, 72, 63, 54, ___, 36",
+          "choices": {
+            "A": "42",
+            "B": "45",
+            "C": "48",
+            "D": "49"
+          },
+          "correct": "B",
+          "reason": "Multiples of 9 pababa (−9 bawat step): 54 − 9 = 45."
+        },
+        "25": {
+          "question": "Find the next number: 2, 5, 11, 23, 47, ___",
+          "choices": {
+            "A": "93",
+            "B": "94",
+            "C": "95",
+            "D": "96"
+          },
+          "correct": "C",
+          "reason": "Pattern ay (×2) + 1: 47 × 2 + 1 = 95."
+        },
+        "26": {
+          "question": "Find the next number: 1, 4, 2, 8, 3, 12, 4, ___",
+          "choices": {
+            "A": "5",
+            "B": "14",
+            "C": "16",
+            "D": "20"
+          },
+          "correct": "C",
+          "reason": "Dalawang magkahiwalay na series: Odd positions (1, 2, 3, 4) at Even positions (4, 8, 12, 16)."
+        },
+        "27": {
+          "question": "Find the next number: 3, 10, 21, 36, 55, ___",
+          "choices": {
+            "A": "74",
+            "B": "76",
+            "C": "78",
+            "D": "80"
+          },
+          "correct": "C",
+          "reason": "Ang idinadagdag ay +7, +11, +15, +19 (nadadagdagan ng 4 ang pagitan), kaya +23 ang susunod (55 + 23 = 78)."
+        },
+        "28": {
+          "question": "Find the next number: 0.5, 1.5, 4.5, 13.5, ___",
+          "choices": {
+            "A": "27",
+            "B": "30.5",
+            "C": "40.5",
+            "D": "45"
+          },
+          "correct": "C",
+          "reason": "Minu-multiply sa 3 (×3) bawat step (13.5 × 3 = 40.5)."
+        },
+        "29": {
+          "question": "Find the next number: 90, 88, 84, 78, 70, ___",
+          "choices": {
+            "A": "58",
+            "B": "60",
+            "C": "62",
+            "D": "64"
+          },
+          "correct": "B",
+          "reason": "Ang binabawas ay −2, −4, −6, −8, kaya −10 ang kasunod (70 − 10 = 60)."
+        },
+        "30": {
+          "question": "Find the next number: 5, 15, 45, 135, ___",
+          "choices": {
+            "A": "270",
+            "B": "305",
+            "C": "405",
+            "D": "450"
+          },
+          "correct": "C",
+          "reason": "Minu-multiply sa 3 (×3) bawat step (135 × 3 = 405)."
+        }
+      }
+    },
+    {
+      "subject": "Analytical Ability",
+      "subject_icon": "🧠",
+      "topic": "Logic",
+      "topic_order": 2,
+      "questions": {
+        "1": {
+          "question": "All civil servants are public servants. Maria is a civil servant. Therefore:",
+          "choices": {
+            "A": "Maria is a politician.",
+            "B": "Maria is a public servant.",
+            "C": "All public servants are Maria.",
+            "D": "Maria is not a public servant."
+          },
+          "correct": "B",
+          "reason": "Dahil lahat ng civil servants ay public servants at si Maria ay civil servant, tiyak na siya ay public servant din."
+        },
+        "2": {
+          "question": "No reptiles have fur. All snakes are reptiles. Therefore:",
+          "choices": {
+            "A": "Some snakes have fur.",
+            "B": "No snakes have fur.",
+            "C": "All animals without fur are snakes.",
+            "D": "Snakes are mammals."
+          },
+          "correct": "B",
+          "reason": "Walang reptile ang may balahibo (fur), at ang ahas ay reptile, kaya walang ahas ang may balahibo."
+        },
+        "3": {
+          "question": "Some doctors are teachers. All teachers are patient. Which conclusion logically follows?",
+          "choices": {
+            "A": "All doctors are patient.",
+            "B": "Some doctors are patient.",
+            "C": "No doctors are patient.",
+            "D": "All patient people are doctors."
+          },
+          "correct": "B",
+          "reason": "Yung ilang doktor na teacher din ay siguradong patient dahil lahat ng teacher ay patient."
+        },
+        "4": {
+          "question": "Ana is taller than Bea. Bea is taller than Carla. Dina is shorter than Carla. Who is the shortest?",
+          "choices": {
+            "A": "Ana",
+            "B": "Bea",
+            "C": "Carla",
+            "D": "Dina"
+          },
+          "correct": "D",
+          "reason": "Ayos mula pinakamatangkad: Ana > Bea > Carla > Dina. Pinakamaliit si Dina."
+        },
+        "5": {
+          "question": "If it rains, the ground gets wet. The ground is NOT wet. What can you conclude?",
+          "choices": {
+            "A": "It rained lightly.",
+            "B": "It did not rain.",
+            "C": "The sun is shining.",
+            "D": "Someone mopped the floor."
+          },
+          "correct": "B",
+          "reason": "Modus Tollens rule: Kung nangyari ang P, mangyayari ang Q. Dahil HINDI nangyari ang Q (hindi basa ang lupa), siguradong HINDI rin nangyari ang P (hindi umulan)."
+        },
+        "6": {
+          "question": "All roses are flowers. Some flowers fade quickly. Therefore:",
+          "choices": {
+            "A": "All roses fade quickly.",
+            "B": "No roses fade quickly.",
+            "C": "Some roses fade quickly.",
+            "D": "None of the above conclusions strictly follows."
+          },
+          "correct": "D",
+          "reason": "Walang tiyak na ugnayan kung yung \"some flowers\" na mabilis malanta ay kasama sa grupo ng \"roses\"."
+        },
+        "7": {
+          "question": "Five runners finished a race. Mark finished ahead of Leo. Nathan finished behind Leo. Oscar finished ahead of Mark. Paul finished between Mark and Leo. Who finished second?",
+          "choices": {
+            "A": "Oscar",
+            "B": "Mark",
+            "C": "Paul",
+            "D": "Leo"
+          },
+          "correct": "B",
+          "reason": "Ranking (1st to 5th): Oscar (1st) > Mark (2nd) > Paul (3rd) > Leo (4th) > Nathan (5th)."
+        },
+        "8": {
+          "question": "All laptops are computers. Some computers are expensive. Which statement MUST be true?",
+          "choices": {
+            "A": "All laptops are expensive.",
+            "B": "All computers are laptops.",
+            "C": "All laptops are machines, and they belong to the category of computers.",
+            "D": "No laptops are expensive."
+          },
+          "correct": "C",
+          "reason": "Tanging ang premise na \"All laptops are computers\" lang ang 100% sigurado."
+        },
+        "9": {
+          "question": "Statement: \"If you pass the Civil Service Exam, you will become eligible for government service.\" Marco became eligible for government service. Can we conclude he passed the CSE?",
+          "choices": {
+            "A": "Yes, definitely.",
+            "B": "No, because there are other ways to gain eligibility (e.g., Honor Graduate Eligibility).",
+            "C": "Yes, because the exam is the only requirement.",
+            "D": "No, Marco failed the exam."
+          },
+          "correct": "B",
+          "reason": "Iwasan ang Fallacy of Affirming the Consequent. Ang pagpasa sa exam ay nagbibigay ng eligibility, pero hindi ibig sabihin na iyon lang ang tanging paraan para maging eligible."
+        },
+        "10": {
+          "question": "A is the father of B. B is the sister of C. C is the son of D. How is D related to A?",
+          "choices": {
+            "A": "Sister",
+            "B": "Wife",
+            "C": "Mother",
+            "D": "Daughter"
+          },
+          "correct": "B",
+          "reason": "Si A ang tatay nina B at C, at si D ang nanay/magulang ni C. Kaya mag-asawa sina A at D (si D ang asawa ni A)."
+        },
+        "11": {
+          "question": "No lazy person succeeds. Juan succeeded. Therefore:",
+          "choices": {
+            "A": "Juan is lazy.",
+            "B": "Juan is not lazy.",
+            "C": "All hardworking people are named Juan.",
+            "D": "Success is easy."
+          },
+          "correct": "B",
+          "reason": "Dahil walang tamad ang nagtatagumpay at nagtagumpay si Juan, tiyak na hindi tamad si Juan."
+        },
+        "12": {
+          "question": "Four friends—Alex, Ben, Cris, and Dan—sit in a row. Ben is to the immediate right of Alex. Dan is at the far right end. Cris is not next to Dan. Who sits at the far left end?",
+          "choices": {
+            "A": "Alex",
+            "B": "Ben",
+            "C": "Cris",
+            "D": "Dan"
+          },
+          "correct": "C",
+          "reason": "Kung nasa dulo sa kanan si Dan (4th) at wala sa tabi niya si Cris, dapat nasa 1st (far left) si Cris. Ayos: Cris - Alex - Ben - Dan."
+        },
+        "13": {
+          "question": "Every library has books. The Municipal Building has a library. Therefore:",
+          "choices": {
+            "A": "The Municipal Building sells books.",
+            "B": "The Municipal Building has books.",
+            "C": "All books are in the Municipal Building.",
+            "D": "The library is closed on weekends."
+          },
+          "correct": "B",
+          "reason": "Transitive property: Municipal Building → may library → may libro."
+        },
+        "14": {
+          "question": "If all squares are rectangles, and all rectangles have four right angles, then:",
+          "choices": {
+            "A": "All rectangles are squares.",
+            "B": "All squares have four right angles.",
+            "C": "Some squares have three angles.",
+            "D": "No squares are rectangles."
+          },
+          "correct": "B",
+          "reason": "Ang square ay nasa loob ng kategorya ng rectangle, kaya namamana nito ang katangian ng rectangle."
+        },
+        "15": {
+          "question": "Pointing to a photograph, Liza said, \"He is the only son of my mother's father.\" Who is the man in the photograph?",
+          "choices": {
+            "A": "Liza's brother",
+            "B": "Liza's father",
+            "C": "Liza's uncle",
+            "D": "Liza's cousin"
+          },
+          "correct": "C",
+          "reason": "Ang tatay ng nanay ni Liza ay ang lolo niya. Ang nag-iisang anak na lalaki ng lolo niya ay kapatid na lalaki ng nanay niya—kaya tiyuhin (uncle) niya ito."
+        },
+        "16": {
+          "question": "Some birds cannot fly. Penguins are birds. Therefore:",
+          "choices": {
+            "A": "Penguins can fly.",
+            "B": "Penguins cannot fly.",
+            "C": "From these two statements alone, we cannot conclude whether penguins fly or not.",
+            "D": "All birds are penguins."
+          },
+          "correct": "C",
+          "reason": "Sa formal logic, huwag gagamit ng outside knowledge; ang premise ay nagsasabi lang na some birds cannot fly, hindi sinabi kung kasama ang penguins."
+        },
+        "17": {
+          "question": "Box A is heavier than Box B. Box C is lighter than Box B. Box D is heavier than Box A. Which box is the second heaviest?",
+          "choices": {
+            "A": "Box A",
+            "B": "Box B",
+            "C": "Box C",
+            "D": "Box D"
+          },
+          "correct": "A",
+          "reason": "Ayos mula pinakamabigat: Box D > Box A > Box B > Box C. Pangalawa si Box A."
+        },
+        "18": {
+          "question": "All honest politicians are respected. No corrupt official is honest. Therefore:",
+          "choices": {
+            "A": "No corrupt official is respected.",
+            "B": "Some corrupt officials are honest.",
+            "C": "No corrupt official is an honest politician.",
+            "D": "All respected people are politicians."
+          },
+          "correct": "C",
+          "reason": "Dahil walang corrupt official ang honest, imposible silang mapabilang sa grupo ng mga honest politicians."
+        },
+        "19": {
+          "question": "If today is Wednesday, what day of the week will it be 100 days from now?",
+          "choices": {
+            "A": "Thursday",
+            "B": "Friday",
+            "C": "Saturday",
+            "D": "Sunday"
+          },
+          "correct": "B",
+          "reason": "I-divide ang 100 sa 7 (araw sa isang linggo): 100 ÷ 7 = 14 weeks remainder 2 days. Wednesday + 2 days = Friday."
+        },
+        "20": {
+          "question": "Either the server is down or the internet cable is unplugged. The internet cable is plugged in. Therefore:",
+          "choices": {
+            "A": "Both are working fine.",
+            "B": "The server is down.",
+            "C": "The computer is broken.",
+            "D": "The server is working fine."
+          },
+          "correct": "B",
+          "reason": "Disjunctive Syllogism: Dalawa lang ang pagpipilian; dahil mali ang pangalawa, siguradong totoo ang una."
+        },
+        "21": {
+          "question": "All mangoes in the basket are sweet. Some fruits in the basket are mangoes. Therefore:",
+          "choices": {
+            "A": "All fruits in the basket are sweet.",
+            "B": "Some fruits in the basket are sweet.",
+            "C": "No fruits in the basket are sour.",
+            "D": "All sweet fruits are mangoes."
+          },
+          "correct": "B",
+          "reason": "Ang ilang prutas na mangga ay siguradong matamis dahil lahat ng mangga sa basket ay matamis."
+        },
+        "22": {
+          "question": "In a certain code, EXAM is written as FYBN. How is PASS written in that code?",
+          "choices": {
+            "A": "QBTT",
+            "B": "QBRR",
+            "C": "OZRR",
+            "D": "QCTT"
+          },
+          "correct": "A",
+          "reason": "Bawat letra ay inuusog ng +1 sa alpabeto (E→F, X→Y, A→B, M→N). Kaya P→Q, A→B, S→T, S→T."
+        },
+        "23": {
+          "question": "In a certain code, BOOK is coded as 2-15-15-11. How is PEN coded?",
+          "choices": {
+            "A": "16-5-14",
+            "B": "15-5-13",
+            "C": "16-4-14",
+            "D": "17-5-15"
+          },
+          "correct": "A",
+          "reason": "Posisyon ng letra sa alpabeto (A=1, B=2 ...): P = 16, E = 5, N = 14."
+        },
+        "24": {
+          "question": "All musicians are creative. Some engineers are musicians. Therefore:",
+          "choices": {
+            "A": "All engineers are creative.",
+            "B": "Some engineers are creative.",
+            "C": "No engineers are creative.",
+            "D": "All creative people are engineers."
+          },
+          "correct": "B",
+          "reason": "Yung ilang engineer na musician din ay tiyak na creative."
+        },
+        "25": {
+          "question": "Statement: \"Only citizens who are at least 18 years old can vote.\" Rico voted in the national election. What MUST be true?",
+          "choices": {
+            "A": "Rico is 25 years old.",
+            "B": "Rico is a citizen who is at least 18 years old.",
+            "C": "Rico is a government employee.",
+            "D": "Rico is a college graduate."
+          },
+          "correct": "B",
+          "reason": "Dahil nakaboto si Rico, tiyak na natugunan niya ang kondisyon na maging citizen at hindi bababa sa 18 taong gulang."
+        },
+        "26": {
+          "question": "Four houses are in a row: Red, Blue, Green, and Yellow. The Red house is between the Blue and Green houses. The Yellow house is not next to the Green house. Which house is next to the Blue house on the other side?",
+          "choices": {
+            "A": "Green",
+            "B": "Red",
+            "C": "Yellow",
+            "D": "None"
+          },
+          "correct": "C",
+          "reason": "Kung nasa gitna ng Blue at Green ang Red, ang sequence ay Blue-Red-Green o Green-Red-Blue. Dahil hindi katabi ng Yellow ang Green, dapat katabi ng Blue ang Yellow: Yellow - Blue - Red - Green."
+        },
+        "27": {
+          "question": "No reptile is warm-blooded. All mammals are warm-blooded. Therefore:",
+          "choices": {
+            "A": "Some mammals are reptiles.",
+            "B": "No mammal is a reptile.",
+            "C": "All warm-blooded animals are mammals.",
+            "D": "Reptiles are cold-blooded mammals."
+          },
+          "correct": "B",
+          "reason": "Magkahiwalay ang dalawang grupo dahil lahat ng mammal ay warm-blooded habang walang reptile ang warm-blooded."
+        },
+        "28": {
+          "question": "Analogy: Doctor : Hospital :: Teacher : ___",
+          "choices": {
+            "A": "Student",
+            "B": "Chalk",
+            "C": "School",
+            "D": "Lesson"
+          },
+          "correct": "C",
+          "reason": "Worker-to-Workplace relationship: Ang doktor ay nagtatrabaho sa ospital; ang guro ay nagtatrabaho sa paaralan."
+        },
+        "29": {
+          "question": "Analogy: Thermometer : Temperature :: Barometer : ___",
+          "choices": {
+            "A": "Wind speed",
+            "B": "Atmospheric pressure",
+            "C": "Humidity",
+            "D": "Rainfall"
+          },
+          "correct": "B",
+          "reason": "Instrument-to-Measurement: Thermometer para sa temperatura; Barometer para sa atmospheric pressure."
+        },
+        "30": {
+          "question": "Analogy: Author : Novel :: Sculptor : ___",
+          "choices": {
+            "A": "Chisel",
+            "B": "Marble",
+            "C": "Statue",
+            "D": "Museum"
+          },
+          "correct": "C",
+          "reason": "Creator-to-Creation: Ang author ay gumagawa ng novel; ang sculptor ay gumagawa ng statue."
+        }
+      }
+    },
+    {
+      "subject": "Analytical Ability",
+      "subject_icon": "🧠",
+      "topic": "Figures and Pattern Questions",
+      "topic_order": 3,
+      "questions": {
+        "1": {
+          "question": "Rotation Pattern: A clock hand points at 12:00 in Figure 1, 3:00 in Figure 2, and 6:00 in Figure 3. Where does it point in Figure 4?",
+          "choices": {
+            "A": "7:00",
+            "B": "8:00",
+            "C": "9:00",
+            "D": "10:00"
+          },
+          "correct": "C",
+          "reason": "Umiikot ito ng 90° clockwise bawat step (12 → 3 → 6 → 9)."
+        },
+        "2": {
+          "question": "Polygon Sides: Figure 1 is a Triangle (3 sides), Figure 2 is a Square (4 sides), Figure 3 is a Pentagon (5 sides). What is Figure 4?",
+          "choices": {
+            "A": "Octagon",
+            "B": "Hexagon",
+            "C": "Heptagon",
+            "D": "Circle"
+          },
+          "correct": "B",
+          "reason": "Nadadagdagan ng 1 gilid (side) bawat hakbang (3, 4, 5 → 6 sides = Hexagon)."
+        },
+        "3": {
+          "question": "Shading Alternation: A circle divided into 4 quadrants has the top-left shaded in Fig. 1, top-right in Fig. 2, bottom-right in Fig. 3. Which quadrant is shaded in Fig. 4?",
+          "choices": {
+            "A": "Top-left",
+            "B": "Bottom-left",
+            "C": "Top-right",
+            "D": "All quadrants"
+          },
+          "correct": "B",
+          "reason": "Ang shade ay lumilipat nang clockwise sa bawat quadrant: Top-Left → Top-Right → Bottom-Right → Bottom-Left."
+        },
+        "4": {
+          "question": "Letter Series: A, C, F, J, O, ___",
+          "choices": {
+            "A": "S",
+            "B": "T",
+            "C": "U",
+            "D": "V"
+          },
+          "correct": "C",
+          "reason": "Ang pagitan sa alpabeto ay +2, +3, +4, +5, kaya ang susunod ay +6 mula sa O (15th letter): 15 + 6 = 21st letter = U."
+        },
+        "5": {
+          "question": "Letter Series: Z, X, U, Q, L, ___",
+          "choices": {
+            "A": "E",
+            "B": "F",
+            "C": "G",
+            "D": "H"
+          },
+          "correct": "B",
+          "reason": "Paatras ang bilang: −2, −3, −4, −5, kaya ang susunod ay −6 mula sa L (12th letter): 12 − 6 = 6th letter = F."
+        },
+        "6": {
+          "question": "Alphanumeric Pattern: A1, C3, E5, G7, ___",
+          "choices": {
+            "A": "H8",
+            "B": "I9",
+            "C": "J10",
+            "D": "I8"
+          },
+          "correct": "B",
+          "reason": "Odd-numbered letters at ang kanilang katumbas na numero sa alpabeto (A=1, C=3, E=5, G=7 → I=9)."
+        },
+        "7": {
+          "question": "Shape Inside Shape: Fig. 1: Small circle inside a large square. Fig. 2: Small square inside a large triangle. Fig. 3: Small triangle inside a large pentagon. What is the rule for the outer shape becoming the next inner shape?",
+          "choices": {
+            "A": "It disappears completely.",
+            "B": "The outer shape of the current figure becomes the inner shape of the next figure.",
+            "C": "Both shapes stay the same.",
+            "D": "The inner shape grows larger."
+          },
+          "correct": "B",
+          "reason": "Sa Fig. 1, outer ay Square → sa Fig. 2, inner ay Square. Sa Fig. 2, outer ay Triangle → sa Fig. 3, inner ay Triangle."
+        },
+        "8": {
+          "question": "Dot Counting: A domino-style box shows 1 dot on top / 6 on bottom in Fig. 1; 2 on top / 5 on bottom in Fig. 2; 3 on top / 4 on bottom in Fig. 3. What is Fig. 4?",
+          "choices": {
+            "A": "4 on top / 4 on bottom",
+            "B": "4 on top / 3 on bottom",
+            "C": "5 on top / 2 on bottom",
+            "D": "3 on top / 3 on bottom"
+          },
+          "correct": "B",
+          "reason": "Ang top ay +1 (1, 2, 3 → 4), at ang bottom ay −1 (6, 5, 4 → 3). Laging 7 ang sum ng bawat domino."
+        },
+        "9": {
+          "question": "Arrow Rotation (Counter-Clockwise): An arrow points North in Fig. 1, West in Fig. 2, South in Fig. 3. Where does it point in Fig. 4?",
+          "choices": {
+            "A": "North",
+            "B": "East",
+            "C": "North-East",
+            "D": "South-West"
+          },
+          "correct": "B",
+          "reason": "Umiikot ito ng 90° counter-clockwise (pakaliwa): North → West → South → East."
+        },
+        "10": {
+          "question": "45-Degree Rotation: An arrow points North in Fig. 1, North-East in Fig. 2, East in Fig. 3. Where does it point in Fig. 4?",
+          "choices": {
+            "A": "South",
+            "B": "South-East",
+            "C": "South-West",
+            "D": "West"
+          },
+          "correct": "B",
+          "reason": "Umiikot ng 45° clockwise bawat step: N → NE → E → SE."
+        },
+        "11": {
+          "question": "Mirror Reflection: What does the capital letter R look like when reflected horizontally across a vertical mirror?",
+          "choices": {
+            "A": "Upside-down R",
+            "B": "Backward-facing Я",
+            "C": "Normal R",
+            "D": "Letter B"
+          },
+          "correct": "B",
+          "reason": "Sa vertical mirror reflection, ang kaliwa ay nagiging kanan (lateral inversion)."
+        },
+        "12": {
+          "question": "Symmetry: Which of the following capital letters has BOTH vertical and horizontal lines of symmetry?",
+          "choices": {
+            "A": "A",
+            "B": "E",
+            "C": "H",
+            "D": "T"
+          },
+          "correct": "C",
+          "reason": "Ang letrang H ay pareho pa rin kahit hatiin nang patayo (vertical) o pahiga (horizontal)."
+        },
+        "13": {
+          "question": "Line Addition: Fig. 1 has 1 vertical line (|). Fig. 2 forms an L (|_). Fig. 3 forms a U (|_|). What is Fig. 4?",
+          "choices": {
+            "A": "A triangle",
+            "B": "A closed square ([])",
+            "C": "A circle",
+            "D": "Two parallel lines"
+          },
+          "correct": "B",
+          "reason": "Nagdadagdag ng isang linya bawat step para makabuo ng sarado at kumpletong parisukat (square)."
+        },
+        "14": {
+          "question": "Alternating Colors: Fig. 1: Black Circle. Fig. 2: White Square. Fig. 3: Black Triangle. Fig. 4: White Circle. What is Fig. 5?",
+          "choices": {
+            "A": "White Square",
+            "B": "Black Square",
+            "C": "Black Circle",
+            "D": "White Triangle"
+          },
+          "correct": "B",
+          "reason": "Dalawang pattern ang sabay na umiikot: Kulay (Black, White, Black, White → Black) at Hugis (Circle, Square, Triangle, Circle → Square)."
+        },
+        "15": {
+          "question": "3x3 Grid Matrix Logic:\nRow 1: [1 Circle] [2 Circles] [3 Circles]\nRow 2: [1 Square] [2 Squares] [3 Squares]\nRow 3: [1 Triangle] [2 Triangles] [?]",
+          "choices": {
+            "A": "1 Triangle",
+            "B": "3 Squares",
+            "C": "3 Triangles",
+            "D": "4 Triangles"
+          },
+          "correct": "C",
+          "reason": "Bawat row ay may parehong hugis at nadadagdagan ang bilang mula 1, 2, hanggang 3."
+        },
+        "16": {
+          "question": "Grid Subtraction Logic:\nColumn 1 has a circle with 5 dots.\nColumn 2 has a circle with 3 dots.\nColumn 3 has a circle with 2 dots.\nWhat is the rule across each row?",
+          "choices": {
+            "A": "Col 1 + Col 2 = Col 3",
+            "B": "Col 1 - Col 2 = Col 3",
+            "C": "Col 1 × Col 2 = Col 3",
+            "D": "All columns are equal"
+          },
+          "correct": "B",
+          "reason": "5 dots − 3 dots = 2 dots."
+        },
+        "17": {
+          "question": "Odd One Out (Visual Properties): Which figure does NOT belong to the group?",
+          "choices": {
+            "A": "Square",
+            "B": "Rectangle",
+            "C": "Rhombus",
+            "D": "Pentagon"
+          },
+          "correct": "D",
+          "reason": "Ang Square, Rectangle, at Rhombus ay pare-parehong quadrilaterals (4 sides), samantalang ang Pentagon ay may 5 sides."
+        },
+        "18": {
+          "question": "Odd One Out (Lines vs. Curves): Which capital letter does NOT belong to the group?",
+          "choices": {
+            "A": "E",
+            "B": "F",
+            "C": "H",
+            "D": "S"
+          },
+          "correct": "D",
+          "reason": "Ang E, F, at H ay binubuo lamang ng mga tuwid na linya (straight lines), habang ang S ay kurba (curved line)."
+        },
+        "19": {
+          "question": "Cube Folding (Net of a Cube): On a standard die where opposite faces always add up to 7, if the top face shows 2 and the front face shows 3, what number is on the bottom face?",
+          "choices": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "1"
+          },
+          "correct": "B",
+          "reason": "Opposite ng top ay bottom. Dahil 2 + 5 = 7, ang nasa ilalim ay 5."
+        },
+        "20": {
+          "question": "Letter Matrix:\nRow 1: A B C\nRow 2: D E F\nRow 3: G H ?",
+          "choices": {
+            "A": "J",
+            "B": "I",
+            "C": "K",
+            "D": "L"
+          },
+          "correct": "B",
+          "reason": "Sunod-sunod na letra sa alpabeto mula kaliwa pakanan: G, H → I."
+        },
+        "21": {
+          "question": "Double Letter Series: AZ, BY, CX, DW, ___",
+          "choices": {
+            "A": "EV",
+            "B": "EU",
+            "C": "FV",
+            "D": "EW"
+          },
+          "correct": "A",
+          "reason": "Ang unang letra ay paabante (A, B, C, D → E) at ang ikalawang letra ay paatras (Z, Y, X, W → V)."
+        },
+        "22": {
+          "question": "Size & Shading Pattern:\nFig. 1: Large Shaded Circle\nFig. 2: Medium Unshaded Circle\nFig. 3: Small Shaded Circle\nFig. 4: Large Unshaded Square\nFig. 5: Medium Shaded Square\nWhat is Fig. 6?",
+          "choices": {
+            "A": "Small Shaded Square",
+            "B": "Small Unshaded Square",
+            "C": "Large Shaded Square",
+            "D": "Small Unshaded Circle"
+          },
+          "correct": "B",
+          "reason": "Size: Large → Medium → Small. Shading: Shaded → Unshaded → Shaded → Unshaded → Shaded → Unshaded. Hugis: Square."
+        },
+        "23": {
+          "question": "Intersection Counting: Fig. 1 shows two parallel lines (0 intersections). Fig. 2 shows two lines crossing each other like an X (1 intersection). Fig. 3 shows a triangle formed by 3 intersecting lines (3 intersections). How many intersections are formed by 4 mutually intersecting lines (where no three meet at one point)?",
+          "choices": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "8"
+          },
+          "correct": "C",
+          "reason": "Formula para sa maximum intersections ng n lines: n(n−1)/2 = (4 × 3)/2 = 6."
+        },
+        "24": {
+          "question": "Diagonal Movement: In a 3×3 grid, a star starts at the Top-Left corner (Row 1, Col 1) in Fig. 1, moves to the Center (Row 2, Col 2) in Fig. 2. Where is it in Fig. 3?",
+          "choices": {
+            "A": "Top-Right",
+            "B": "Bottom-Left",
+            "C": "Bottom-Right",
+            "D": "Middle-Right"
+          },
+          "correct": "C",
+          "reason": "Gumagalaw ito nang pahilis (diagonally) pababa sa kanan: (1,1) → (2,2) → (3,3) (Bottom-Right)."
+        },
+        "25": {
+          "question": "Letter Series: B, E, H, K, N, ___",
+          "choices": {
+            "A": "P",
+            "B": "Q",
+            "C": "R",
+            "D": "S"
+          },
+          "correct": "B",
+          "reason": "Bawat hakbang ay +3 sa alpabeto: B → E → H → K → N → Q."
+        },
+        "26": {
+          "question": "Pattern in Triangles (Numbers at Vertices):\nTriangle 1: Top = 2, Left = 3, Right = 4 → Center = 9\nTriangle 2: Top = 5, Left = 1, Right = 6 → Center = 12\nTriangle 3: Top = 4, Left = 7, Right = 3 → Center = ?",
+          "choices": {
+            "A": "12",
+            "B": "14",
+            "C": "15",
+            "D": "84"
+          },
+          "correct": "B",
+          "reason": "Ang numero sa gitna ay ang sum ng tatlong sulok: 4 + 7 + 3 = 14."
+        },
+        "27": {
+          "question": "Pattern in Triangles (Multiplication & Subtraction):\nTriangle 1: Top = 4, Left = 5, Bottom = 2 → Center = 18\nTriangle 2: Top = 6, Left = 3, Bottom = 4 → Center = 14\nTriangle 3: Top = 7, Left = 4, Bottom = 5 → Center = ?",
+          "choices": {
+            "A": "23",
+            "B": "28",
+            "C": "33",
+            "D": "16"
+          },
+          "correct": "A",
+          "reason": "Rule: (Top × Left) − Bottom = Center. Check: (4×5)−2=18; (6×3)−4=14. Kaya (7×4)−5 = 28−5 = 23."
+        },
+        "28": {
+          "question": "Alphanumeric Series: Z1A, Y2B, X3C, W4D, ___",
+          "choices": {
+            "A": "V5E",
+            "B": "U5E",
+            "C": "V6E",
+            "D": "V5F"
+          },
+          "correct": "A",
+          "reason": "Unang letra paatras (Z, Y, X, W → V), gitnang numero +1 (1, 2, 3, 4 → 5), huling letra paabante (A, B, C, D → E)."
+        },
+        "29": {
+          "question": "Rotation + Reflection: A letter b is reflected vertically (left-to-right) to become d. Next, d is flipped upside-down (horizontally) to become p. If p is reflected vertically (left-to-right), what letter does it become?",
+          "choices": {
+            "A": "b",
+            "B": "d",
+            "C": "q",
+            "D": "g"
+          },
+          "correct": "C",
+          "reason": "Kapag binaligtad nang pakaliwa-pakanan ang p, ang bilog ay lilipat sa kaliwa habang nasa ibaba pa rin ang buntot, na nagiging q."
+        },
+        "30": {
+          "question": "Number-Shape Correspondence: Circle = 1, Triangle = 3, Square = 4. What is the value of Square + Triangle − Circle?",
+          "choices": {
+            "A": "5",
+            "B": "6",
+            "C": "7",
+            "D": "8"
+          },
+          "correct": "B",
+          "reason": "Ang bawat hugis ay katumbas ng bilang ng gilid/kurba nito: 4 + 3 − 1 = 6."
+        }
+      }
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Philippine Constitution",
+      "topic_order": 1,
+      "questions": {
+        "1": {
+          "question": "When was the 1987 Philippine Constitution ratified?",
+          "choices": {
+            "A": "February 2, 1987",
+            "B": "February 11, 1987",
+            "C": "June 12, 1987",
+            "D": "January 1, 1987"
+          },
+          "correct": "A",
+          "reason": "Na-ratify ang 1987 Constitution through a plebiscite noong February 2, 1987. It was proclaimed in force on February 11, 1987."
+        },
+        "2": {
+          "question": "Where does sovereignty reside under the 1987 Constitution?",
+          "choices": {
+            "A": "Congress",
+            "B": "The President",
+            "C": "The people",
+            "D": "The Supreme Court"
+          },
+          "correct": "C",
+          "reason": "The Constitution states that sovereignty resides in the people, and all government authority emanates from them. Ibig sabihin, ang kapangyarihan ng gobyerno ay nagmumula sa mamamayan."
+        },
+        "3": {
+          "question": "What is the supreme law of the Philippines?",
+          "choices": {
+            "A": "Civil Code",
+            "B": "1987 Constitution",
+            "C": "Revised Penal Code",
+            "D": "Local Government Code"
+          },
+          "correct": "B",
+          "reason": "The Constitution is the highest law of the land. Other laws and government actions must not conflict with it."
+        },
+        "4": {
+          "question": "Which branch of government makes laws?",
+          "choices": {
+            "A": "Executive",
+            "B": "Legislative",
+            "C": "Judiciary",
+            "D": "Constitutional commissions"
+          },
+          "correct": "B",
+          "reason": "Congress, composed of the Senate and House of Representatives, is responsible for making laws."
+        },
+        "5": {
+          "question": "Which branch implements and enforces laws?",
+          "choices": {
+            "A": "Executive",
+            "B": "Legislative",
+            "C": "Judiciary",
+            "D": "Commission on Audit"
+          },
+          "correct": "A",
+          "reason": "The Executive Branch, headed by the President, implements and enforces laws."
+        },
+        "6": {
+          "question": "Which branch interprets laws and settles legal disputes?",
+          "choices": {
+            "A": "Legislative",
+            "B": "Executive",
+            "C": "Judiciary",
+            "D": "Local government"
+          },
+          "correct": "C",
+          "reason": "The Judiciary, led by the Supreme Court, interprets laws and decides cases."
+        },
+        "7": {
+          "question": "How many senators are there in the Philippine Senate?",
+          "choices": {
+            "A": "12",
+            "B": "18",
+            "C": "24",
+            "D": "30"
+          },
+          "correct": "C",
+          "reason": "The Senate is composed of 24 senators elected at large by qualified voters."
+        },
+        "8": {
+          "question": "What is the term of office of a senator?",
+          "choices": {
+            "A": "Three years",
+            "B": "Four years",
+            "C": "Five years",
+            "D": "Six years"
+          },
+          "correct": "D",
+          "reason": "Senators serve six-year terms and may not serve more than two consecutive terms."
+        },
+        "9": {
+          "question": "What is the term of office of members of the House of Representatives?",
+          "choices": {
+            "A": "Three years",
+            "B": "Four years",
+            "C": "Five years",
+            "D": "Six years"
+          },
+          "correct": "A",
+          "reason": "Members of the House generally serve three-year terms and may not serve more than three consecutive terms."
+        },
+        "10": {
+          "question": "What is the minimum age requirement for a Philippine President?",
+          "choices": {
+            "A": "35 years old",
+            "B": "40 years old",
+            "C": "45 years old",
+            "D": "50 years old"
+          },
+          "correct": "B",
+          "reason": "A presidential candidate must be at least 40 years old on election day."
+        },
+        "11": {
+          "question": "What is the term of office of the President of the Philippines?",
+          "choices": {
+            "A": "Three years",
+            "B": "Four years",
+            "C": "Six years",
+            "D": "Eight years"
+          },
+          "correct": "C",
+          "reason": "The President serves a six-year term and is not eligible for reelection."
+        },
+        "12": {
+          "question": "Who succeeds the President if the President dies, becomes permanently disabled, is removed, or resigns?",
+          "choices": {
+            "A": "Senate President",
+            "B": "Chief Justice",
+            "C": "Vice President",
+            "D": "Speaker of the House"
+          },
+          "correct": "C",
+          "reason": "The Vice President succeeds to the presidency under the circumstances specified in the Constitution."
+        },
+        "13": {
+          "question": "What is the minimum voting age in the Philippines?",
+          "choices": {
+            "A": "16",
+            "B": "18",
+            "C": "21",
+            "D": "25"
+          },
+          "correct": "B",
+          "reason": "A Filipino citizen who is at least 18 years old and meets the other legal requirements may vote."
+        },
+        "14": {
+          "question": "Which article of the Constitution contains the Bill of Rights?",
+          "choices": {
+            "A": "Article II",
+            "B": "Article III",
+            "C": "Article IV",
+            "D": "Article V"
+          },
+          "correct": "B",
+          "reason": "Article III protects fundamental rights and freedoms, including due process, equal protection, and freedom of expression."
+        },
+        "15": {
+          "question": "What does due process mean?",
+          "choices": {
+            "A": "Government may punish anyone without explanation.",
+            "B": "A person must be treated fairly under established legal procedures.",
+            "C": "Only wealthy people can receive legal protection.",
+            "D": "Police may arrest anyone without legal grounds."
+          },
+          "correct": "B",
+          "reason": "Due process protects people from arbitrary government action. Hindi basta-basta puwedeng parusahan ang isang tao without following the law."
+        },
+        "16": {
+          "question": "What does equal protection of the laws mean?",
+          "choices": {
+            "A": "Everyone must receive identical salaries.",
+            "B": "Everyone is entitled to equal protection under the law.",
+            "C": "Government officials have more legal rights.",
+            "D": "Only citizens with jobs are protected."
+          },
+          "correct": "B",
+          "reason": "The government must treat people fairly and may not arbitrarily discriminate against similarly situated persons."
+        },
+        "17": {
+          "question": "Which right protects people from unreasonable searches and seizures?",
+          "choices": {
+            "A": "Freedom of religion",
+            "B": "Right to privacy of communication",
+            "C": "Right against unreasonable searches and seizures",
+            "D": "Right to education"
+          },
+          "correct": "C",
+          "reason": "Article III, Section 2 protects people against unreasonable searches and seizures. Warrants generally require probable cause determined personally by a judge."
+        },
+        "18": {
+          "question": "What is the purpose of a writ of habeas corpus?",
+          "choices": {
+            "A": "To determine ownership of land",
+            "B": "To question the legality of a person's detention",
+            "C": "To register a business",
+            "D": "To cancel an election"
+          },
+          "correct": "B",
+          "reason": "The writ allows a court to examine whether a person's detention is lawful. It is not simply a guarantee that someone will immediately be released."
+        },
+        "19": {
+          "question": "Which freedom allows people to express their opinions peacefully?",
+          "choices": {
+            "A": "Freedom of speech and expression",
+            "B": "Freedom from taxation",
+            "C": "Freedom from all laws",
+            "D": "Freedom to ignore court orders"
+          },
+          "correct": "A",
+          "reason": "People have the right to express opinions, subject to lawful limitations and applicable rules."
+        },
+        "20": {
+          "question": "What does the principle of separation of powers prevent?",
+          "choices": {
+            "A": "People from voting",
+            "B": "One branch from exercising all government powers",
+            "C": "Courts from interpreting laws",
+            "D": "Congress from creating laws"
+          },
+          "correct": "B",
+          "reason": "Government powers are divided among the three branches to prevent abuse and concentration of authority."
+        },
+        "21": {
+          "question": "What is the main purpose of checks and balances?",
+          "choices": {
+            "A": "To remove all government officials",
+            "B": "To allow branches to limit and check one another",
+            "C": "To make the President more powerful",
+            "D": "To eliminate the courts"
+          },
+          "correct": "B",
+          "reason": "Each branch has certain powers to prevent another branch from abusing its authority."
+        },
+        "22": {
+          "question": "Which constitutional body audits government funds and expenditures?",
+          "choices": {
+            "A": "COMELEC",
+            "B": "Civil Service Commission",
+            "C": "Commission on Audit",
+            "D": "Commission on Human Rights"
+          },
+          "correct": "C",
+          "reason": "The COA examines, audits, and settles government accounts involving public funds and property."
+        },
+        "23": {
+          "question": "Which constitutional commission administers and enforces election laws?",
+          "choices": {
+            "A": "COA",
+            "B": "COMELEC",
+            "C": "CSC",
+            "D": "CHR"
+          },
+          "correct": "B",
+          "reason": "The Commission on Elections is responsible for administering elections and enforcing election laws."
+        },
+        "24": {
+          "question": "Which constitutional commission promotes an efficient and professional civil service?",
+          "choices": {
+            "A": "CSC",
+            "B": "COA",
+            "C": "COMELEC",
+            "D": "CHR"
+          },
+          "correct": "A",
+          "reason": "The Civil Service Commission oversees the government personnel system and promotes merit and fitness in public service."
+        },
+        "25": {
+          "question": "Is the Commission on Human Rights one of the three Constitutional Commissions under Article IX?",
+          "choices": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Only during elections",
+            "D": "Only during martial law"
+          },
+          "correct": "B",
+          "reason": "The three Constitutional Commissions are the CSC, COMELEC, and COA. The CHR is a separate independent office established under Article XIII."
+        },
+        "26": {
+          "question": "Who has the power to declare martial law under the Constitution?",
+          "choices": {
+            "A": "Chief Justice",
+            "B": "Senate President",
+            "C": "President",
+            "D": "Speaker of the House"
+          },
+          "correct": "C",
+          "reason": "The President may declare martial law or suspend the privilege of the writ of habeas corpus in cases of invasion or rebellion when public safety requires it."
+        },
+        "27": {
+          "question": "What is the maximum initial period of a martial law declaration under the Constitution?",
+          "choices": {
+            "A": "15 days",
+            "B": "30 days",
+            "C": "60 days",
+            "D": "90 days"
+          },
+          "correct": "C",
+          "reason": "The initial declaration cannot exceed 60 days. Congress may revoke or extend it under the conditions and procedures provided by the Constitution."
+        },
+        "28": {
+          "question": "What is the main purpose of the constitutional provision on national territory?",
+          "choices": {
+            "A": "To establish private ownership of all islands",
+            "B": "To define the territory under Philippine sovereignty or jurisdiction",
+            "C": "To remove maritime boundaries",
+            "D": "To give other countries control over Philippine waters"
+          },
+          "correct": "B",
+          "reason": "Article I describes the Philippine archipelago and other territories over which the Philippines has sovereignty or jurisdiction."
+        },
+        "29": {
+          "question": "Which institution has the power of judicial review?",
+          "choices": {
+            "A": "Supreme Court",
+            "B": "Department of Education",
+            "C": "Department of Agriculture",
+            "D": "Bureau of Internal Revenue"
+          },
+          "correct": "A",
+          "reason": "The Supreme Court may review cases involving the constitutionality or validity of government acts, subject to the requirements of judicial review."
+        },
+        "30": {
+          "question": "What is the primary purpose of the Constitution's Preamble?",
+          "choices": {
+            "A": "To list all criminal offenses",
+            "B": "To state the ideals and purposes of the Filipino people",
+            "C": "To establish the national budget",
+            "D": "To appoint government officials"
+          },
+          "correct": "B",
+          "reason": "The Preamble introduces the Constitution's goals and guiding principles, such as justice, freedom, equality, peace, and the common good."
+        }
+      }
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "RA 6713 (Code of Conduct)",
+      "topic_order": 2,
+      "questions": {
+        "1": {
+          "question": "What is the full title commonly associated with RA 6713?",
+          "choices": {
+            "A": "Anti-Graft and Corrupt Practices Act",
+            "B": "Code of Conduct and Ethical Standards for Public Officials and Employees",
+            "C": "Local Government Code",
+            "D": "Government Procurement Reform Act"
+          },
+          "correct": "B",
+          "reason": "RA 6713 establishes ethical standards and responsibilities for public officials and employees."
+        },
+        "2": {
+          "question": "What principle does RA 6713 uphold?",
+          "choices": {
+            "A": "Public office is a private business.",
+            "B": "Public office is a public trust.",
+            "C": "Public office is a family inheritance.",
+            "D": "Public office is a personal privilege."
+          },
+          "correct": "B",
+          "reason": "Public officials are entrusted with authority and must serve the people responsibly."
+        },
+        "3": {
+          "question": "Who are generally covered by RA 6713?",
+          "choices": {
+            "A": "Only elected officials",
+            "B": "Only government department heads",
+            "C": "Public officials and employees, whether permanent or temporary",
+            "D": "Only private company employees"
+          },
+          "correct": "C",
+          "reason": "The law broadly covers public officials and employees in government, including government-owned or controlled corporations."
+        },
+        "4": {
+          "question": "Which of the following is a norm of conduct under RA 6713?",
+          "choices": {
+            "A": "Political favoritism",
+            "B": "Commitment to public interest",
+            "C": "Personal enrichment through office",
+            "D": "Discrimination against citizens"
+          },
+          "correct": "B",
+          "reason": "Public officials must prioritize public interest over personal interest."
+        },
+        "5": {
+          "question": "What does professionalism mean in public service?",
+          "choices": {
+            "A": "Doing work only when supervised",
+            "B": "Performing duties with competence and proper conduct",
+            "C": "Favoring friends and relatives",
+            "D": "Avoiding responsibility"
+          },
+          "correct": "B",
+          "reason": "Public employees should perform their duties professionally, competently, and with dedication."
+        },
+        "6": {
+          "question": "What does political neutrality require?",
+          "choices": {
+            "A": "Favoring supporters of the administration",
+            "B": "Providing service without unfair political discrimination",
+            "C": "Refusing service to political opponents",
+            "D": "Campaigning while performing official duties"
+          },
+          "correct": "B",
+          "reason": "Government services must be provided fairly regardless of a person's political beliefs or affiliations."
+        },
+        "7": {
+          "question": "What does responsiveness to the public mean?",
+          "choices": {
+            "A": "Ignoring complaints",
+            "B": "Providing prompt, courteous, and adequate service",
+            "C": "Serving only wealthy citizens",
+            "D": "Delaying documents intentionally"
+          },
+          "correct": "B",
+          "reason": "Government employees should respond to public needs efficiently and respectfully."
+        },
+        "8": {
+          "question": "What does simple living mean under RA 6713?",
+          "choices": {
+            "A": "Public employees cannot own property.",
+            "B": "Public employees should live within their lawful means and avoid extravagant lifestyles.",
+            "C": "Public employees must live in rural areas.",
+            "D": "Public employees cannot travel."
+          },
+          "correct": "B",
+          "reason": "Officials should avoid extravagant or ostentatious displays of wealth inconsistent with their income and position."
+        },
+        "9": {
+          "question": "What does commitment to democracy require from public officials?",
+          "choices": {
+            "A": "Respecting democratic principles and institutions",
+            "B": "Ignoring election results",
+            "C": "Preventing citizens from participating",
+            "D": "Rejecting constitutional rights"
+          },
+          "correct": "A",
+          "reason": "Public servants must uphold democracy and respect the Constitution and democratic processes."
+        },
+        "10": {
+          "question": "What is the meaning of justness and sincerity?",
+          "choices": {
+            "A": "Being fair, honest, and truthful",
+            "B": "Favoring personal friends",
+            "C": "Hiding government transactions",
+            "D": "Avoiding public accountability"
+          },
+          "correct": "A",
+          "reason": "Public officials should act fairly and honestly in their dealings with the public."
+        },
+        "11": {
+          "question": "What is a SALN?",
+          "choices": {
+            "A": "Statement of Annual Legal Notice",
+            "B": "Statement of Assets, Liabilities and Net Worth",
+            "C": "Summary of Administrative Legal Numbers",
+            "D": "System of Approved Local Needs"
+          },
+          "correct": "B",
+          "reason": "SALN is a declaration of an official's assets, liabilities, and net worth, together with required disclosures."
+        },
+        "12": {
+          "question": "When must a covered public official generally file a SALN after assuming office?",
+          "choices": {
+            "A": "Within 10 days",
+            "B": "Within 30 days",
+            "C": "Within 60 days",
+            "D": "Within one year"
+          },
+          "correct": "B",
+          "reason": "RA 6713 requires filing within 30 days after assumption of office."
+        },
+        "13": {
+          "question": "When is the annual SALN generally due?",
+          "choices": {
+            "A": "January 1",
+            "B": "February 14",
+            "C": "April 30",
+            "D": "December 31"
+          },
+          "correct": "C",
+          "reason": "The annual SALN must generally be filed on or before April 30 of every year."
+        },
+        "14": {
+          "question": "When must a covered official file a SALN after separation from service?",
+          "choices": {
+            "A": "Within 15 days",
+            "B": "Within 30 days",
+            "C": "Within 90 days",
+            "D": "Within one year"
+          },
+          "correct": "B",
+          "reason": "The law requires filing within 30 days after separation from the service."
+        },
+        "15": {
+          "question": "Which of the following should be disclosed in a SALN?",
+          "choices": {
+            "A": "Assets and liabilities",
+            "B": "Favorite food",
+            "C": "Personal hobbies only",
+            "D": "Favorite television shows"
+          },
+          "correct": "A",
+          "reason": "SALN includes real and personal property, other assets, liabilities, and business interests and financial connections."
+        },
+        "16": {
+          "question": "What is a conflict of interest?",
+          "choices": {
+            "A": "A situation where personal interests may improperly influence official duties",
+            "B": "A disagreement between two private citizens",
+            "C": "A public meeting",
+            "D": "A government employee taking a vacation"
+          },
+          "correct": "A",
+          "reason": "A conflict arises when private interests could affect or appear to affect impartial performance of official responsibilities."
+        },
+        "17": {
+          "question": "What should a public official do when a conflict of interest exists under the applicable rules?",
+          "choices": {
+            "A": "Hide the conflict",
+            "B": "Disclose and address it as required by law",
+            "C": "Use it for personal benefit",
+            "D": "Ignore the matter"
+          },
+          "correct": "B",
+          "reason": "The official must comply with the disclosure and divestment requirements that apply to the particular situation."
+        },
+        "18": {
+          "question": "Which act is prohibited under RA 6713?",
+          "choices": {
+            "A": "Providing equal service",
+            "B": "Disclosing a required conflict",
+            "C": "Having a financial or material interest in a transaction requiring approval by one's office, subject to the law",
+            "D": "Filing a SALN"
+          },
+          "correct": "C",
+          "reason": "RA 6713 prohibits certain financial and material interests in transactions requiring approval by the official's office."
+        },
+        "19": {
+          "question": "Can a public official use confidential information obtained through office for personal benefit?",
+          "choices": {
+            "A": "Yes, anytime",
+            "B": "Yes, if the amount is small",
+            "C": "No",
+            "D": "Only during weekends"
+          },
+          "correct": "C",
+          "reason": "Public officials must not misuse confidential or classified information acquired through their official functions."
+        },
+        "20": {
+          "question": "What does RA 6713 say about accepting gifts?",
+          "choices": {
+            "A": "All gifts are automatically allowed.",
+            "B": "Public officials may accept any gift from anyone.",
+            "C": "Accepting gifts in connection with official duties may be prohibited, subject to specific legal exceptions.",
+            "D": "Gifts are allowed if not reported."
+          },
+          "correct": "C",
+          "reason": "The law prohibits soliciting or accepting gifts connected with official duties or transactions, while recognizing limited exceptions under its provisions."
+        },
+        "21": {
+          "question": "What should a government employee do if offered money to speed up a government transaction unlawfully?",
+          "choices": {
+            "A": "Accept it",
+            "B": "Refuse and report the improper offer through proper channels",
+            "C": "Share it with coworkers",
+            "D": "Accept it if no one sees"
+          },
+          "correct": "B",
+          "reason": "Bribery and improper benefits violate ethical and legal standards."
+        },
+        "22": {
+          "question": "Which behavior demonstrates accountability?",
+          "choices": {
+            "A": "Blaming others for every mistake",
+            "B": "Taking responsibility for official actions and decisions",
+            "C": "Hiding errors",
+            "D": "Refusing to explain public transactions"
+          },
+          "correct": "B",
+          "reason": "Public officials are accountable to the people for their conduct and performance."
+        },
+        "23": {
+          "question": "What is the purpose of public disclosure of SALN?",
+          "choices": {
+            "A": "To promote transparency and accountability",
+            "B": "To advertise personal wealth",
+            "C": "To eliminate taxes",
+            "D": "To give officials business advantages"
+          },
+          "correct": "A",
+          "reason": "SALN requirements help promote honesty and accountability in public service. Access is governed by applicable laws and rules."
+        },
+        "24": {
+          "question": "Which of the following is an example of political neutrality?",
+          "choices": {
+            "A": "Refusing to process an application because the applicant supports the opposition",
+            "B": "Processing applications fairly regardless of political affiliation",
+            "C": "Giving priority to campaign supporters",
+            "D": "Using government vehicles for political campaigns"
+          },
+          "correct": "B",
+          "reason": "Government employees must not discriminate based on political affiliation."
+        },
+        "25": {
+          "question": "What is the main purpose of the government's Citizen's Charter under the related anti-red-tape framework?",
+          "choices": {
+            "A": "To hide government procedures",
+            "B": "To inform the public about government services, requirements, fees, and processing times",
+            "C": "To increase personal favors",
+            "D": "To prevent citizens from filing applications"
+          },
+          "correct": "B",
+          "reason": "The Citizen's Charter helps people understand how to access government services. This is associated with anti-red-tape laws, particularly RA 11032."
+        },
+        "26": {
+          "question": "Which action shows commitment to public interest?",
+          "choices": {
+            "A": "Giving government contracts to friends without lawful process",
+            "B": "Prioritizing public welfare over personal gain",
+            "C": "Using government property for private business",
+            "D": "Delaying public service for personal reasons"
+          },
+          "correct": "B",
+          "reason": "Public interest must come before private or personal interests."
+        },
+        "27": {
+          "question": "What is the general penalty under RA 6713 for violations of the Act?",
+          "choices": {
+            "A": "Only a verbal warning in all cases",
+            "B": "Fine, imprisonment, or both, as provided by the law",
+            "C": "Automatic life imprisonment",
+            "D": "No penalty"
+          },
+          "correct": "B",
+          "reason": "Section 11 provides penalties that may include a fine, imprisonment, or both. Administrative liability may also arise under applicable rules."
+        },
+        "28": {
+          "question": "What is the main purpose of recognizing exemplary public service?",
+          "choices": {
+            "A": "To encourage excellent and ethical government service",
+            "B": "To reward political loyalty",
+            "C": "To exempt officials from laws",
+            "D": "To allow officials to avoid accountability"
+          },
+          "correct": "A",
+          "reason": "RA 6713 provides incentives and rewards to encourage exemplary conduct and service."
+        },
+        "29": {
+          "question": "Which statement about government employees is correct?",
+          "choices": {
+            "A": "They may use their positions to gain personal favors.",
+            "B": "They must serve the public with responsibility and integrity.",
+            "C": "They are not accountable for their actions.",
+            "D": "They may ignore lawful instructions."
+          },
+          "correct": "B",
+          "reason": "Public officials and employees must perform their duties with responsibility, integrity, competence, and loyalty."
+        },
+        "30": {
+          "question": "A government employee gives faster service to a friend while deliberately delaying other applicants. What principle is violated?",
+          "choices": {
+            "A": "Political neutrality and responsiveness to the public",
+            "B": "Freedom of religion",
+            "C": "Right to travel",
+            "D": "Separation of powers"
+          },
+          "correct": "A",
+          "reason": "Public service should be fair and impartial. Personal relationships should not determine who receives better service."
+        }
+      }
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Peace and Human Rights",
+      "topic_order": 3,
+      "questions": {
+        "1": {
+          "question": "What are human rights?",
+          "choices": {
+            "A": "Privileges given only to government officials",
+            "B": "Basic rights and freedoms belonging to every person",
+            "C": "Benefits available only to wealthy people",
+            "D": "Rights given only during elections"
+          },
+          "correct": "B",
+          "reason": "Human rights belong to all people because they are human beings, regardless of nationality, gender, status, or background."
+        },
+        "2": {
+          "question": "Which document is internationally recognized as a foundational statement of human rights?",
+          "choices": {
+            "A": "Universal Declaration of Human Rights",
+            "B": "Local Government Code",
+            "C": "Revised Penal Code",
+            "D": "National Building Code"
+          },
+          "correct": "A",
+          "reason": "The UDHR was adopted by the United Nations General Assembly on December 10, 1948."
+        },
+        "3": {
+          "question": "When is International Human Rights Day celebrated?",
+          "choices": {
+            "A": "June 12",
+            "B": "August 21",
+            "C": "December 10",
+            "D": "December 30"
+          },
+          "correct": "C",
+          "reason": "December 10 commemorates the adoption of the Universal Declaration of Human Rights in 1948."
+        },
+        "4": {
+          "question": "Which organization adopted the Universal Declaration of Human Rights?",
+          "choices": {
+            "A": "ASEAN",
+            "B": "United Nations",
+            "C": "European Union",
+            "D": "World Trade Organization"
+          },
+          "correct": "B",
+          "reason": "The UN General Assembly adopted the UDHR in 1948."
+        },
+        "5": {
+          "question": "What does equality before the law mean?",
+          "choices": {
+            "A": "Only officials have legal protection.",
+            "B": "Everyone is entitled to equal protection under the law.",
+            "C": "Wealthy people receive special treatment.",
+            "D": "Laws apply only to citizens with jobs."
+          },
+          "correct": "B",
+          "reason": "Every person is entitled to legal protection without arbitrary discrimination."
+        },
+        "6": {
+          "question": "What is discrimination?",
+          "choices": {
+            "A": "Treating people fairly",
+            "B": "Unjust or unequal treatment based on certain characteristics or circumstances",
+            "C": "Respecting differences",
+            "D": "Protecting people's rights"
+          },
+          "correct": "B",
+          "reason": "Discrimination happens when people are unfairly treated because of characteristics such as sex, race, religion, disability, or other protected grounds."
+        },
+        "7": {
+          "question": "What is freedom of religion?",
+          "choices": {
+            "A": "The right to practice or not practice a religion, subject to law",
+            "B": "The right to force others to follow a religion",
+            "C": "The right to ignore all laws",
+            "D": "The right to prevent others from worshipping"
+          },
+          "correct": "A",
+          "reason": "People have the freedom to choose, practice, or change their religion or belief, within lawful limits."
+        },
+        "8": {
+          "question": "What is the right to education intended to promote?",
+          "choices": {
+            "A": "Ignorance",
+            "B": "Learning and personal development",
+            "C": "Discrimination",
+            "D": "Unemployment"
+          },
+          "correct": "B",
+          "reason": "Education helps individuals develop knowledge, skills, and opportunities."
+        },
+        "9": {
+          "question": "What is the meaning of peace?",
+          "choices": {
+            "A": "Absence of war only",
+            "B": "A condition involving security, justice, respect, and cooperation",
+            "C": "Complete absence of disagreement",
+            "D": "Control by one powerful person"
+          },
+          "correct": "B",
+          "reason": "Peace is more than the absence of war. It also involves fairness, respect for rights, and peaceful ways of resolving conflicts."
+        },
+        "10": {
+          "question": "What is conflict resolution?",
+          "choices": {
+            "A": "Making disagreements worse",
+            "B": "Finding peaceful ways to address disagreements",
+            "C": "Avoiding all communication",
+            "D": "Using violence to settle disputes"
+          },
+          "correct": "B",
+          "reason": "Conflict resolution involves communication, negotiation, mediation, and other peaceful methods."
+        },
+        "11": {
+          "question": "What is mediation?",
+          "choices": {
+            "A": "A neutral third party helps disputing parties reach an agreement.",
+            "B": "One party forces the other to surrender.",
+            "C": "A judge automatically sends someone to prison.",
+            "D": "A person ignores the disagreement."
+          },
+          "correct": "A",
+          "reason": "A mediator helps both sides communicate and find a possible solution but generally does not impose the decision."
+        },
+        "12": {
+          "question": "What does tolerance mean?",
+          "choices": {
+            "A": "Accepting violence",
+            "B": "Respecting differences in beliefs, culture, and opinions",
+            "C": "Forcing everyone to think alike",
+            "D": "Ignoring human rights violations"
+          },
+          "correct": "B",
+          "reason": "Tolerance means respecting diversity, even when other people's beliefs or practices differ from yours."
+        },
+        "13": {
+          "question": "What is gender equality?",
+          "choices": {
+            "A": "Giving opportunities only to men",
+            "B": "Giving equal rights, responsibilities, and opportunities regardless of gender",
+            "C": "Giving women fewer opportunities",
+            "D": "Preventing women from working"
+          },
+          "correct": "B",
+          "reason": "Gender equality means people should have fair opportunities and rights regardless of gender."
+        },
+        "14": {
+          "question": "What is child labor?",
+          "choices": {
+            "A": "Any household chore performed by a child",
+            "B": "Work that harms a child's development or interferes with education, as defined by law",
+            "C": "Every form of learning",
+            "D": "Playing after school"
+          },
+          "correct": "B",
+          "reason": "Not all work by children is automatically illegal. Child labor laws prohibit harmful or exploitative work and set age and working-condition restrictions."
+        },
+        "15": {
+          "question": "What is human trafficking?",
+          "choices": {
+            "A": "Legal tourism",
+            "B": "Recruiting, transporting, transferring, harboring, or receiving persons for exploitation through prohibited means or circumstances under the law",
+            "C": "Ordinary employment",
+            "D": "Voluntary travel"
+          },
+          "correct": "B",
+          "reason": "Human trafficking involves exploitation, such as forced labor or sexual exploitation. It is a serious violation of human rights."
+        },
+        "16": {
+          "question": "Which Philippine law addresses human trafficking?",
+          "choices": {
+            "A": "RA 9165",
+            "B": "RA 9208, as amended",
+            "C": "RA 9003",
+            "D": "RA 6713"
+          },
+          "correct": "B",
+          "reason": "RA 9208 is the Anti-Trafficking in Persons Act of 2003. It was strengthened by later amendments, including RA 10364 and RA 11862."
+        },
+        "17": {
+          "question": "What is the Commission on Human Rights (CHR)?",
+          "choices": {
+            "A": "A private company",
+            "B": "An independent constitutional office that promotes and protects human rights",
+            "C": "A police department",
+            "D": "A political party"
+          },
+          "correct": "B",
+          "reason": "The CHR is established under Article XIII of the 1987 Constitution."
+        },
+        "18": {
+          "question": "Which of the following is a function of the CHR?",
+          "choices": {
+            "A": "Conducting regular national elections",
+            "B": "Investigating human rights violations involving civil and political rights",
+            "C": "Approving the national budget",
+            "D": "Making all criminal laws"
+          },
+          "correct": "B",
+          "reason": "The Constitution gives the CHR authority to investigate these violations, among other functions."
+        },
+        "19": {
+          "question": "What is an extrajudicial killing?",
+          "choices": {
+            "A": "A killing lawfully carried out after a fair trial",
+            "B": "An unlawful killing by, at the instigation of, or with the involvement or acquiescence of state actors, outside lawful judicial process",
+            "C": "A natural death",
+            "D": "An accidental death in every case"
+          },
+          "correct": "B",
+          "reason": "Extrajudicial killing refers to unlawful deprivation of life outside lawful judicial procedures."
+        },
+        "20": {
+          "question": "What is enforced disappearance?",
+          "choices": {
+            "A": "A person voluntarily changing residence",
+            "B": "Arrest, detention, or abduction by state agents or with state authorization or support, followed by refusal to acknowledge it or concealment of the person's fate or whereabouts",
+            "C": "A person losing a personal belonging",
+            "D": "A person traveling abroad"
+          },
+          "correct": "B",
+          "reason": "Enforced disappearance involves taking someone into custody and concealing or denying the person's fate or whereabouts."
+        },
+        "21": {
+          "question": "What is the purpose of the writ of amparo in the Philippines?",
+          "choices": {
+            "A": "To protect the right to education",
+            "B": "To protect the rights to life, liberty, and security against certain unlawful acts or omissions",
+            "C": "To settle land ownership disputes",
+            "D": "To cancel government taxes"
+          },
+          "correct": "B",
+          "reason": "The writ of amparo is a legal remedy that may be used in cases involving extralegal killings, enforced disappearances, and threats to life, liberty, or security."
+        },
+        "22": {
+          "question": "What is the purpose of the writ of habeas data?",
+          "choices": {
+            "A": "To protect a person's privacy concerning life, liberty, or security against unlawful gathering or storage of information",
+            "B": "To collect taxes",
+            "C": "To transfer property ownership",
+            "D": "To register voters"
+          },
+          "correct": "A",
+          "reason": "Habeas data is a remedy involving unlawful or inaccurate information affecting a person's privacy, life, liberty, or security."
+        },
+        "23": {
+          "question": "What does International Humanitarian Law (IHL) primarily regulate?",
+          "choices": {
+            "A": "International trade",
+            "B": "Conduct during armed conflict and protection of persons affected by it",
+            "C": "Local elections",
+            "D": "Tax collection"
+          },
+          "correct": "B",
+          "reason": "IHL limits the effects of armed conflict and protects people who are not, or are no longer, participating in hostilities."
+        },
+        "24": {
+          "question": "Which people are protected under the Geneva Conventions and their applicable rules?",
+          "choices": {
+            "A": "Only military commanders",
+            "B": "Wounded and sick persons, prisoners of war, and civilians, among others",
+            "C": "Only government officials",
+            "D": "Only foreign tourists"
+          },
+          "correct": "B",
+          "reason": "IHL provides protections to people affected by armed conflict, including those who are not actively fighting."
+        },
+        "25": {
+          "question": "What is the principle of distinction in International Humanitarian Law?",
+          "choices": {
+            "A": "Attacks must distinguish between civilians and combatants.",
+            "B": "All people may be attacked during war.",
+            "C": "Civilians may always be targeted.",
+            "D": "Military forces may ignore humanitarian rules."
+          },
+          "correct": "A",
+          "reason": "Parties to a conflict must distinguish between civilian persons and combatants, and between civilian objects and military objectives."
+        },
+        "26": {
+          "question": "What is the principle of proportionality in IHL?",
+          "choices": {
+            "A": "Any amount of civilian harm is acceptable.",
+            "B": "An attack is prohibited if expected incidental civilian harm would be excessive in relation to the concrete and direct military advantage anticipated.",
+            "C": "Civilians have no protection.",
+            "D": "Every military attack is automatically lawful."
+          },
+          "correct": "B",
+          "reason": "The principle prohibits attacks expected to cause excessive incidental civilian harm compared with the anticipated military advantage."
+        },
+        "27": {
+          "question": "What does the principle of humanity emphasize?",
+          "choices": {
+            "A": "Unnecessary suffering should be prevented.",
+            "B": "Civilians should be punished.",
+            "C": "Prisoners should be mistreated.",
+            "D": "All forms of violence are acceptable."
+          },
+          "correct": "A",
+          "reason": "Humanity is a basic humanitarian principle that seeks to reduce suffering and protect human dignity during armed conflict."
+        },
+        "28": {
+          "question": "What is the International Criminal Court (ICC)?",
+          "choices": {
+            "A": "A Philippine local court",
+            "B": "An international court that prosecutes individuals for certain serious international crimes",
+            "C": "A United Nations police department",
+            "D": "A national election commission"
+          },
+          "correct": "B",
+          "reason": "The ICC deals with individual criminal responsibility for genocide, crimes against humanity, war crimes, and the crime of aggression, subject to its jurisdictional rules."
+        },
+        "29": {
+          "question": "What are the four crimes under the Rome Statute of the ICC?",
+          "choices": {
+            "A": "Theft, robbery, fraud, and arson",
+            "B": "Genocide, crimes against humanity, war crimes, and aggression",
+            "C": "Tax evasion, smuggling, bribery, and murder",
+            "D": "Trespassing, assault, libel, and cybercrime"
+          },
+          "correct": "B",
+          "reason": "These are the four core crimes under the Rome Statute. The ICC's jurisdiction over aggression has additional conditions."
+        },
+        "30": {
+          "question": "Which action best promotes peace in a community?",
+          "choices": {
+            "A": "Spreading false information",
+            "B": "Respecting others and resolving disagreements peacefully",
+            "C": "Encouraging discrimination",
+            "D": "Using violence to settle arguments"
+          },
+          "correct": "B",
+          "reason": "Peace begins with respect, cooperation, dialogue, and peaceful conflict resolution."
+        }
+      }
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Environmental Management",
+      "topic_order": 4,
+      "questions": {
+        "1": {
+          "question": "What is the environment?",
+          "choices": {
+            "A": "Only forests and mountains",
+            "B": "The natural and human-made surroundings in which living things exist",
+            "C": "Only buildings and roads",
+            "D": "Only animals"
+          },
+          "correct": "B",
+          "reason": "The environment includes air, water, land, plants, animals, people, and their surroundings."
+        },
+        "2": {
+          "question": "What is environmental protection?",
+          "choices": {
+            "A": "Destroying natural resources",
+            "B": "Preventing environmental damage and conserving natural resources",
+            "C": "Increasing pollution",
+            "D": "Cutting down all forests"
+          },
+          "correct": "B",
+          "reason": "Environmental protection means taking action to preserve nature and reduce harmful human activities."
+        },
+        "3": {
+          "question": "What is biodiversity?",
+          "choices": {
+            "A": "The number of buildings in a city",
+            "B": "The variety of life within species, between species, and among ecosystems",
+            "C": "The amount of rainfall in one area",
+            "D": "The number of people in a country"
+          },
+          "correct": "B",
+          "reason": "Biodiversity includes genetic diversity, species diversity, and ecosystem diversity."
+        },
+        "4": {
+          "question": "What is deforestation?",
+          "choices": {
+            "A": "Planting trees",
+            "B": "The clearing or removal of forests",
+            "C": "Protecting wildlife",
+            "D": "Cleaning rivers"
+          },
+          "correct": "B",
+          "reason": "Deforestation is the loss or removal of forest cover, often caused by logging, agriculture, and land development."
+        },
+        "5": {
+          "question": "What is one major effect of deforestation?",
+          "choices": {
+            "A": "Increased wildlife habitat",
+            "B": "Soil erosion and loss of biodiversity",
+            "C": "Cleaner air in every case",
+            "D": "Increased forest cover"
+          },
+          "correct": "B",
+          "reason": "Removing trees can expose soil to erosion and destroy habitats for many species."
+        },
+        "6": {
+          "question": "What is climate change?",
+          "choices": {
+            "A": "A temporary change in daily weather",
+            "B": "Long-term changes in temperature and weather patterns",
+            "C": "A change in the time of sunrise",
+            "D": "A single rainstorm"
+          },
+          "correct": "B",
+          "reason": "Climate change refers to long-term shifts in climate patterns. Human activities, especially greenhouse gas emissions, are a major cause of recent global warming."
+        },
+        "7": {
+          "question": "Which gas is a major contributor to human-caused global warming?",
+          "choices": {
+            "A": "Oxygen",
+            "B": "Carbon dioxide",
+            "C": "Helium",
+            "D": "Neon"
+          },
+          "correct": "B",
+          "reason": "Carbon dioxide is a major greenhouse gas released through activities such as burning fossil fuels and deforestation."
+        },
+        "8": {
+          "question": "What is the greenhouse effect?",
+          "choices": {
+            "A": "The process by which certain gases trap heat in Earth's atmosphere",
+            "B": "The process of creating artificial forests",
+            "C": "The movement of ocean waves",
+            "D": "The formation of earthquakes"
+          },
+          "correct": "A",
+          "reason": "Greenhouse gases absorb and re-emit heat, helping warm the planet. Human activities have intensified this natural process."
+        },
+        "9": {
+          "question": "What is global warming?",
+          "choices": {
+            "A": "A long-term increase in Earth's average surface temperature",
+            "B": "A decrease in all ocean temperatures",
+            "C": "A daily weather forecast",
+            "D": "The cooling of every country"
+          },
+          "correct": "A",
+          "reason": "Global warming is the long-term rise in Earth's average temperature, largely driven by increased greenhouse gases."
+        },
+        "10": {
+          "question": "What is El Niño?",
+          "choices": {
+            "A": "Unusually warm sea-surface temperatures in the central and eastern equatorial Pacific",
+            "B": "A volcanic eruption",
+            "C": "A type of earthquake",
+            "D": "A permanent change in ocean level"
+          },
+          "correct": "A",
+          "reason": "El Niño is part of a natural climate pattern. It can contribute to below-normal rainfall and drought conditions in parts of the Philippines."
+        },
+        "11": {
+          "question": "What is La Niña?",
+          "choices": {
+            "A": "Unusually cool sea-surface temperatures in the central and eastern equatorial Pacific",
+            "B": "A tropical forest",
+            "C": "A type of pollution",
+            "D": "A volcanic storm"
+          },
+          "correct": "A",
+          "reason": "La Niña is the opposite phase of El Niño. It can contribute to above-normal rainfall in parts of the Philippines."
+        },
+        "12": {
+          "question": "Which Philippine law is known as the Ecological Solid Waste Management Act of 2000?",
+          "choices": {
+            "A": "RA 8749",
+            "B": "RA 9003",
+            "C": "RA 9275",
+            "D": "RA 9729"
+          },
+          "correct": "B",
+          "reason": "RA 9003 establishes the country's ecological solid waste management framework, including segregation, recycling, composting, and proper disposal."
+        },
+        "13": {
+          "question": "What does waste segregation mean?",
+          "choices": {
+            "A": "Mixing all waste together",
+            "B": "Separating waste according to its type",
+            "C": "Burning all garbage",
+            "D": "Throwing waste into rivers"
+          },
+          "correct": "B",
+          "reason": "Waste segregation separates materials so that recyclables, compostables, residuals, and special wastes can be handled properly."
+        },
+        "14": {
+          "question": "Under RA 9003, which is an example of biodegradable waste?",
+          "choices": {
+            "A": "Plastic bottle",
+            "B": "Vegetable peelings",
+            "C": "Glass bottle",
+            "D": "Metal can"
+          },
+          "correct": "B",
+          "reason": "Vegetable peelings can naturally decompose and may be composted."
+        },
+        "15": {
+          "question": "Which of the following is recyclable?",
+          "choices": {
+            "A": "Used glass bottle",
+            "B": "Rotten food",
+            "C": "Leftover soup",
+            "D": "Garden leaves"
+          },
+          "correct": "A",
+          "reason": "Glass bottles can be collected and processed for recycling when properly sorted."
+        },
+        "16": {
+          "question": "What is composting?",
+          "choices": {
+            "A": "Burning plastic",
+            "B": "Turning biodegradable waste into a soil-improving material",
+            "C": "Throwing garbage into the ocean",
+            "D": "Mixing hazardous waste with food waste"
+          },
+          "correct": "B",
+          "reason": "Composting allows organic materials, such as food scraps and leaves, to decompose into compost."
+        },
+        "17": {
+          "question": "Which law is known as the Philippine Clean Air Act of 1999?",
+          "choices": {
+            "A": "RA 9003",
+            "B": "RA 8749",
+            "C": "RA 9275",
+            "D": "RA 7586"
+          },
+          "correct": "B",
+          "reason": "RA 8749 provides a comprehensive air pollution control policy to protect air quality."
+        },
+        "18": {
+          "question": "Which activity contributes to air pollution?",
+          "choices": {
+            "A": "Planting trees",
+            "B": "Uncontrolled emissions from vehicles and factories",
+            "C": "Proper waste segregation",
+            "D": "Using clean energy"
+          },
+          "correct": "B",
+          "reason": "Vehicle exhaust and industrial emissions can release pollutants into the air."
+        },
+        "19": {
+          "question": "Which law is known as the Philippine Clean Water Act of 2004?",
+          "choices": {
+            "A": "RA 9275",
+            "B": "RA 9003",
+            "C": "RA 8749",
+            "D": "RA 6713"
+          },
+          "correct": "A",
+          "reason": "RA 9275 establishes a comprehensive water quality management policy to protect the country's water bodies."
+        },
+        "20": {
+          "question": "Which action helps prevent water pollution?",
+          "choices": {
+            "A": "Dumping chemicals into rivers",
+            "B": "Properly treating wastewater before discharge",
+            "C": "Throwing plastics into the sea",
+            "D": "Washing oil into drainage systems"
+          },
+          "correct": "B",
+          "reason": "Treating wastewater helps remove harmful pollutants before water is released into the environment."
+        },
+        "21": {
+          "question": "What is an Environmental Impact Assessment (EIA)?",
+          "choices": {
+            "A": "An assessment of the possible environmental effects of a proposed project",
+            "B": "A tax collection process",
+            "C": "A national election procedure",
+            "D": "A method of measuring population"
+          },
+          "correct": "A",
+          "reason": "EIA helps identify and evaluate potential environmental impacts and possible mitigation measures before a project proceeds. Applicable requirements depend on the project and environmental rules."
+        },
+        "22": {
+          "question": "What is the purpose of an Environmental Compliance Certificate (ECC)?",
+          "choices": {
+            "A": "To automatically approve every business activity",
+            "B": "To document the environmental compliance decision for a project covered by the Philippine EIS System",
+            "C": "To replace all business permits",
+            "D": "To exempt a project from environmental laws"
+          },
+          "correct": "B",
+          "reason": "An ECC is issued by the DENR-Environmental Management Bureau for covered projects after the required environmental review. It does not replace every other permit."
+        },
+        "23": {
+          "question": "Which government department is primarily responsible for environmental protection and natural resource management?",
+          "choices": {
+            "A": "Department of Finance",
+            "B": "Department of Environment and Natural Resources",
+            "C": "Department of Tourism",
+            "D": "Department of Labor and Employment"
+          },
+          "correct": "B",
+          "reason": "The DENR is the principal government agency responsible for the conservation, management, development, and proper use of the country's environment and natural resources."
+        },
+        "24": {
+          "question": "What is reforestation?",
+          "choices": {
+            "A": "Removing all trees from a forest",
+            "B": "Replanting trees in areas where forest cover has been lost",
+            "C": "Converting forests into parking lots",
+            "D": "Burning forests to clear land"
+          },
+          "correct": "B",
+          "reason": "Reforestation helps restore forest cover, improve habitats, and reduce soil erosion."
+        },
+        "25": {
+          "question": "What is the importance of mangrove forests?",
+          "choices": {
+            "A": "They increase coastal erosion.",
+            "B": "They provide habitats and help reduce wave energy along coastlines.",
+            "C": "They prevent all natural disasters.",
+            "D": "They remove the need for coastal protection."
+          },
+          "correct": "B",
+          "reason": "Mangroves support marine life, protect coastal ecosystems, and can reduce the impact of waves and storm surges. They do not guarantee protection against tsunamis or all disasters."
+        },
+        "26": {
+          "question": "Which law established the National Integrated Protected Areas System (NIPAS), later expanded and strengthened?",
+          "choices": {
+            "A": "RA 7586",
+            "B": "RA 6713",
+            "C": "RA 9003",
+            "D": "RA 9165"
+          },
+          "correct": "A",
+          "reason": "RA 7586 established the NIPAS. It was strengthened and expanded by RA 11038, the Expanded NIPAS Act of 2018."
+        },
+        "27": {
+          "question": "What is the main purpose of protected areas?",
+          "choices": {
+            "A": "To encourage illegal logging",
+            "B": "To conserve important ecosystems, habitats, and biodiversity",
+            "C": "To allow unlimited mining",
+            "D": "To remove wildlife habitats"
+          },
+          "correct": "B",
+          "reason": "Protected areas are managed to conserve natural resources, biodiversity, and ecological processes."
+        },
+        "28": {
+          "question": "Which law is known as the Climate Change Act of 2009?",
+          "choices": {
+            "A": "RA 9729",
+            "B": "RA 9003",
+            "C": "RA 8749",
+            "D": "RA 9275"
+          },
+          "correct": "A",
+          "reason": "RA 9729 mainstreams climate change into government policy and established the Climate Change Commission."
+        },
+        "29": {
+          "question": "What is renewable energy?",
+          "choices": {
+            "A": "Energy from sources that naturally replenish",
+            "B": "Energy produced only by burning coal",
+            "C": "Energy from non-replenishable minerals only",
+            "D": "Energy produced by plastic waste alone"
+          },
+          "correct": "A",
+          "reason": "Examples include solar, wind, hydropower, geothermal, and certain forms of biomass energy."
+        },
+        "30": {
+          "question": "Which action best demonstrates environmental responsibility?",
+          "choices": {
+            "A": "Throwing trash into waterways",
+            "B": "Burning plastic waste in open areas",
+            "C": "Conserving water, segregating waste, and reducing pollution",
+            "D": "Cutting down trees without permission"
+          },
+          "correct": "C",
+          "reason": "Environmental responsibility means making daily choices that protect natural resources and reduce pollution."
+        }
+      }
+    }
+  ]
+}

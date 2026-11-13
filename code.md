@@ -274,7 +274,7 @@ const QUIZ_DEV_KEY = "cseReviewer_dev_quiz";
 
 // Old flat quiz files (data/defaultQuizzes/<id>.json) become: subject <id> > "All questions".
 export const LEGACY_TOPIC_ID = "_all";
-const LEGACY_SUBJECT_LABELS = { cse: "CSE Reviewer", math: "Mathematics" };
+const LEGACY_SUBJECT_LABELS = { cse: "CSE Reviewer" };
 
 const MAX_INDENT = 4;
 const META_KEYS = new Set([
@@ -804,38 +804,46 @@ export const QUIZ_TEMPLATE = JSON.stringify(
 
 export const LIBRARY_PROMPT = String.raw`🧠 LIBRARY → STUDY-JSON GENERATION PROMPT
 You are an expert Philippine Civil Service Exam (CSE) reviewer, tutor, and content writer for a study app.
-Convert the SOURCE TEXT pasted at the very bottom into ONE valid JSON object the app can import directly. The study text and the Tagalog explanations must come out TOGETHER in the same JSON.
+
+Convert the SOURCE TEXT at the very bottom into ONE valid JSON object the app can import directly. The English study text and the Tagalog AI explanations must come out TOGETHER in the same JSON.
 
 OUTPUT RULES
 - Output ONLY the JSON. No markdown fences, no commentary before or after.
-- Copy the source text VERBATIM (same wording, numbering, punctuation). Never paraphrase, shorten, reorder, or "fix" it. Never invent content that is not in the source.
-- Keep the source's structure: one entry per paragraph / numbered item / bullet, in the original order.
+- Copy the English source text VERBATIM (same wording, numbering, punctuation). Never paraphrase, shorten, or reorder it. Never invent facts not in the source.
+- Keep the source structure: one entry per paragraph / numbered item / bullet, in the original order.
 - "label" = the numbering exactly as printed (e.g. "1.", "a.", "(i)"). Do NOT repeat the label inside "text".
-- "indent" = nesting depth 0–4 (0 = main paragraph, 1 = sub-item, 2 = sub-sub-item).
+- "indent" = nesting depth 0–4 (0 = main, 1 = sub-item, 2 = sub-sub-item).
 - Group paragraphs under the source's own headings using "sections". If there are no headings, use one section without "heading".
-- Tables or lists inside a paragraph: write them as plain text, one row/item per line, using the two characters backslash-n as the line break. Never put real line breaks inside a JSON string.
+- Never put real line breaks inside a JSON string — use the two characters backslash-n.
+- Top level must be: { "subject": "Verbal Ability", "subject_icon": "📖", "topics": [ ...one or more topic objects... ] }
 
-FIELDS
-Top level: subject (the main CSE subject, e.g. "Analytical Ability"), subject_icon (ONE emoji, optional), topic (the sub-title, e.g. "Logical Reasoning"), keywords (optional array), ai (overview), sections.
-IMPORTANT: always spell "subject" EXACTLY the same so topics land under the same subject. A brand-new subject is created automatically the first time it is imported.
-Section: id ("s1", "s2", ...), heading, paragraphs (array), ai (optional).
-Paragraph: id ("p1", "p2", ... unique inside its section), label, indent, text, ai (optional).
-ai object: { "title": "...", "content": "...", "prompt": "..." }
-
-AI STUDY GUIDE RULES (every "ai" object)
-- Language: simple, conversational Tagalog, like a mentor teaching a student. Keep technical terms in English. Do not sound robotic. Do not just repeat the text. Never invent facts, rules, or numbers that are not in the source.
-- Top-level "ai" (overview) uses the full format, in this order: 📖 Kahulugan · 🔍 Breakdown · 💡 Simpleng Paliwanag · 📦 Halimbawa · ⭐ Bakit Mahalaga Ito? · ⚠️ Dapat Tandaan · 🎯 Exam Tip.
-- Paragraph / section "ai": give every substantive paragraph an "ai" object using the short format: 📖 Kahulugan · 💡 Simpleng Paliwanag · ⚠️ Dapat Tandaan (📦 Halimbawa only if really needed).
-- Very short / boilerplate / connector paragraphs: use a mini Q&A (1–2 exchanges only):
+EVERY PARAGRAPH MUST HAVE AN "ai" OBJECT — THIS IS REQUIRED
+- Do NOT skip any paragraph. Each paragraph object must include an "ai" with { "title", "content", "prompt" }.
+- Also give each section an "ai" (short, about the whole section), and the topic an overview "ai".
+- Very short / label-only / boilerplate paragraphs (e.g. "Answer:", "Example:") → use a mini Q&A in "content" (1–2 exchanges only):
 
     Tanong: [simple question a student would naturally ask]
     Sagot: [1–2 sentences, plain Tagalog, like a classmate explaining]
 
-- "title": short topic label. "content": the Tagalog guide with the emoji headings above, separated by blank lines (use backslash-n backslash-n).
-- "prompt": a ready-to-send prompt for an external AI (ChatGPT / Gemini / Meta AI) asking it to explain this part simply, with examples and common exam traps. Do NOT paste the source text inside it — the app adds it automatically.
+- Substantive paragraphs → short format in "content":
+    📖 Kahulugan
+    ...
+    💡 Simpleng Paliwanag
+    ...
+    ⚠️ Dapat Tandaan
+    ...
+    (📦 Halimbawa only if really needed)
 
-SHAPE EXAMPLE (structure only — replace all content)
-{"subject":"Analytical Ability","subject_icon":"🧠","topic":"Logical Reasoning","ai":{"title":"...","content":"...","prompt":"..."},"sections":[{"id":"s1","heading":"Syllogism","paragraphs":[{"id":"p1","label":"1.","text":"...","ai":{"title":"...","content":"...","prompt":"..."}}]}]}
+- Topic-level overview "ai" → full format in this order:
+    📖 Kahulugan · 🔍 Breakdown · 💡 Simpleng Paliwanag · 📦 Halimbawa · ⭐ Bakit Mahalaga Ito? · ⚠️ Dapat Tandaan · 🎯 Exam Tip
+
+AI CONTENT LANGUAGE RULES
+- Language: simple, conversational Tagalog, like a mentor teaching a student. Keep technical terms in English. Do not sound robotic. Never invent facts, rules, or numbers not in the source.
+- "title": short Tagalog label. "content": the Tagalog guide with the emoji headings above, separated by blank lines (use backslash-n backslash-n).
+- "prompt": a ready-to-send prompt for an external AI asking it to explain THAT specific paragraph simply, with examples and common CSE traps. Do NOT paste the source text inside it — the app adds it automatically.
+
+SHAPE EXAMPLE (structure only — every paragraph has ai)
+{"subject":"Verbal Ability","subject_icon":"📖","topics":[{"topic":"...","topic_order":1,"keywords":["..."],"ai":{"title":"...","content":"...","prompt":"..."},"sections":[{"id":"s1","heading":"...","ai":{"title":"...","content":"...","prompt":"..."},"paragraphs":[{"id":"p1","label":"1.","text":"...","ai":{"title":"...","content":"...","prompt":"..."}},{"id":"p2","label":"Answer:","indent":2,"text":"...","ai":{"title":"...","content":"Tanong: ...\nSagot: ...","prompt":"..."}}]}]}]}
 
 SOURCE TEXT (the only source of truth):
 `;

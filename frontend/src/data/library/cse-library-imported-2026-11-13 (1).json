@@ -1,0 +1,2099 @@
+{
+  "format": "cse-library",
+  "version": 1,
+  "exportedAt": "2026-11-13T22:14:52.012Z",
+  "topics": [
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Fractions",
+      "topic_order": 1,
+      "keywords": [
+        "fractions",
+        "praksyon",
+        "numerator",
+        "denominator",
+        "proper",
+        "improper",
+        "mixed number",
+        "equivalent"
+      ],
+      "ai": {
+        "title": "Gabay sa Fractions (Mga Praksyon)",
+        "content": "📖 Kahulugan\nAng fraction ay kumakatawan sa bahagi ng isang kabuuan. May dalawang pangunahing bahagi: numerator (taas) at denominator (baba).\n\n🔍 Breakdown\n• Proper Fraction — numerator < denominator\n• Improper Fraction — numerator ≥ denominator\n• Mixed Number — whole number + proper fraction\n• Equivalent Fractions — magkaibang numero, parehong halaga\n• Operations: Addition, Subtraction, Multiplication, Division\n\n💡 Simpleng Paliwanag\nIsipin mo na pizza na hinati sa 4 na slice. Kung kumuha ka ng 3, ang fraction mo ay 3/4. Ang 4 ay denominator (kabuuang slices), ang 3 ay numerator (kinuha mo).\n\n📦 Halimbawa\n• Proper: 3/4\n• Improper: 5/2 = 2 1/2\n• Equivalent: 1/2 = 2/4 = 4/8\n\n⭐ Bakit Mahalaga Ito?\nAng fractions ay pundasyon ng maraming math problems sa CSE — ratios, percentages, at word problems.\n\n⚠️ Dapat Tandaan\n• Sa addition at subtraction, kailangang magkapareho muna ang denominator.\n• Sa multiplication, i-multiply ang numerator sa numerator at denominator sa denominator.\n• Sa division, i-reciprocal (baliktarin) ang pangalawang fraction bago mag-multiply.\n\n🎯 Exam Tip\nSa CSE, madalas may fraction operations. Alamin ang LCD (Least Common Denominator) para mabilis ang addition at subtraction.",
+        "prompt": "Explain fractions (proper, improper, mixed, equivalent) and the four basic operations with step-by-step examples, plus common Civil Service Exam traps."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Ano ang Fraction?",
+            "content": "📖 Kahulugan\nAng fraction ay kumakatawan sa bahagi ng isang kabuuan o bilang na nagpapakita ng paghahati.\n\n💡 Simpleng Paliwanag\nMayroon itong dalawang bahagi: numerator (nasa itaas, kung ilang bahagi ang kinukuha) at denominator (nasa ibaba, kung ilang pantay na bahagi hinati ang kabuuan).\n\n⚠️ Dapat Tandaan\nNumerator sa itaas, denominator sa ibaba. Hindi pwedeng zero ang denominator.",
+            "prompt": "Explain what a fraction is, its parts (numerator and denominator), and give simple examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "A fraction represents a part of a whole or a number that expresses division. It consists of two main parts: the numerator (the top number, which indicates how many parts are being considered) and the denominator (the bottom number, which indicates the total number of equal parts).",
+              "ai": {
+                "title": "Kahulugan ng Fraction",
+                "content": "📖 Kahulugan\nAng fraction ay bahagi ng isang buo o bilang na nagpapakita ng paghahati.\n\n💡 Simpleng Paliwanag\nBinubuo ito ng numerator (taas) at denominator (baba). Ang numerator ay kung ilang bahagi ang kinukuha; ang denominator ay kung ilang pantay na bahagi ang kabuuan.\n\n⚠️ Dapat Tandaan\nHalimbawa: sa 3/4, ang 3 ay numerator at ang 4 ay denominator.",
+                "prompt": "Explain this definition of a fraction with simple real-life examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Types of Fractions",
+          "ai": {
+            "title": "Mga Uri ng Fractions",
+            "content": "📖 Kahulugan\nApat na uri ng fractions: proper, improper, mixed number, at equivalent.\n\n💡 Simpleng Paliwanag\nTingnan lang ang numerator at denominator: kung mas maliit ang numerator, proper; kung mas malaki o pantay, improper. Ang mixed number ay may buong bilang at fraction. Ang equivalent ay magkaiba ang itsura pero pareho ang halaga.\n\n⚠️ Dapat Tandaan\nAng improper fraction ay pwedeng gawing mixed number. Ang equivalent fractions ay nakukuha sa pamamagitan ng multiply o divide ng numerator at denominator sa parehong numero.",
+            "prompt": "Explain the four types of fractions with examples and how they convert into each other."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "Proper Fraction:",
+              "text": "A fraction whose numerator is smaller than its denominator.",
+              "ai": {
+                "title": "Proper Fraction",
+                "content": "📖 Kahulugan\nAng proper fraction ay may numerator na mas maliit kaysa denominator.\n\n💡 Simpleng Paliwanag\nMas mababa sa 1 ang value nito — kasi mas kaunti ang kinuha kaysa sa buong hinati.\n\n⚠️ Dapat Tandaan\nHalimbawa: 3/4, 1/2, 5/8 — lahat proper fractions.",
+                "prompt": "Explain proper fractions with examples and why their value is less than 1."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "3/4 means 3 out of 4 equal parts.",
+              "ai": {
+                "title": "Halimbawa ng Proper Fraction",
+                "content": "Tanong: Bakit proper fraction ang 3/4?\nSagot: Dahil mas maliit ang numerator (3) kaysa denominator (4). Ibig sabihin, kumuha ka ng 3 bahagi mula sa 4 na pantay na bahagi.",
+                "prompt": "Explain why 3/4 is a proper fraction with a real-life example."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "Improper Fraction:",
+              "text": "A fraction whose numerator is greater than or equal to its denominator.",
+              "ai": {
+                "title": "Improper Fraction",
+                "content": "📖 Kahulugan\nAng improper fraction ay may numerator na mas malaki o pantay sa denominator.\n\n💡 Simpleng Paliwanag\nAng value nito ay 1 o higit pa — kasi pantay o lumampas na ang kinuha sa buong hinati.\n\n⚠️ Dapat Tandaan\nHalimbawa: 5/2, 7/4, 9/9 — lahat improper fractions.",
+                "prompt": "Explain improper fractions with examples and how they convert to mixed numbers."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Example:",
+              "indent": 1,
+              "text": "5/2, which is equivalent to 2 1/2.",
+              "ai": {
+                "title": "Halimbawa ng Improper Fraction",
+                "content": "Tanong: Paano naging 2 1/2 ang 5/2?\nSagot: I-divide ang 5 sa 2 = 2 remainder 1. Kaya 2 1/2. Ang 2 ay buong bilang, ang 1/2 ay natirang fraction.",
+                "prompt": "Explain how to convert 5/2 into the mixed number 2 1/2 step by step."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "Mixed Number:",
+              "text": "A number consisting of a whole number and a proper fraction.",
+              "ai": {
+                "title": "Mixed Number",
+                "content": "📖 Kahulugan\nAng mixed number ay binubuo ng buong bilang at proper fraction.\n\n💡 Simpleng Paliwanag\nKombinasyon ito — may buong bahagi at may fraction na bahagi.\n\n⚠️ Dapat Tandaan\nHalimbawa: 2 1/2, 3 3/4, 5 1/8 — lahat mixed numbers.",
+                "prompt": "Explain mixed numbers with examples and how they relate to improper fractions."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Example:",
+              "indent": 1,
+              "text": "2 1/2",
+              "ai": {
+                "title": "Halimbawa ng Mixed Number",
+                "content": "Tanong: Ano ang ibig sabihin ng 2 1/2?\nSagot: Ibig sabihin, may 2 buong yunit at 1/2 pang bahagi. Katumbas ito ng improper fraction na 5/2.",
+                "prompt": "Explain the mixed number 2 1/2 with a real-life example."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "Equivalent Fractions:",
+              "text": "Fractions that have different numerators and denominators but represent the same value.",
+              "ai": {
+                "title": "Equivalent Fractions",
+                "content": "📖 Kahulugan\nAng equivalent fractions ay magkaiba ang numerator at denominator pero pareho ang halaga.\n\n💡 Simpleng Paliwanag\nParang iba-ibang damit pero iisang tao — magkaiba ang itsura, pareho ang value.\n\n⚠️ Dapat Tandaan\nNakukuha ito sa pag-multiply o pag-divide ng numerator at denominator sa parehong numero.",
+                "prompt": "Explain equivalent fractions with examples and how to find them."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Example:",
+              "indent": 1,
+              "text": "1/2 = 2/4 = 4/8",
+              "ai": {
+                "title": "Halimbawa ng Equivalent Fractions",
+                "content": "Tanong: Bakit equivalent ang 1/2, 2/4, at 4/8?\nSagot: I-multiply lang ang numerator at denominator sa parehong numero: 1×2/2×2 = 2/4; 2×2/4×2 = 4/8. Pareho silang 0.5 ang value.",
+                "prompt": "Explain why 1/2, 2/4, and 4/8 are equivalent fractions."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "heading": "Basic Operations on Fractions",
+          "ai": {
+            "title": "Mga Operasyon sa Fractions",
+            "content": "📖 Kahulugan\nApat na basic operations: addition, subtraction, multiplication, at division.\n\n💡 Simpleng Paliwanag\nAng addition at subtraction ay kailangan ng common denominator. Ang multiplication ay direkta lang (numerator × numerator, denominator × denominator). Ang division ay i-reciprocal ang second fraction bago mag-multiply.\n\n⚠️ Dapat Tandaan\nPinakamadaling pagkakamali: mag-add ng fractions na hindi pareho ang denominator. Laging hanapin ang LCD muna.",
+            "prompt": "Explain the four basic operations on fractions with step-by-step examples and common mistakes."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Addition:",
+              "text": "Find a common denominator before adding the numerators.",
+              "ai": {
+                "title": "Addition of Fractions",
+                "content": "📖 Kahulugan\nSa addition, kailangang magkapareho muna ang denominator bago mag-add ng numerators.\n\n💡 Simpleng Paliwanag\nHindi pwedeng direkta ang addition kung magkaiba ang denominator. Hanapin muna ang LCD (Least Common Denominator).\n\n⚠️ Dapat Tandaan\nPag pareho na ang denominator, i-add lang ang numerators at i-keep ang denominator.",
+                "prompt": "Explain how to add fractions with different denominators step by step."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "1/2 + 1/4 = 2/4 + 1/4 = 3/4",
+              "ai": {
+                "title": "Halimbawa ng Addition",
+                "content": "Tanong: Paano naging 3/4 ang 1/2 + 1/4?\nSagot: Ang LCD ng 2 at 4 ay 4. Gawing 2/4 ang 1/2 (multiply numerator at denominator sa 2). Tapos 2/4 + 1/4 = 3/4.",
+                "prompt": "Explain the step-by-step solution for 1/2 + 1/4."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Subtraction:",
+              "text": "Find a common denominator before subtracting the numerators.",
+              "ai": {
+                "title": "Subtraction of Fractions",
+                "content": "📖 Kahulugan\nSa subtraction, kailangan din ng common denominator bago mag-subtract ng numerators.\n\n💡 Simpleng Paliwanag\nPareho lang sa addition — common denominator muna, tapos subtract.\n\n⚠️ Dapat Tandaan\nPag pareho na ang denominator, i-subtract lang ang numerators at i-keep ang denominator.",
+                "prompt": "Explain how to subtract fractions with different denominators step by step."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Example:",
+              "indent": 1,
+              "text": "3/4 − 1/4 = 2/4 = 1/2",
+              "ai": {
+                "title": "Halimbawa ng Subtraction",
+                "content": "Tanong: Bakit 1/2 ang 3/4 − 1/4?\nSagot: Pareho na ang denominator (4), kaya 3−1 = 2. Kaya 2/4. I-simplify: 2/4 = 1/2.",
+                "prompt": "Explain the step-by-step solution for 3/4 − 1/4."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "3. Multiplication:",
+              "text": "Multiply the numerators together and the denominators together.",
+              "ai": {
+                "title": "Multiplication of Fractions",
+                "content": "📖 Kahulugan\nSa multiplication, direkta lang — numerator × numerator, denominator × denominator.\n\n💡 Simpleng Paliwanag\nHindi kailangan ng common denominator sa multiplication. Direkta lang ang multiply.\n\n⚠️ Dapat Tandaan\nPagkatapos mag-multiply, i-simplify ang sagot kung posible.",
+                "prompt": "Explain how to multiply fractions step by step."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Example:",
+              "indent": 1,
+              "text": "2/3 × 3/4 = 6/12 = 1/2",
+              "ai": {
+                "title": "Halimbawa ng Multiplication",
+                "content": "Tanong: Paano naging 1/2 ang 2/3 × 3/4?\nSagot: 2×3 = 6 (numerator); 3×4 = 12 (denominator). Kaya 6/12. I-simplify: 6/12 = 1/2.",
+                "prompt": "Explain the step-by-step solution for 2/3 × 3/4."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "4. Division:",
+              "text": "Keep the first fraction, change division into multiplication, and invert the second fraction.",
+              "ai": {
+                "title": "Division of Fractions",
+                "content": "📖 Kahulugan\nSa division, i-keep ang first fraction, gawing multiplication ang division sign, at i-reciprocal (baliktarin) ang second fraction.\n\n💡 Simpleng Paliwanag\nAng reciprocal ng 1/4 ay 4/1. Kaya ang 1/2 ÷ 1/4 ay nagiging 1/2 × 4/1.\n\n⚠️ Dapat Tandaan\nTandaan ang rule: Keep-Change-Flip (Keep first, Change ÷ to ×, Flip second).",
+                "prompt": "Explain how to divide fractions using the Keep-Change-Flip rule with examples."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Example:",
+              "indent": 1,
+              "text": "1/2 ÷ 1/4 = 1/2 × 4/1 = 2",
+              "ai": {
+                "title": "Halimbawa ng Division",
+                "content": "Tanong: Bakit 2 ang 1/2 ÷ 1/4?\nSagot: Keep 1/2, change ÷ to ×, flip 1/4 to 4/1. Kaya 1/2 × 4/1 = 4/2 = 2.",
+                "prompt": "Explain the step-by-step solution for 1/2 ÷ 1/4."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Percentages",
+      "topic_order": 2,
+      "keywords": [
+        "percentages",
+        "porsyento",
+        "discount",
+        "increase",
+        "decimal",
+        "fraction",
+        "per hundred"
+      ],
+      "ai": {
+        "title": "Gabay sa Percentages (Porsyento)",
+        "content": "📖 Kahulugan\nAng percentage ay paraan ng pagpapahayag ng numero o proporsyon bilang fraction ng 100. Symbol: %.\n\n🔍 Breakdown\n• Finding the percentage of a number\n• Finding what percentage one number is of another\n• Percentage discount\n• Percentage increase\n\n💡 Simpleng Paliwanag\nAng percentage ay \"bahagi ng isang daan.\" Para gawing decimal, ilipat ang decimal point ng dalawang puwesto pakaliwa. 50% = 0.50, 25% = 0.25, 10% = 0.10.\n\n📦 Halimbawa\n• 20% of 500 = 0.20 × 500 = 100\n• 40/50 × 100 = 80%\n• ₱800 with 25% discount = ₱600\n• ₱500 → ₱600 = 20% increase\n\n⭐ Bakit Mahalaga Ito?\nMadalas ito sa CSE — discounts, exam scores, interest, at statistics.\n\n⚠️ Dapat Tandaan\n• 50% = 0.50 = 1/2\n• 25% = 0.25 = 1/4\n• 10% = 0.10 = 1/10\n• 100% = 1.00 = buong halaga\n\n🎯 Exam Tip\nSa discount problems, i-multiply ang original price sa discount rate para makuha ang discount amount, tapos i-subtract sa original price.",
+        "prompt": "Explain percentages in simple Tagalog, covering finding percentage, discount, and increase, with formulas and CSE examples."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Ano ang Percentage?",
+            "content": "📖 Kahulugan\nAng percentage ay paraan ng pagpapahayag ng numero bilang fraction ng 100.\n\n💡 Simpleng Paliwanag\nGinagamit ito sa discounts, taxes, interest rates, exam scores, profits, at statistical comparisons.\n\n⚠️ Dapat Tandaan\nAng % ay nangangahulugang \"per hundred\" — kaya 20% ay 20/100 o 0.20.",
+            "prompt": "Explain what a percentage is and where it is commonly used."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "A percentage is a way of expressing a number or proportion as a fraction of 100. It is represented by the symbol (%) and is commonly used in calculating discounts, taxes, interest rates, examination scores, profits, and statistical comparisons.",
+              "ai": {
+                "title": "Kahulugan ng Percentage",
+                "content": "📖 Kahulugan\nAng percentage ay nagpapahayag ng numero bilang bahagi ng 100. Symbol: %.\n\n💡 Simpleng Paliwanag\nGinagamit ito sa maraming bagay: discounts sa tindahan, tax, interest sa bangko, exam scores, at statistics.\n\n⚠️ Dapat Tandaan\nAng 20% ay katumbas ng 20/100 o 0.20. Ang 100% ay ang buong halaga.",
+                "prompt": "Explain this definition of percentage with everyday examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Concepts and Formulas",
+          "ai": {
+            "title": "Mga Formula sa Percentage",
+            "content": "📖 Kahulugan\nApat na pangunahing konsepto: finding percentage, finding rate, discount, at increase.\n\n💡 Simpleng Paliwanag\nAng bawat isa ay may sariling formula. Alamin kung ano ang hinahanap: percentage (bahagi), rate (%), o base (buo).\n\n⚠️ Dapat Tandaan\nP = R × B (Percentage = Rate × Base). Ito ang pinaka-pundasyon na formula.",
+            "prompt": "Explain the four main percentage formulas with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Finding the Percentage of a Number:",
+              "text": "Convert the percentage into a decimal, then multiply it by the given number.",
+              "ai": {
+                "title": "Finding the Percentage",
+                "content": "📖 Kahulugan\nPara hanapin ang percentage ng isang numero, gawing decimal ang % at i-multiply sa numero.\n\n💡 Simpleng Paliwanag\n20% → 0.20. Tapos 0.20 × 500 = 100.\n\n⚠️ Dapat Tandaan\nIlipat ang decimal point ng dalawang puwesto pakaliwa para gawing decimal ang %.",
+                "prompt": "Explain how to find the percentage of a number with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "What is 20% of 500? 20% × 500 = 0.20 × 500 = 100",
+              "ai": {
+                "title": "Halimbawa: 20% of 500",
+                "content": "Tanong: Paano naging 100 ang 20% ng 500?\nSagot: 20% = 0.20. Tapos 0.20 × 500 = 100.",
+                "prompt": "Explain step by step how to compute 20% of 500."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Finding What Percentage One Number Is of Another:",
+              "text": "Divide the part by the whole, then multiply by 100.",
+              "ai": {
+                "title": "Finding the Rate (%)",
+                "content": "📖 Kahulugan\nPara malaman kung ilang % ang isang numero sa isa pa, i-divide ang part sa whole, tapos i-multiply sa 100.\n\n💡 Simpleng Paliwanag\nFormula: (Part ÷ Whole) × 100 = Rate.\n\n⚠️ Dapat Tandaan\nAng \"part\" ay ang maliit na bahagi; ang \"whole\" ay ang buong halaga.",
+                "prompt": "Explain how to find what percentage one number is of another."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A student gets 40 correct answers out of 50 questions. What is the percentage? 40/50 × 100 = 80%",
+              "ai": {
+                "title": "Halimbawa: 40 out of 50",
+                "content": "Tanong: Paano naging 80% ang 40/50?\nSagot: (40 ÷ 50) × 100 = 0.80 × 100 = 80%.",
+                "prompt": "Explain step by step how to compute the percentage for 40 out of 50."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "3. Percentage Discount:",
+              "text": "Multiply the original price by the discount rate to find the discount amount. Subtract it from the original price to get the sale price.",
+              "ai": {
+                "title": "Percentage Discount",
+                "content": "📖 Kahulugan\nPara makuha ang sale price, i-multiply ang original price sa discount rate para makuha ang discount, tapos i-subtract sa original price.\n\n💡 Simpleng Paliwanag\nOriginal Price − Discount = Sale Price. Ang discount = Original × Rate.\n\n⚠️ Dapat Tandaan\nHuwag kalimutang i-subtract ang discount sa original price para makuha ang final na babayaran.",
+                "prompt": "Explain how to calculate a percentage discount step by step."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A shirt costs ₱800 with a 25% discount. 800 × 0.25 = ₱200; 800 − 200 = ₱600. Final Sale Price: ₱600",
+              "ai": {
+                "title": "Halimbawa: 25% Discount",
+                "content": "Tanong: Magkano ang babayaran sa ₱800 shirt na may 25% discount?\nSagot: Discount = 800 × 0.25 = ₱200. Sale price = 800 − 200 = ₱600.",
+                "prompt": "Explain step by step how to compute a 25% discount on an ₱800 shirt."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "4. Percentage Increase:",
+              "text": "Subtract the original value from the new value, divide by the original value, and multiply by 100.",
+              "ai": {
+                "title": "Percentage Increase",
+                "content": "📖 Kahulugan\nPara malaman ang % increase: (New − Original) ÷ Original × 100.\n\n💡 Simpleng Paliwanag\nI-subtract ang original sa new, i-divide sa original, tapos i-multiply sa 100.\n\n⚠️ Dapat Tandaan\nAng denominator ay laging ang ORIGINAL value, hindi ang new value.",
+                "prompt": "Explain how to calculate percentage increase step by step."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A product increases in price from ₱500 to ₱600. (600 − 500)/500 × 100 = 20%",
+              "ai": {
+                "title": "Halimbawa: 20% Increase",
+                "content": "Tanong: Ilang % ang increase mula ₱500 to ₱600?\nSagot: (600 − 500) ÷ 500 × 100 = 100/500 × 100 = 0.20 × 100 = 20%.",
+                "prompt": "Explain step by step how to compute the percentage increase from ₱500 to ₱600."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Ratios and Proportions",
+      "topic_order": 3,
+      "keywords": [
+        "ratios",
+        "proportions",
+        "tumbasan",
+        "proporsyon",
+        "GCF",
+        "cross multiplication",
+        "partitive proportion"
+      ],
+      "ai": {
+        "title": "Gabay sa Ratios and Proportions",
+        "content": "📖 Kahulugan\nAng ratio ay paghahambing ng dalawa o higit pang dami. Ang proportion ay equation na nagpapakita ng pagkakapantay ng dalawang ratio.\n\n🔍 Breakdown\n• Writing ratios (12:16)\n• Simplifying ratios (GCF)\n• Proportions (2:4 = 3:6)\n• Cross multiplication\n• Partitive proportion\n\n💡 Simpleng Paliwanag\nAng ratio ay parang \"3 lalaki sa 4 na babae.\" Ang proportion ay \"kung 2:4, dapat 3:6 din.\" Ang partitive proportion ay paghahati ng total base sa ratio.\n\n📦 Halimbawa\n• 12 boys : 16 girls = 3:4\n• 2/3 = x/12 → x = 8\n• ₱1,000 in 2:3 → ₱400 at ₱600\n\n⭐ Bakit Mahalaga Ito?\nMaraming CSE problems ang tungkol sa ratios at proportions — mixtures, recipes, sharing money, at scaled drawings.\n\n⚠️ Dapat Tandaan\n• GCF ang gamit sa pag-simplify.\n• Cross multiplication para sa missing value.\n• Mahalaga ang order: 2:3 ≠ 3:2.\n\n🎯 Exam Tip\nSa partitive proportion, i-add muna ang ratio terms, divide ang total, tapos i-multiply sa bawat term.",
+        "prompt": "Explain ratios and proportions in simple Tagalog, including simplifying, cross multiplication, and partitive proportion."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Ano ang Ratio at Proportion?",
+            "content": "📖 Kahulugan\nAng ratio ay paghahambing ng dalawang dami. Ang proportion ay equation na nagpapakita ng pagkakapantay ng dalawang ratio.\n\n💡 Simpleng Paliwanag\nRatio: 12:16. Proportion: 2:4 = 3:6 (pareho silang 1:2).\n\n⚠️ Dapat Tandaan\nAng ratio ay pwedeng isulat sa colon (:) o fraction. Ang proportion ay may equal sign.",
+            "prompt": "Explain the difference between ratio and proportion with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "A ratio is a mathematical comparison between two or more quantities of the same kind. It shows the relationship between quantities and can be written using a colon (:), as a fraction, or using the word \"to.\" A proportion is an equation that states that two ratios are equal.",
+              "ai": {
+                "title": "Kahulugan ng Ratio at Proportion",
+                "content": "📖 Kahulugan\nAng ratio ay paghahambing ng dalawang dami (12:16). Ang proportion ay equation na nagpapakita ng pagkakapantay ng dalawang ratio (2:4 = 3:6).\n\n💡 Simpleng Paliwanag\nAng ratio ay naghahambing; ang proportion ay nagpapatunay na pareho sila ng value.\n\n⚠️ Dapat Tandaan\nAng ratio ay pwedeng isulat sa colon, fraction, o word form (\"to\").",
+                "prompt": "Explain this definition of ratio and proportion with examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Concepts",
+          "ai": {
+            "title": "Mga Konsepto sa Ratio at Proportion",
+            "content": "📖 Kahulugan\nLimang konsepto: writing, simplifying, identifying proportions, solving, at partitive.\n\n💡 Simpleng Paliwanag\nBawat isa ay may tamang paraan. Ang simplifying ay GCF; ang solving ay cross multiplication; ang partitive ay total ÷ sum of ratios.\n\n⚠️ Dapat Tandaan\nAng cross multiplication ay (a/b = c/d) → ad = bc.",
+            "prompt": "Explain the five key concepts in ratios and proportions."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Writing Ratios:",
+              "text": "A classroom has 12 boys and 16 girls. Ratio of boys to girls: 12:16. The ratio in simplest form: 12:16 = 3:4.",
+              "ai": {
+                "title": "Writing Ratios",
+                "content": "📖 Kahulugan\nAng ratio ay sinusulat sa colon form (12:16) o fraction form (12/16).\n\n💡 Simpleng Paliwanag\nAng 12:16 ay nagiging 3:4 kapag pinasimple (divide both by 4).\n\n⚠️ Dapat Tandaan\nAng order ay mahalaga: boys:girls = 12:16, hindi 16:12.",
+                "prompt": "Explain how to write and simplify ratios with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "2. Simplifying Ratios:",
+              "text": "Divide all terms of the ratio by their Greatest Common Factor (GCF). 18:24 — GCF is 6 — 18÷6 : 24÷6 = 3:4.",
+              "ai": {
+                "title": "Simplifying Ratios",
+                "content": "📖 Kahulugan\nPara i-simplify ang ratio, i-divide ang lahat ng terms sa GCF.\n\n💡 Simpleng Paliwanag\nGCF ng 18 at 24 ay 6. Kaya 18:24 → 3:4.\n\n⚠️ Dapat Tandaan\nHanapin ang GCF ng lahat ng terms bago mag-divide.",
+                "prompt": "Explain how to simplify ratios using GCF with examples."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "3. Proportion:",
+              "text": "Two ratios are proportional when they have the same value. 2:4 = 3:6 — both ratios are equivalent to 1:2.",
+              "ai": {
+                "title": "Proportion",
+                "content": "📖 Kahulugan\nAng proportion ay equation na nagsasabi na pareho ang value ng dalawang ratio.\n\n💡 Simpleng Paliwanag\n2:4 = 3:6 dahil pareho silang 1:2 kapag pinasimple.\n\n⚠️ Dapat Tandaan\nAng proportion ay may equal sign; ang ratio ay wala.",
+                "prompt": "Explain how to identify proportional ratios with examples."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "4. Solving Proportions:",
+              "text": "Use cross multiplication to find the missing value. 2/3 = x/12 — cross multiply: 3x = 24 — x = 8.",
+              "ai": {
+                "title": "Solving Proportions",
+                "content": "📖 Kahulugan\nPara hanapin ang missing value, gamitin ang cross multiplication.\n\n💡 Simpleng Paliwanag\n2/3 = x/12 → 3 × x = 2 × 12 → 3x = 24 → x = 8.\n\n⚠️ Dapat Tandaan\nI-multiply ang numerator ng isang side sa denominator ng kabilang side.",
+                "prompt": "Explain how to solve proportions using cross multiplication with step-by-step examples."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "5. Partitive Proportion:",
+              "text": "This involves dividing a total amount into shares based on a given ratio. Example: Divide ₱1,000 in the ratio 2:3. Step 1: Add the ratio terms (2+3=5). Step 2: Divide the total amount by 5 (₱1,000÷5=₱200). Step 3: Multiply each ratio term by ₱200. First share: 2×200=₱400. Second share: 3×200=₱600. Final Answer: ₱400 and ₱600.",
+              "ai": {
+                "title": "Partitive Proportion",
+                "content": "📖 Kahulugan\nAng partitive proportion ay paghahati ng total base sa isang ratio.\n\n💡 Simpleng Paliwanag\nHakbang: (1) Add ratio terms (2+3=5). (2) Total ÷ sum (1000÷5=200). (3) Multiply each term (2×200=400; 3×200=600).\n\n⚠️ Dapat Tandaan\nLaging i-add muna ang ratio terms bago mag-divide ng total.",
+                "prompt": "Explain how to solve partitive proportion problems step by step with examples."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Word Problems",
+      "topic_order": 4,
+      "keywords": [
+        "word problems",
+        "suliraning pang-matematika",
+        "age problem",
+        "distance",
+        "rate",
+        "time",
+        "average"
+      ],
+      "ai": {
+        "title": "Gabay sa Word Problems",
+        "content": "📖 Kahulugan\nAng word problems ay math exercises na nakasulat sa sentences o story form.\n\n🔍 Breakdown\n• Steps: Read, Identify Given, Identify Asked, Choose Operation, Solve, Check\n• Keywords table\n• Examples: Age, Distance, Average\n\n💡 Simpleng Paliwanag\nHindi sapat na makita ang numero — kailangan intindihin ang buong sitwasyon. Basahin muna bago mag-compute.\n\n📦 Halimbawa\n• Age: Maria is 5 years older than Juan, sum = 25 → Juan = 10, Maria = 15\n• Distance: D = R × T = 60 × 3.5 = 210 km\n• Average: (80+90+100)/3 = 90\n\n⭐ Bakit Mahalaga Ito?\nAng word problems ang pinaka-praktikal na application ng math sa totoong buhay at sa CSE.\n\n⚠️ Dapat Tandaan\nAng keywords ay clues, hindi absolute rules. Basahin ang buong sentence — may \"less than\" na nagbabago ng order ng subtraction.\n\n🎯 Exam Tip\nBago mag-compute, isulat kung ano ang given at ano ang hinahanap. Mas malinaw, mas mabilis.",
+        "prompt": "Explain word problems in simple Tagalog, including steps, keywords, and examples of age, distance, and average problems."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Ano ang Word Problems?",
+            "content": "📖 Kahulugan\nAng word problems ay math exercises sa sentence/story form na nangangailangan ng analysis bago mag-compute.\n\n💡 Simpleng Paliwanag\nKailangang intindihin ang sitwasyon, tukuyin ang given at hinahanap, pumili ng operation, at mag-solve.\n\n⚠️ Dapat Tandaan\nHuwag agad mag-compute pag nakita ang numero. Intindihin muna ang buong problema.",
+            "prompt": "Explain what word problems are and why they require careful reading."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Word problems are mathematical exercises presented in sentences or story form. They require the ability to understand written information, identify given quantities, determine what is being asked, select the correct mathematical operation, create an equation when necessary, and solve the problem logically.",
+              "ai": {
+                "title": "Kahulugan ng Word Problems",
+                "content": "📖 Kahulugan\nAng word problems ay math exercises sa story form. Kailangan mong intindihin, i-identify ang given, at mag-solve.\n\n💡 Simpleng Paliwanag\nHindi lang numero ang titingnan mo — kailangan mong maintindihan ang buong kuwento para pumili ng tamang operation.\n\n⚠️ Dapat Tandaan\nAng tamang sagot ay nagsisimula sa tamang pag-intindi, hindi sa tamang pag-compute.",
+                "prompt": "Explain this definition of word problems with examples of what makes them challenging."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Steps in Solving Word Problems",
+          "ai": {
+            "title": "Mga Hakbang sa Pagsagot",
+            "content": "📖 Kahulugan\nAnim na hakbang: Read, Identify Given, Identify Asked, Choose Operation, Solve, Check.\n\n💡 Simpleng Paliwanag\nSunod-sunurin ang mga hakbang para hindi magulo. Ang pag-skip ng hakbang ay nagdudulot ng maling sagot.\n\n⚠️ Dapat Tandaan\nAng huling hakbang (Check) ay madalas nakakalimutan — pero ito ang nagpapatunay na tama ang sagot.",
+            "prompt": "Explain the six steps in solving word problems with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "Read and Understand:",
+              "text": "Read the problem carefully.",
+              "ai": {
+                "title": "Hakbang 1: Read",
+                "content": "Tanong: Bakit kailangang basahin nang mabuti ang problema?\nSagot: Para maintindihan ang buong sitwasyon at hindi magkamali sa operation.",
+                "prompt": "Explain why careful reading is the first step in solving word problems."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Identify the Given:",
+              "text": "Determine the numbers and information provided.",
+              "ai": {
+                "title": "Hakbang 2: Identify Given",
+                "content": "Tanong: Ano ang \"given\" sa word problem?\nSagot: Ito ang mga numerong ibinigay sa problema — halimbawa, ₱500 at 5 araw.",
+                "prompt": "Explain how to identify the given information in a word problem."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "Identify What Is Asked:",
+              "text": "Find out what value needs to be calculated.",
+              "ai": {
+                "title": "Hakbang 3: Identify Asked",
+                "content": "Tanong: Ano ang \"asked\" sa word problem?\nSagot: Ito ang hinahanap na value — halimbawa, \"magkano ang kabuuang kinita?\"",
+                "prompt": "Explain how to identify what is being asked in a word problem."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Choose the Operation:",
+              "text": "Determine whether to add, subtract, multiply, or divide.",
+              "ai": {
+                "title": "Hakbang 4: Choose Operation",
+                "content": "Tanong: Paano pipiliin ang tamang operation?\nSagot: Tingnan ang keywords (sum = add, difference = subtract, product = multiply, quotient = divide) at intindihin ang sitwasyon.",
+                "prompt": "Explain how to choose the correct mathematical operation in word problems."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "Solve:",
+              "text": "Perform the necessary mathematical calculations.",
+              "ai": {
+                "title": "Hakbang 5: Solve",
+                "content": "Tanong: Paano mag-solve nang tama?\nSagot: Isulat ang equation, tapos i-compute nang maingat. I-double check ang arithmetic.",
+                "prompt": "Explain how to perform the calculations accurately in word problems."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Check the Answer:",
+              "text": "Make sure the answer is reasonable and includes the correct unit.",
+              "ai": {
+                "title": "Hakbang 6: Check",
+                "content": "Tanong: Bakit kailangang i-check ang sagot?\nSagot: Para masigurong reasonable ito at may tamang unit (₱, km, etc.). Kung mali ang unit, malamang mali ang sagot.",
+                "prompt": "Explain why checking the answer is important and what to look for."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "heading": "Common Mathematical Keywords",
+          "ai": {
+            "title": "Mga Keyword sa Word Problems",
+            "content": "📖 Kahulugan\nAng keywords ay nagbibigay ng clue kung anong operation ang gagamitin.\n\n💡 Simpleng Paliwanag\nSum = addition, difference = subtraction, product = multiplication, quotient = division, is = equals.\n\n⚠️ Dapat Tandaan\nKeywords ay clues, hindi absolute rules. Basahin ang buong sentence — may \"less than\" na nagbabago ng order.",
+            "prompt": "Explain common mathematical keywords and how they map to operations."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "Sum, total, altogether:",
+              "text": "Addition (+)",
+              "ai": {
+                "title": "Keywords for Addition",
+                "content": "Tanong: Anong operation ang sum, total, altogether?\nSagot: Addition (+). Halimbawa: \"total sales\" = i-add lahat ng sales.",
+                "prompt": "Explain keywords that signal addition in word problems."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Difference, less, decreased by:",
+              "text": "Subtraction (−)",
+              "ai": {
+                "title": "Keywords for Subtraction",
+                "content": "Tanong: Anong operation ang difference, less, decreased by?\nSagot: Subtraction (−). Pero mag-ingat sa \"less than\" — nagbabago ito ng order.",
+                "prompt": "Explain keywords that signal subtraction and the 'less than' trap."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "Product, times, multiplied by:",
+              "text": "Multiplication (×)",
+              "ai": {
+                "title": "Keywords for Multiplication",
+                "content": "Tanong: Anong operation ang product, times, multiplied by?\nSagot: Multiplication (×). Halimbawa: \"5 times a number\" = 5 × n.",
+                "prompt": "Explain keywords that signal multiplication."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Quotient, divided by, per:",
+              "text": "Division (÷)",
+              "ai": {
+                "title": "Keywords for Division",
+                "content": "Tanong: Anong operation ang quotient, divided by, per?\nSagot: Division (÷). Halimbawa: \"per day\" = i-divide sa bilang ng araw.",
+                "prompt": "Explain keywords that signal division."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "Is, equals, results in:",
+              "text": "Equal sign (=)",
+              "ai": {
+                "title": "Keywords for Equals",
+                "content": "Tanong: Anong ibig sabihin ng is, equals, results in?\nSagot: Equal sign (=). Ito ang naghihiwalay sa equation.",
+                "prompt": "Explain keywords that signal an equal sign in equations."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "heading": "English Examples",
+          "ai": {
+            "title": "Mga Halimbawa ng Word Problems",
+            "content": "📖 Kahulugan\nTatlong uri: Age, Distance, at Average problems.\n\n💡 Simpleng Paliwanag\nAng age problem ay may variable na edad; ang distance ay D = R × T; ang average ay sum ÷ count.\n\n⚠️ Dapat Tandaan\nI-check ang unit ng sagot (taon, km, score) para masigurong tama.",
+            "prompt": "Explain age, distance, and average word problems with solutions."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Age Problem:",
+              "text": "Maria is 5 years older than Juan. The sum of their ages is 25. How old is Juan? Let x = Juan's age. Maria's age = x + 5. Equation: x + (x + 5) = 25 → 2x + 5 = 25 → 2x = 20 → x = 10. Final Answer: Juan is 10 years old, and Maria is 15 years old.",
+              "ai": {
+                "title": "Age Problem",
+                "content": "📖 Kahulugan\nAng age problem ay may variable na edad (x) at relasyon (5 years older).\n\n💡 Simpleng Paliwanag\nx = Juan's age; x + 5 = Maria's age. Sum = 25, kaya x + (x + 5) = 25. Solve: 2x + 5 = 25 → 2x = 20 → x = 10.\n\n⚠️ Dapat Tandaan\nI-check: Juan = 10, Maria = 15. 10 + 15 = 25 ✓",
+                "prompt": "Explain how to solve this age problem step by step with variable setup."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "2. Distance, Rate, and Time Problem:",
+              "text": "A car travels at a constant speed of 60 km/h for 3.5 hours. How far does it travel? Formula: D = R × T. Solution: D = 60 × 3.5 = 210 km. Final Answer: The car travels 210 kilometers.",
+              "ai": {
+                "title": "Distance Problem",
+                "content": "📖 Kahulugan\nFormula: D = R × T (Distance = Rate × Time).\n\n💡 Simpleng Paliwanag\nRate = 60 km/h, Time = 3.5 h. D = 60 × 3.5 = 210 km.\n\n⚠️ Dapat Tandaan\nTiyakin na pareho ang unit ng rate at time (km/h at hours).",
+                "prompt": "Explain how to solve this distance-rate-time problem step by step."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "3. Average Problem:",
+              "text": "A student gets scores of 80, 90, and 100 in three examinations. What is the average? Formula: Average = Sum of Values / Number of Values. Solution: (80 + 90 + 100) / 3 = 270 / 3 = 90. Final Answer: The average score is 90.",
+              "ai": {
+                "title": "Average Problem",
+                "content": "📖 Kahulugan\nFormula: Average = Sum ÷ Count.\n\n💡 Simpleng Paliwanag\nSum = 80 + 90 + 100 = 270. Count = 3. Average = 270 ÷ 3 = 90.\n\n⚠️ Dapat Tandaan\nHuwag kalimutang i-divide sa tamang count — 3 exam scores, hindi 2.",
+                "prompt": "Explain how to solve this average problem step by step."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Numerical Ability",
+      "subject_icon": "🔢",
+      "topic": "Tables and Graphs",
+      "topic_order": 5,
+      "keywords": [
+        "tables",
+        "graphs",
+        "bar graph",
+        "line graph",
+        "pie chart",
+        "histogram",
+        "data interpretation"
+      ],
+      "ai": {
+        "title": "Gabay sa Tables and Graphs",
+        "content": "📖 Kahulugan\nAng tables at graphs ay paraan ng pag-organize at pag-interpret ng numerical data.\n\n🔍 Breakdown\n• Table — rows at columns\n• Bar Graph — rectangular bars\n• Line Graph — connected points\n• Pie Chart — circular sections\n• Histogram — adjoining bars (frequency)\n\n💡 Simpleng Paliwanag\nAng table ay listahan; ang graph ay biswal na presentasyon. Ang bawat uri ay may tamang gamit — bar para sa comparison, line para sa trend, pie para sa parts of whole.\n\n📦 Halimbawa\n• Table: Jan ₱15,000; Feb ₱20,000; Mar ₱25,000 → Average = ₱20,000\n• Bar: Section C (50) ang highest\n• Line: Wednesday (32°C) ang highest\n• Pie: 40% of ₱30,000 = ₱12,000\n\n⭐ Bakit Mahalaga Ito?\nMaraming CSE questions ang nagtatanong ng interpretasyon ng tables at graphs.\n\n⚠️ Dapat Tandaan\n• Basahin ang title at labels.\n• Tiyakin ang unit (₱, °C, students).\n• Hanapin ang highest at lowest values.\n\n🎯 Exam Tip\nSa pie chart, i-multiply ang percentage sa total para makuha ang halaga. Sa bar/line graph, i-compare ang heights para malaman ang highest/lowest.",
+        "prompt": "Explain tables and graphs in simple Tagalog, covering bar, line, pie, and histogram, with interpretation tips for CSE."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Ano ang Tables at Graphs?",
+            "content": "📖 Kahulugan\nAng tables at graphs ay paraan ng pag-organize at pag-present ng data.\n\n💡 Simpleng Paliwanag\nAng table ay rows at columns; ang graph ay biswal na representasyon.\n\n⚠️ Dapat Tandaan\nNakakatulong ang mga ito upang mabilis na makita ang comparison, pattern, at trend.",
+            "prompt": "Explain what tables and graphs are and why they are used."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Tables and graphs are methods of organizing, presenting, and interpreting numerical information or data. They help readers understand comparisons, patterns, changes, and relationships between different sets of information. Tables display information in rows and columns, while graphs present data visually to make comparisons and trends easier to understand.",
+              "ai": {
+                "title": "Kahulugan ng Tables at Graphs",
+                "content": "📖 Kahulugan\nAng tables at graphs ay nag-o-organize at nag-present ng numerical data.\n\n💡 Simpleng Paliwanag\nNakakatulong sila upang mabilis na makita ang comparison, pattern, at trend — hindi mo na kailangang basahin lahat ng numero.\n\n⚠️ Dapat Tandaan\nAng table ay text-based; ang graph ay visual. Pareho silang nagpapakita ng data sa madaling maintindihang paraan.",
+                "prompt": "Explain this definition of tables and graphs with examples of when to use each."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Types of Tables and Graphs",
+          "ai": {
+            "title": "Mga Uri ng Graphs",
+            "content": "📖 Kahulugan\nLimang uri: table, bar graph, line graph, pie chart, histogram.\n\n💡 Simpleng Paliwanag\nAng bawat uri ay may tamang gamit: table para sa raw data, bar para sa comparison, line para sa trend, pie para sa parts, histogram para sa frequency.\n\n⚠️ Dapat Tandaan\nHuwag pagkamalain ang bar graph (categories) at histogram (intervals).",
+            "prompt": "Explain the five types of tables and graphs with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Table:",
+              "text": "Organizes information using rows and columns. Example: A table showing the monthly sales of a store.",
+              "ai": {
+                "title": "Table",
+                "content": "📖 Kahulugan\nAng table ay nag-o-organize ng info sa rows at columns.\n\n💡 Simpleng Paliwanag\nParang listahan na may header — madaling tingnan ang data.\n\n⚠️ Dapat Tandaan\nHanapin ang title at labels para malaman kung ano ang data.",
+                "prompt": "Explain how tables organize information with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "2. Bar Graph:",
+              "text": "Uses rectangular bars to compare quantities between different categories. Example: Comparing the number of students in different sections.",
+              "ai": {
+                "title": "Bar Graph",
+                "content": "📖 Kahulugan\nAng bar graph ay gumagamit ng rectangular bars para i-compare ang quantities.\n\n💡 Simpleng Paliwanag\nMas mataas ang bar, mas malaki ang value.\n\n⚠️ Dapat Tandaan\nTingnan ang y-axis para sa scale at units.",
+                "prompt": "Explain how bar graphs work and how to read them."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "3. Line Graph:",
+              "text": "Uses connected points or lines to show changes or trends over time. Example: Tracking temperature changes throughout the week.",
+              "ai": {
+                "title": "Line Graph",
+                "content": "📖 Kahulugan\nAng line graph ay nagpapakita ng changes/trends over time gamit ang connected points.\n\n💡 Simpleng Paliwanag\nAng pataas na linya = pagtaas; pababa = pagbaba.\n\n⚠️ Dapat Tandaan\nAng x-axis ay kadalasang time (araw, buwan, taon).",
+                "prompt": "Explain how line graphs show trends over time."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "4. Pie Chart:",
+              "text": "Uses a circular graph divided into sections to represent parts of a whole, usually expressed in percentages. Example: Showing how a family divides its monthly budget.",
+              "ai": {
+                "title": "Pie Chart",
+                "content": "📖 Kahulugan\nAng pie chart ay circular graph na hinati sa sections para ipakita ang parts of a whole.\n\n💡 Simpleng Paliwanag\nAng buong pie ay 100%. Ang bawat slice ay isang percentage ng total.\n\n⚠️ Dapat Tandaan\nI-multiply ang % sa total para makuha ang exact value.",
+                "prompt": "Explain how pie charts represent parts of a whole."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "5. Histogram:",
+              "text": "Uses adjoining bars to show the frequency distribution of numerical data grouped into intervals. Example: Showing how many students belong to different examination score ranges.",
+              "ai": {
+                "title": "Histogram",
+                "content": "📖 Kahulugan\nAng histogram ay adjoining bars na nagpapakita ng frequency distribution sa intervals.\n\n💡 Simpleng Paliwanag\nParang bar graph pero continuous ang data (intervals tulad ng 70-79, 80-89).\n\n⚠️ Dapat Tandaan\nWalang space between bars — continuous ang data.",
+                "prompt": "Explain histograms and how they differ from bar graphs."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "heading": "English Examples",
+          "ai": {
+            "title": "Mga Halimbawa ng Data Interpretation",
+            "content": "📖 Kahulugan\nApat na halimbawa: table, bar graph, line graph, pie chart.\n\n💡 Simpleng Paliwanag\nBawat isa ay may tamang formula: table = average; pie = % × total.\n\n⚠️ Dapat Tandaan\nBasahin muna ang title at labels bago mag-compute.",
+            "prompt": "Explain these four data interpretation examples with solutions."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Table Interpretation:",
+              "text": "A store records: January ₱15,000; February ₱20,000; March ₱25,000. What is the average monthly sale? Solution: (15,000 + 20,000 + 25,000) / 3 = 60,000 / 3 = ₱20,000. Final Answer: ₱20,000.",
+              "ai": {
+                "title": "Table Interpretation",
+                "content": "Tanong: Paano nakuha ang average na ₱20,000?\nSagot: Sum = 15,000 + 20,000 + 25,000 = 60,000. Divide by 3 months = ₱20,000.",
+                "prompt": "Explain how to compute the average monthly sale from this table."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "2. Bar Graph Interpretation:",
+              "text": "Section A: 30 students; Section B: 40 students; Section C: 50 students. Which section has the highest number of students? Answer: Section C, with 50 students.",
+              "ai": {
+                "title": "Bar Graph Interpretation",
+                "content": "Tanong: Aling section ang may pinakamaraming estudyante?\nSagot: Section C (50), kasi pinakamataas ang bar nito.",
+                "prompt": "Explain how to identify the highest value from this bar graph data."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "3. Line Graph Interpretation:",
+              "text": "Temperatures: Monday 28°C; Tuesday 30°C; Wednesday 32°C; Thursday 29°C. What is the highest temperature recorded? Answer: 32°C on Wednesday.",
+              "ai": {
+                "title": "Line Graph Interpretation",
+                "content": "Tanong: Anong araw ang pinakamainit?\nSagot: Miyerkules (32°C) — pinakamataas na point sa line graph.",
+                "prompt": "Explain how to find the highest temperature from this line graph data."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "4. Pie Chart Interpretation:",
+              "text": "A family's monthly budget is ₱30,000, and 40% is allocated for food. How much is spent on food? Solution: ₱30,000 × 0.40 = ₱12,000. Final Answer: ₱12,000.",
+              "ai": {
+                "title": "Pie Chart Interpretation",
+                "content": "Tanong: Magkano ang para sa food kung 40% ng ₱30,000?\nSagot: 30,000 × 0.40 = ₱12,000.",
+                "prompt": "Explain how to compute the exact amount from a pie chart percentage."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Analytical Ability",
+      "subject_icon": "🧠",
+      "topic": "Number Series",
+      "topic_order": 1,
+      "keywords": [
+        "number series",
+        "arithmetic",
+        "geometric",
+        "alternating",
+        "square numbers",
+        "cube numbers",
+        "pattern",
+        "serye"
+      ],
+      "ai": {
+        "title": "Gabay sa Number Series",
+        "content": "📖 Kahulugan\nAng number series ay sunod-sunod na hanay ng mga numero na sumusunod sa isang partikular na pattern o rule. Ang gawain ay tukuyin kung paano nagbabago ang bawat numero para mahanap ang nawawala o susunod na numero.\n\n🔍 Breakdown\nMga karaniwang pattern:\n• Arithmetic Progression — constant addition/subtraction\n• Geometric Progression — constant multiplication/division\n• Alternating Series — dalawang pattern na salitan\n• Square Numbers — 1, 4, 9, 16, 25...\n• Cube Numbers — 1, 8, 27, 64...\n• Increasing Difference — +1, +2, +3, +4...\n\n💡 Simpleng Paliwanag\nIsipin mong detective ka — kailangan mong hanapin ang \"pattern\" ng mga numero. Tingnan ang pagitan ng bawat isa. Kung pare-pareho ang dagdag, arithmetic ito. Kung dumarami, geometric. Kung may special (squares, cubes), i-check mo yun.\n\n📦 Halimbawa\n• Arithmetic: 2, 5, 8, 11 → next = 14 (+3)\n• Geometric: 3, 6, 12, 24 → next = 48 (×2)\n• Alternating: 2, 5, 4, 10, 6, 15 → next = 8\n• Squares: 1, 4, 9, 16, 25 → next = 36 (6²)\n• Cubes: 1, 8, 27, 64 → next = 125 (5³)\n\n⭐ Bakit Mahalaga Ito?\nIsa ito sa pinakamadalas na uri ng tanong sa CSE Analytical Ability. Madaling makakuha ng puntos dito kung kabisado mo ang patterns.\n\n⚠️ Dapat Tandaan\nHuwag agad mag-assume na addition lang. I-check din: may alternating pattern ba? Perfect squares/cubes ba? Increasing ba ang differences?\n\n🎯 Exam Tip\nSa number series, unahin ang differences between consecutive numbers. Kung may pattern agad, arithmetic. Kung wala, i-check ang ratios. Kung wala pa rin, hanapin ang squares, cubes, o double patterns.",
+        "prompt": "Explain number series patterns in simple Tagalog — arithmetic, geometric, alternating, square, cube, and increasing difference — with examples and CSE exam tips."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng Number Series",
+            "content": "📖 Kahulugan\nAng number series ay ordered sequence ng mga numero na may specific pattern.\n\n💡 Simpleng Paliwanag\nLayunin mo: identify the relationship between consecutive numbers para malaman ang nawawala o susunod.\n\n⚠️ Dapat Tandaan\nCommon patterns: addition, subtraction, multiplication, division, alternating, squares, at cubes.",
+            "prompt": "Explain what a number series is with examples of different patterns."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "A number series is an ordered sequence of numbers that follows a specific mathematical rule or pattern. The objective is to identify the relationship between consecutive numbers and determine the missing or next number in the sequence. Common patterns include addition, subtraction, multiplication, division, alternating operations, and square or cube numbers.",
+              "ai": {
+                "title": "Ano ang Number Series?",
+                "content": "📖 Kahulugan\nAng number series ay ordered sequence ng mga numero na sumusunod sa isang rule o pattern.\n\n💡 Simpleng Paliwanag\nAng gawain mo ay tukuyin ang pattern sa pagitan ng consecutive numbers para mahanap ang susunod.\n\n⚠️ Dapat Tandaan\nKaraniwang patterns: addition, subtraction, multiplication, division, alternating, squares, at cubes.",
+                "prompt": "Explain this definition of number series with examples of each pattern type."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Types of Number Series",
+          "ai": {
+            "title": "Mga Uri ng Number Series",
+            "content": "📖 Kahulugan\nAnim na karaniwang uri ng number series na lumalabas sa CSE.\n\n💡 Simpleng Paliwanag\nBawat isa ay may unique na pattern — arithmetic (constant add), geometric (constant multiply), alternating (dalawa-salitan), squares, cubes, at increasing difference.\n\n⚠️ Dapat Tandaan\nPag hindi mo makita ang pattern sa first pass, i-check ang differences muna, tapos ratios, tapos squares/cubes.",
+            "prompt": "Explain the six main types of number series with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Arithmetic Progression:",
+              "text": "A sequence in which the same number is repeatedly added or subtracted.",
+              "ai": {
+                "title": "Arithmetic Progression",
+                "content": "📖 Kahulugan\nAng arithmetic progression ay sequence kung saan constant ang dinadagdag (o binabawas) sa bawat step.\n\n💡 Simpleng Paliwanag\nKung pareho ang pagitan ng lahat ng number, arithmetic ito.\n\n⚠️ Dapat Tandaan\nHanapin ang common difference: (term2 − term1) = (term3 − term2) = ...",
+                "prompt": "Explain arithmetic progression with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Find the next number: 2, 5, 8, 11, ? Solution: 2+3=5, 5+3=8, 8+3=11, 11+3=14. Answer: 14",
+              "ai": {
+                "title": "Halimbawa ng Arithmetic",
+                "content": "Tanong: Paano naging 14 ang susunod?\nSagot: Pare-pareho ang dagdag na +3 sa bawat term. Kaya 11 + 3 = 14.",
+                "prompt": "Explain step by step how to find the next number in the series 2, 5, 8, 11."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Geometric Progression:",
+              "text": "A sequence in which each number is multiplied or divided by the same value.",
+              "ai": {
+                "title": "Geometric Progression",
+                "content": "📖 Kahulugan\nAng geometric progression ay sequence kung saan constant ang multiplier (o divisor) sa bawat step.\n\n💡 Simpleng Paliwanag\nKung doble o triple ang bawat term, geometric ito.\n\n⚠️ Dapat Tandaan\nHanapin ang common ratio: term2 ÷ term1 = term3 ÷ term2 = ...",
+                "prompt": "Explain geometric progression with examples."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Find the next number: 3, 6, 12, 24, ? Solution: Each number is multiplied by 2. 24×2 = 48. Answer: 48",
+              "ai": {
+                "title": "Halimbawa ng Geometric",
+                "content": "Tanong: Paano naging 48 ang susunod?\nSagot: Bawat term ay dinodoble (×2). Kaya 24 × 2 = 48.",
+                "prompt": "Explain step by step how to find the next number in the series 3, 6, 12, 24."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "3. Alternating Number Series:",
+              "text": "A sequence that follows two or more different patterns alternately.",
+              "ai": {
+                "title": "Alternating Series",
+                "content": "📖 Kahulugan\nAng alternating series ay may dalawa o higit pang pattern na salitan.\n\n💡 Simpleng Paliwanag\nIhiwalay ang odd positions at even positions, tapos tingnan ang pattern ng bawat isa.\n\n⚠️ Dapat Tandaan\nHindi ito regular sequence — kailangang i-split ang series para makita ang dalawang pattern.",
+                "prompt": "Explain alternating number series with examples."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Example:",
+              "indent": 1,
+              "text": "2, 5, 4, 10, 6, 15, ? Solution: Odd positions: 2, 4, 6, 8. Even positions: 5, 10, 15. Answer: 8",
+              "ai": {
+                "title": "Halimbawa ng Alternating",
+                "content": "Tanong: Paano naging 8 ang susunod?\nSagot: Odd positions (1st, 3rd, 5th, 7th): 2, 4, 6, 8 (+2). Even positions (2nd, 4th, 6th): 5, 10, 15 (+5). Kaya ang 7th term ay 8.",
+                "prompt": "Explain step by step how to solve this alternating series."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "4. Square Number Series:",
+              "text": "A sequence that follows the pattern of perfect squares.",
+              "ai": {
+                "title": "Square Number Series",
+                "content": "📖 Kahulugan\nAng square number series ay galing sa perfect squares: 1², 2², 3², 4², 5²...\n\n💡 Simpleng Paliwanag\nAng sequence ay 1, 4, 9, 16, 25, 36, 49, 64, 81, 100...\n\n⚠️ Dapat Tandaan\nDifference pattern ng squares: +3, +5, +7, +9, +11 (odd numbers na increasing).",
+                "prompt": "Explain square number series with examples."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Example:",
+              "indent": 1,
+              "text": "1, 4, 9, 16, 25, ? Solution: 1², 2², 3², 4², 5², 6². 6² = 36. Answer: 36",
+              "ai": {
+                "title": "Halimbawa ng Square Series",
+                "content": "Tanong: Paano naging 36 ang susunod?\nSagot: Ang sequence ay squares ng 1, 2, 3, 4, 5, 6. Kaya 6² = 36.",
+                "prompt": "Explain step by step how to find the next square number."
+              }
+            },
+            {
+              "id": "p9",
+              "label": "5. Cube Number Series:",
+              "text": "A sequence that follows the pattern of perfect cubes.",
+              "ai": {
+                "title": "Cube Number Series",
+                "content": "📖 Kahulugan\nAng cube number series ay galing sa perfect cubes: 1³, 2³, 3³, 4³, 5³...\n\n💡 Simpleng Paliwanag\nAng sequence ay 1, 8, 27, 64, 125, 216...\n\n⚠️ Dapat Tandaan\nAng difference ng cubes: +7, +19, +37, +61 — hindi regular, kaya siguraduhing cube talaga ang pattern.",
+                "prompt": "Explain cube number series with examples."
+              }
+            },
+            {
+              "id": "p10",
+              "label": "Example:",
+              "indent": 1,
+              "text": "1, 8, 27, 64, ? Solution: 1³, 2³, 3³, 4³, 5³. 5³ = 125. Answer: 125",
+              "ai": {
+                "title": "Halimbawa ng Cube Series",
+                "content": "Tanong: Paano naging 125 ang susunod?\nSagot: Ang sequence ay cubes ng 1, 2, 3, 4, 5. Kaya 5³ = 125.",
+                "prompt": "Explain step by step how to find the next cube number."
+              }
+            },
+            {
+              "id": "p11",
+              "label": "6. Increasing Difference Series:",
+              "text": "A sequence in which the differences between consecutive numbers follow an increasing pattern.",
+              "ai": {
+                "title": "Increasing Difference Series",
+                "content": "📖 Kahulugan\nAng increasing difference series ay may pattern sa differences — bawat difference ay tumataas.\n\n💡 Simpleng Paliwanag\nAng differences ay nag-iincrease: +1, +2, +3, +4, +5...\n\n⚠️ Dapat Tandaan\nHindi constant ang difference — kaya kailangan mong hanapin ang pattern ng differences mismo.",
+                "prompt": "Explain increasing difference series with examples."
+              }
+            },
+            {
+              "id": "p12",
+              "label": "Example:",
+              "indent": 1,
+              "text": "2, 3, 5, 8, 12, ? Solution: Differences: +1, +2, +3, +4. Next difference is +5. 12+5 = 17. Answer: 17",
+              "ai": {
+                "title": "Halimbawa ng Increasing Difference",
+                "content": "Tanong: Paano naging 17 ang susunod?\nSagot: Ang differences ay +1, +2, +3, +4 — tumataas ng 1 bawat step. Kaya next difference ay +5: 12 + 5 = 17.",
+                "prompt": "Explain step by step how to solve this increasing difference series."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Analytical Ability",
+      "subject_icon": "🧠",
+      "topic": "Logic",
+      "topic_order": 2,
+      "keywords": [
+        "logic",
+        "syllogism",
+        "blood relations",
+        "direction sense",
+        "seating arrangement",
+        "coding decoding",
+        "deductive",
+        "inductive",
+        "lohika"
+      ],
+      "ai": {
+        "title": "Gabay sa Logic (Lohika)",
+        "content": "📖 Kahulugan\nAng logic ay ang kakayahang mag-isip nang malinaw, magsuri ng impormasyon, at makabuo ng tamang konklusyon gamit ang mga ibinigay na pahayag.\n\n🔍 Breakdown\nAnim na uri ng logical reasoning:\n• Syllogism — conclusion mula sa statements\n• Blood Relations — family relationships\n• Direction Sense — directions at movements\n• Seating Arrangement — positioning\n• Coding and Decoding — letter/number patterns\n• Deductive at Inductive Reasoning — general to specific at vice versa\n\n💡 Simpleng Paliwanag\nHindi ito hula — kailangan mong gamitin ang mga detalye at relasyon para makuha ang lohikal na sagot. Kung may given information, yun lang ang gamitin. Huwag mag-imbento ng sariling assumptions.\n\n📦 Halimbawa\n• Syllogism: All cats are animals. All animals need water. → All cats need water.\n• Blood Relations: John is son of Mary's brother → John is Mary's nephew.\n• Coding: CAT → DBU (bawat letter +1) → DOG → EPH\n\n⭐ Bakit Mahalaga Ito?\nMalaking bahagi ng CSE Analytical Ability. Sinusukat nito ang iyong critical thinking at attention to detail.\n\n⚠️ Dapat Tandaan\nGamitin lamang ang impormasyong nasa problem. Huwag magdagdag ng sariling palagay na wala sa given.\n\n🎯 Exam Tip\nSa logic problems, isulat ang mga given sa bullet form at i-drawing (kung kailangan) para mas malinaw ang relationships.",
+        "prompt": "Explain logical reasoning types in simple Tagalog — syllogism, blood relations, direction sense, seating, coding, deductive/inductive — with examples and CSE traps."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng Logic",
+            "content": "📖 Kahulugan\nAng logic ay kakayahang mag-isip nang malinaw at gumawa ng tamang konklusyon base sa given information.\n\n💡 Simpleng Paliwanag\nSinusukat nito ang deductive reasoning (general → specific) at inductive reasoning (specific observations → general pattern).\n\n⚠️ Dapat Tandaan\nAng logic ay hindi hula — may basehan sa given statements.",
+            "prompt": "Explain what logic is and why it matters in exams."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Logic refers to the ability to think clearly, analyze information, recognize relationships, and draw reasonable conclusions based on given facts or statements. Logical reasoning questions measure a person's ability to solve problems using deductive reasoning (applying general rules to specific situations), inductive reasoning (identifying general patterns from observations), and other forms of analytical thinking.",
+              "ai": {
+                "title": "Ano ang Logic?",
+                "content": "📖 Kahulugan\nAng logic ay kakayahang mag-isip nang malinaw at magbigay ng tamang konklusyon base sa facts.\n\n💡 Simpleng Paliwanag\nDalawang main approach: deductive (general → specific) at inductive (observations → general pattern).\n\n⚠️ Dapat Tandaan\nAng logic ay structured thinking — hindi basta hula o intuition.",
+                "prompt": "Explain this definition of logic with deductive and inductive examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Types of Logical Reasoning",
+          "ai": {
+            "title": "Mga Uri ng Logical Reasoning",
+            "content": "📖 Kahulugan\nAnim na uri: syllogism, blood relations, direction sense, seating arrangement, coding/decoding, deductive/inductive.\n\n💡 Simpleng Paliwanag\nBawat isa ay may unique approach. Ang syllogism ay tungkol sa validity ng conclusion; ang blood relations ay tungkol sa family tree; ang coding ay tungkol sa letter shifts.\n\n⚠️ Dapat Tandaan\nSa bawat uri, may tamang method — hindi basta hula.",
+            "prompt": "Explain the six types of logical reasoning with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Syllogism:",
+              "text": "A reasoning method that uses two or more statements to determine whether a conclusion logically follows.",
+              "ai": {
+                "title": "Syllogism",
+                "content": "📖 Kahulugan\nAng syllogism ay gumagamit ng dalawa o higit pang statements para tukuyin kung lohikal ang conclusion.\n\n💡 Simpleng Paliwanag\nRule of thumb: kung general statement → specific case, dapat mag-follow ang conclusion.\n\n⚠️ Dapat Tandaan\nHindi porke may valid form, true ang conclusion — kailangang true din ang premises.",
+                "prompt": "Explain syllogism with clear examples of valid and invalid reasoning."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Statement 1: All cats are animals. Statement 2: All animals need water. Conclusion: Therefore, all cats need water. Answer: The conclusion is logically valid.",
+              "ai": {
+                "title": "Halimbawa ng Syllogism",
+                "content": "Tanong: Bakit valid ang conclusion?\nSagot: Kung lahat ng cats ay animals, at lahat ng animals ay nangangailangan ng water — kung gayon, lahat ng cats ay nangangailangan ng water. Transitive property ito.",
+                "prompt": "Explain step by step why this syllogism is valid."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Blood Relations:",
+              "text": "Questions that test your ability to identify family relationships based on given information.",
+              "ai": {
+                "title": "Blood Relations",
+                "content": "📖 Kahulugan\nAng blood relations ay tungkol sa family ties — mother, father, sibling, uncle, aunt, nephew, niece, etc.\n\n💡 Simpleng Paliwanag\nI-drawing ang family tree para malinaw ang relationships. I-identify ang gender at generation ng bawat tao.\n\n⚠️ Dapat Tandaan\nMag-ingat sa gender pronouns (he/she) — malaking clue ito sa relasyon.",
+                "prompt": "Explain how to solve blood relation problems with a family tree."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Example:",
+              "indent": 1,
+              "text": "John is the son of Mary's brother. How is John related to Mary? Solution: Mary's brother is John's father. John is the son of Mary's brother. Therefore, John is Mary's nephew. Answer: Nephew",
+              "ai": {
+                "title": "Halimbawa ng Blood Relation",
+                "content": "Tanong: Paano naging nephew si John ni Mary?\nSagot: Ang brother ni Mary ay ama ni John. Kaya si John ay anak ng kapatid ni Mary = pamangkin (nephew).",
+                "prompt": "Explain step by step how to solve this blood relation problem."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "3. Direction Sense:",
+              "text": "Questions that test your ability to determine directions and movements.",
+              "ai": {
+                "title": "Direction Sense",
+                "content": "📖 Kahulugan\nAng direction sense ay tungkol sa pag-navigate — North, South, East, West, Northeast, Northwest, Southeast, Southwest.\n\n💡 Simpleng Paliwanag\nI-drawing ang path sa papel. I-set ang North sa taas, South sa baba, East sa kanan, West sa kaliwa.\n\n⚠️ Dapat Tandaan\nI-check ang \"from\" — mula sa starting point ba o mula sa current position ang hinihingi?",
+                "prompt": "Explain direction sense problems with a clear method."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A person walks 5 meters north, then 3 meters east. In which direction is the person from the starting point? Solution: The person is now northeast of the starting point. Answer: Northeast",
+              "ai": {
+                "title": "Halimbawa ng Direction",
+                "content": "Tanong: Bakit Northeast ang sagot?\nSagot: Pahilaga 5m, tapos pasilangan 3m. From starting point, nasa northeast direction siya — combination ng North at East.",
+                "prompt": "Explain step by step how to determine the direction in this problem."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "4. Seating Arrangement:",
+              "text": "Questions that require arranging people or objects according to specific conditions.",
+              "ai": {
+                "title": "Seating Arrangement",
+                "content": "📖 Kahulugan\nAng seating arrangement ay tungkol sa positioning ng mga tao o bagay base sa given conditions.\n\n💡 Simpleng Paliwanag\nI-drawing ang row (o circle) at i-place ang bawat tao base sa clues. Start sa pinaka-specific clue.\n\n⚠️ Dapat Tandaan\nI-check ang left/right pag nakaharap sa iba — nag-iiba ito depende sa perspective.",
+                "prompt": "Explain seating arrangement problems with a clear method."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Ana, Ben, and Carlo are sitting in a row. Ana is on the left of Ben, and Carlo is on the right of Ben. Who is in the middle? Solution: Ana — Ben — Carlo. Answer: Ben",
+              "ai": {
+                "title": "Halimbawa ng Seating",
+                "content": "Tanong: Paano naging Ben ang nasa gitna?\nSagot: Si Ana ay nasa kaliwa ni Ben, si Carlo ay nasa kanan ni Ben. Kaya ang order: Ana-Ben-Carlo. Nasa gitna si Ben.",
+                "prompt": "Explain step by step how to solve this seating arrangement."
+              }
+            },
+            {
+              "id": "p9",
+              "label": "5. Coding and Decoding:",
+              "text": "Questions that involve changing letters, numbers, or words according to a specific rule.",
+              "ai": {
+                "title": "Coding and Decoding",
+                "content": "📖 Kahulugan\nAng coding at decoding ay tungkol sa patterns ng letters o numbers — shifts, reversals, substitutions.\n\n💡 Simpleng Paliwanag\nHanapin ang shift sa unang letter: A→B (+1), A→C (+2), A→Z (-1).\n\n⚠️ Dapat Tandaan\nKaraniwang patterns: +1, +2, -1, -2, reverse order, alternating shifts.",
+                "prompt": "Explain coding and decoding with letter shift examples."
+              }
+            },
+            {
+              "id": "p10",
+              "label": "Example:",
+              "indent": 1,
+              "text": "If CAT is coded as DBU, how is DOG coded using the same pattern? Solution: Each letter moves one position forward in the alphabet. D→E, O→P, G→H. Answer: EPH",
+              "ai": {
+                "title": "Halimbawa ng Coding",
+                "content": "Tanong: Paano naging EPH ang DOG?\nSagot: Ang pattern ay +1 sa bawat letter: C→D, A→B, T→U (CAT→DBU). Kaya D→E, O→P, G→H (DOG→EPH).",
+                "prompt": "Explain step by step how to decode DOG using the same pattern as CAT→DBU."
+              }
+            },
+            {
+              "id": "p11",
+              "label": "6. Deductive and Inductive Reasoning:",
+              "text": "Deductive Reasoning: Uses general information or rules to reach a specific conclusion. Inductive Reasoning: Uses repeated observations to identify a possible general pattern.",
+              "ai": {
+                "title": "Deductive vs Inductive",
+                "content": "📖 Kahulugan\nDeductive: general rule → specific conclusion. Inductive: specific observations → general conclusion.\n\n💡 Simpleng Paliwanag\nDeductive ay \"top-down\" (rule muna). Inductive ay \"bottom-up\" (observations muna).\n\n⚠️ Dapat Tandaan\nAng deductive ay certain (kung valid); ang inductive ay probable lang (hindi 100% sure).",
+                "prompt": "Explain deductive and inductive reasoning with examples."
+              }
+            },
+            {
+              "id": "p12",
+              "label": "Example (Deductive):",
+              "indent": 1,
+              "text": "All humans need oxygen. Mark is human. Therefore, Mark needs oxygen.",
+              "ai": {
+                "title": "Halimbawa ng Deductive",
+                "content": "Tanong: Bakit deductive ito?\nSagot: General rule (all humans need oxygen) → specific case (Mark is human → Mark needs oxygen).",
+                "prompt": "Explain why this is deductive reasoning."
+              }
+            },
+            {
+              "id": "p13",
+              "label": "Example (Inductive):",
+              "indent": 1,
+              "text": "The sun has risen every morning observed so far. Therefore, it is reasonable to expect the sun to rise tomorrow.",
+              "ai": {
+                "title": "Halimbawa ng Inductive",
+                "content": "Tanong: Bakit inductive ito?\nSagot: Repeated observations (araw-araw sumisikat ang araw) → general conclusion (aasahan nating sisikat ulit bukas). Pero probable lang, hindi 100% certain.",
+                "prompt": "Explain why this is inductive reasoning."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Analytical Ability",
+      "subject_icon": "🧠",
+      "topic": "Figures and Pattern Questions",
+      "topic_order": 3,
+      "keywords": [
+        "figures",
+        "patterns",
+        "rotation",
+        "reflection",
+        "mirror image",
+        "size progression",
+        "element counting",
+        "shape alternation",
+        "missing figure"
+      ],
+      "ai": {
+        "title": "Gabay sa Figures and Patterns",
+        "content": "📖 Kahulugan\nAng figures and pattern questions ay non-verbal reasoning — gumagamit ng hugis, simbolo, at visual arrangements.\n\n🔍 Breakdown\nPitong uri:\n• Rotation — umiikot sa angle\n• Reflection — mirror image\n• Size Progression — lumalaki/lumiliit\n• Element Counting — dumarami ang elements\n• Shape Alternation — paulit-ulit na shapes\n• Position Movement — gumagalaw sa grid\n• Missing Figure — tukuyin ang kulang\n\n💡 Simpleng Paliwanag\nObserbahan kung paano nagbabago ang figure sa bawat step. I-check: direksyon, size, bilang ng elements, position, at repetition.\n\n📦 Halimbawa\n• Rotation: UP → RIGHT → DOWN → LEFT (90° clockwise)\n• Mirror: → ← (horizontal reflection)\n• Counting: 1, 3, 5, 7 dots (+2)\n• Alternation: Circle → Square → Triangle → Circle → Square → Triangle\n\n⭐ Bakit Mahalaga Ito?\nTest ng visual-spatial intelligence at pattern recognition. Madalas sa CSE Analytical Ability.\n\n⚠️ Dapat Tandaan\nTingnan ang direksyon, laki, bilang ng elements, at posisyon. I-count ang lines, dots, at shapes.\n\n🎯 Exam Tip\nSa rotation, i-check kung clockwise o counterclockwise at gaano kalaki ang angle. Sa mirror, i-check kung horizontal o vertical ang flip.",
+        "prompt": "Explain figures and pattern questions in simple Tagalog — rotation, reflection, size, counting, alternation, position, and missing figure — with CSE exam tips."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng Figures and Patterns",
+            "content": "📖 Kahulugan\nNon-verbal reasoning na gumagamit ng hugis at visuals sa halip na words o numbers.\n\n💡 Simpleng Paliwanag\nSinusukat nito ang pattern recognition at spatial reasoning — kakayahang makita ang changes sa figures.\n\n⚠️ Dapat Tandaan\nHindi kailangan ng math — observation lang.",
+            "prompt": "Explain what figures and pattern questions are and why they are used."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Figures and pattern questions are forms of non-verbal reasoning that involve analyzing shapes, symbols, diagrams, and visual arrangements instead of relying mainly on words or numerical calculations. These questions test your ability to recognize visual patterns, identify changes in shapes, understand spatial relationships, and predict the next figure based on a specific rule.",
+              "ai": {
+                "title": "Ano ang Figures and Patterns?",
+                "content": "📖 Kahulugan\nAng figures and pattern questions ay non-verbal reasoning gamit ang shapes, symbols, at visual arrangements.\n\n💡 Simpleng Paliwanag\nSinusukat nito: pattern recognition, spatial relationships, at prediction ng susunod na figure.\n\n⚠️ Dapat Tandaan\nHindi kailangan ng computation — observation lang.",
+                "prompt": "Explain this definition with examples of visual pattern recognition."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Types of Figure Patterns",
+          "ai": {
+            "title": "Mga Uri ng Figure Patterns",
+            "content": "📖 Kahulugan\nPitong karaniwang pattern: rotation, reflection, size, counting, alternation, position, at missing figure.\n\n💡 Simpleng Paliwanag\nBawat isa ay may unique clue: rotation (angle), reflection (flip), size (grow/shrink), counting (add/remove), alternation (repeat), position (move), at missing (complete).\n\n⚠️ Dapat Tandaan\nI-check isa-isa ang bawat possibility — direksyon, laki, bilang, posisyon.",
+            "prompt": "Explain the seven types of figure patterns with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Rotation Pattern:",
+              "text": "A figure changes its direction or orientation by rotating at a consistent angle.",
+              "ai": {
+                "title": "Rotation Pattern",
+                "content": "📖 Kahulugan\nAng figure ay umiikot sa consistent angle (90°, 180°, 45°, etc.).\n\n💡 Simpleng Paliwanag\nI-check kung clockwise o counterclockwise ang ikot.\n\n⚠️ Dapat Tandaan\nAng 90° clockwise ay: UP → RIGHT → DOWN → LEFT.",
+                "prompt": "Explain rotation patterns with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A triangle points UP, then RIGHT, then DOWN. Which direction comes next? Solution: The triangle rotates 90° clockwise each time. UP → RIGHT → DOWN → LEFT. Answer: LEFT",
+              "ai": {
+                "title": "Halimbawa ng Rotation",
+                "content": "Tanong: Paano naging LEFT ang susunod?\nSagot: 90° clockwise rotation: UP → RIGHT → DOWN → LEFT. Sunod ng DOWN ay LEFT.",
+                "prompt": "Explain step by step how to solve this rotation pattern."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Reflection or Mirror Image:",
+              "text": "A figure is flipped horizontally or vertically, creating its mirror image.",
+              "ai": {
+                "title": "Reflection / Mirror Image",
+                "content": "📖 Kahulugan\nAng figure ay binaliktad (flip) — either horizontally (left-right) o vertically (up-down).\n\n💡 Simpleng Paliwanag\nHorizontal flip: kanan → kaliwa. Vertical flip: taas → baba.\n\n⚠️ Dapat Tandaan\nTingnan kung anong axis ang flip — horizontal ba o vertical?",
+                "prompt": "Explain reflection patterns with examples."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Example:",
+              "indent": 1,
+              "text": "If an arrow points to the right and is reflected horizontally, which direction will it point? Solution: The arrow will point to the left. Answer: LEFT",
+              "ai": {
+                "title": "Halimbawa ng Reflection",
+                "content": "Tanong: Bakit LEFT ang sagot?\nSagot: Horizontal flip (mirror sa gitna): ang arrow na pakanan ay magiging pakaliwa.",
+                "prompt": "Explain step by step how horizontal reflection works."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "3. Size Progression:",
+              "text": "Shapes gradually increase or decrease in size according to a pattern.",
+              "ai": {
+                "title": "Size Progression",
+                "content": "📖 Kahulugan\nAng shapes ay lumalaki o lumiliit sa bawat step.\n\n💡 Simpleng Paliwanag\nObserbahan kung dumarami ba ang laki (growing) o bumababa (shrinking).\n\n⚠️ Dapat Tandaan\nI-check ang ratio ng sizes — palaging doble ba, o pare-pareho ang dagdag?",
+                "prompt": "Explain size progression patterns."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Small circle → Medium circle → Large circle → ? Answer: A larger circle, following the same increasing pattern.",
+              "ai": {
+                "title": "Halimbawa ng Size Progression",
+                "content": "Tanong: Bakit larger circle ang sagot?\nSagot: Patuloy na lumalaki ang size bawat step. Kaya sa susunod, mas malaking circle pa.",
+                "prompt": "Explain how to continue this size progression pattern."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "4. Element Counting Pattern:",
+              "text": "The number of objects or elements increases or decreases in each figure.",
+              "ai": {
+                "title": "Element Counting",
+                "content": "📖 Kahulugan\nAng bilang ng objects/elements ay dumarami o bumababa sa bawat figure.\n\n💡 Simpleng Paliwanag\nI-count ang dots, lines, o shapes — may pattern (+2, +3, ×2, etc.).\n\n⚠️ Dapat Tandaan\nI-check kung constant ba ang dagdag o pattern (1, 3, 5, 7 = +2).",
+                "prompt": "Explain element counting patterns."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Figure 1: 1 dot. Figure 2: 3 dots. Figure 3: 5 dots. Figure 4: ? Solution: The number of dots increases by 2 each time. 1, 3, 5, 7. Answer: 7 dots",
+              "ai": {
+                "title": "Halimbawa ng Element Counting",
+                "content": "Tanong: Paano naging 7 dots ang susunod?\nSagot: Constant +2 dots bawat figure: 1, 3, 5, 7. Kaya 7 dots.",
+                "prompt": "Explain step by step how to solve this element counting pattern."
+              }
+            },
+            {
+              "id": "p9",
+              "label": "5. Shape and Symbol Alternation:",
+              "text": "Different shapes or symbols appear in a repeating sequence.",
+              "ai": {
+                "title": "Shape Alternation",
+                "content": "📖 Kahulugan\nAng shapes ay paulit-ulit sa pattern (cycle).\n\n💡 Simpleng Paliwanag\nI-identify ang cycle: Circle → Square → Triangle → (repeat).\n\n⚠️ Dapat Tandaan\nHanapin ang cycle length — 2 shapes ba, 3 shapes, o 4?",
+                "prompt": "Explain shape alternation patterns."
+              }
+            },
+            {
+              "id": "p10",
+              "label": "Example:",
+              "indent": 1,
+              "text": "Circle → Square → Triangle → Circle → Square → ? Answer: Triangle",
+              "ai": {
+                "title": "Halimbawa ng Alternation",
+                "content": "Tanong: Bakit Triangle ang sagot?\nSagot: Cycle ng 3 shapes: Circle, Square, Triangle. Kaya pagkatapos ng Circle → Square, susunod ay Triangle.",
+                "prompt": "Explain how to find the next shape in this alternation pattern."
+              }
+            },
+            {
+              "id": "p11",
+              "label": "6. Position and Movement Pattern:",
+              "text": "An object changes its position within a box, grid, or diagram according to a specific direction or sequence.",
+              "ai": {
+                "title": "Position and Movement",
+                "content": "📖 Kahulugan\nAng object ay gumagalaw sa loob ng grid/box base sa direction at sequence.\n\n💡 Simpleng Paliwanag\nI-track ang path: gumagalaw ba clockwise? Counterclockwise? Diagonal?\n\n⚠️ Dapat Tandaan\nI-check kung may step pattern ang movement (1 position ba, 2 positions, etc.).",
+                "prompt": "Explain position and movement patterns."
+              }
+            },
+            {
+              "id": "p12",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A dot moves from the upper-left corner to the upper-right corner, then to the lower-right corner. Where will it move next if it follows a clockwise pattern? Answer: Lower-left corner.",
+              "ai": {
+                "title": "Halimbawa ng Position Movement",
+                "content": "Tanong: Bakit lower-left ang sagot?\nSagot: Clockwise movement: upper-left → upper-right → lower-right → lower-left. Cycle ito ng 4 positions.",
+                "prompt": "Explain step by step how to solve this position movement pattern."
+              }
+            },
+            {
+              "id": "p13",
+              "label": "7. Missing Figure:",
+              "text": "A figure contains an incomplete section, and you must identify which shape or symbol correctly completes it.",
+              "ai": {
+                "title": "Missing Figure",
+                "content": "📖 Kahulugan\nMay kulang na bahagi sa figure, at kailangan mong tukuyin kung anong shape/symbol ang kumukumpleto.\n\n💡 Simpleng Paliwanag\nTingnan ang pattern ng iba pang sections — dapat mag-follow ng rule.\n\n⚠️ Dapat Tandaan\nI-check ang symmetry at repetition — madalas ito ang key.",
+                "prompt": "Explain missing figure problems with a clear method."
+              }
+            },
+            {
+              "id": "p14",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A square is divided into four equal sections. Three sections contain circles, while one is empty. The task is to identify which missing arrangement follows the pattern of the other sections. Answer: Depends on the given diagram and its visual rule.",
+              "ai": {
+                "title": "Halimbawa ng Missing Figure",
+                "content": "Tanong: Paano sasagutin ang missing figure problem?\nSagot: Tukuyin kung anong symmetry o pattern ang nire-follow ng 3 sections. Pagkatapos, yung tamang shape/symbol ang ilalagay sa empty section.",
+                "prompt": "Explain how to solve missing figure problems step by step."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "The Philippine Constitution",
+      "topic_order": 1,
+      "keywords": [
+        "1987 Constitution",
+        "Bill of Rights",
+        "Executive",
+        "Legislative",
+        "Judicial",
+        "Citizenship",
+        "Saligang Batas"
+      ],
+      "ai": {
+        "title": "Gabay sa Philippine Constitution",
+        "content": "📖 Kahulugan\nAng 1987 Philippine Constitution ay ang pinakamataas na batas sa Pilipinas. Dito nakasaad ang mga pangunahing prinsipyo ng ating pamahalaan, ang kapangyarihan at tungkulin ng bawat sangay nito, at ang mga karapatan at kalayaan ng mga mamamayan.\n\n🔍 Breakdown\n• Supremacy of the Constitution — pinakamataas na batas, walang nakahihigit\n• Three Branches — Executive (nagpapatupad), Legislative (gumagawa ng batas), Judicial (nagbibigay-kahulugan)\n• Separation of Powers at Checks and Balances\n• Bill of Rights (Article III)\n• Citizenship (Article IV)\n\n💡 Simpleng Paliwanag\nAng Constitution ay parang \"rules ng bahay\" ng buong bansa — lahat, kahit ang Pangulo, ay kailangang sumunod dito. Hinahati nito ang kapangyarihan sa tatlong sangay para walang sinuman ang magkaroon ng walang limitasyong kapangyarihan.\n\n📦 Halimbawa\n• Supremacy: Kahit ang Pangulo ay kailangang sumunod sa Konstitusyon.\n• Legislative: Ang Kongreso ang gumagawa at nagpapasa ng mga batas.\n• Executive: Ang Pangulo at mga ahensya ang nagpapatupad.\n• Judicial: Ang mga hukuman ang nagbibigay-kahulugan sa batas.\n• Bill of Rights: Karapatan ng isang tao na magpahayag ng opinyon, basta sumusunod sa batas.\n\n⭐ Bakit Mahalaga Ito?\nPundasyon ito ng lahat ng batas sa Pilipinas. Madalas itong lumabas sa CSE — constitutional articles, branches of government, at Bill of Rights.\n\n⚠️ Dapat Tandaan\nMga articles na madalas lumabas:\n• Article II — Declaration of Principles and State Policies\n• Article III — Bill of Rights\n• Article IV — Citizenship\n• Article VI — Legislative Department\n• Article VII — Executive Department\n• Article VIII — Judicial Department\n\n🎯 Exam Tip\nI-memorize ang article numbers at ang kanilang subject. Madalas ang tanong: \"Anong article ang Bill of Rights?\" (Article III) o \"Anong article ang Citizenship?\" (Article IV).",
+        "prompt": "Explain the 1987 Philippine Constitution in simple Tagalog — supremacy, three branches, separation of powers, checks and balances, Bill of Rights, and Citizenship — with examples and CSE exam tips."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng Constitution",
+            "content": "📖 Kahulugan\nAng 1987 Philippine Constitution ay ang supreme law ng Pilipinas — pinakamataas na batas, walang nakahihigit dito.\n\n💡 Simpleng Paliwanag\nNakasaad dito ang structure ng gobyerno, powers nito, at karapatan ng mamamayan. Tatlong branches: Executive, Legislative, Judicial.\n\n⚠️ Dapat Tandaan\nLahat ng batas at government policies ay dapat sumunod sa Constitution.",
+            "prompt": "Explain what the Philippine Constitution is and why it is supreme."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "The 1987 Philippine Constitution is the supreme law of the Republic of the Philippines. It establishes the fundamental principles, structure, and powers of the government, defines the relationship between the government and its people, and protects the fundamental rights and freedoms of individuals. It also establishes the three branches of government: the Executive, Legislative, and Judicial branches, which operate under the principle of separation of powers and checks and balances.",
+              "ai": {
+                "title": "Ano ang Constitution?",
+                "content": "📖 Kahulugan\nAng 1987 Philippine Constitution ay pinakamataas na batas ng Pilipinas. Nakasaad dito ang prinsipyo ng gobyerno, kapangyarihan nito, at karapatan ng mamamayan.\n\n💡 Simpleng Paliwanag\nTatlong branches: Executive (nagpapatupad ng batas), Legislative (gumagawa ng batas), at Judicial (nagbibigay-kahulugan). Gumagana sila sa principle ng separation of powers at checks and balances.\n\n⚠️ Dapat Tandaan\nWalang sinuman — kahit ang Pangulo — ang nakahihigit sa Constitution.",
+                "prompt": "Explain this definition of the Philippine Constitution with its three branches."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Concepts and Provisions",
+          "ai": {
+            "title": "Mahahalagang Konsepto",
+            "content": "📖 Kahulugan\nLimang pangunahing konsepto: supremacy, three branches, separation of powers, Bill of Rights, at citizenship.\n\n💡 Simpleng Paliwanag\nAng bawat isa ay may specific na role at pinoprotektahan ang balance ng power sa gobyerno.\n\n⚠️ Dapat Tandaan\nAng Bill of Rights (Article III) ang pinakamadaling lumabas sa exam — alamin ang mga specific rights.",
+            "prompt": "Explain the five key concepts of the Philippine Constitution with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Supremacy of the Constitution:",
+              "text": "The Constitution is the highest law of the country. All other laws, government policies, and official actions must be consistent with its provisions.",
+              "ai": {
+                "title": "Supremacy of the Constitution",
+                "content": "📖 Kahulugan\nAng Constitution ang pinakamataas na batas — lahat ng ibang batas, policies, at official actions ay dapat sumunod dito.\n\n💡 Simpleng Paliwanag\nKapag may conflict sa pagitan ng Constitution at ordinary law, ang Constitution ang masusunod.\n\n⚠️ Dapat Tandaan\nWalang batas na pwedeng lumabag sa Constitution — pag lumabag, unconstitutional ito.",
+                "prompt": "Explain supremacy of the Constitution with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A law that violates a constitutional right may be declared unconstitutional by the Supreme Court.",
+              "ai": {
+                "title": "Halimbawa ng Supremacy",
+                "content": "Tanong: Paano ipinapatupad ang supremacy?\nSagot: Ang Supreme Court ay may kapangyarihang i-declare na unconstitutional ang isang batas kung lumalabag ito sa Constitution.",
+                "prompt": "Explain how the Supreme Court enforces constitutional supremacy."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Three Branches of Government:",
+              "text": "The Philippine government is divided into three branches, each with distinct responsibilities.",
+              "ai": {
+                "title": "Tatlong Sangay ng Gobyerno",
+                "content": "📖 Kahulugan\nAng gobyerno ay nahahati sa tatlong branches: Executive, Legislative, Judicial.\n\n💡 Simpleng Paliwanag\nBawat branch ay may kanya-kanyang responsibilidad para hindi maipon ang kapangyarihan sa isang tao o grupo.\n\n⚠️ Dapat Tandaan\nExecutive = nagpapatupad; Legislative = gumagawa ng batas; Judicial = nagbibigay-kahulugan.",
+                "prompt": "Explain the three branches of the Philippine government."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "Executive Branch:",
+              "indent": 1,
+              "text": "Implements and enforces laws. Headed by the President of the Philippines.",
+              "ai": {
+                "title": "Executive Branch",
+                "content": "📖 Kahulugan\nAng Executive Branch ay nagpapatupad at nag-eenforce ng mga batas. Pinamumunuan ng Pangulo.\n\n💡 Simpleng Paliwanag\nKapag may bagong batas, ang Pangulo at mga ahensya (DOH, DepEd, DPWH, etc.) ang nagpapatupad nito.\n\n⚠️ Dapat Tandaan\nAng Pangulo ay may veto power sa mga bill na ipinasa ng Congress.",
+                "prompt": "Explain the Executive Branch and its responsibilities."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "Example:",
+              "indent": 2,
+              "text": "The President directs government agencies in implementing national policies.",
+              "ai": {
+                "title": "Halimbawa ng Executive",
+                "content": "Tanong: Paano nagpapatupad ang Pangulo?\nSagot: Sa pamamagitan ng mga ahensya ng gobyerno — halimbawa, pag-utos sa DepEd na magpatupad ng bagong curriculum.",
+                "prompt": "Explain how the President implements policies through agencies."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "Legislative Branch:",
+              "indent": 1,
+              "text": "Creates, amends, and repeals laws. Composed of the Senate and the House of Representatives, collectively known as Congress.",
+              "ai": {
+                "title": "Legislative Branch",
+                "content": "📖 Kahulugan\nAng Legislative Branch (Congress) ang gumagawa, nag-aamend, at nag-repeal ng mga batas.\n\n💡 Simpleng Paliwanag\nBinubuo ng Senate (24 senators) at House of Representatives (mga congressman). Sila ang gumagawa ng batas.\n\n⚠️ Dapat Tandaan\nAng isang bill ay kailangang pumasa sa parehong Senate at House bago pumunta sa Pangulo para pirmahan.",
+                "prompt": "Explain the Legislative Branch and its law-making role."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "Example:",
+              "indent": 2,
+              "text": "Congress passes a proposed law concerning taxation.",
+              "ai": {
+                "title": "Halimbawa ng Legislative",
+                "content": "Tanong: Paano gumagawa ng batas ang Congress?\nSagot: Isang proposed law (bill) ang pinag-debatehan at binoboto sa Senate at House. Kapag pasado sa dalawa, pupunta sa Pangulo para sa approval.",
+                "prompt": "Explain how Congress passes a law."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "Judicial Branch:",
+              "indent": 1,
+              "text": "Interprets laws and settles legal disputes. Headed by the Supreme Court.",
+              "ai": {
+                "title": "Judicial Branch",
+                "content": "📖 Kahulugan\nAng Judicial Branch ay nagbibigay-kahulugan sa batas at lumulutas ng legal disputes. Pinamumunuan ng Supreme Court.\n\n💡 Simpleng Paliwanag\nSila ang nagde-determine kung ano ang ibig sabihin ng isang batas sa isang specific na sitwasyon.\n\n⚠️ Dapat Tandaan\nAng Supreme Court ang may final say — kung unconstitutional, invalid ang batas.",
+                "prompt": "Explain the Judicial Branch and its role."
+              }
+            },
+            {
+              "id": "p9",
+              "label": "Example:",
+              "indent": 2,
+              "text": "The Supreme Court determines whether a government action violates the Constitution.",
+              "ai": {
+                "title": "Halimbawa ng Judicial",
+                "content": "Tanong: Paano nagbibigay-kahulugan ang Supreme Court?\nSagot: Kapag may question sa constitutionality ng isang batas o aksyon, ang Supreme Court ang nagde-decide kung valid ito o hindi.",
+                "prompt": "Explain how the Supreme Court reviews constitutionality."
+              }
+            },
+            {
+              "id": "p10",
+              "label": "3. Separation of Powers and Checks and Balances:",
+              "text": "These principles prevent any single branch of government from having unlimited authority.",
+              "ai": {
+                "title": "Separation of Powers at Checks and Balances",
+                "content": "📖 Kahulugan\nAng separation of powers ay naghahati ng kapangyarihan sa 3 branches. Ang checks and balances ay nagbibigay ng kapangyarihan sa bawat branch na i-check ang iba.\n\n💡 Simpleng Paliwanag\nWalang branch ang pwedeng gumawa ng lahat — bawat isa ay may limitasyon.\n\n⚠️ Dapat Tandaan\nHindi ito pareho: separation = hiwalay na roles; checks = bawat branch may power over ibang branches.",
+                "prompt": "Explain separation of powers and checks and balances."
+              }
+            },
+            {
+              "id": "p11",
+              "label": "Separation of Powers:",
+              "indent": 1,
+              "text": "Each branch has its own constitutional responsibilities.",
+              "ai": {
+                "title": "Separation of Powers",
+                "content": "Tanong: Ano ang separation of powers?\nSagot: Bawat branch ay may kanya-kanyang responsibilidad na hindi ginagawa ng ibang branch. Legislative = gumawa ng batas; Executive = magpatupad; Judicial = magbigay-kahulugan.",
+                "prompt": "Explain separation of powers in detail."
+              }
+            },
+            {
+              "id": "p12",
+              "label": "Checks and Balances:",
+              "indent": 1,
+              "text": "Each branch has certain powers to limit or review the actions of the other branches.",
+              "ai": {
+                "title": "Checks and Balances",
+                "content": "Tanong: Ano ang checks and balances?\nSagot: Bawat branch ay may power na i-review o limitahan ang iba. Halimbawa, ang Pangulo ay may veto, ang Congress ay may override, at ang Supreme Court ay may judicial review.",
+                "prompt": "Explain checks and balances with examples."
+              }
+            },
+            {
+              "id": "p13",
+              "label": "Example:",
+              "indent": 1,
+              "text": "The President may veto a bill passed by Congress, while Congress may override the veto under the constitutional requirements.",
+              "ai": {
+                "title": "Halimbawa ng Checks and Balances",
+                "content": "Tanong: Paano nag-i-check ang branches sa isa't isa?\nSagot: Pangulo → may veto sa bill ng Congress. Congress → may override ng veto (2/3 vote ng both houses). Supreme Court → may judicial review (ide-declare na unconstitutional).",
+                "prompt": "Explain the veto and override process as an example of checks and balances."
+              }
+            },
+            {
+              "id": "p14",
+              "label": "4. Bill of Rights (Article III):",
+              "text": "The Bill of Rights protects individuals against abuses of government power and guarantees fundamental freedoms.",
+              "ai": {
+                "title": "Bill of Rights (Article III)",
+                "content": "📖 Kahulugan\nAng Bill of Rights ay nagpoprotekta sa mga indibidwal laban sa abuse ng gobyerno. Nasa Article III ito ng Constitution.\n\n💡 Simpleng Paliwanag\nKarapatan mo ito — hindi pwedeng bawiin ng gobyerno nang walang due process.\n\n⚠️ Dapat Tandaan\nArticle III = Bill of Rights. Madalas itong lumabas sa CSE.",
+                "prompt": "Explain the Bill of Rights and why it's in Article III."
+              }
+            },
+            {
+              "id": "p15",
+              "indent": 1,
+              "text": "Important rights include: freedom of speech and expression, freedom of religion, right to due process of law, equal protection of the laws, right against unreasonable searches and seizures, right to privacy of communication, right to a speedy and public trial.",
+              "ai": {
+                "title": "Mahahalagang Karapatan sa Bill of Rights",
+                "content": "📖 Kahulugan\nPitong mahalagang karapatan sa Bill of Rights:\n\n1. Freedom of speech and expression\n2. Freedom of religion\n3. Right to due process\n4. Equal protection of the laws\n5. Right against unreasonable searches and seizures\n6. Right to privacy of communication\n7. Right to speedy and public trial\n\n💡 Simpleng Paliwanag\nAng lahat ng ito ay nagpoprotekta sa iyo laban sa abuse ng gobyerno.\n\n⚠️ Dapat Tandaan\nAng \"due process\" ay ang karapatang magkaroon ng tamang legal procedure bago ka parusahan o bawiin ng karapatan.",
+                "prompt": "Explain the key rights in the Bill of Rights with examples."
+              }
+            },
+            {
+              "id": "p16",
+              "label": "5. Citizenship (Article IV):",
+              "text": "The Constitution identifies who are considered citizens of the Philippines.",
+              "ai": {
+                "title": "Citizenship (Article IV)",
+                "content": "📖 Kahulugan\nAng Article IV ay nagsasaad kung sino ang itinuturing na citizen ng Pilipinas.\n\n💡 Simpleng Paliwanag\nMay tatlong paraan: (1) natural-born (Filipino parent), (2) naturalization, (3) reacquisition.\n\n⚠️ Dapat Tandaan\nArticle IV = Citizenship. Madalas itong tanong sa exam.",
+                "prompt": "Explain Philippine citizenship under Article IV with examples."
+              }
+            },
+            {
+              "id": "p17",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A person whose father or mother is a Filipino citizen is generally considered a natural-born Filipino citizen, subject to the constitutional provisions.",
+              "ai": {
+                "title": "Halimbawa ng Citizenship",
+                "content": "Tanong: Paano maging natural-born citizen?\nSagot: Kung ang ama o ina ay Filipino citizen, natural-born citizen ang anak. Hindi kailangang mag-naturalize.",
+                "prompt": "Explain natural-born citizenship through Filipino parents."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "RA 6713 (Code of Conduct)",
+      "topic_order": 2,
+      "keywords": [
+        "RA 6713",
+        "Code of Conduct",
+        "SALN",
+        "public officials",
+        "ethics",
+        "norms of conduct",
+        "prohibited acts"
+      ],
+      "ai": {
+        "title": "Gabay sa RA 6713",
+        "content": "📖 Kahulugan\nAng RA 6713 (Code of Conduct and Ethical Standards for Public Officials and Employees) ay batas na nagtatakda ng tamang asal, etika, at responsibilidad ng mga opisyal at empleyado ng pamahalaan.\n\n🔍 Breakdown\n• 8 Norms of Conduct (Section 4)\n• Prohibited Acts and Transactions (Section 7)\n• SALN (Statement of Assets, Liabilities, and Net Worth)\n\n💡 Simpleng Paliwanag\nLayunin ng batas na ito na matiyak na ang mga lingkod-bayan ay nagtatrabaho nang tapat, patas, responsable, at may malasakit sa mga mamamayan. Ang pagiging empleyado ng gobyerno ay isang responsibilidad na dapat gamitin para sa kapakanan ng publiko — hindi para sa pansariling interes.\n\n📦 Halimbawa\n• Commitment to Public Interest: Dapat unahin ng empleyado ang kapakanan ng mamamayan kaysa sa sarili.\n• Professionalism: Maayos at mahusay na gampanan ang trabaho.\n• Political Neutrality: Hindi magkaiba ang serbisyo dahil sa partido.\n• Simple Living: Mamuhay nang simple at naaayon sa lehitimong kinikita.\n• Prohibited Gifts: Hindi tumanggap ng suhol.\n• SALN: Ideklara ang mga ari-arian, utang, at net worth.\n\n⭐ Bakit Mahalaga Ito?\nIto ang batayan ng integridad ng serbisyo publiko. Madalas itong lumabas sa CSE — lalo na ang 8 norms at SALN.\n\n⚠️ Dapat Tandaan\nMemorize ang 8 Norms of Conduct (Section 4):\n1. Commitment to Public Interest\n2. Professionalism\n3. Justness and Sincerity\n4. Political Neutrality\n5. Responsiveness to the Public\n6. Nationalism and Patriotism\n7. Commitment to Democracy\n8. Simple Living\n\n🎯 Exam Tip\nMnemonic para sa 8 norms: CP-JP-RN-CS (Commitment, Professionalism, Justness, Political, Responsiveness, Nationalism, Commitment to Democracy, Simple Living).",
+        "prompt": "Explain RA 6713 in simple Tagalog — 8 norms of conduct, prohibited acts, and SALN — with CSE exam tips."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng RA 6713",
+            "content": "📖 Kahulugan\nAng RA 6713 ay Code of Conduct and Ethical Standards for Public Officials and Employees, enacted noong February 20, 1989.\n\n💡 Simpleng Paliwanag\nLayunin nito: honesty, integrity, accountability, professionalism, at responsibility sa serbisyo publiko.\n\n⚠️ Dapat Tandaan\nPublic interest > personal gain — ito ang core principle.",
+            "prompt": "Explain what RA 6713 is and its purpose."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Republic Act No. 6713, also known as the Code of Conduct and Ethical Standards for Public Officials and Employees, is a Philippine law enacted on February 20, 1989. It establishes ethical standards and promotes honesty, integrity, accountability, professionalism, and responsibility among government officials and employees. Its main purpose is to ensure that public officials and employees serve the people honestly and prioritize public interest over personal gain.",
+              "ai": {
+                "title": "Ano ang RA 6713?",
+                "content": "📖 Kahulugan\nAng RA 6713 ay batas na nagtatakda ng ethical standards sa mga public officials at employees. Naipasa noong February 20, 1989.\n\n💡 Simpleng Paliwanag\nLayunin: tiyakin na ang mga lingkod-bayan ay tapat at inuuna ang public interest kaysa personal gain.\n\n⚠️ Dapat Tandaan\nPublic interest > personal gain — ito ang puso ng batas.",
+                "prompt": "Explain this definition of RA 6713 with examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "The 8 Norms of Conduct (Section 4)",
+          "ai": {
+            "title": "8 Norms of Conduct",
+            "content": "📖 Kahulugan\nWalong norms ng conduct ang dapat sundin ng bawat public official at employee.\n\n💡 Simpleng Paliwanag\nBawat norm ay may specific na meaning at application sa totoong buhay. Ito ang daily guide ng isang lingkod-bayan.\n\n⚠️ Dapat Tandaan\nMemorize ang 8 norms: Commitment to Public Interest, Professionalism, Justness and Sincerity, Political Neutrality, Responsiveness to the Public, Nationalism and Patriotism, Commitment to Democracy, Simple Living.",
+            "prompt": "Explain the eight norms of conduct under RA 6713 with examples."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Commitment to Public Interest:",
+              "text": "Public officials must prioritize the welfare and interests of the public rather than their personal benefits.",
+              "ai": {
+                "title": "Commitment to Public Interest",
+                "content": "📖 Kahulugan\nDapat unahin ng public official ang welfare ng publiko kaysa personal benefit.\n\n💡 Simpleng Paliwanag\nAng trabaho sa gobyerno ay para sa tao, hindi para sa sarili.\n\n⚠️ Dapat Tandaan\nHalimbawa: Dapat patas ang pagproseso ng aplikasyon — hindi priority ang kaibigan o kamag-anak.",
+                "prompt": "Explain commitment to public interest with examples."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "2. Professionalism:",
+              "text": "Government employees must perform their duties with competence, dedication, and excellence.",
+              "ai": {
+                "title": "Professionalism",
+                "content": "📖 Kahulugan\nDapat gampanan ang tungkulin nang may competence, dedication, at excellence.\n\n💡 Simpleng Paliwanag\nMaayos at mahusay ang trabaho — hindi basta \"pwede na.\"\n\n⚠️ Dapat Tandaan\nHalimbawa: Magbigay ng accurate information at tapusin ang tasks nang responsable.",
+                "prompt": "Explain professionalism in public service."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "3. Justness and Sincerity:",
+              "text": "Public officials must treat everyone fairly, honestly, and without discrimination.",
+              "ai": {
+                "title": "Justness and Sincerity",
+                "content": "📖 Kahulugan\nPatas, tapat, at walang diskriminasyon ang pagtrato sa lahat.\n\n💡 Simpleng Paliwanag\nPareho ang serbisyo sa mayaman at mahirap — walang favoritism.\n\n⚠️ Dapat Tandaan\nHalimbawa: Equal service sa lahat ng mamamayan.",
+                "prompt": "Explain justness and sincerity with examples."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "4. Political Neutrality:",
+              "text": "Government employees must provide services without unfairly favoring or discriminating against anyone because of political beliefs or affiliations.",
+              "ai": {
+                "title": "Political Neutrality",
+                "content": "📖 Kahulugan\nWalang favoritism o discrimination base sa political beliefs o party affiliation.\n\n💡 Simpleng Paliwanag\nSerbisyo para sa lahat — anuman ang partido o paniniwala.\n\n⚠️ Dapat Tandaan\nHalimbawa: Tulungan ang lahat ng mamamayan, hindi lang ang kakampi sa pulitika.",
+                "prompt": "Explain political neutrality in public service."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "5. Responsiveness to the Public:",
+              "text": "Public officials must provide prompt, adequate, and efficient service to the people.",
+              "ai": {
+                "title": "Responsiveness to the Public",
+                "content": "📖 Kahulugan\nMabilis, sapat, at efficient na serbisyo sa publiko.\n\n💡 Simpleng Paliwanag\nHuwag pabayaan ang mga tanong o request ng mamamayan — aksyunan agad.\n\n⚠️ Dapat Tandaan\nHalimbawa: Proseso ng dokumento sa loob ng required period.",
+                "prompt": "Explain responsiveness to the public with examples."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "6. Nationalism and Patriotism:",
+              "text": "Public officials must remain loyal to the country and promote the welfare of the Filipino people.",
+              "ai": {
+                "title": "Nationalism and Patriotism",
+                "content": "📖 Kahulugan\nLoyalty sa bansa at pag-promote ng welfare ng Filipino people.\n\n💡 Simpleng Paliwanag\nProtektahan ang public resources at suportahan ang programs para sa bansa.\n\n⚠️ Dapat Tandaan\nHalimbawa: Huwag magnakaw ng pondo — gamitin ito para sa bayan.",
+                "prompt": "Explain nationalism and patriotism in public service."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "7. Commitment to Democracy:",
+              "text": "Public officials must respect democratic principles, constitutional rights, and the authority of the people.",
+              "ai": {
+                "title": "Commitment to Democracy",
+                "content": "📖 Kahulugan\nIgalang ang democratic principles, constitutional rights, at authority ng taong-bayan.\n\n💡 Simpleng Paliwanag\nAng mamamayan ang boss — respetuhin ang kanilang karapatan.\n\n⚠️ Dapat Tandaan\nHalimbawa: Respetuhin ang karapatang magpahayag ng opinyon nang mapayapa.",
+                "prompt": "Explain commitment to democracy with examples."
+              }
+            },
+            {
+              "id": "p8",
+              "label": "8. Simple Living:",
+              "text": "Public officials and employees must lead modest lives appropriate to their positions and income.",
+              "ai": {
+                "title": "Simple Living",
+                "content": "📖 Kahulugan\nMamuhay nang simple at naaayon sa lawful income.\n\n💡 Simpleng Paliwanag\nHuwag magpakita ng extravagant na yaman na hindi tugma sa sahod.\n\n⚠️ Dapat Tandaan\nHalimbawa: Iwasan ang mamahaling sasakyan o alahas kung hindi kaya ng suweldo.",
+                "prompt": "Explain simple living under RA 6713."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "heading": "Prohibited Acts and Transactions (Section 7)",
+          "ai": {
+            "title": "Mga Prohibited Acts",
+            "content": "📖 Kahulugan\nSection 7 ng RA 6713 ay naglilista ng mga bawal na gawain para sa public officials at employees.\n\n💡 Simpleng Paliwanag\nLayunin ng prohibitions na maiwasan ang conflict of interest at corruption.\n\n⚠️ Dapat Tandaan\nAng tatanggap ng regalo, misusing confidential info, at conflict of interest ay mga seryosong violations.",
+            "prompt": "Explain the prohibited acts under Section 7 of RA 6713."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Under Section 7 of RA 6713, public officials and employees are prohibited from certain activities, including: having financial or material interests in transactions requiring the approval of their office; misusing confidential government information for personal benefit; soliciting or accepting gifts, favors, loans, or anything of monetary value connected with their official duties or transactions affected by their office, subject to the law's specific exceptions; and engaging in certain outside employment or private activities that conflict with their official responsibilities.",
+              "ai": {
+                "title": "Prohibited Acts (Section 7)",
+                "content": "📖 Kahulugan\nApat na pangunahing prohibited acts:\n\n1. Financial/material interest sa transactions na kailangan ng approval ng office nila\n2. Misusing confidential government info para sa personal benefit\n3. Soliciting/accepting gifts, favors, loans na may kinalaman sa official duties\n4. Outside employment na may conflict sa official responsibilities\n\n💡 Simpleng Paliwanag\nHuwag kumita o makinabang nang personal gamit ang posisyon sa gobyerno.\n\n⚠️ Dapat Tandaan\nMay exceptions ang batas sa gifts — pero general rule: bawal tumanggap kapag may kinalaman sa trabaho.",
+                "prompt": "Explain the prohibited acts under Section 7 of RA 6713 with examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "heading": "SALN (Statement of Assets, Liabilities, and Net Worth)",
+          "ai": {
+            "title": "SALN",
+            "content": "📖 Kahulugan\nAng SALN ay Statement of Assets, Liabilities, and Net Worth — deklarasyon ng mga ari-arian, utang, net worth, at financial interests.\n\n💡 Simpleng Paliwanag\nIto ang \"transparency report\" ng bawat public official — para makita kung tugma ang yaman sa sahod.\n\n⚠️ Dapat Tandaan\nKasama sa SALN ang mga ari-arian at utang ng asawa at mga anak na wala pang 18 taong gulang.",
+            "prompt": "Explain what SALN is and its purpose under RA 6713."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "SALN means Statement of Assets, Liabilities, and Net Worth. It is a declaration that public officials and employees are generally required to submit under oath to disclose their assets, liabilities, net worth, and certain financial or business interests, including those of their spouses and unmarried children under 18, as provided by law.",
+              "ai": {
+                "title": "Ano ang SALN?",
+                "content": "📖 Kahulugan\nAng SALN ay Statement of Assets, Liabilities, and Net Worth — isang sworn declaration ng lahat ng ari-arian, utang, at financial interests.\n\n💡 Simpleng Paliwanag\nKasama sa SALN ang mga ari-arian at utang ng asawa at mga unmarried children under 18 years old.\n\n⚠️ Dapat Tandaan\nSinasubmit ito under oath — meaning, may legal consequence kapag nag-falsify.",
+                "prompt": "Explain SALN in detail with the requirement for spouse and minor children."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "Example:",
+              "indent": 1,
+              "text": "A government employee must declare their properties, financial liabilities, and other reportable interests in their SALN.",
+              "ai": {
+                "title": "Halimbawa ng SALN",
+                "content": "Tanong: Paano ginagawa ang SALN?\nSagot: Inililista ng empleyado ang lahat ng properties (bahay, lupa, sasakyan), liabilities (utang sa bangko, credit card), at net worth (assets minus liabilities).",
+                "prompt": "Explain what goes into a SALN with examples."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Peace and Human Rights",
+      "topic_order": 3,
+      "keywords": [
+        "human rights",
+        "UDHR",
+        "peace",
+        "equality",
+        "dignity",
+        "peacebuilding",
+        "karapatang pantao"
+      ],
+      "ai": {
+        "title": "Gabay sa Peace and Human Rights",
+        "content": "📖 Kahulugan\nAng peace and human rights ay tumutukoy sa pagpapanatili ng kapayapaan at pagprotekta sa mga pangunahing karapatan at dignidad ng bawat tao.\n\n🔍 Breakdown\n• UDHR — Universal Declaration of Human Rights\n• Civil at Political Rights\n• Economic, Social, Cultural Rights\n• Equality at Non-Discrimination\n• Peacebuilding\n• Human Dignity\n\n💡 Simpleng Paliwanag\nLahat ng tao ay nararapat tratuhin nang patas at may respeto, anuman ang kasarian, relihiyon, lahi, paniniwala, o estado sa buhay. Hindi lang ito tungkol sa kawalan ng gulo — kasama rin ang katarungan, pagkakapantay-pantay, kalayaan, at paggalang.\n\n📦 Halimbawa\n• Right to Life: Karapatang mabuhay at maprotektahan laban sa ilegal na pagkitil.\n• Freedom of Expression: Malayang pagpapahayag ng opinyon.\n• Equality: Pantay na pagtrato sa lahat.\n• Peacebuilding: Pag-usapan ang hindi pagkakaunawaan, hindi karahasan.\n• Human Dignity: Walang dapat maliitin o ipahiya.\n\n⭐ Bakit Mahalaga Ito?\nCore values ito ng isang demokratikong lipunan. Madalas itong lumabas sa CSE — lalo na ang UDHR at human rights principles.\n\n⚠️ Dapat Tandaan\n• UDHR — Adopted on December 10, 1948 ng UN General Assembly\n• Human Rights — Basic rights ng bawat tao\n• Peacebuilding — Preventing at resolving conflicts through peaceful means\n• Equality — Equal dignity without unfair discrimination\n\n🎯 Exam Tip\nMemorize ang petsa ng UDHR (December 10, 1948) at ang UN General Assembly bilang nag-adopt nito — madalas itong tanong.",
+        "prompt": "Explain peace and human rights in simple Tagalog — UDHR, civil/political rights, economic/social rights, equality, peacebuilding, and human dignity — with CSE exam tips."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng Peace and Human Rights",
+            "content": "📖 Kahulugan\nAng peace ay pagpapanatili ng peaceful relationships at pag-iwas sa violence. Ang human rights ay basic rights at freedoms ng lahat ng tao.\n\n💡 Simpleng Paliwanag\nHindi lang ito kawalan ng gulo — kasama ang justice, equality, at paggalang sa dignidad ng bawat isa.\n\n⚠️ Dapat Tandaan\nUniversal ang human rights — para sa lahat, walang exception.",
+            "prompt": "Explain what peace and human rights mean."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Peace and human rights refer to the promotion of peaceful relationships, justice, equality, respect, and protection of the inherent dignity and fundamental rights of every human being. Human rights are basic rights and freedoms that belong to all individuals regardless of nationality, race, sex, religion, language, social status, or other personal circumstances. Peace involves preventing violence, resolving conflicts through peaceful means, respecting differences, and promoting cooperation within communities and nations.",
+              "ai": {
+                "title": "Ano ang Peace and Human Rights?",
+                "content": "📖 Kahulugan\nAng peace ay pag-iwas sa violence at peaceful resolution ng conflict. Ang human rights ay basic rights ng lahat ng tao, anuman ang lahi, kasarian, relihiyon, o estado.\n\n💡 Simpleng Paliwanag\nUniversal ito — hindi pwedeng bawiin ng kahit sino, kahit gobyerno.\n\n⚠️ Dapat Tandaan\nAng peace ay hindi lang absence of war — kasama ang justice at equality.",
+                "prompt": "Explain this definition of peace and human rights with examples."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Important Concepts",
+          "ai": {
+            "title": "Mahahalagang Konsepto",
+            "content": "📖 Kahulugan\nAnim na mahalagang konsepto sa peace and human rights: UDHR, civil/political rights, economic/social/cultural rights, equality, peacebuilding, human dignity.\n\n💡 Simpleng Paliwanag\nBawat isa ay nagpoprotekta sa iba't ibang aspeto ng buhay ng tao — mula sa basic rights hanggang sa dignity.\n\n⚠️ Dapat Tandaan\nAng UDHR (1948) ang pinaka-fundamental na international document sa human rights.",
+            "prompt": "Explain the six key concepts in peace and human rights."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. Universal Declaration of Human Rights (UDHR):",
+              "text": "The UDHR is an international declaration adopted by the United Nations General Assembly on December 10, 1948. It establishes a common standard of fundamental human rights and freedoms for all people.",
+              "ai": {
+                "title": "UDHR",
+                "content": "📖 Kahulugan\nAng UDHR ay international declaration na in-adopt ng UN General Assembly noong December 10, 1948. Ito ang common standard ng human rights para sa lahat ng tao.\n\n💡 Simpleng Paliwanag\nIto ang pinaka-fundamental na dokumento ng human rights sa buong mundo — sinusunod ng maraming bansa.\n\n⚠️ Dapat Tandaan\nDecember 10, 1948 — madalas lumabas sa exam.",
+                "prompt": "Explain the UDHR and its significance."
+              }
+            },
+            {
+              "id": "p2",
+              "indent": 1,
+              "text": "Important rights recognized include: right to life, liberty, and security; right to equality before the law; freedom of thought, religion, and expression; right to education; right to work; right to participate in government; right against torture and slavery.",
+              "ai": {
+                "title": "Mga Karapatan sa UDHR",
+                "content": "📖 Kahulugan\nPitong mahalagang karapatan sa UDHR:\n\n1. Right to life, liberty, and security\n2. Equality before the law\n3. Freedom of thought, religion, expression\n4. Right to education\n5. Right to work\n6. Right to participate in government\n7. Right against torture and slavery\n\n💡 Simpleng Paliwanag\nLahat ng ito ay basic rights — walang dapat mabawasan kahit kanino.\n\n⚠️ Dapat Tandaan\nRight against torture at slavery — pinaka-basic na karapatan ng tao.",
+                "prompt": "Explain the rights enumerated in the UDHR."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "2. Civil and Political Rights:",
+              "text": "These protect an individual's freedom and participation in society and government. Example: The right to vote, freedom of speech, and freedom of religion.",
+              "ai": {
+                "title": "Civil at Political Rights",
+                "content": "📖 Kahulugan\nAng civil at political rights ay nagpoprotekta sa freedom at participation sa society at government.\n\n💡 Simpleng Paliwanag\nRight to vote, freedom of speech, freedom of religion — mga karapatang pampulitika at personal.\n\n⚠️ Dapat Tandaan\nCivil = personal freedoms; Political = participation sa government.",
+                "prompt": "Explain civil and political rights with examples."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "3. Economic, Social, and Cultural Rights:",
+              "text": "These protect the conditions necessary for people to live with dignity and participate in society. Example: The right to education, healthcare, decent working conditions, and participation in cultural activities.",
+              "ai": {
+                "title": "Economic, Social, Cultural Rights",
+                "content": "📖 Kahulugan\nAng mga ito ay nagpoprotekta sa kondisyon para mabuhay nang may dignidad: education, healthcare, decent work, cultural participation.\n\n💡 Simpleng Paliwanag\nBasic needs ito — hindi lang freedom, kundi quality of life.\n\n⚠️ Dapat Tandaan\nEducation at healthcare — madalas lumabas sa exam.",
+                "prompt": "Explain economic, social, and cultural rights with examples."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "4. Equality and Non-Discrimination:",
+              "text": "All individuals should receive equal protection and respect regardless of their personal backgrounds or circumstances. Example: A school or workplace should not unfairly discriminate against someone because of their religion or gender.",
+              "ai": {
+                "title": "Equality and Non-Discrimination",
+                "content": "📖 Kahulugan\nPantay na proteksyon at respeto sa lahat — walang diskriminasyon base sa religion, gender, race, etc.\n\n💡 Simpleng Paliwanag\nWalang special treatment, walang unfair treatment — pantay lang.\n\n⚠️ Dapat Tandaan\nAnti-discrimination — core principle ito ng human rights.",
+                "prompt": "Explain equality and non-discrimination with examples."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "5. Peacebuilding and Conflict Resolution:",
+              "text": "Peacebuilding involves preventing conflicts and developing peaceful solutions through communication, cooperation, negotiation, and mediation. Example: Two communities experiencing a disagreement should seek dialogue and peaceful settlement rather than violence.",
+              "ai": {
+                "title": "Peacebuilding",
+                "content": "📖 Kahulugan\nAng peacebuilding ay pag-iwas sa conflict at paghahanap ng peaceful solutions through dialogue, cooperation, negotiation, at mediation.\n\n💡 Simpleng Paliwanag\nKung may hindi pagkakaunawaan, pag-usapan — hindi karahasan.\n\n⚠️ Dapat Tandaan\nPeace ≠ absence of war — active resolution ito ng conflicts.",
+                "prompt": "Explain peacebuilding and conflict resolution with examples."
+              }
+            },
+            {
+              "id": "p7",
+              "label": "6. Human Dignity:",
+              "text": "Every person deserves respect and fair treatment simply because they are human. Example: No individual should be subjected to humiliation, torture, or degrading treatment.",
+              "ai": {
+                "title": "Human Dignity",
+                "content": "📖 Kahulugan\nBawat tao ay karapat-dapat sa respeto at fair treatment dahil tao siya.\n\n💡 Simpleng Paliwanag\nWalang dapat ipahiya, saktan, o abusuhin — kahit sino pa siya.\n\n⚠️ Dapat Tandaan\nWalang torture, walang degrading treatment — basic ito.",
+                "prompt": "Explain human dignity with examples."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Environmental Management",
+      "topic_order": 4,
+      "keywords": [
+        "environmental management",
+        "RA 9003",
+        "RA 8749",
+        "RA 9275",
+        "RA 6969",
+        "RA 9729",
+        "RA 9512",
+        "waste management",
+        "climate change"
+      ],
+      "ai": {
+        "title": "Gabay sa Environmental Management",
+        "content": "📖 Kahulugan\nAng environmental management ay responsible planning, protection, conservation, at sustainable use ng natural resources.\n\n🔍 Breakdown\nAnim na mahalagang batas:\n• RA 9003 — Ecological Solid Waste Management\n• RA 8749 — Clean Air Act\n• RA 9275 — Clean Water Act\n• RA 6969 — Toxic Substances at Hazardous Wastes\n• RA 9729 — Climate Change Act\n• RA 9512 — Environmental Awareness and Education\n\n💡 Simpleng Paliwanag\nLayunin nitong maiwasan ang polusyon, pagkasira ng kalikasan, at pagkaubos ng resources — para mapakinabangan pa ito ng susunod na henerasyon.\n\n📦 Halimbawa\n• RA 9003: Paghihiwalay ng biodegradable, recyclable, residual, special waste.\n• RA 8749: Kontrol sa usok ng sasakyan at pabrika.\n• RA 9275: Huwag magtapon ng wastewater sa ilog.\n• RA 9729: Paghahanda sa bagyo at baha.\n• Reforestation: Pagtatanim ng puno sa kalbong lugar.\n\n⭐ Bakit Mahalaga Ito?\nNapakalaking bahagi ito ng CSE General Information — lalo na ang identification ng RA numbers.\n\n⚠️ Dapat Tandaan\nMemorize ang table:\n• RA 9003 → Ecological Solid Waste Management\n• RA 8749 → Clean Air Act\n• RA 9275 → Clean Water Act\n• RA 6969 → Toxic Substances and Hazardous Wastes\n• RA 9729 → Climate Change Act\n• RA 9512 → Environmental Awareness and Education Act\n\n🎯 Exam Tip\nMadalas mag-match ang tanong ng RA number at description. Mnemonic: 9-9-5-9-9-2 → RA 9003, 8749, 9275, 6969, 9729, 9512. Focus sa pinaka-common: 9003 (waste), 8749 (air), 9275 (water).",
+        "prompt": "Explain environmental management in simple Tagalog — RA 9003, 8749, 9275, 6969, 9729, 9512 — with mnemonic and CSE exam tips."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition",
+          "ai": {
+            "title": "Kahulugan ng Environmental Management",
+            "content": "📖 Kahulugan\nResponsible planning, protection, conservation, at sustainable use ng natural resources.\n\n💡 Simpleng Paliwanag\nPangangalaga sa hangin, tubig, lupa, kagubatan, at hayop — para sa susunod na henerasyon.\n\n⚠️ Dapat Tandaan\nSustainability ang core principle — gamitin pero huwag ubusin.",
+            "prompt": "Explain what environmental management is."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Environmental management refers to the responsible planning, protection, conservation, and sustainable use of natural resources to maintain ecological balance, prevent pollution, and protect the environment for present and future generations. It involves implementing environmental policies, managing waste, conserving biodiversity, reducing pollution, and promoting sustainable practices.",
+              "ai": {
+                "title": "Ano ang Environmental Management?",
+                "content": "📖 Kahulugan\nResponsible planning, protection, conservation, at sustainable use ng natural resources.\n\n💡 Simpleng Paliwanag\nKasama rito ang pagsunod sa batas, tamang waste disposal, conservation, at pangangalaga sa halaman at hayop.\n\n⚠️ Dapat Tandaan\nPara sa present at future generations — hindi lang para sa ngayon.",
+                "prompt": "Explain this definition of environmental management."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "Philippine Environmental Laws",
+          "ai": {
+            "title": "Philippine Environmental Laws",
+            "content": "📖 Kahulugan\nAnim na pangunahing environmental laws sa Pilipinas.\n\n💡 Simpleng Paliwanag\nBawat batas ay may specific na focus: waste, air, water, toxic, climate, education.\n\n⚠️ Dapat Tandaan\nAng RA numbers ay madalas i-match sa description — memorized dapat.",
+            "prompt": "Explain the six main Philippine environmental laws."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "label": "1. RA 9003 – Ecological Solid Waste Management Act of 2000:",
+              "text": "This law establishes a systematic program for managing solid waste through waste reduction, segregation, recycling, composting, and proper disposal. Example: Households should separate biodegradable, recyclable, residual, and special waste to support proper waste management.",
+              "ai": {
+                "title": "RA 9003 (Solid Waste)",
+                "content": "📖 Kahulugan\nAng RA 9003 ay batas tungkol sa waste reduction, segregation, recycling, composting, at proper disposal.\n\n💡 Simpleng Paliwanag\nPaghihiwalay ng biodegradable, recyclable, residual, at special waste — ito ang core.\n\n⚠️ Dapat Tandaan\nRA 9003 = Solid Waste Management.",
+                "prompt": "Explain RA 9003 Ecological Solid Waste Management Act."
+              }
+            },
+            {
+              "id": "p2",
+              "label": "2. RA 8749 – Philippine Clean Air Act of 1999:",
+              "text": "This law aims to protect and maintain clean air by preventing and controlling air pollution. Example: Factories and vehicles must comply with applicable emission standards to reduce harmful air pollutants.",
+              "ai": {
+                "title": "RA 8749 (Clean Air)",
+                "content": "📖 Kahulugan\nAng RA 8749 ay batas para sa clean air — prevention at control ng air pollution.\n\n💡 Simpleng Paliwanag\nFactories at vehicles dapat sumunod sa emission standards.\n\n⚠️ Dapat Tandaan\nRA 8749 = Clean Air Act.",
+                "prompt": "Explain RA 8749 Clean Air Act."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "3. RA 9275 – Philippine Clean Water Act of 2004:",
+              "text": "This law aims to protect the country's water resources by preventing and controlling water pollution. Example: Factories must properly manage wastewater instead of releasing untreated industrial waste into rivers.",
+              "ai": {
+                "title": "RA 9275 (Clean Water)",
+                "content": "📖 Kahulugan\nAng RA 9275 ay batas para sa water resources — prevention at control ng water pollution.\n\n💡 Simpleng Paliwanag\nFactories dapat i-manage ang wastewater — hindi ito itinatapon sa ilog.\n\n⚠️ Dapat Tandaan\nRA 9275 = Clean Water Act.",
+                "prompt": "Explain RA 9275 Clean Water Act."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "4. RA 6969 – Toxic Substances and Hazardous and Nuclear Wastes Control Act of 1990:",
+              "text": "This law regulates the importation, manufacture, processing, distribution, use, and disposal of chemical substances and hazardous and nuclear wastes. Example: Hazardous chemical waste must be handled and disposed of according to applicable safety and environmental regulations.",
+              "ai": {
+                "title": "RA 6969 (Toxic Substances)",
+                "content": "📖 Kahulugan\nAng RA 6969 ay nagre-regulate ng chemical substances at hazardous/nuclear wastes.\n\n💡 Simpleng Paliwanag\nToxic at nuclear wastes ay may special handling rules — hindi pwedeng basta itapon.\n\n⚠️ Dapat Tandaan\nRA 6969 = Toxic Substances and Hazardous Wastes.",
+                "prompt": "Explain RA 6969 Toxic Substances Control Act."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "5. RA 9729 – Climate Change Act of 2009:",
+              "text": "This law integrates climate change considerations into government policies and establishes the Climate Change Commission. Example: Government agencies develop programs to prepare communities for climate-related risks such as floods, droughts, and stronger typhoons.",
+              "ai": {
+                "title": "RA 9729 (Climate Change)",
+                "content": "📖 Kahulugan\nAng RA 9729 ay nag-iintegrate ng climate change sa government policies at nagtatag ng Climate Change Commission.\n\n💡 Simpleng Paliwanag\nPaghahanda sa floods, droughts, stronger typhoons — climate adaptation.\n\n⚠️ Dapat Tandaan\nRA 9729 = Climate Change Act. Nagtatag ito ng Climate Change Commission.",
+                "prompt": "Explain RA 9729 Climate Change Act."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "6. RA 9512 – National Environmental Awareness and Education Act of 2008:",
+              "text": "This law promotes environmental awareness through environmental education in schools and other learning institutions. Example: Schools conduct environmental activities and lessons about pollution prevention, conservation, and waste management.",
+              "ai": {
+                "title": "RA 9512 (Environmental Education)",
+                "content": "📖 Kahulugan\nAng RA 9512 ay nagpo-promote ng environmental awareness through education sa schools.\n\n💡 Simpleng Paliwanag\nEnvironmental education sa curriculum — para maging aware ang mga estudyante.\n\n⚠️ Dapat Tandaan\nRA 9512 = Environmental Awareness and Education Act.",
+                "prompt": "Explain RA 9512 Environmental Awareness and Education Act."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "heading": "Important Environmental Practices",
+          "ai": {
+            "title": "Mga Environmental Practices",
+            "content": "📖 Kahulugan\nPitong karaniwang environmental practices na dapat gawin ng bawat isa.\n\n💡 Simpleng Paliwanag\nSimpleng aksyon ito sa araw-araw — waste segregation, recycling, composting, at iba pa.\n\n⚠️ Dapat Tandaan\nLahat ay nagsisimula sa maliit na gawi — daily habits ang susi.",
+            "prompt": "Explain the seven important environmental practices."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Important environmental management practices include: Waste Segregation (separating waste according to type), Recycling (processing used materials into new products), Composting (turning biodegradable waste into organic fertilizer), Reforestation (planting trees to restore forests), Water Conservation (avoiding unnecessary water consumption), Energy Conservation (reducing unnecessary electricity use), and Biodiversity Conservation (protecting different species of plants, animals, and their natural habitats).",
+              "ai": {
+                "title": "Pitong Environmental Practices",
+                "content": "📖 Kahulugan\nPitong practices:\n\n1. Waste Segregation — paghihiwalay ng basura by type\n2. Recycling — processing used materials into new products\n3. Composting — biodegradable waste → organic fertilizer\n4. Reforestation — tree planting para restore forests\n5. Water Conservation — tipirin ang tubig\n6. Energy Conservation — tipirin ang kuryente\n7. Biodiversity Conservation — protektahan ang species at habitats\n\n💡 Simpleng Paliwanag\nLahat ito ay kaya mong gawin sa araw-araw — maliit man, malaking tulong.\n\n⚠️ Dapat Tandaan\nSegregation at recycling — pinaka-basic at madalas lumabas sa exam.",
+                "prompt": "Explain the seven environmental practices with examples."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
