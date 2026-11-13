@@ -4,6 +4,7 @@
 
 export const SUBJECTS = [
   { id: "cse", label: "CSE Reviewer" },
+  { id: "math", label: "Mathematics" },
 ];
 
 export function getSubjectById(id) {
