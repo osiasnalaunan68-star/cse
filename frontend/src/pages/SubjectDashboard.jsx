@@ -229,7 +229,7 @@ export default function SubjectDashboard({ subjectId, subjectLabel }) {
         </div>
 
         {stats.total === 0 ? (
-          <p className="rounded-lg bg-parchment p-3 text-sm text-slate-400 dark:bg-navy-900/40 dark:text-slate-500">Import {subjectLabel} questions in the Import tab first.</p>
+          <p className="rounded-lg bg-parchment p-3 text-sm text-slate-400 dark:bg-navy-900/40 dark:text-slate-500">No questions in this topic yet.</p>
         ) : (
           <div className="space-y-2">
             <button onClick={() => setPlaying(true)} className="flex w-full items-center justify-center gap-1.5 rounded-md bg-navy-900 px-4 py-3 text-sm font-semibold text-white active:bg-navy-800 dark:bg-navy-700 dark:active:bg-navy-600">

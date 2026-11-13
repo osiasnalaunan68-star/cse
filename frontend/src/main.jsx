@@ -2,7 +2,6 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { seedDefaultQuizzes } from "./subjectQuizStore";
 
 class ErrorBoundary extends React.Component {
   constructor(props) { super(props); this.state = { error: null }; }
@@ -20,9 +19,6 @@ class ErrorBoundary extends React.Component {
     return this.props.children;
   }
 }
-
-// Load data/defaultQuizzes/*.json into localStorage on first run.
-seedDefaultQuizzes();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

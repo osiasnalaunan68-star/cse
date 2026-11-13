@@ -1,0 +1,597 @@
+{
+  "format": "cse-library",
+  "version": 1,
+  "exportedAt": "2026-11-13T12:44:40.044Z",
+  "topics": [
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "1. Vocabulary (Talasalitaan)",
+      "topic_order": 1,
+      "keywords": [
+        "vocabulary",
+        "synonyms",
+        "antonyms",
+        "homonyms",
+        "context clues"
+      ],
+      "ai": {
+        "title": "Gabay sa Vocabulary",
+        "content": "📖 Kahulugan\nAng Vocabulary ay ang kabuuang koleksyon ng mga salitang alam, naiintindihan, at ginagamit ng isang tao sa pagsasalita, pagbabasa, at pagsusulat.\n\n🔍 Breakdown\nKasama rito ang pag-unawa sa word meanings, synonyms (magkasingkahulugan), antonyms (magkasalungat), homonyms (parehong baybay o bigkas pero magkaiba ang kahulugan), at context clues (mga pahiwatig sa pangungusap).\n\n💡 Simpleng Paliwanag\nIto ang baul mo ng mga salita. Kapag malawak ang vocabulary mo, madali mong maiintindihan ang malalalim na salita kahit hindi mo pa ito nakita noon.\n\n📦 Halimbawa\nSa salitang 'abundant', ang synonym nito ay 'plentiful'. Sa 'generous', ang antonym ay 'selfish'.\n\n⭐ Bakit Mahalaga Ito?\nMahalaga ito dahil pundasyon ito ng pag-intindi sa kahit anong binabasa o pinapakinggan.\n\n⚠️ Dapat Tandaan\nHuwag lang magkabisado ng salita; tingnan palagi kung paano ito ginamit sa loob ng pangungusap.\n\n🎯 Exam Tip\nSa CSE, gamitin ang context clues sa pangungusap para hulaan ang kahulugan ng mahirap na salita bago tumingin sa choices.",
+        "prompt": "Explain the topic of Vocabulary for the Philippine Civil Service Exam in simple Tagalog, including synonyms, antonyms, homonyms, and context clues, with clear examples and common exam traps."
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "English Definition:",
+          "ai": {
+            "title": "Kahulugan ng Vocabulary",
+            "content": "📖 Kahulugan\nIpinapaliwanag ng seksyong ito kung ano ang Vocabulary at ang mga pangunahing bahagi nito.\n\n💡 Simpleng Paliwanag\nDito mo malalaman na hindi lang basta kahulugan ng salita ang sakop nito, kundi pati relasyon ng mga salita sa isa't isa.\n\n⚠️ Dapat Tandaan\nTandaan ang apat na susi: synonyms, antonyms, homonyms, at context clues.",
+            "prompt": "Explain the definition of Vocabulary and its key components simply in Tagalog for a CSE reviewee, including common traps."
+          },
+          "paragraphs": [
+            {
+              "id": "p1",
+              "text": "Vocabulary refers to the collection of words a person knows, understands, and uses when speaking, reading, and writing. It includes understanding word meanings, synonyms (words with similar meanings), antonyms (words with opposite meanings), homonyms (words with the same spelling or pronunciation but different meanings), and context clues (hints that help determine the meaning of unfamiliar words).",
+              "ai": {
+                "title": "Ano ang Vocabulary?",
+                "content": "📖 Kahulugan\nAng Vocabulary ay ang mga salitang alam, naiintindihan, at nagagamit mo sa pagsasalita, pagbabasa, at pagsusulat.\n\n💡 Simpleng Paliwanag\nHindi sapat na alam mo lang ang isang salita; dapat alam mo rin ang kasingkahulugan (synonyms), kasalungat (antonyms), mga salitang magkapareho ang tunog o baybay pero iba ang ibig sabihin (homonyms), at paano kunin ang kahulugan base sa gamit sa pangungusap (context clues).\n\n⚠️ Dapat Tandaan\nMagkaiba ang synonym (pareho) at antonym (kabaliktaran)—madalas itong nakakalito kapag nagmamadali sa pagsagot.",
+                "prompt": "Explain this definition of Vocabulary in simple Tagalog with everyday examples and highlight common CSE traps between synonyms, antonyms, and homonyms."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "heading": "English Examples:",
+          "ai": {
+            "title": "Mga Halimbawa sa Vocabulary",
+            "content": "📖 Kahulugan\nNagbibigay ang seksyong ito ng konkretong halimbawa para sa bawat uri ng vocabulary concept.\n\n💡 Simpleng Paliwanag\nMakikita rito kung paano aktuwal na ginagamit ang synonyms, antonyms, homonyms, at context clues sa pangungusap.\n\n⚠️ Dapat Tandaan\nPansinin ang mga palatandaan sa loob ng pangungusap para makuha ang tamang kahulugan.",
+            "prompt": "Explain these Vocabulary examples in simple Tagalog and show how to spot similar patterns in the Civil Service Exam."
+          },
+          "paragraphs": [
+            {
+              "id": "p2",
+              "label": "-",
+              "text": "Synonym: The word abundant means plentiful or available in large quantities.",
+              "ai": {
+                "title": "Halimbawa ng Synonym",
+                "content": "📖 Kahulugan\nAng synonym ay mga salitang magkapareho o magkalapit ang kahulugan.\n\n💡 Simpleng Paliwanag\nAng 'abundant' at 'plentiful' ay parehong nangangahulugang sagana o marami.\n\n⚠️ Dapat Tandaan\nSa exam, piliin ang salitang pinakamalapit ang diwa sa naka-highlight na salita.",
+                "prompt": "Explain what a synonym is using the word abundant in simple Tagalog, with extra examples and CSE traps."
+              }
+            },
+            {
+              "id": "p3",
+              "label": "-",
+              "indent": 1,
+              "text": "Example: The school has an abundant supply of books.",
+              "ai": {
+                "title": "Gamit ng Abundant sa Pangungusap",
+                "content": "Tanong: Ano ang ibig sabihin ng 'abundant' sa pangungusap na ito?\nSagot: Ibig sabihin nito ay marami o sagana ang suplay ng libro ng paaralan.",
+                "prompt": "Explain this example sentence for the word abundant in simple Tagalog and show how context helps confirm its meaning."
+              }
+            },
+            {
+              "id": "p4",
+              "label": "-",
+              "text": "Antonym: The opposite of generous is selfish.",
+              "ai": {
+                "title": "Halimbawa ng Antonym",
+                "content": "📖 Kahulugan\nAng antonym ay mga salitang magkasalungat o magkabaliktaran ang ibig sabihin.\n\n💡 Simpleng Paliwanag\nKung ang 'generous' ay mapagbigay, ang kabaliktaran naman nito ay 'selfish' o makasarili.\n\n⚠️ Dapat Tandaan\nBasahing mabuti ang panuto kung 'opposite' o 'similar' ang hinahanap dahil ito ang pinakamadaling pagkamalian sa CSE.",
+                "prompt": "Explain antonyms using generous and selfish in simple Tagalog, and warn about common Civil Service Exam traps."
+              }
+            },
+            {
+              "id": "p5",
+              "label": "-",
+              "text": "Homonym: The word bat can refer to an animal or a piece of sports equipment.",
+              "ai": {
+                "title": "Halimbawa ng Homonym",
+                "content": "📖 Kahulugan\nAng homonym ay salitang magkapareho ang baybay o bigkas ngunit magkaiba ang kahulugan.\n\n💡 Simpleng Paliwanag\nAng salitang 'bat' ay pwedeng tumukoy sa hayop na paniki o kaya sa pamalo sa larong baseball.\n\n⚠️ Dapat Tandaan\nNakadepende sa buong pangungusap kung aling kahulugan ng homonym ang tinutukoy.",
+                "prompt": "Explain homonyms using the word bat in simple Tagalog, give more examples, and note how CSE tests words with multiple meanings."
+              }
+            },
+            {
+              "id": "p6",
+              "label": "-",
+              "text": "Context Clues: Maria was exhausted after running for five kilometers. The word exhausted means extremely tired.",
+              "ai": {
+                "title": "Halimbawa ng Context Clues",
+                "content": "📖 Kahulugan\nAng context clues ay mga salita o ideya sa loob ng pangungusap na tumutulong hulaan ang kahulugan ng isang mahirap na salita.\n\n💡 Simpleng Paliwanag\nDahil tumakbo si Maria ng limang kilometro, malinaw na ang 'exhausted' ay nangangahulugang sobrang pagod.\n\n⚠️ Dapat Tandaan\nHanapin ang sanhi, bunga, o paliwanag sa paligid ng hindi pamilyar na salita.",
+                "prompt": "Explain context clues using this sentence about Maria in simple Tagalog, and give tips on solving CSE vocabulary items without a dictionary."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "2. Grammar and Correct Usage (Balarila at Tamang Paggamit)",
+      "topic_order": 2,
+      "keywords": [
+        "grammar",
+        "parts of speech",
+        "noun",
+        "verb tense",
+        "subject-verb agreement"
+      ],
+      "ai": {
+        "title": "Gabay sa Grammar and Correct Usage",
+        "content": "📖 Kahulugan\nAng Grammar ay ang set ng mga panuntunan kung paano binubuo, inaayos, at tamang ginagamit ang mga salita sa loob ng pangungusap.\n\n🔍 Breakdown\nSakop nito ang parts of speech (nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, interjections), subject-verb agreement, verb tenses, sentence structure, at proper punctuation.\n\n💡 Simpleng Paliwanag\nIto ang 'batas' ng English language. Kapag sinunod mo ang rules na ito, malinaw at tama ang pagkakabuo ng iyong pangungusap.\n\n📦 Halimbawa\nSa Subject-Verb Agreement: 'She runs every morning' (tama dahil singular ang 'She' at may -s ang 'runs').\n\n⭐ Bakit Mahalaga Ito?\nMahalaga ito para maiwasan ang malabong kahulugan at maling pagkakabuo ng mga pangungusap sa pagsusulat at pagsasalita.\n\n⚠️ Dapat Tandaan\nSa English verbs, baliktad ang -s rule: ang singular subject ay kadalasang gumagamit ng verb na may -s (hal. runs), habang ang plural subject ay walang -s (hal. run).\n\n🎯 Exam Tip\nSa Identifying Errors o Correct Usage sa CSE, hanapin muna ang pangunahing subject at verb para makita agad kung nagtutugma sila.",
+        "prompt": "Explain Grammar and Correct Usage for the Philippine Civil Service Exam in simple Tagalog, covering parts of speech, tenses, and subject-verb agreement with examples and traps."
+      },
+      "sections": [
+        {
+          "id": "s3",
+          "heading": "English Definition:",
+          "ai": {
+            "title": "Kahulugan ng Grammar",
+            "content": "📖 Kahulugan\nIpinapaliwanag ng seksyong ito kung ano ang Grammar at ang mga saklaw nitong tuntunin.\n\n💡 Simpleng Paliwanag\nIto ang gabay kung paano pinagsasama-sama nang tama ang mga salita para makabuo ng maayos na pangungusap.\n\n⚠️ Dapat Tandaan\nKabisaduhin ang walong parts of speech dahil dito umiikot ang karamihan sa mga tanong sa grammar.",
+            "prompt": "Explain the definition of Grammar and its main areas in simple Tagalog for a CSE reviewee."
+          },
+          "paragraphs": [
+            {
+              "id": "p7",
+              "text": "Grammar refers to the set of rules that govern how words are formed, arranged, and used correctly in sentences. It includes parts of speech (nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, and interjections), subject-verb agreement, verb tenses, sentence structure, and proper punctuation.",
+              "ai": {
+                "title": "Ano ang Grammar?",
+                "content": "📖 Kahulugan\nAng Grammar ay ang mga patakaran kung paano binubuo, inaayos, at ginagamit nang wasto ang mga salita sa pangungusap.\n\n💡 Simpleng Paliwanag\nKasama rito ang walong parts of speech, ang pagtutugma ng simuno at pandiwa (subject-verb agreement), panahunan ng pandiwa (verb tenses), ayos ng pangungusap, at tamang bantas (punctuation).\n\n⚠️ Dapat Tandaan\nKapag may isang rule na nalabag sa pangungusap, nagiging mali na ang grammar nito.",
+                "prompt": "Explain this definition of Grammar in simple Tagalog, breaking down each component with simple examples and CSE traps."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "heading": "English Examples:",
+          "ai": {
+            "title": "Mga Halimbawa sa Grammar",
+            "content": "📖 Kahulugan\nNagpapakita ito ng mga tiyak na halimbawa ng nouns, verb tenses, at subject-verb agreement.\n\n💡 Simpleng Paliwanag\nMakikita rito ang pagkakaiba ng tama at maling gamit ng salita sa totoong pangungusap.\n\n⚠️ Dapat Tandaan\nBigyang-pansin ang capitalization sa proper nouns at ang -s sa singular verbs.",
+            "prompt": "Explain these Grammar examples in simple Tagalog and highlight the exact rules tested in the Civil Service Exam."
+          },
+          "paragraphs": [
+            {
+              "id": "p8",
+              "label": "-",
+              "text": "Noun: Names a person, place, thing, or idea.",
+              "ai": {
+                "title": "Kahulugan ng Noun",
+                "content": "📖 Kahulugan\nAng Noun (pangngalan) ay salitang nagbibigay ngalan sa tao, lugar, bagay, o ideya.\n\n💡 Simpleng Paliwanag\nLahat ng bagay na may pangalan—nakikita man o hindi—ay tinatawag na noun.\n\n⚠️ Dapat Tandaan\nHindi lang tao o bagay ang noun; kasama rin dito ang mga ideya gaya ng love o freedom.",
+                "prompt": "Explain what a Noun is in simple Tagalog with examples of person, place, thing, and idea, plus CSE traps."
+              }
+            },
+            {
+              "id": "p9",
+              "label": "-",
+              "indent": 1,
+              "text": "Example: The student reads a book.",
+              "ai": {
+                "title": "Halimbawa ng Noun sa Pangungusap",
+                "content": "Tanong: Alin ang mga noun sa pangungusap na ito?\nSagot: Ang 'student' (tao) at 'book' (bagay) ang mga noun dito.",
+                "prompt": "Identify and explain the nouns in this example sentence in simple Tagalog."
+              }
+            },
+            {
+              "id": "p10",
+              "label": "-",
+              "text": "Proper Noun: Refers to a specific name and always begins with a capital letter.",
+              "ai": {
+                "title": "Kahulugan ng Proper Noun",
+                "content": "📖 Kahulugan\nAng Proper Noun ay tumutukoy sa tiyak o partikular na pangalan at laging nagsisimula sa malaking titik (capital letter).\n\n💡 Simpleng Paliwanag\nIto ang mismong pangalan ng isang tao, lugar, o bagay kaya laging naka-capitalize.\n\n⚠️ Dapat Tandaan\nKahit nasa gitna ng pangungusap ang proper noun, dapat ay capital letter pa rin ang unang letra nito.",
+                "prompt": "Explain Proper Nouns in simple Tagalog with examples and capitalization rules tested in the CSE."
+              }
+            },
+            {
+              "id": "p11",
+              "label": "-",
+              "indent": 1,
+              "text": "Example: Philippines, Manila, Harry Potter.",
+              "ai": {
+                "title": "Mga Halimbawa ng Proper Noun",
+                "content": "Tanong: Bakit nagsisimula sa malaking titik ang Philippines, Manila, at Harry Potter?\nSagot: Dahil tiyak na pangalan sila ng bansa, lungsod, at karakter kaya proper nouns sila.",
+                "prompt": "Explain why these specific examples are Proper Nouns in simple Tagalog."
+              }
+            },
+            {
+              "id": "p12",
+              "label": "-",
+              "text": "Common Noun: Refers to a general person, place, or thing.",
+              "ai": {
+                "title": "Kahulugan ng Common Noun",
+                "content": "📖 Kahulugan\nAng Common Noun ay tumutukoy sa pangkalahatang ngalan ng tao, lugar, o bagay.\n\n💡 Simpleng Paliwanag\nHindi ito tiyak na pangalan, kaya hindi ito naka-capitalize maliban na lang kung nasa simula ng pangungusap.\n\n⚠️ Dapat Tandaan\nHuwag i-capitalize ang common nouns sa gitna ng pangungusap.",
+                "prompt": "Explain Common Nouns in simple Tagalog and contrast them with Proper Nouns, including CSE traps."
+              }
+            },
+            {
+              "id": "p13",
+              "label": "-",
+              "indent": 1,
+              "text": "Example: city, teacher, book.",
+              "ai": {
+                "title": "Mga Halimbawa ng Common Noun",
+                "content": "Tanong: Bakit maliit ang unang titik ng city, teacher, at book?\nSagot: Dahil pangkalahatang tawag lang sila sa lugar, tao, at bagay—walang tiyak na pangalan.",
+                "prompt": "Explain these Common Noun examples in simple Tagalog."
+              }
+            },
+            {
+              "id": "p14",
+              "label": "-",
+              "text": "Verb Tense: Shows when an action happens.",
+              "ai": {
+                "title": "Kahulugan ng Verb Tense",
+                "content": "📖 Kahulugan\nAng Verb Tense ay nagpapakita kung kailan nangyari, nangyayari, o mangyayari ang isang kilos.\n\n💡 Simpleng Paliwanag\nNagbabago ang anyo ng pandiwa (verb) depende sa panahon ng kilos—nakaraan, kasalukuyan, o hinaharap.\n\n⚠️ Dapat Tandaan\nTingnan ang time markers sa pangungusap (gaya ng yesterday, every day, tomorrow) para malaman ang tamang tense.",
+                "prompt": "Explain Verb Tenses in simple Tagalog and show how time markers help identify the right tense in the CSE."
+              }
+            },
+            {
+              "id": "p15",
+              "label": "-",
+              "indent": 1,
+              "text": "Present: She studies every day.",
+              "ai": {
+                "title": "Present Tense Example",
+                "content": "Tanong: Bakit 'studies' ang ginamit sa pangungusap na ito?\nSagot: Dahil ang 'every day' ay nagpapakita ng kilos na ginagawa nang paulit-ulit sa kasalukuyan (Present Tense).",
+                "prompt": "Explain the present tense in this example sentence in simple Tagalog, including spelling and agreement rules."
+              }
+            },
+            {
+              "id": "p16",
+              "label": "-",
+              "indent": 1,
+              "text": "Past: She studied yesterday.",
+              "ai": {
+                "title": "Past Tense Example",
+                "content": "Tanong: Paano natin nalaman na Past Tense ang dapat gamitin dito?\nSagot: Dahil sa salitang 'yesterday', na nagpapakitang tapos na ang pag-aaral niya kahapon.",
+                "prompt": "Explain the past tense in this example sentence in simple Tagalog, including regular vs irregular verb traps."
+              }
+            },
+            {
+              "id": "p17",
+              "label": "-",
+              "indent": 1,
+              "text": "Future: She will study tomorrow.",
+              "ai": {
+                "title": "Future Tense Example",
+                "content": "Tanong: Paano ipinakita ang Future Tense sa pangungusap?\nSagot: Gumamit ng 'will' bago ang base form na 'study' dahil bukas ('tomorrow') pa ito gagawin.",
+                "prompt": "Explain the future tense in this example sentence in simple Tagalog and warn against adding -s or -ed after 'will'."
+              }
+            },
+            {
+              "id": "p18",
+              "label": "-",
+              "text": "Subject-Verb Agreement: The subject and verb must agree in number.",
+              "ai": {
+                "title": "Kahulugan ng Subject-Verb Agreement",
+                "content": "📖 Kahulugan\nSa Subject-Verb Agreement, dapat magkatugma sa bilang (singular o plural) ang paksa (subject) at ang pandiwa (verb).\n\n💡 Simpleng Paliwanag\nKung iisa ang gumagawa ng kilos (singular), dapat singular din ang verb. Kung marami sila (plural), plural din ang verb.\n\n⚠️ Dapat Tandaan\nSa simple present tense, ang singular verb ay nagtatapos sa -s, samantalang ang plural verb ay walang -s.",
+                "prompt": "Explain Subject-Verb Agreement in simple Tagalog with clear rules and common CSE traps like intervening phrases."
+              }
+            },
+            {
+              "id": "p19",
+              "label": "-",
+              "indent": 1,
+              "text": "Correct: She runs every morning.",
+              "ai": {
+                "title": "Tamang Subject-Verb Agreement",
+                "content": "Tanong: Bakit tama ang 'She runs every morning'?\nSagot: Dahil iisa lang si 'She' (singular), kaya dapat may -s ang verb na 'runs'.",
+                "prompt": "Explain why this sentence has correct subject-verb agreement in simple Tagalog."
+              }
+            },
+            {
+              "id": "p20",
+              "label": "-",
+              "indent": 1,
+              "text": "Incorrect: She run every morning.",
+              "ai": {
+                "title": "Maling Subject-Verb Agreement",
+                "content": "Tanong: Bakit mali ang 'She run every morning'?\nSagot: Mali ito dahil singular ang 'She' pero walang -s ang verb na 'run' sa present tense.",
+                "prompt": "Explain why this sentence is grammatically incorrect in simple Tagalog and how to fix it."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "3. Paragraph Organization (Pag-aayos ng mga Talata)",
+      "topic_order": 3,
+      "keywords": [
+        "paragraph organization",
+        "topic sentence",
+        "supporting details",
+        "transition words",
+        "concluding sentence"
+      ],
+      "ai": {
+        "title": "Gabay sa Paragraph Organization",
+        "content": "📖 Kahulugan\nAng Paragraph Organization ay ang lohikal at maayos na pagkakasunod-sunod ng mga pangungusap at ideya upang makabuo ng malinaw at magkakaugnay na talata.\n\n🔍 Breakdown\nBinubuo ito ng apat na bahagi: Topic Sentence (pangunahing ideya), Supporting Details (mga paliwanag o halimbawa), Transition Words (pang-ugnay na salita), at Concluding Sentence (pangwakas na buod).\n\n💡 Simpleng Paliwanag\nPara itong pagkukwento na may simula, gitna, at wakas. Hindi pwedeng magulo o talon-talon ang mga ideya para madaling maintindihan ng nagbabasa.\n\n📦 Halimbawa\nSimulan sa pangkalahatang ideya tungkol sa edukasyon, sundan ng mga benepisyo nito, gumamit ng 'Furthermore', at tapusin gamit ang 'Therefore'.\n\n⭐ Bakit Mahalaga Ito?\nMahalaga ito dahil nagiging malinaw, kapani-paniwala, at madaling sundan ang daloy ng iyong isinusulat o binabasa.\n\n⚠️ Dapat Tandaan\nAng topic sentence ang pinakapangkalahatang ideya, habang ang mga detalye at halimbawa ay laging sumusunod lang dito.\n\n🎯 Exam Tip\nSa CSE Paragraph Organization, hanapin muna ang pinaka-general sentence para sa simula at ang pangungusap na may 'Therefore' o 'In conclusion' para sa dulo.",
+        "prompt": "Explain Paragraph Organization for the Philippine Civil Service Exam in simple Tagalog, covering topic sentences, supporting details, transitions, and conclusions with strategies and traps."
+      },
+      "sections": [
+        {
+          "id": "s5",
+          "heading": "English Definition:",
+          "ai": {
+            "title": "Kahulugan ng Paragraph Organization",
+            "content": "📖 Kahulugan\nIpinapaliwanag ng seksyong ito kung ano ang Paragraph Organization at ang mga bahaging bumubuo rito.\n\n💡 Simpleng Paliwanag\nIto ang tamang pagkakasunod-sunod ng mga ideya para hindi magulo ang isang talata.\n\n⚠️ Dapat Tandaan\nTandaan ang apat na sangkap: topic sentence, supporting sentences, transitional words, at concluding sentence.",
+            "prompt": "Explain the definition of Paragraph Organization in simple Tagalog for a CSE reviewee."
+          },
+          "paragraphs": [
+            {
+              "id": "p21",
+              "text": "Paragraph organization refers to the logical arrangement of sentences and ideas to create a clear, meaningful, and well-connected paragraph. A well-organized paragraph usually contains a topic sentence, supporting sentences, transitional words, and a concluding sentence.",
+              "ai": {
+                "title": "Ano ang Paragraph Organization?",
+                "content": "📖 Kahulugan\nAng Paragraph Organization ay ang lohikal na pagsasaayos ng mga pangungusap at ideya upang makabuo ng malinaw, makabuluhan, at magkakaugnay na talata.\n\n💡 Simpleng Paliwanag\nAng isang maayos na talata ay may malinaw na simula (topic sentence), gitna (supporting sentences at transitional words), at katapusan (concluding sentence).\n\n⚠️ Dapat Tandaan\nKailangan ay magkakaugnay ang bawat pangungusap at hindi lumilihis sa pangunahing paksa.",
+                "prompt": "Explain this definition of Paragraph Organization in simple Tagalog and show how each part connects to the next."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s6",
+          "heading": "English Example — A paragraph about the importance of education:",
+          "ai": {
+            "title": "Halimbawa ng Maayos na Talata",
+            "content": "📖 Kahulugan\nNagpapakita ang seksyong ito ng kumpletong modelo kung paano binubuo ang isang talata tungkol sa edukasyon.\n\n💡 Simpleng Paliwanag\nMakikita rito ang sunod-sunod na pwesto ng bawat bahagi mula simula hanggang dulo.\n\n⚠️ Dapat Tandaan\nPansinin kung paano ginamit ang 'Furthermore' at 'Therefore' bilang palatandaan ng ayos.",
+            "prompt": "Walk through this example paragraph about education in simple Tagalog, pointing out the flow of ideas and CSE sequencing clues."
+          },
+          "paragraphs": [
+            {
+              "id": "p22",
+              "label": "-",
+              "text": "Topic Sentence: Education plays an important role in a person's future.",
+              "ai": {
+                "title": "Halimbawa ng Topic Sentence",
+                "content": "📖 Kahulugan\nIto ang pangungusap na nagpapakilala sa pangunahing ideya ng buong talata.\n\n💡 Simpleng Paliwanag\nSinasabi agad nito na tungkol sa mahalagang papel ng edukasyon sa kinabukasan ang pag-uusapan.\n\n⚠️ Dapat Tandaan\nPangkalahatan ang pahayag na ito at wala pang masyadong detalye kaya ito ang nasa unahan.",
+                "prompt": "Explain why this serves as the Topic Sentence in simple Tagalog and how to spot opening sentences in CSE tests."
+              }
+            },
+            {
+              "id": "p23",
+              "label": "-",
+              "text": "Supporting Details: It provides knowledge, develops skills, and helps individuals find better career opportunities.",
+              "ai": {
+                "title": "Halimbawa ng Supporting Details",
+                "content": "📖 Kahulugan\nIto ang mga pangungusap na nagpapaliwanag at nagpapatunay sa topic sentence.\n\n💡 Simpleng Paliwanag\nIbinibigay nito ang mga tiyak na paraan kung paano nakakatulong ang edukasyon: kaalaman, kasanayan, at magandang trabaho.\n\n⚠️ Dapat Tandaan\nNotice the pronoun 'It'—tumutukoy ito sa 'Education' sa unang pangungusap, kaya siguradong kasunod ito.",
+                "prompt": "Explain these Supporting Details in simple Tagalog and point out pronoun clues like 'It' that help order sentences."
+              }
+            },
+            {
+              "id": "p24",
+              "label": "-",
+              "text": "Transition: Furthermore, education teaches discipline and responsibility.",
+              "ai": {
+                "title": "Halimbawa ng Transition",
+                "content": "📖 Kahulugan\nGumagamit ito ng transition word upang magdagdag ng kaugnay na ideya nang maayos.\n\n💡 Simpleng Paliwanag\nAng salitang 'Furthermore' ay nangangahulugang 'bukod pa rito', kaya nagdadagdag ito ng isa pang magandang dulot ng edukasyon.\n\n⚠️ Dapat Tandaan\nAng mga salitang gaya ng 'Furthermore' o 'In addition' ay hindi kailanman pwedeng maging unang pangungusap ng talata.",
+                "prompt": "Explain the role of transitions using 'Furthermore' in simple Tagalog, with common CSE sequence traps."
+              }
+            },
+            {
+              "id": "p25",
+              "label": "-",
+              "text": "Concluding Sentence: Therefore, education is essential for personal growth and success.",
+              "ai": {
+                "title": "Halimbawa ng Concluding Sentence",
+                "content": "📖 Kahulugan\nIto ang pangwakas na pangungusap na nagbubuod sa pangunahing mensahe ng talata.\n\n💡 Simpleng Paliwanag\nGamit ang salitang 'Therefore' (samakatuwid), isinasara nito ang talata sa pamamagitan ng pag-uulit na mahalaga ang edukasyon para sa pag-unlad at tagumpay.\n\n⚠️ Dapat Tandaan\nAng mga salitang gaya ng 'Therefore', 'Thus', at 'Finally' ay malakas na palatandaan na ito ang huling pangungusap.",
+                "prompt": "Explain this Concluding Sentence in simple Tagalog and list common conclusion signal words used in the CSE."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s7",
+          "heading": "Important Elements:",
+          "ai": {
+            "title": "Mahahalagang Elemento ng Talata",
+            "content": "📖 Kahulugan\nInililista at binibigyang-kahulugan ng seksyong ito ang apat na mahahalagang bahagi ng isang talata.\n\n💡 Simpleng Paliwanag\nIto ang mabilisang gabay sa tungkulin ng bawat bahagi ng paragraph organization.\n\n⚠️ Dapat Tandaan\nKabisaduhin ang papel ng bawat isa para madaling matukoy ang tamang pagkakasunod-sunod.",
+            "prompt": "Summarize these four important elements of a paragraph in simple Tagalog for quick CSE review."
+          },
+          "paragraphs": [
+            {
+              "id": "p26",
+              "label": "-",
+              "text": "Topic Sentence: Introduces the main idea of the paragraph.",
+              "ai": {
+                "title": "Tungkulin ng Topic Sentence",
+                "content": "📖 Kahulugan\nIpinapakilala nito ang pangunahing ideya o paksa ng buong talata.\n\n💡 Simpleng Paliwanag\nIto ang pinaka-ulo ng talata na nagsasabi kung tungkol saan ang lahat ng susunod na pangungusap.\n\n⚠️ Dapat Tandaan\nKadalasan itong matatagpuan sa pinakaunang bahagi ng talata.",
+                "prompt": "Explain the function of a Topic Sentence in simple Tagalog and how to distinguish it from supporting details."
+              }
+            },
+            {
+              "id": "p27",
+              "label": "-",
+              "text": "Supporting Details: Provide explanations, facts, or examples that support the main idea.",
+              "ai": {
+                "title": "Tungkulin ng Supporting Details",
+                "content": "📖 Kahulugan\nNagbibigay ang mga ito ng paliwanag, katotohanan (facts), o halimbawa na sumusuporta sa pangunahing ideya.\n\n💡 Simpleng Paliwanag\nIto ang laman o katawan ng talata na nagpapatibay sa sinabi ng topic sentence.\n\n⚠️ Dapat Tandaan\nHindi dapat magpasok ng ibang paksa sa supporting details.",
+                "prompt": "Explain Supporting Details in simple Tagalog with examples of facts and explanations."
+              }
+            },
+            {
+              "id": "p28",
+              "label": "-",
+              "text": "Transition Words: Connect ideas smoothly (first, furthermore, however, therefore).",
+              "ai": {
+                "title": "Tungkulin ng Transition Words",
+                "content": "📖 Kahulugan\nAng transition words ay mga salitang nagdurugtong sa mga ideya nang maayos at madulas.\n\n💡 Simpleng Paliwanag\nGaya ng 'first', 'furthermore', 'however', at 'therefore', nagsisilbi itong tulay para hindi biglaan ang lipat mula sa isang pangungusap patungo sa susunod.\n\n⚠️ Dapat Tandaan\nAlamin ang gamit ng bawat transition: 'furthermore' (dagdag), 'however' (salungat), at 'therefore' (resulta/konklusyon).",
+                "prompt": "Explain Transition Words in simple Tagalog, categorizing words like first, furthermore, however, and therefore for CSE items."
+              }
+            },
+            {
+              "id": "p29",
+              "label": "-",
+              "text": "Concluding Sentence: Summarizes the main idea and provides a proper ending.",
+              "ai": {
+                "title": "Tungkulin ng Concluding Sentence",
+                "content": "📖 Kahulugan\nBinubuod nito ang pangunahing ideya at nagbibigay ng maayos na pagtatapos sa talata.\n\n💡 Simpleng Paliwanag\nIto ang panghuling pangungusap na nagsasara sa diskusyon nang hindi na nagdadagdag ng bagong ideya.\n\n⚠️ Dapat Tandaan\nHindi dapat naglalaman ng panibagong paksa ang concluding sentence.",
+                "prompt": "Explain the role of a Concluding Sentence in simple Tagalog and common traps when choosing the final sentence in CSE."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "4. Reading Comprehension (Pag-unawa sa Binasa)",
+      "topic_order": 4,
+      "keywords": [
+        "reading comprehension",
+        "main idea",
+        "supporting details",
+        "inference",
+        "author's purpose",
+        "moral lesson"
+      ],
+      "ai": {
+        "title": "Gabay sa Reading Comprehension",
+        "content": "📖 Kahulugan\nAng Reading Comprehension ay ang kakayahang magbasa, umunawa, magbigay-kahulugan, at magsuri ng mga nakasulat na teksto.\n\n🔍 Breakdown\nKasama rito ang pagtukoy sa main idea (pangunahing ideya), pagkilala sa supporting details (mga sumusuportang detalye), paggawa ng inferences (matalinong hinuha), pag-unawa sa author's purpose (layunin ng may-akda), at pagkuha ng message o moral lesson.\n\n💡 Simpleng Paliwanag\nHindi sapat na nababasa mo lang ang mga salita; kailangan naiintindihan mo ang kabuuang mensahe ng kwento, pati ang mga bagay na hindi direktang sinabi.\n\n📦 Halimbawa\nSa kwento ng batang tumulong sa matanda sa pagtawid: ang main idea ay pagtulong sa matanda, at ang inference ay mabait at maalalahanin ang bata.\n\n⭐ Bakit Mahalaga Ito?\nMahalaga ito dahil halos lahat ng impormasyon sa pag-aaral at trabaho ay nakukuha sa pamamagitan ng pagbabasa at tamang pag-unawa.\n\n⚠️ Dapat Tandaan\nIbase lang ang sagot sa kung ano ang sinasabi o ipinapahiwatig ng teksto—huwag magdagdag ng sariling opinyon na wala sa binasa.\n\n🎯 Exam Tip\nSa CSE Reading Comprehension, basahin muna ang mga tanong bago ang mahabang talata para alam mo agad kung anong detalye ang hahanapin.",
+        "prompt": "Explain Reading Comprehension for the Philippine Civil Service Exam in simple Tagalog, covering main idea, supporting details, inference, author's purpose, and moral lesson with tips and traps."
+      },
+      "sections": [
+        {
+          "id": "s8",
+          "heading": "English Definition:",
+          "ai": {
+            "title": "Kahulugan ng Reading Comprehension",
+            "content": "📖 Kahulugan\nIpinapaliwanag ng seksyong ito kung ano ang Reading Comprehension at ang limang kasanayang sakop nito.\n\n💡 Simpleng Paliwanag\nDito makikita na ang pag-unawa sa binasa ay may iba't ibang antas—mula sa direktang detalye hanggang sa malalim na pagsusuri.\n\n⚠️ Dapat Tandaan\nAlamin ang pagkakaiba ng direktang detalye (supporting details) at ng hinuha (inference).",
+            "prompt": "Explain the definition of Reading Comprehension and its five core skills in simple Tagalog for a CSE reviewee."
+          },
+          "paragraphs": [
+            {
+              "id": "p30",
+              "text": "Reading comprehension is the ability to read, understand, interpret, and analyze written texts. It involves identifying the main idea, recognizing supporting details, making inferences, understanding the author's purpose, and identifying the message or lesson presented in a passage.",
+              "ai": {
+                "title": "Ano ang Reading Comprehension?",
+                "content": "📖 Kahulugan\nAng Reading Comprehension ay ang kakayahang magbasa, umunawa, mag-interpret, at mag-analisa ng mga nakasulat na teksto.\n\n💡 Simpleng Paliwanag\nKapag nagbabasa ka, tinutukoy mo ang main idea, supporting details, inferences, author's purpose, at ang aral o mensahe ng talata.\n\n⚠️ Dapat Tandaan\nLaging nakabatay sa mismong binasang teksto ang lahat ng tamang sagot.",
+                "prompt": "Explain this definition of Reading Comprehension in simple Tagalog and clarify what each skill means during an exam."
+              }
+            }
+          ]
+        },
+        {
+          "id": "s9",
+          "heading": "English Example — After reading a short story about a boy who helps an elderly woman cross the street:",
+          "ai": {
+            "title": "Halimbawa ng Pagsusuri sa Kwento",
+            "content": "📖 Kahulugan\nIpinapakita rito kung paano sinasagot ang iba't ibang uri ng tanong sa Reading Comprehension gamit ang isang maikling kwento.\n\n💡 Simpleng Paliwanag\nMula sa simpleng kwento ng batang tumulong sa matanda, makikita kung paano hinahango ang main idea, detalye, inference, layunin, at aral.\n\n⚠️ Dapat Tandaan\nTingnan kung paano nagkakaiba ang sagot sa bawat uri ng tanong kahit iisang kwento lang ang pinagbatayan.",
+            "prompt": "Explain how each reading comprehension question in this story example works in simple Tagalog, including common CSE traps."
+          },
+          "paragraphs": [
+            {
+              "id": "p31",
+              "label": "-",
+              "text": "Main Idea: What is the story mainly about?",
+              "ai": {
+                "title": "Tanong sa Main Idea",
+                "content": "📖 Kahulugan\nTinatanong ng Main Idea kung tungkol saan ang kabuuan ng kwento o talata.\n\n💡 Simpleng Paliwanag\nIto ang pinakabuod o pangunahing paksa na umiikot sa buong binasa.\n\n⚠️ Dapat Tandaan\nHuwag piliin ang masyadong maliit na detalye o ang masyadong malawak na ideya na wala sa kwento.",
+                "prompt": "Explain how to find the Main Idea in simple Tagalog and common distractor traps in the CSE."
+              }
+            },
+            {
+              "id": "p32",
+              "label": "-",
+              "indent": 1,
+              "text": "Answer: A boy helping an elderly woman.",
+              "ai": {
+                "title": "Sagot sa Main Idea",
+                "content": "Tanong: Bakit ito ang Main Idea ng kwento?\nSagot: Dahil ang buong kwento ay umiikot sa pagtulong ng bata sa matandang babae.",
+                "prompt": "Explain why this answer accurately captures the Main Idea in simple Tagalog."
+              }
+            },
+            {
+              "id": "p33",
+              "label": "-",
+              "text": "Supporting Details: What did the boy do?",
+              "ai": {
+                "title": "Tanong sa Supporting Details",
+                "content": "📖 Kahulugan\nAng Supporting Details ay mga tiyak na impormasyon o pangyayari na direktang nakasulat sa teksto.\n\n💡 Simpleng Paliwanag\nSinasagot nito ang mga tanong na ano, sino, saan, kailan, at paano base mismo sa nabasa.\n\n⚠️ Dapat Tandaan\nDirekta mo itong mahahanap sa mismong mga pangungusap ng talata.",
+                "prompt": "Explain Supporting Details in Reading Comprehension in simple Tagalog and how to locate them quickly."
+              }
+            },
+            {
+              "id": "p34",
+              "label": "-",
+              "indent": 1,
+              "text": "Answer: He helped the woman cross the street.",
+              "ai": {
+                "title": "Sagot sa Supporting Details",
+                "content": "Tanong: Paano nakuha ang sagot na ito?\nSagot: Direktang binanggit sa kwento ang ginawa ng bata—tinulungan niyang tumawid sa kalsada ang matanda.",
+                "prompt": "Explain why this is a Supporting Detail in simple Tagalog."
+              }
+            },
+            {
+              "id": "p35",
+              "label": "-",
+              "text": "Inference: What can you conclude about the boy?",
+              "ai": {
+                "title": "Tanong sa Inference",
+                "content": "📖 Kahulugan\nAng Inference ay matalinong hinuha o konklusyon base sa mga pahiwatig sa kwento kahit hindi ito direktang sinabi.\n\n💡 Simpleng Paliwanag\nIto ang 'reading between the lines'—ginagamit mo ang ebidensya sa kwento para makabuo ng tamang palagay.\n\n⚠️ Dapat Tandaan\nDapat may matibay na basehan sa teksto ang iyong hinuha at hindi basta hula lang.",
+                "prompt": "Explain how to make an Inference in simple Tagalog and how to avoid over-assuming on CSE questions."
+              }
+            },
+            {
+              "id": "p36",
+              "label": "-",
+              "indent": 1,
+              "text": "Answer: He is helpful and considerate.",
+              "ai": {
+                "title": "Sagot sa Inference",
+                "content": "Tanong: Bakit masasabing matulungin at maalalahanin ang bata?\nSagot: Kahit hindi direktang sinabi sa kwento ang mga salitang iyon, ipinakita ito ng kilos niyang pagtulong sa matanda.",
+                "prompt": "Explain how this inference is supported by the boy's actions in simple Tagalog."
+              }
+            },
+            {
+              "id": "p37",
+              "label": "-",
+              "text": "Author's Purpose: Why did the author write the story?",
+              "ai": {
+                "title": "Tanong sa Author's Purpose",
+                "content": "📖 Kahulugan\nAng Author's Purpose ay ang dahilan o layunin ng may-akda kung bakit niya isinulat ang teksto.\n\n💡 Simpleng Paliwanag\nTinatanong nito kung gusto ba ng writer na magbigay-impormasyon, manghikayat, magbigay-aliw, o magpakita ng isang mahalagang punto.\n\n⚠️ Dapat Tandaan\nPag-isipan ang kabuuang tono at mensahe ng sulatin para matukoy ang layunin ng may-akda.",
+                "prompt": "Explain Author's Purpose in simple Tagalog (to inform, persuade, entertain, or illustrate a value) with CSE tips."
+              }
+            },
+            {
+              "id": "p38",
+              "label": "-",
+              "indent": 1,
+              "text": "Answer: To show the importance of kindness.",
+              "ai": {
+                "title": "Sagot sa Author's Purpose",
+                "content": "Tanong: Ano ang layunin ng may-akda sa kwentong ito?\nSagot: Isinulat niya ito upang ipakita ang kahalagahan ng kabaitan o pagiging matulungin sa kapwa.",
+                "prompt": "Explain why showing the importance of kindness is the author's purpose here in simple Tagalog."
+              }
+            },
+            {
+              "id": "p39",
+              "label": "-",
+              "text": "Moral Lesson: What lesson can you learn?",
+              "ai": {
+                "title": "Tanong sa Moral Lesson",
+                "content": "📖 Kahulugan\nAng Moral Lesson ay ang magandang asal o aral sa buhay na mapupulot mula sa binasang kwento.\n\n💡 Simpleng Paliwanag\nIto ang praktikal na paalala na pwede mong isabuhay pagkatapos mong mabasa ang teksto.\n\n⚠️ Dapat Tandaan\nAng moral lesson ay karaniwang positibo at pangkalahatang gabay sa tamang pag-uugali.",
+                "prompt": "Explain how to identify the Moral Lesson of a passage in simple Tagalog and distinguish it from the Main Idea."
+              }
+            },
+            {
+              "id": "p40",
+              "label": "-",
+              "indent": 1,
+              "text": "Answer: We should help others whenever we can.",
+              "ai": {
+                "title": "Sagot sa Moral Lesson",
+                "content": "Tanong: Anong aral ang mapupulot natin sa kwento?\nSagot: Dapat tayong tumulong sa ating kapwa sa tuwing may pagkakataon tayo.",
+                "prompt": "Explain this Moral Lesson in simple Tagalog and show how it applies the story's theme to real life."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

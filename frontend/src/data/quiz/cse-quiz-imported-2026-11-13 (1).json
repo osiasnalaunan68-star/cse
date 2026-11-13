@@ -1,0 +1,1359 @@
+{
+  "format": "cse-quiz",
+  "version": 1,
+  "exportedAt": "2026-11-13T12:44:45.440Z",
+  "topics": [
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "Vocabulary",
+      "topic_order": 1,
+      "questions": {
+        "1": {
+          "question": "The manager made a lucrative business proposal that benefited all partners. (Choose the closest meaning of 'lucrative')",
+          "choices": {
+            "A": "risky",
+            "B": "profitable",
+            "C": "complex",
+            "D": "temporary"
+          },
+          "correct": "B",
+          "reason": "Ang \"lucrative\" ay nangangahulugang kumikita o nagbibigay ng malaking tubo (profitable)."
+        },
+        "2": {
+          "question": "Her meticulous attention to detail ensured there were no errors in the final report. (Choose the closest meaning of 'meticulous')",
+          "choices": {
+            "A": "careless",
+            "B": "hasty",
+            "C": "thorough",
+            "D": "casual"
+          },
+          "correct": "C",
+          "reason": "Ang \"meticulous\" ay ibig sabihin ay sobrang busisi, maingat, at masusi (thorough/detailed)."
+        },
+        "3": {
+          "question": "The politician's ambiguous statement left the reporters confused about his true stance. (Choose the closest meaning of 'ambiguous')",
+          "choices": {
+            "A": "clear",
+            "B": "straightforward",
+            "C": "vague",
+            "D": "honest"
+          },
+          "correct": "C",
+          "reason": "Ang \"ambiguous\" ay may dalawa o higit pang kahulugan o malabo (vague/unclear)."
+        },
+        "4": {
+          "question": "Despite facing numerous hardships, she remained resilient and achieved her goals. (Choose the closest meaning of 'resilient')",
+          "choices": {
+            "A": "fragile",
+            "B": "flexible",
+            "C": "persistent",
+            "D": "weak"
+          },
+          "correct": "C",
+          "reason": "Ang \"resilient\" ay ang kakayahang bumangon muli o magpatuloy sa kabila ng pagsubok (persistent/strong)."
+        },
+        "5": {
+          "question": "The CEO decided to mitigate the risks by hiring an external auditor. (Choose the closest meaning of 'mitigate')",
+          "choices": {
+            "A": "increase",
+            "B": "evaluate",
+            "C": "lessen",
+            "D": "ignore"
+          },
+          "correct": "C",
+          "reason": "Ang \"mitigate\" ay nangangahulugang bawasan ang tindi o epekto ng isang masamang bagay (lessen/reduce)."
+        },
+        "6": {
+          "question": "His audacious plan to climb the mountain without oxygen amazed everyone. (Choose the closest meaning of 'audacious')",
+          "choices": {
+            "A": "timid",
+            "B": "bold",
+            "C": "foolish",
+            "D": "cautious"
+          },
+          "correct": "B",
+          "reason": "Ang \"audacious\" ay matapang, mapangahas, o daring (bold/fearless)."
+        },
+        "7": {
+          "question": "The committee reached a consensus after hours of intense debate. (Choose the closest meaning of 'consensus')",
+          "choices": {
+            "A": "disagreement",
+            "B": "deadlock",
+            "C": "agreement",
+            "D": "compromise"
+          },
+          "correct": "C",
+          "reason": "Ang \"consensus\" ay pangkalahatang kasunduan ng grupo (general agreement)."
+        },
+        "8": {
+          "question": "The museum houses a collection of ancient artifacts dating back to the Stone Age. (Choose the closest meaning of 'ancient')",
+          "choices": {
+            "A": "modern",
+            "B": "antique",
+            "C": "replica",
+            "D": "broken"
+          },
+          "correct": "B",
+          "reason": "Ang \"ancient\" ay napakaluma o sinauna (antique/very old)."
+        },
+        "9": {
+          "question": "She showed great candor when she admitted her mistake during the meeting. (Choose the closest meaning of 'candor')",
+          "choices": {
+            "A": "dishonesty",
+            "B": "shyness",
+            "C": "frankness",
+            "D": "arrogance"
+          },
+          "correct": "C",
+          "reason": "Ang \"candor\" ay pagiging tapat at prangka sa pagsasalita (frankness/openness)."
+        },
+        "10": {
+          "question": "The teacher gave a concise explanation, making the complex topic easy to understand. (Choose the closest meaning of 'concise')",
+          "choices": {
+            "A": "lengthy",
+            "B": "brief",
+            "C": "complicated",
+            "D": "boring"
+          },
+          "correct": "B",
+          "reason": "Ang \"concise\" ay maikli ngunit siksik at malinaw (brief and clear)."
+        },
+        "11": {
+          "question": "His frugal lifestyle allowed him to save enough money to buy a house. (Choose the closest meaning of 'frugal')",
+          "choices": {
+            "A": "extravagant",
+            "B": "wasteful",
+            "C": "thrifty",
+            "D": "greedy"
+          },
+          "correct": "C",
+          "reason": "Ang \"frugal\" ay matipid sa pera o resources (thrifty/wise spender)."
+        },
+        "12": {
+          "question": "The heavy rain hindered the rescue operations in the flooded town. (Choose the closest meaning of 'hindered')",
+          "choices": {
+            "A": "delayed",
+            "B": "helped",
+            "C": "accelerated",
+            "D": "guided"
+          },
+          "correct": "A",
+          "reason": "Ang \"hinder\" ay nagpapatagal, pumipigil, o humahadlang sa isang gawain (delayed/obstructed)."
+        },
+        "13": {
+          "question": "The detective found tangible evidence linking the suspect to the crime scene. (Choose the closest meaning of 'tangible')",
+          "choices": {
+            "A": "imaginary",
+            "B": "concrete",
+            "C": "invisible",
+            "D": "weak"
+          },
+          "correct": "B",
+          "reason": "Ang \"tangible\" ay nahahawakan, totoo, o konkretong ebidensya (real/concrete)."
+        },
+        "14": {
+          "question": "Local residents expressed apathy toward the upcoming local elections, showing low voter turnout. (Choose the closest meaning of 'apathy')",
+          "choices": {
+            "A": "enthusiasm",
+            "B": "indifference",
+            "C": "anger",
+            "D": "support"
+          },
+          "correct": "B",
+          "reason": "Ang \"apathy\" ay kawalan ng interes o pakialam sa mga nangyayari (indifference)."
+        },
+        "15": {
+          "question": "The novice programmer struggled with the advanced coding syntax. (Choose the closest meaning of 'novice')",
+          "choices": {
+            "A": "expert",
+            "B": "beginner",
+            "C": "veteran",
+            "D": "master"
+          },
+          "correct": "B",
+          "reason": "Ang \"novice\" ay baguhan o wala pang masyadong karanasan (beginner)."
+        },
+        "16": {
+          "question": "The ubiquitous presence of smartphones has changed how people communicate. (Choose the closest meaning of 'ubiquitous')",
+          "choices": {
+            "A": "rare",
+            "B": "limited",
+            "C": "omnipresent",
+            "D": "hidden"
+          },
+          "correct": "C",
+          "reason": "Ang \"ubiquitous\" ay nangangahulugang laging nakikita o laganap kahit saan (found everywhere/omnipresent)."
+        },
+        "17": {
+          "question": "She made a prudent decision to invest in government bonds rather than high-risk stocks. (Choose the closest meaning of 'prudent')",
+          "choices": {
+            "A": "foolish",
+            "B": "wise",
+            "C": "reckless",
+            "D": "hasty"
+          },
+          "correct": "B",
+          "reason": "Ang \"prudent\" ay matalino, maingat, at may magandang pagpapasiya (wise/sensible)."
+        },
+        "18": {
+          "question": "The ephemeral beauty of the sunset lasted only a few minutes. (Choose the closest meaning of 'ephemeral')",
+          "choices": {
+            "A": "eternal",
+            "B": "fleeting",
+            "C": "bright",
+            "D": "dull"
+          },
+          "correct": "B",
+          "reason": "Ang \"ephemeral\" ay panandalian o mabilis mawala (fleeting/short-lived)."
+        },
+        "19": {
+          "question": "His gregarious personality makes him the life of every party. (Choose the closest meaning of 'gregarious')",
+          "choices": {
+            "A": "antisocial",
+            "B": "shy",
+            "C": "outgoing",
+            "D": "quiet"
+          },
+          "correct": "C",
+          "reason": "Ang \"gregarious\" ay palakaibigan at mahilig makisalamuha (sociable/outgoing)."
+        },
+        "20": {
+          "question": "The company faced a severe financial crisis after the market crash. (Choose the closest meaning of 'severe')",
+          "choices": {
+            "A": "mild",
+            "B": "minor",
+            "C": "serious",
+            "D": "brief"
+          },
+          "correct": "C",
+          "reason": "Ang \"severe\" ay malubha o matindi (serious/grave)."
+        },
+        "21": {
+          "question": "The paucity of medical supplies caused panic among the patients. (Choose the closest meaning of 'paucity')",
+          "choices": {
+            "A": "abundance",
+            "B": "scarcity",
+            "C": "quality",
+            "D": "cost"
+          },
+          "correct": "B",
+          "reason": "Ang \"paucity\" ay kakulangan o kakaunti (scarcity/lack)."
+        },
+        "22": {
+          "question": "The artist used vibrant colors to make the painting look lively. (Choose the closest meaning of 'vibrant')",
+          "choices": {
+            "A": "dull",
+            "B": "bright",
+            "C": "dark",
+            "D": "faded"
+          },
+          "correct": "B",
+          "reason": "Ang \"vibrant\" ay makulay, masigla, at matingkad (bright and full of life)."
+        },
+        "23": {
+          "question": "It is mandatory for all government employees to wear their proper uniform. (Choose the closest meaning of 'mandatory')",
+          "choices": {
+            "A": "optional",
+            "B": "required",
+            "C": "prohibited",
+            "D": "recommended"
+          },
+          "correct": "B",
+          "reason": "Ang \"mandatory\" ay sapilitan o kailangang sundin (required/compulsory)."
+        },
+        "24": {
+          "question": "The benevolent donor gave millions of pesos to orphanages. (Choose the closest meaning of 'benevolent')",
+          "choices": {
+            "A": "cruel",
+            "B": "selfish",
+            "C": "kind",
+            "D": "greedy"
+          },
+          "correct": "C",
+          "reason": "Ang \"benevolent\" ay mapagkawanggawa at mabait (kind-hearted/charitable)."
+        },
+        "25": {
+          "question": "The teacher's lucid explanation helped the students grasp the algebra formula. (Choose the closest meaning of 'lucid')",
+          "choices": {
+            "A": "confusing",
+            "B": "clear",
+            "C": "vague",
+            "D": "lengthy"
+          },
+          "correct": "B",
+          "reason": "Ang \"lucid\" ay malinaw at madaling intindihin (clear and easily understood)."
+        },
+        "26": {
+          "question": "The old bridge is obsolete and needs to be replaced by a modern structure. (Choose the closest meaning of 'obsolete')",
+          "choices": {
+            "A": "modern",
+            "B": "outdated",
+            "C": "functional",
+            "D": "sturdy"
+          },
+          "correct": "B",
+          "reason": "Ang \"obsolete\" ay lipas na sa panahon o hindi na ginagamit (outdated)."
+        },
+        "27": {
+          "question": "He showed zeal in organizing the community outreach program. (Choose the closest meaning of 'zeal')",
+          "choices": {
+            "A": "laziness",
+            "B": "enthusiasm",
+            "C": "hesitation",
+            "D": "sadness"
+          },
+          "correct": "B",
+          "reason": "Ang \"zeal\" ay masidhing sigla o determinasyon (enthusiasm/passion)."
+        },
+        "28": {
+          "question": "The twins have distinct personalities despite looking identical. (Choose the closest meaning of 'distinct')",
+          "choices": {
+            "A": "similar",
+            "B": "identical",
+            "C": "different",
+            "D": "boring"
+          },
+          "correct": "C",
+          "reason": "Ang \"distinct\" ay magkaiba o may malinaw na pagkakaiba (separate or different)."
+        },
+        "29": {
+          "question": "The arduous hike tested the physical endurance of the mountaineers. (Choose the closest meaning of 'arduous')",
+          "choices": {
+            "A": "easy",
+            "B": "short",
+            "C": "difficult",
+            "D": "fun"
+          },
+          "correct": "C",
+          "reason": "Ang \"arduous\" ay mahirap, nakakapagod, at nangangailangan ng matinding lakas (difficult/strenuous)."
+        },
+        "30": {
+          "question": "The suspect tried to elude the police by hiding in an abandoned building. (Choose the closest meaning of 'elude')",
+          "choices": {
+            "A": "confront",
+            "B": "escape",
+            "C": "attack",
+            "D": "help"
+          },
+          "correct": "B",
+          "reason": "Ang \"elude\" ay umiwas, tumakas, o magtago sa mga umuusig (escape/evade)."
+        }
+      }
+    },
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "Grammar and Correct Usage",
+      "topic_order": 2,
+      "questions": {
+        "1": {
+          "question": "Which sentence is grammatically correct?",
+          "choices": {
+            "A": "Each of the employees have submitted their reports.",
+            "B": "Each of the employees has submitted his or her report.",
+            "C": "Each of the employees have submitted his or her report.",
+            "D": "Each of the employees has submitted their reports."
+          },
+          "correct": "B",
+          "reason": "Ang \"Each\" ay singular subject kaya dapat singular verb (\"has\") at singular pronoun (\"his or her\")."
+        },
+        "2": {
+          "question": "Neither the teacher nor the students _____ present in the classroom.",
+          "choices": {
+            "A": "was",
+            "B": "were",
+            "C": "is",
+            "D": "am"
+          },
+          "correct": "B",
+          "reason": "Sa \"neither... nor\", ang verb ay umaayon sa malapit na subject (ang \"students\" ay plural, kaya \"were\")."
+        },
+        "3": {
+          "question": "The team of researchers _____ finished conducting the experiment.",
+          "choices": {
+            "A": "have",
+            "B": "has",
+            "C": "are",
+            "D": "were"
+          },
+          "correct": "B",
+          "reason": "Ang collective noun na \"team\" ay tinuturing na isa o singular dito kasi kumikilos sila bilang isang yunit (takes singular verb \"has\")."
+        },
+        "4": {
+          "question": "Choose the correct sentence:",
+          "choices": {
+            "A": "She is more smarter than her brother.",
+            "B": "She is smarter than her brother.",
+            "C": "She is more smart than her brother.",
+            "D": "She is the smartest between her brother and her."
+          },
+          "correct": "B",
+          "reason": "Ang comparative form ng \"smart\" ay \"smarter\". Hindi na kailangang lagyan ng \"more\"."
+        },
+        "5": {
+          "question": "Choose the correct sentence:",
+          "choices": {
+            "A": "I prefer reading books than watching television.",
+            "B": "I prefer reading books over watching television.",
+            "C": "I prefer to read books than to watch television.",
+            "D": "I prefer reading books from watching television."
+          },
+          "correct": "B",
+          "reason": "Ang tamang preposition pagkatapos ng \"prefer\" kapag nagkukumpara ay \"to\" o \"over\", hindi \"than\"."
+        },
+        "6": {
+          "question": "Everyone must bring _____ own calculator to the examination.",
+          "choices": {
+            "A": "their",
+            "B": "his or her",
+            "C": "our",
+            "D": "your"
+          },
+          "correct": "B",
+          "reason": "Ang \"everyone\" ay singular indefinite pronoun kaya singular pronoun din ang gagamitin (\"his or her\")."
+        },
+        "7": {
+          "question": "Choose the correct sentence:",
+          "choices": {
+            "A": "The committee presented their findings yesterday.",
+            "B": "The committee presented its findings yesterday.",
+            "C": "The committee have presented their findings yesterday.",
+            "D": "The committee were presenting its findings yesterday."
+          },
+          "correct": "B",
+          "reason": "Dito, ang committee ay kumikilos bilang iisang buong grupo kaya singular pronoun (\"its\") ang ginamit."
+        },
+        "8": {
+          "question": "Physics _____ my hardest subject this semester.",
+          "choices": {
+            "A": "are",
+            "B": "is",
+            "C": "were",
+            "D": "have been"
+          },
+          "correct": "B",
+          "reason": "Ang mga pangalan ng subject gaya ng Physics, Mathematics, at Economics ay nagtatapos sa \"s\" pero singular ang form kaya singular verb (\"is\") ang kasama."
+        },
+        "9": {
+          "question": "Ten thousand pesos _____ a lot of money for a student.",
+          "choices": {
+            "A": "are",
+            "B": "is",
+            "C": "were",
+            "D": "have"
+          },
+          "correct": "B",
+          "reason": "Ang mga sumatotal na pera, oras, o distansya ay tinuturing bilang iisang halaga o singular quantity kaya \"is\" ang ginagamit."
+        },
+        "10": {
+          "question": "Choose the correct sentence structure:",
+          "choices": {
+            "A": "Walking down the street, the rain started to fall.",
+            "B": "Walking down the street, an umbrella was opened by me.",
+            "C": "Walking down the street, I felt the cold rain start to fall.",
+            "D": "While walking down the street, the storm began."
+          },
+          "correct": "C",
+          "reason": "Maiiwasan ang \"misplaced modifier\". Ang gumagawa ng kilos na \"walking\" ay dapat ang kasunod na subject (\"I\")."
+        },
+        "11": {
+          "question": "Choose the correct spelling:",
+          "choices": {
+            "A": "Accomodation",
+            "B": "Accommodation",
+            "C": "Acomodation",
+            "D": "Acommodation"
+          },
+          "correct": "B",
+          "reason": "Ang tamang baybay ay may dalawang \"c\" at dalawang \"m\" (Accommodation)."
+        },
+        "12": {
+          "question": "Choose the correct spelling:",
+          "choices": {
+            "A": "Questionnaire",
+            "B": "Questionaire",
+            "C": "Questionnair",
+            "D": "Questionare"
+          },
+          "correct": "A",
+          "reason": "Double \"n\" at may \"re\" sa dula ang tamang spelling ng questionnaire."
+        },
+        "13": {
+          "question": "Choose the correct spelling:",
+          "choices": {
+            "A": "Millennium",
+            "B": "Millenium",
+            "C": "Milenium",
+            "D": "Milleniumm"
+          },
+          "correct": "A",
+          "reason": "Double \"l\" at double \"n\" ang tamang spelling nito."
+        },
+        "14": {
+          "question": "Choose the sentence with correct punctuation and grammar:",
+          "choices": {
+            "A": "Its a beautiful day for a picnic.",
+            "B": "It's a beautiful day for a picnic.",
+            "C": "Its' a beautiful day for a picnic.",
+            "D": "It is a beautiful day, for a picnic."
+          },
+          "correct": "B",
+          "reason": "Ang \"It's\" ay contraction ng \"It is\". Ang \"its\" naman ay possessive pronoun (walang apostrophe)."
+        },
+        "15": {
+          "question": "Between you and _____, I think the project will succeed.",
+          "choices": {
+            "A": "I",
+            "B": "me",
+            "C": "myself",
+            "D": "he"
+          },
+          "correct": "B",
+          "reason": "Pagkatapos ng preposition na \"between\", ang pronoun ay dapat nasa objective case (\"me\", hindi \"I\")."
+        },
+        "16": {
+          "question": "She is the _____ of the two sisters.",
+          "choices": {
+            "A": "taller",
+            "B": "tallest",
+            "C": "most tall",
+            "D": "more taller"
+          },
+          "correct": "A",
+          "reason": "Kapag nagkukumpara ng dalawang bagay o tao lang, ang gagamitin ay comparative form (\"taller\"), hindi superlative (\"tallest\")."
+        },
+        "17": {
+          "question": "Neither of the suspects _____ admitted to the crime.",
+          "choices": {
+            "A": "has",
+            "B": "have",
+            "C": "were",
+            "D": "are"
+          },
+          "correct": "A",
+          "reason": "Ang \"Neither\" ay laging singular kaya singular verb (\"has\") ang dapat gamitin."
+        },
+        "18": {
+          "question": "The number of applicants _____ increasing every year.",
+          "choices": {
+            "A": "are",
+            "B": "is",
+            "C": "were",
+            "D": "have been"
+          },
+          "correct": "B",
+          "reason": "Pag sinabing \"The number of\", singular ito (\"is\"). Pero pag \"A number of\", plural yun."
+        },
+        "19": {
+          "question": "A number of students _____ absent due to the flu.",
+          "choices": {
+            "A": "is",
+            "B": "was",
+            "C": "are",
+            "D": "has been"
+          },
+          "correct": "C",
+          "reason": "Ang \"A number of\" ay nangangahulugang \"several\" o marami kaya plural verb (\"are\") ang kasunod."
+        },
+        "20": {
+          "question": "Choose the correct sentence:",
+          "choices": {
+            "A": "He speaks English good.",
+            "B": "He speaks English well.",
+            "C": "He is speaking English good.",
+            "D": "He spoke English goodly."
+          },
+          "correct": "B",
+          "reason": "Ang \"well\" ay adverb na naglalarawan kung paano niya sinasalita ang English. Ang \"good\" ay adjective."
+        },
+        "21": {
+          "question": "The news about the exam results _____ surprising.",
+          "choices": {
+            "A": "were",
+            "B": "are",
+            "C": "is",
+            "D": "have been"
+          },
+          "correct": "C",
+          "reason": "Ang salitang \"news\" ay laging tinuturing na singular noun kaya singular verb (\"is\") ang gamitin."
+        },
+        "22": {
+          "question": "Choose the correct sentence:",
+          "choices": {
+            "A": "Whomever wins the contest will receive a cash prize.",
+            "B": "Whoever wins the contest will receive a cash prize.",
+            "C": "Whomever you choose will be fine.",
+            "D": "Whoever you choose will be fired."
+          },
+          "correct": "B",
+          "reason": "Ang \"Whoever\" ay subject ng verb na \"wins\". Kaya subjective case ang kailangan."
+        },
+        "23": {
+          "question": "Give the book to _____ asked for it first.",
+          "choices": {
+            "A": "whoever",
+            "B": "whomever",
+            "C": "who",
+            "D": "whom"
+          },
+          "correct": "A",
+          "reason": "Ang \"whoever\" ay subject ng clause na \"asked for it first\"."
+        },
+        "24": {
+          "question": "She sings much _____ than her sister.",
+          "choices": {
+            "A": "good",
+            "B": "well",
+            "C": "better",
+            "D": "best"
+          },
+          "correct": "C",
+          "reason": "Nagkukumpara sa pagitan ng dalawa kaya comparative adverb na \"better\" ang kailangan."
+        },
+        "25": {
+          "question": "Mount Apo is the _____ mountain in the Philippines.",
+          "choices": {
+            "A": "high",
+            "B": "higher",
+            "C": "highest",
+            "D": "most high"
+          },
+          "correct": "C",
+          "reason": "Nagkukumpara sa higit sa dalawa (lahat ng bundok sa bansa) kaya superlative form (\"highest\") ang gagamitin."
+        },
+        "26": {
+          "question": "I look forward to _____ you at the conference.",
+          "choices": {
+            "A": "see",
+            "B": "seeing",
+            "C": "saw",
+            "D": "seen"
+          },
+          "correct": "B",
+          "reason": "Ang phrasal verb na \"look forward to\" ay sinusundan ng gerund (-ing form), hindi base verb."
+        },
+        "27": {
+          "question": "If I _____ rich, I would travel around the world.",
+          "choices": {
+            "A": "am",
+            "B": "was",
+            "C": "were",
+            "D": "will be"
+          },
+          "correct": "C",
+          "reason": "Ito ay Second Conditional (hypothetical/contrary to fact). Ang gagamitin para sa lahat ng subject ay \"were\"."
+        },
+        "28": {
+          "question": "By next year, she _____ graduated from college.",
+          "choices": {
+            "A": "will",
+            "B": "will have",
+            "C": "has",
+            "D": "had"
+          },
+          "correct": "B",
+          "reason": "Ginagamit ang Future Perfect tense (\"will have + past participle\") para sa aksyon na matatapos bago ang isang tiyak na panahon sa hinaharap."
+        },
+        "29": {
+          "question": "Choose the correct sentence:",
+          "choices": {
+            "A": "She is one of those women who works hard.",
+            "B": "She is one of those women who work hard.",
+            "C": "She is one of those woman who works hard.",
+            "D": "She is one of those woman who work hard."
+          },
+          "correct": "B",
+          "reason": "Ang antecedent ng \"who\" ay \"women\" (plural), kaya ang verb ay dapat plural din (\"work\")."
+        },
+        "30": {
+          "question": "Hard _____ he tried, he couldn't solve the puzzle.",
+          "choices": {
+            "A": "as",
+            "B": "though",
+            "C": "although",
+            "D": "when"
+          },
+          "correct": "A",
+          "reason": "Ang pormat na \"Adjective/Adverb + as/though + subject + verb\" ay ginagamit para magpahayag ng contrast (kahit gaano pa niya sinubukan)."
+        }
+      }
+    },
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "Paragraph Organization",
+      "topic_order": 3,
+      "questions": {
+        "1": {
+          "question": "Arrange the sentences to form a logical paragraph:\n1. The government launched a nationwide tree-planting campaign last month.\n2. Volunteers from different sectors gathered early in the morning to participate.\n3. Within a few hours, thousands of saplings were successfully planted along the riverbanks.\n4. This initiative aims to prevent soil erosion and mitigate flooding during heavy rains.",
+          "choices": {
+            "A": "1-4-2-3",
+            "B": "4-1-2-3",
+            "C": "1-2-3-4",
+            "D": "2-1-3-4"
+          },
+          "correct": "A",
+          "reason": "Inilalahad muna ang pangunahing ideya o proyekto (1), sinundan ng layunin nito (4), pagkatapos ay ang pagdating ng mga volunteers (2), at ang huli ay ang resulta ng kanilang ginawa (3)."
+        },
+        "2": {
+          "question": "Arrange the sentences to form a logical paragraph:\n1. Proper waste segregation is essential for effective recycling.\n2. When households separate biodegradable from non-biodegradable trash, processing becomes much easier.\n3. Furthermore, it helps reduce the volume of waste sent to landfills.\n4. Therefore, local communities must strictly implement segregation policies.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "1-3-2-4",
+            "C": "2-1-3-4",
+            "D": "4-1-2-3"
+          },
+          "correct": "A",
+          "reason": "Nagsisimula sa topic sentence (1), pinaliwanag kung paano (2), nagdagdag pa ng benepisyo gamit ang \"Furthermore\" (3), at nagtapos sa konklusyon/rekomendasyon gamit ang \"Therefore\" (4)."
+        },
+        "3": {
+          "question": "Arrange the sentences to form a logical paragraph:\n1. Reading books expands our vocabulary and improves critical thinking skills.\n2. In today's digital age, however, many people prefer scrolling through social media feeds.\n3. Despite these distractions, making time for reading remains a valuable habit.\n4. It offers a mental escape and deepens our understanding of different perspectives.",
+          "choices": {
+            "A": "2-1-4-3",
+            "B": "1-4-2-3",
+            "C": "1-2-3-4",
+            "D": "2-3-1-4"
+          },
+          "correct": "B",
+          "reason": "Inilatag muna ang benepisyo ng pagbabasa (1 at 4), ipinapakita ang counter-trend o problema ngayon (2), at nagtapos sa payo o solusyon sa kabila ng distraction (3)."
+        },
+        "4": {
+          "question": "Arrange the sentences to form a logical paragraph:\n1. First, gather all the necessary ingredients and measuring tools.\n2. Baking a cake requires patience and precision.\n3. Once everything is ready, preheat your oven to the required temperature.\n4. Finally, mix the batter gently and bake it for thirty minutes.",
+          "choices": {
+            "A": "2-1-3-4",
+            "B": "1-2-3-4",
+            "C": "2-3-1-4",
+            "D": "4-3-2-1"
+          },
+          "correct": "A",
+          "reason": "Ang (2) ang general intro statement, sinundan ng unang hakbang gamit ang \"First\" (1), kasunod ang pag-preheat (3), at nagtapos sa \"Finally\" (4)."
+        },
+        "5": {
+          "question": "Arrange the sentences to form a logical paragraph:\n1. The invention of the internet revolutionized global communication.\n2. People can now connect with friends and colleagues across oceans in mere seconds.\n3. Businesses have also expanded their markets globally through e-commerce platforms.\n4. Truly, technology has transformed our society in unimaginable ways.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "1-3-2-4",
+            "C": "2-1-3-4",
+            "D": "4-1-2-3"
+          },
+          "correct": "A",
+          "reason": "Main topic ang internet (1), epekto sa komunikasyon (2), epekto sa negosyo (3), at pangkalahatang konklusyon (4)."
+        },
+        "6": {
+          "question": "Which sentence does not belong in the paragraph below about sleep?\n(1) Getting adequate sleep is crucial for overall physical and mental health.\n(2) During sleep, the brain repairs tissues and consolidates memories.\n(3) Drinking coffee in the morning helps many people wake up faster.\n(4) Chronic sleep deprivation can lead to weakened immune systems and cognitive decline.",
+          "choices": {
+            "A": "Sentence 1",
+            "B": "Sentence 2",
+            "C": "Sentence 3",
+            "D": "Sentence 4"
+          },
+          "correct": "C",
+          "reason": "Ang talata ay tungkol sa kahalagahan ng tulog (sleep), habang ang Sentence 3 ay tungkol sa pag-inom ng kape (coffee), kaya ito ay out-of-topic."
+        },
+        "7": {
+          "question": "Choose the best logical order for these sentences:\n1. This leads to reduced crop yields and food shortages.\n2. Climate change brings prolonged droughts and unpredictable weather patterns.\n3. Farmers struggle to irrigate their fields without steady water supplies.\n4. Consequently, global food security is severely threatened.",
+          "choices": {
+            "A": "2-3-1-4",
+            "B": "2-1-3-4",
+            "C": "1-2-3-4",
+            "D": "4-2-3-1"
+          },
+          "correct": "A",
+          "reason": "Climate change ang ugat (2), epekto sa magsasaka (3), epekto sa ani (1), at ang pangkalahatang epekto sa buong mundo o food security (4)."
+        },
+        "8": {
+          "question": "Which sentence is the best opening sentence for a paragraph about renewable energy?",
+          "choices": {
+            "A": "Solar panels convert sunlight directly into electricity.",
+            "B": "Renewable energy sources are becoming vital in reducing carbon footprints and combating climate change.",
+            "C": "Wind turbines generate power by capturing kinetic energy from the wind.",
+            "D": "Fossil fuels will eventually run out in the near future."
+          },
+          "correct": "B",
+          "reason": "Ito ang pinaka-general at main topic sentence na sumasaklaw sa buong tema ng renewable energy."
+        },
+        "9": {
+          "question": "Arrange the sentences logically:\n1. Financial literacy equips individuals with the skills to manage money wisely.\n2. Unfortunately, many schools still lack comprehensive financial education programs.\n3. As a result, adults often struggle with debt management and retirement planning.\n4. Integrating this subject into the curriculum is therefore a crucial step forward.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "2-1-3-4",
+            "C": "1-3-2-4",
+            "D": "3-2-1-4"
+          },
+          "correct": "A",
+          "reason": "Kahalagahan ng financial literacy (1), problema sa sistema (2), negatibong epekto ng problema (3), at solusyon/rekomendasyon (4)."
+        },
+        "10": {
+          "question": "Which sentence does not belong in a paragraph about healthy eating habits?\n(1) Eating a balanced diet rich in fruits and vegetables promotes longevity.\n(2) Vitamins and minerals boost our immune system against diseases.\n(3) Regular cardiovascular exercise is important for heart health.\n(4) Incorporating whole grains provides sustained daily energy.",
+          "choices": {
+            "A": "Sentence 1",
+            "B": "Sentence 2",
+            "C": "Sentence 3",
+            "D": "Sentence 4"
+          },
+          "correct": "C",
+          "reason": "Ang talata ay tungkol sa pagkain (diet/nutrition), samantalang ang Sentence 3 ay tungkol sa ehersisyo (exercise)."
+        },
+        "11": {
+          "question": "Arrange the sentences logically:\n1. Public transportation plays a vital role in reducing urban traffic congestion.\n2. When commuters opt for trains and buses instead of private cars, fewer vehicles crowd the highways.\n3. Additionally, mass transit significantly lowers greenhouse gas emissions per passenger.\n4. Investing in modern, reliable public transport is therefore essential for sustainable cities.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "4-1-2-3",
+            "C": "1-3-2-4",
+            "D": "2-1-3-4"
+          },
+          "correct": "A",
+          "reason": "Nagsisimula sa main topic (1), pinaliwanag ang epekto sa trapiko (2), nagdagdag ng isa pang benepisyo gamit ang \"Additionally\" (3), at nagtapos sa konklusyon gamit ang \"therefore\" (4)."
+        },
+        "12": {
+          "question": "Which sentence does not belong in a paragraph about cyber hygiene?\n(1) Practicing good cyber hygiene protects personal data from online threats.\n(2) Using strong, unique passwords for every account prevents unauthorized access.\n(3) Buying the latest gaming laptop improves video editing speed.\n(4) Enabling two-factor authentication adds an extra layer of security against hackers.",
+          "choices": {
+            "A": "Sentence 1",
+            "B": "Sentence 2",
+            "C": "Sentence 3",
+            "D": "Sentence 4"
+          },
+          "correct": "C",
+          "reason": "Ang talata ay tungkol sa online security (cyber hygiene), habang ang Sentence 3 ay tungkol sa bilis ng laptop sa video editing."
+        },
+        "13": {
+          "question": "Arrange the sentences logically:\n1. First, soak the dried beans in water overnight to soften them.\n2. Cooking bean soup from scratch requires simple preparation steps.\n3. Next, drain the water and boil the beans with herbs and spices until tender.\n4. Finally, mash a portion of the beans to thicken the broth before serving hot.",
+          "choices": {
+            "A": "2-1-3-4",
+            "B": "1-2-3-4",
+            "C": "2-3-1-4",
+            "D": "4-1-3-2"
+          },
+          "correct": "A",
+          "reason": "Intro sentence muna (2), tapos sundan ang sequence words: \"First\" (1), \"Next\" (3), at \"Finally\" (4)."
+        },
+        "14": {
+          "question": "Choose the best concluding sentence for a paragraph about volunteering:",
+          "choices": {
+            "A": "Many non-profit organizations rely on donations to buy office supplies.",
+            "B": "Volunteering requires people to wake up early on weekends.",
+            "C": "Ultimately, giving time to help others not only uplifts communities but also fosters personal fulfillment.",
+            "D": "Some students volunteer just to get extra credit in school."
+          },
+          "correct": "C",
+          "reason": "Gumamit ito ng concluding transition (\"Ultimately\") at binuod ang pangkalahatang benepisyo ng pagbo-volunteer."
+        },
+        "15": {
+          "question": "Arrange the sentences logically:\n1. Urban gardening is gaining popularity among city dwellers with limited yard space.\n2. By using vertical planters and recycled containers, residents can grow fresh herbs and vegetables on balconies.\n3. This practice not only provides organic produce at home but also helps cool down concrete surroundings.\n4. As food prices continue to rise, growing one's own food offers both economic and environmental rewards.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "2-1-4-3",
+            "C": "4-2-1-3",
+            "D": "1-4-2-3"
+          },
+          "correct": "A",
+          "reason": "Ipinakilala ang konsepto ng urban gardening (1), paano ito ginagawa (2), ang mga benepisyo nito (3), at ang pangkalahatang halaga nito ngayon (4)."
+        },
+        "16": {
+          "question": "Which sentence does not belong in a paragraph about time management?\n(1) Effective time management allows professionals to meet deadlines without burning out.\n(2) Creating a daily to-do list helps prioritize urgent and important tasks.\n(3) Eliminating digital distractions during work blocks boosts overall focus.\n(4) Drinking eight glasses of water a day keeps the skin hydrated.",
+          "choices": {
+            "A": "Sentence 1",
+            "B": "Sentence 2",
+            "C": "Sentence 3",
+            "D": "Sentence 4"
+          },
+          "correct": "D",
+          "reason": "Ang talata ay tungkol sa pamamahala ng oras at trabaho, samantalang ang Sentence 4 ay tungkol sa pag-inom ng tubig."
+        },
+        "17": {
+          "question": "Arrange the sentences logically:\n1. However, excessive screen time before bed can disrupt the body's natural sleep cycle.\n2. Smartphones and tablets have made information accessible at our fingertips.\n3. To prevent insomnia, experts recommend turning off electronic devices at least an hour before sleeping.\n4. The blue light emitted by screens suppresses melatonin, the hormone responsible for sleep.",
+          "choices": {
+            "A": "2-1-4-3",
+            "B": "1-2-3-4",
+            "C": "2-4-1-3",
+            "D": "4-1-2-3"
+          },
+          "correct": "A",
+          "reason": "Magandang dulot ng gadgets (2), ang problema gamit ang \"However\" (1), siyentipikong paliwanag ng problema (4), at ang rekomendasyon o solusyon (3)."
+        },
+        "18": {
+          "question": "Arrange the sentences logically:\n1. As a result, many coastal towns experienced severe flooding and power outages.\n2. A super typhoon made landfall in the eastern provinces late last night.\n3. Emergency response teams were immediately deployed to rescue stranded residents.\n4. The storm brought torrential rains and destructive winds exceeding 200 kilometers per hour.",
+          "choices": {
+            "A": "2-4-1-3",
+            "B": "2-1-4-3",
+            "C": "4-2-1-3",
+            "D": "1-2-3-4"
+          },
+          "correct": "A",
+          "reason": "Pangyayari (2), paglalarawan sa lakas ng bagyo (4), ang resulta nito gamit ang \"As a result\" (1), at ang aksyon ng gobyerno/rescuers (3)."
+        },
+        "19": {
+          "question": "Which sentence is the best opening sentence for a paragraph about teamwork in the workplace?",
+          "choices": {
+            "A": "When employees blame each other for mistakes, projects fail.",
+            "B": "Strong teamwork is the cornerstone of any successful and innovative organization.",
+            "C": "Regular team-building outings are usually held at beach resorts.",
+            "D": "Some employees prefer working alone in quiet cubicles."
+          },
+          "correct": "B",
+          "reason": "Ito ay isang malinaw at general topic sentence na nagpapakilala sa kahalagahan ng teamwork."
+        },
+        "20": {
+          "question": "Arrange the sentences logically:\n1. Tourism brings significant revenue and job opportunities to local communities.\n2. Nevertheless, unregulated tourist arrivals can overwhelm fragile ecosystems and pollute beaches.\n3. Finding a balance between economic growth and environmental conservation is key to sustainable tourism.\n4. Hotels, restaurants, and transport operators thrive when visitors flock to popular destinations.",
+          "choices": {
+            "A": "1-4-2-3",
+            "B": "1-2-3-4",
+            "C": "4-1-2-3",
+            "D": "2-1-4-3"
+          },
+          "correct": "A",
+          "reason": "Positibong epekto ng turismo (1), konkretong halimbawa nito (4), ang negatibong bahagi gamit ang \"Nevertheless\" (2), at ang balanseng solusyon (3)."
+        },
+        "21": {
+          "question": "Which sentence does not belong in a paragraph about learning a second language?\n(1) Learning a second language enhances cognitive flexibility and memory retention.\n(2) Bilingual individuals often have better career prospects in multinational companies.\n(3) Traveling to different countries requires a valid passport and visa.\n(4) Moreover, speaking another tongue fosters deeper appreciation for diverse cultures.",
+          "choices": {
+            "A": "Sentence 1",
+            "B": "Sentence 2",
+            "C": "Sentence 3",
+            "D": "Sentence 4"
+          },
+          "correct": "C",
+          "reason": "Tungkol sa benepisyo ng pag-aaral ng ibang lenggwahe ang buong talata, kaya out-of-place ang Sentence 3 na tungkol sa passport at visa."
+        },
+        "22": {
+          "question": "Arrange the sentences logically:\n1. Before signing any lease agreement, tenants should carefully read all terms and conditions.\n2. Pay close attention to clauses regarding security deposits, maintenance responsibilities, and renewal policies.\n3. Doing so prevents unexpected financial disputes with the landlord later on.\n4. If anything seems unclear, ask for written clarification prior to finalizing the contract.",
+          "choices": {
+            "A": "1-2-4-3",
+            "B": "1-4-2-3",
+            "C": "2-1-3-4",
+            "D": "3-1-2-4"
+          },
+          "correct": "A",
+          "reason": "Main advice (1), ano ang dapat tingnan (2), ano ang gagawin kung may malabo (4), at ang magandang resulta ng pag-iingat na ito gamit ang \"Doing so\" (3)."
+        },
+        "23": {
+          "question": "Arrange the sentences logically:\n1. Honeybees are vital pollinators responsible for fertilizing a third of the crops we eat.\n2. Unfortunately, pesticide use and habitat loss have caused global bee populations to decline rapidly.\n3. Without these tiny insects, global agricultural production would suffer catastrophic losses.\n4. Protecting bee habitats and adopting eco-friendly farming are urgent priorities today.",
+          "choices": {
+            "A": "1-3-2-4",
+            "B": "1-2-3-4",
+            "C": "2-1-3-4",
+            "D": "3-1-2-4"
+          },
+          "correct": "A",
+          "reason": "Papel ng honeybees (1), ano ang mangyayari kung wala sila (3), ang banta sa kanila ngayon gamit ang \"Unfortunately\" (2), at ang panawagan sa pagkilos (4)."
+        },
+        "24": {
+          "question": "Which sentence is the best concluding sentence for a paragraph about lifelong learning?",
+          "choices": {
+            "A": "Libraries offer free access to thousands of books and journals.",
+            "B": "Many universities now offer online degree programs for working adults.",
+            "C": "In a rapidly changing world, committing to lifelong learning ensures both personal growth and career adaptability.",
+            "D": "Graduating from college is a proud moment for every family."
+          },
+          "correct": "C",
+          "reason": "Binubuod nito ang pangunahing punto ng talata tungkol sa kahalagahan ng patuloy na pag-aaral."
+        },
+        "25": {
+          "question": "Arrange the sentences logically:\n1. First, assess your monthly income and list all fixed expenses such as rent and utilities.\n2. Creating a realistic personal budget is the foundation of financial stability.\n3. Next, allocate a specific percentage of your remaining funds toward savings and debt repayment.\n4. Finally, track your daily spending to ensure you stay within your set limits.",
+          "choices": {
+            "A": "2-1-3-4",
+            "B": "1-2-3-4",
+            "C": "2-3-1-4",
+            "D": "4-1-3-2"
+          },
+          "correct": "A",
+          "reason": "Topic sentence (2), tapos sundan ang transition words: \"First\" (1), \"Next\" (3), at \"Finally\" (4)."
+        },
+        "26": {
+          "question": "Which sentence does not belong in a paragraph about coral reefs?\n(1) Coral reefs are often called the rainforests of the sea due to their rich biodiversity.\n(2) They provide shelter and food for thousands of marine organisms.\n(3) Deep-sea oil drilling requires massive offshore platforms and specialized engineers.\n(4) Rising ocean temperatures, however, cause coral bleaching that threatens these ecosystems.",
+          "choices": {
+            "A": "Sentence 1",
+            "B": "Sentence 2",
+            "C": "Sentence 3",
+            "D": "Sentence 4"
+          },
+          "correct": "C",
+          "reason": "Tungkol sa coral reefs at marine ecosystem ang talata; hindi konektado ang deep-sea oil drilling engineering."
+        },
+        "27": {
+          "question": "Arrange the sentences logically:\n1. Solar energy has become increasingly affordable over the past decade.\n2. Advancements in photovoltaic technology have lowered manufacturing costs while boosting efficiency.\n3. Consequently, more households and businesses are installing rooftop solar panels to cut electricity bills.\n4. This shift toward clean energy also reduces reliance on imported fossil fuels.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "2-1-4-3",
+            "C": "1-3-2-4",
+            "D": "3-1-2-4"
+          },
+          "correct": "A",
+          "reason": "Main statement (1), dahilan kung bakit naging mura (2), ang direktang resulta gamit ang \"Consequently\" (3), at karagdagang benepisyo gamit ang \"This shift... also\" (4)."
+        },
+        "28": {
+          "question": "Arrange the sentences logically:\n1. Effective communication requires both clear speaking and active listening.\n2. Many conflicts arise simply because people focus on formulating their reply rather than understanding the speaker.\n3. By paying full attention and asking clarifying questions, listeners show respect and prevent misunderstandings.\n4. Mastering this two-way skill strengthens both personal relationships and professional teamwork.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "2-1-3-4",
+            "C": "1-3-2-4",
+            "D": "4-1-2-3"
+          },
+          "correct": "A",
+          "reason": "Kahulugan ng effective communication (1), karaniwang pagkakamali (2), paano itama ang pagkakamali (3), at ang magandang resulta nito (4)."
+        },
+        "29": {
+          "question": "Which sentence is the best opening sentence for a paragraph about public libraries?",
+          "choices": {
+            "A": "Late fees are charged when borrowers fail to return books on time.",
+            "B": "Public libraries remain indispensable community hubs that provide equal access to knowledge and digital resources.",
+            "C": "Librarians organize books using the Dewey Decimal Classification system.",
+            "D": "Quiet zones are strictly enforced on the second floor of the building."
+          },
+          "correct": "B",
+          "reason": "Ipinapakilala nito ang pangkalahatang halaga ng public libraries sa komunidad."
+        },
+        "30": {
+          "question": "Arrange the sentences logically:\n1. Plastic pollution has become one of the most pressing environmental crises worldwide.\n2. Single-use plastics, such as straws and shopping bags, often end up in oceans where marine animals mistake them for food.\n3. To combat this problem, several cities have banned disposable plastics and promoted reusable alternatives.\n4. Individual consumers can also help by carrying eco-bags and refusing unnecessary plastic packaging.",
+          "choices": {
+            "A": "1-2-3-4",
+            "B": "1-3-2-4",
+            "C": "2-1-3-4",
+            "D": "3-4-1-2"
+          },
+          "correct": "A",
+          "reason": "Pangkalahatang problema (1), partikular na halimbawa at epekto (2), aksyon ng mga lungsod/gobyerno (3), at aksyon ng mga indibidwal gamit ang \"also\" (4)."
+        }
+      }
+    },
+    {
+      "subject": "Verbal Ability",
+      "subject_icon": "📖",
+      "topic": "Reading Comprehension",
+      "topic_order": 4,
+      "questions": {
+        "1": {
+          "question": "[PASSAGE] Baguio City, known as the Summer Capital of the Philippines, faces mounting environmental challenges due to rapid urbanization. Once celebrated for its cool climate and pine-scented air, the city now grapples with heavy traffic congestion, air pollution, and water scarcity. Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures. Local government units and environmental advocates are now pushing for stricter zoning laws and sustainable tourism practices to preserve what remains of the city's natural heritage.\n\n[QUESTION] What is the primary problem discussed in the passage?",
+          "choices": {
+            "A": "Lack of tourists visiting Baguio City",
+            "B": "Environmental degradation caused by rapid urbanization in Baguio",
+            "C": "The rising cost of real estate properties in the mountains",
+            "D": "The extreme cold climate of the Summer Capital"
+          },
+          "correct": "B",
+          "reason": "Sinasabi sa teksto na ang mabilis na urbanisasyon ay nagdudulot ng mga problema sa kalikasan tulad ng trapiko, polusyon, at kawalan ng tubig."
+        },
+        "2": {
+          "question": "[PASSAGE] Baguio City, known as the Summer Capital of the Philippines, faces mounting environmental challenges due to rapid urbanization. Once celebrated for its cool climate and pine-scented air, the city now grapples with heavy traffic congestion, air pollution, and water scarcity. Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures. Local government units and environmental advocates are now pushing for stricter zoning laws and sustainable tourism practices to preserve what remains of the city's natural heritage.\n\n[QUESTION] According to the text, what caused the loss of numerous pine trees?",
+          "choices": {
+            "A": "Heavy rainfall and typhoons",
+            "B": "Unchecked real estate development and concrete construction",
+            "C": "Government-mandated tree cutting programs",
+            "D": "Air pollution from vehicles"
+          },
+          "correct": "B",
+          "reason": "Nabanggit sa text: \"Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures.\""
+        },
+        "3": {
+          "question": "[PASSAGE] Baguio City, known as the Summer Capital of the Philippines, faces mounting environmental challenges due to rapid urbanization. Once celebrated for its cool climate and pine-scented air, the city now grapples with heavy traffic congestion, air pollution, and water scarcity. Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures. Local government units and environmental advocates are now pushing for stricter zoning laws and sustainable tourism practices to preserve what remains of the city's natural heritage.\n\n[QUESTION] What solution are local officials and advocates pushing for?",
+          "choices": {
+            "A": "Total closure of Baguio City to all tourists",
+            "B": "Building more concrete high-rise buildings",
+            "C": "Stricter zoning laws and sustainable tourism practices",
+            "D": "Relocating all residents to lowland areas"
+          },
+          "correct": "C",
+          "reason": "Ayon sa huling pangungusap, nagtutulungan sila para sa \"stricter zoning laws and sustainable tourism practices.\""
+        },
+        "4": {
+          "question": "[PASSAGE] Mangroves play a vital ecological role in coastal areas. They act as natural buffers against storm surges, typhoons, and coastal erosion, protecting vulnerable human settlements. Furthermore, mangrove forests serve as crucial breeding grounds and nurseries for various marine species, including fish and crustaceans, which sustain local fishing communities. Despite these immense benefits, large areas of mangroves are continually cleared for aquaculture ponds and coastal development, threatening both biodiversity and coastal safety.\n\n[QUESTION] What is the main idea of the passage?",
+          "choices": {
+            "A": "Coastal communities rely entirely on aquaculture for income.",
+            "B": "Mangroves are essential for ecological protection and marine life, but they face destruction.",
+            "C": "Typhoons are becoming stronger because of global warming.",
+            "D": "Fish and crustaceans can only survive in artificial ponds."
+          },
+          "correct": "B",
+          "reason": "Binibigyang-diin ng talata ang kahalagahan ng mangroves at ang banta ng pagkasira nito."
+        },
+        "5": {
+          "question": "[PASSAGE] Mangroves play a vital ecological role in coastal areas. They act as natural buffers against storm surges, typhoons, and coastal erosion, protecting vulnerable human settlements. Furthermore, mangrove forests serve as crucial breeding grounds and nurseries for various marine species, including fish and crustaceans, which sustain local fishing communities. Despite these immense benefits, large areas of mangroves are continually cleared for aquaculture ponds and coastal development, threatening both biodiversity and coastal safety.\n\n[QUESTION] How do mangroves protect coastal human settlements?",
+          "choices": {
+            "A": "By absorbing harmful air pollutants",
+            "B": "By serving as natural buffers against storm surges and erosion",
+            "C": "By providing wood for building houses",
+            "D": "By filtering drinking water supplies"
+          },
+          "correct": "B",
+          "reason": "Sabi sa teksto: \"They act as natural buffers against storm surges, typhoons, and coastal erosion.\""
+        },
+        "6": {
+          "question": "[PASSAGE] Mangroves play a vital ecological role in coastal areas. They act as natural buffers against storm surges, typhoons, and coastal erosion, protecting vulnerable human settlements. Furthermore, mangrove forests serve as crucial breeding grounds and nurseries for various marine species, including fish and crustaceans, which sustain local fishing communities. Despite these immense benefits, large areas of mangroves are continually cleared for aquaculture ponds and coastal development, threatening both biodiversity and coastal safety.\n\n[QUESTION] Why are mangrove forests being cleared according to the text?",
+          "choices": {
+            "A": "For highway expansion projects",
+            "B": "For aquaculture ponds and coastal development",
+            "C": "To plant agricultural crops",
+            "D": "To build recreational parks"
+          },
+          "correct": "B",
+          "reason": "Direksyong binanggit sa huling pangungusap: \"...cleared for aquaculture ponds and coastal development.\""
+        },
+        "7": {
+          "question": "[PASSAGE] Financial literacy is an essential life skill that empowers individuals to make informed decisions about money management, budgeting, and investing. Unfortunately, many young adults enter the workforce without basic knowledge of how compound interest works or how to build an emergency fund. Without these foundational skills, they often fall into consumer debt traps. Educational institutions and financial institutions must collaborate to integrate practical financial training into school curricula to secure the economic well-being of future generations.\n\n[QUESTION] What does the author suggest to solve the problem of financial illiteracy?",
+          "choices": {
+            "A": "Banning credit cards for young adults",
+            "B": "Integrating practical financial training into school curricula",
+            "C": "Increasing the minimum wage for fresh graduates",
+            "D": "Giving government cash subsidies to everyone"
+          },
+          "correct": "B",
+          "reason": "Ayon sa huling pangungusap, kailangang isama ang practical financial training sa kurikulum ng paaralan."
+        },
+        "8": {
+          "question": "[PASSAGE] Financial literacy is an essential life skill that empowers individuals to make informed decisions about money management, budgeting, and investing. Unfortunately, many young adults enter the workforce without basic knowledge of how compound interest works or how to build an emergency fund. Without these foundational skills, they often fall into consumer debt traps. Educational institutions and financial institutions must collaborate to integrate practical financial training into school curricula to secure the economic well-being of future generations.\n\n[QUESTION] What happens to young adults who lack basic financial skills?",
+          "choices": {
+            "A": "They become successful entrepreneurs automatically.",
+            "B": "They easily build large emergency funds.",
+            "C": "They often fall into consumer debt traps.",
+            "D": "They invest all their money in real estate."
+          },
+          "correct": "C",
+          "reason": "Nakasaad sa teksto: \"...they often fall into consumer debt traps.\""
+        },
+        "9": {
+          "question": "[PASSAGE] Financial literacy is an essential life skill that empowers individuals to make informed decisions about money management, budgeting, and investing. Unfortunately, many young adults enter the workforce without basic knowledge of how compound interest works or how to build an emergency fund. Without these foundational skills, they often fall into consumer debt traps. Educational institutions and financial institutions must collaborate to integrate practical financial training into school curricula to secure the economic well-being of future generations.\n\n[QUESTION] Which of the following is NOT mentioned as a benefit of financial literacy?",
+          "choices": {
+            "A": "Making informed decisions about money",
+            "B": "Understanding how compound interest works",
+            "C": "Guaranteeing a promotion at work",
+            "D": "Effective budgeting and investing"
+          },
+          "correct": "C",
+          "reason": "Walang nabanggit sa teksto tungkol sa job promotion; ang binanggit lang ay money management, budgeting, investing, at compound interest."
+        },
+        "10": {
+          "question": "[PASSAGE] The rise of artificial intelligence (AI) has sparked intense debate regarding its impact on the modern workforce. While pessimists argue that automation will replace millions of jobs, leading to widespread unemployment, optimists contend that AI will create entirely new industries and increase overall productivity. Experts suggest that rather than fearing technological displacement, workers should focus on upskilling and continuous learning. By mastering skills that require human empathy, creativity, and complex problem-solving, workers can remain valuable in an AI-driven economy.\n\n[QUESTION] What is the central theme of the passage?",
+          "choices": {
+            "A": "The history of computer science and automation",
+            "B": "The impact of artificial intelligence on jobs and workforce adaptation",
+            "C": "Why AI will completely destroy human civilization",
+            "D": "The technical coding languages used to build AI"
+          },
+          "correct": "B",
+          "reason": "Tinatalakay ng talata kung paano naaapektuhan ng AI ang mga manggagawa at kung paano sila dapat mag-adapt."
+        },
+        "11": {
+          "question": "[PASSAGE] The rise of artificial intelligence (AI) has sparked intense debate regarding its impact on the modern workforce. While pessimists argue that automation will replace millions of jobs, leading to widespread unemployment, optimists contend that AI will create entirely new industries and increase overall productivity. Experts suggest that rather than fearing technological displacement, workers should focus on upskilling and continuous learning. By mastering skills that require human empathy, creativity, and complex problem-solving, workers can remain valuable in an AI-driven economy.\n\n[QUESTION] According to the text, what should workers do to remain valuable?",
+          "choices": {
+            "A": "Protest against automation in factories",
+            "B": "Stop using computers and smartphones",
+            "C": "Focus on upskilling and mastering human-centric skills",
+            "D": "Work longer hours every single day"
+          },
+          "correct": "C",
+          "reason": "Sabi sa teksto, mag-focus sa upskilling at sa mga skills na may kinalaman sa empathy, creativity, at problem-solving."
+        },
+        "12": {
+          "question": "[PASSAGE] The rise of artificial intelligence (AI) has sparked intense debate regarding its impact on the modern workforce. While pessimists argue that automation will replace millions of jobs, leading to widespread unemployment, optimists contend that AI will create entirely new industries and increase overall productivity. Experts suggest that rather than fearing technological displacement, workers should focus on upskilling and continuous learning. By mastering skills that require human empathy, creativity, and complex problem-solving, workers can remain valuable in an AI-driven economy.\n\n[QUESTION] What is the optimists' view on artificial intelligence?",
+          "choices": {
+            "A": "It will destroy all existing businesses.",
+            "B": "It will create new industries and increase productivity.",
+            "C": "It will make human labor completely unnecessary for survival.",
+            "D": "It will lower global internet speeds."
+          },
+          "correct": "B",
+          "reason": "Nakasaad na ang mga optimista ay naniniwalang \"AI will create entirely new industries and increase overall productivity.\""
+        },
+        "13": {
+          "question": "[PASSAGE] Regular physical activity is one of the most effective ways to maintain physical and mental well-being. Engaging in exercises such as brisk walking, swimming, or cycling strengthens the cardiovascular system, improves muscle tone, and helps regulate body weight. Beyond physical health, exercise stimulates the release of endorphins—chemicals in the brain that act as natural mood lifters—which help reduce stress, anxiety, and symptoms of depression.\n\n[QUESTION] Which of the following is a mental health benefit of exercise mentioned in the text?",
+          "choices": {
+            "A": "Lowering blood pressure instantly",
+            "B": "Releasing endorphins that reduce stress and anxiety",
+            "C": "Increasing body muscle mass",
+            "D": "Curing all forms of genetic disorders"
+          },
+          "correct": "B",
+          "reason": "Sabi sa huling pangungusap, ang exercise ay nagre-release ng endorphins na pampababa ng stress at anxiety."
+        },
+        "14": {
+          "question": "[PASSAGE] Regular physical activity is one of the most effective ways to maintain physical and mental well-being. Engaging in exercises such as brisk walking, swimming, or cycling strengthens the cardiovascular system, improves muscle tone, and helps regulate body weight. Beyond physical health, exercise stimulates the release of endorphins—chemicals in the brain that act as natural mood lifters—which help reduce stress, anxiety, and symptoms of depression.\n\n[QUESTION] What kind of exercises are suggested in the passage?",
+          "choices": {
+            "A": "Extreme weightlifting and boxing",
+            "B": "Brisk walking, swimming, or cycling",
+            "C": "Marathon running every single day",
+            "D": "Yoga and meditation only"
+          },
+          "correct": "B",
+          "reason": "Diretsong binanggit sa teksto ang \"brisk walking, swimming, or cycling.\""
+        },
+        "15": {
+          "question": "[PASSAGE] Regular physical activity is one of the most effective ways to maintain physical and mental well-being. Engaging in exercises such as brisk walking, swimming, or cycling strengthens the cardiovascular system, improves muscle tone, and helps regulate body weight. Beyond physical health, exercise stimulates the release of endorphins—chemicals in the brain that act as natural mood lifters—which help reduce stress, anxiety, and symptoms of depression.\n\n[QUESTION] What is the overall tone and purpose of the passage?",
+          "choices": {
+            "A": "To warn people against dangerous sports injuries",
+            "B": "To inform and encourage readers about the benefits of physical activity",
+            "C": "To advertise local gyms and fitness centers",
+            "D": "To criticize people who do not exercise"
+          },
+          "correct": "B",
+          "reason": "Layunin ng teksto na ipaalam ang mga magagandang epekto ng regular na ehersisyo sa katawan at isip."
+        },
+        "16": {
+          "question": "[PASSAGE] The Banaue Rice Terraces, carved into the mountains of Ifugao over two thousand years ago by indigenous ancestors, stand as a testament to Filipino ingenuity and sustainable agriculture. Fed by an ancient irrigation system channeling water from the rainforests above, these 'stairways to the sky' prevent soil erosion while producing staple crops. Today, however, the terraces face threats from modernization, climate change, and out-migration of younger generations seeking urban jobs, prompting urgent preservation efforts.\n\n[QUESTION] How are the Banaue Rice Terraces irrigated according to the passage?",
+          "choices": {
+            "A": "Through modern electric water pumps",
+            "B": "By an ancient system channeling water from rainforests above",
+            "C": "Solely through seasonal typhoon rains",
+            "D": "By diverting water from nearby lowland rivers"
+          },
+          "correct": "B",
+          "reason": "Diretsong nakasaad sa ikalawang pangungusap: \"Fed by an ancient irrigation system channeling water from the rainforests above...\""
+        },
+        "17": {
+          "question": "[PASSAGE] The Banaue Rice Terraces, carved into the mountains of Ifugao over two thousand years ago by indigenous ancestors, stand as a testament to Filipino ingenuity and sustainable agriculture. Fed by an ancient irrigation system channeling water from the rainforests above, these 'stairways to the sky' prevent soil erosion while producing staple crops. Today, however, the terraces face threats from modernization, climate change, and out-migration of younger generations seeking urban jobs, prompting urgent preservation efforts.\n\n[QUESTION] Which of the following is NOT mentioned as a current threat to the terraces?",
+          "choices": {
+            "A": "Modernization",
+            "B": "Climate change",
+            "C": "Volcanic eruptions",
+            "D": "Out-migration of younger generations"
+          },
+          "correct": "C",
+          "reason": "Ang mga nabanggit na banta sa teksto ay modernization, climate change, at out-migration ng mga kabataan—walang nabanggit na volcanic eruptions."
+        },
+        "18": {
+          "question": "[PASSAGE] The Banaue Rice Terraces, carved into the mountains of Ifugao over two thousand years ago by indigenous ancestors, stand as a testament to Filipino ingenuity and sustainable agriculture. Fed by an ancient irrigation system channeling water from the rainforests above, these 'stairways to the sky' prevent soil erosion while producing staple crops. Today, however, the terraces face threats from modernization, climate change, and out-migration of younger generations seeking urban jobs, prompting urgent preservation efforts.\n\n[QUESTION] What does the phrase \"testament to Filipino ingenuity\" imply about the ancestors who built the terraces?",
+          "choices": {
+            "A": "They relied on foreign engineers to design the mountains.",
+            "B": "They possessed remarkable skill, creativity, and engineering knowledge.",
+            "C": "They built the terraces purely for tourist attraction.",
+            "D": "They destroyed the rainforests to plant rice."
+          },
+          "correct": "B",
+          "reason": "Ang salitang \"ingenuity\" ay nangangahulugang pagiging malikhain, matalino, at mahusay sa paglutas ng problema."
+        },
+        "19": {
+          "question": "[PASSAGE] Telecommuting, or working from home, shifted from a rare perk to a mainstream work arrangement following global health crises. For employees, remote work eliminates exhausting daily commutes, lowers transportation expenses, and offers greater flexibility to balance family responsibilities. Employers also benefit through reduced office overhead costs and access to a wider talent pool beyond geographic boundaries. Nevertheless, organizations must address challenges such as digital fatigue, blurred work-life boundaries, and maintaining team cohesion virtually.\n\n[QUESTION] What is one advantage of remote work for employers mentioned in the text?",
+          "choices": {
+            "A": "Eliminating the need for internet connections",
+            "B": "Reduced office overhead costs and access to a wider talent pool",
+            "C": "Guaranteeing that employees work twice as fast",
+            "D": "Avoiding payment of employee salaries"
+          },
+          "correct": "B",
+          "reason": "Nakasaad sa ikatlong pangungusap: \"Employers also benefit through reduced office overhead costs and access to a wider talent pool...\""
+        },
+        "20": {
+          "question": "[PASSAGE] Telecommuting, or working from home, shifted from a rare perk to a mainstream work arrangement following global health crises. For employees, remote work eliminates exhausting daily commutes, lowers transportation expenses, and offers greater flexibility to balance family responsibilities. Employers also benefit through reduced office overhead costs and access to a wider talent pool beyond geographic boundaries. Nevertheless, organizations must address challenges such as digital fatigue, blurred work-life boundaries, and maintaining team cohesion virtually.\n\n[QUESTION] What challenge associated with telecommuting must organizations address?",
+          "choices": {
+            "A": "Increased traffic congestion on highways",
+            "B": "Higher spending on office electricity",
+            "C": "Blurred work-life boundaries and digital fatigue",
+            "D": "Lack of qualified applicants worldwide"
+          },
+          "correct": "C",
+          "reason": "Nabanggit sa huling pangungusap ang \"digital fatigue, blurred work-life boundaries, and maintaining team cohesion.\""
+        },
+        "21": {
+          "question": "[PASSAGE] Telecommuting, or working from home, shifted from a rare perk to a mainstream work arrangement following global health crises. For employees, remote work eliminates exhausting daily commutes, lowers transportation expenses, and offers greater flexibility to balance family responsibilities. Employers also benefit through reduced office overhead costs and access to a wider talent pool beyond geographic boundaries. Nevertheless, organizations must address challenges such as digital fatigue, blurred work-life boundaries, and maintaining team cohesion virtually.\n\n[QUESTION] What is the main idea of the passage?",
+          "choices": {
+            "A": "Remote work is completely ineffective and should be abolished.",
+            "B": "Telecommuting offers mutual benefits to workers and employers, though it presents new challenges.",
+            "C": "Employees only want to work from home to avoid doing their jobs.",
+            "D": "Office buildings are no longer needed in modern cities."
+          },
+          "correct": "B",
+          "reason": "Balanseng tinalakay ng talata ang mga benepisyo para sa parehong empleyado at employer, pati na ang mga hamon nito."
+        },
+        "22": {
+          "question": "[PASSAGE] In an era dominated by social media, misinformation spreads faster than verified facts. Sensationalized headlines and manipulated images are often designed to trigger strong emotional reactions, prompting users to share content without checking its credibility. Practicing media literacy—such as verifying sources, cross-checking facts across reputable news outlets, and examining publication dates—is essential for citizens to make informed decisions and protect democratic discourse.\n\n[QUESTION] Why do users often share misinformation without verifying it?",
+          "choices": {
+            "A": "Because verified news websites are banned online",
+            "B": "Because sensationalized content triggers strong emotional reactions",
+            "C": "Because social media platforms require users to share every post",
+            "D": "Because fact-checking websites charge expensive fees"
+          },
+          "correct": "B",
+          "reason": "Sabi sa ikalawang pangungusap: \"...designed to trigger strong emotional reactions, prompting users to share content without checking its credibility.\""
+        },
+        "23": {
+          "question": "[PASSAGE] In an era dominated by social media, misinformation spreads faster than verified facts. Sensationalized headlines and manipulated images are often designed to trigger strong emotional reactions, prompting users to share content without checking its credibility. Practicing media literacy—such as verifying sources, cross-checking facts across reputable news outlets, and examining publication dates—is essential for citizens to make informed decisions and protect democratic discourse.\n\n[QUESTION] Which of the following is an example of practicing media literacy according to the passage?",
+          "choices": {
+            "A": "Sharing posts immediately if they have many likes",
+            "B": "Cross-checking facts across reputable news outlets",
+            "C": "Reading only the headlines of articles",
+            "D": "Ignoring publication dates on news stories"
+          },
+          "correct": "B",
+          "reason": "Isa ito sa mga halimbawang ibinigay sa huling pangungusap: \"...verifying sources, cross-checking facts across reputable news outlets, and examining publication dates.\""
+        },
+        "24": {
+          "question": "[PASSAGE] In an era dominated by social media, misinformation spreads faster than verified facts. Sensationalized headlines and manipulated images are often designed to trigger strong emotional reactions, prompting users to share content without checking its credibility. Practicing media literacy—such as verifying sources, cross-checking facts across reputable news outlets, and examining publication dates—is essential for citizens to make informed decisions and protect democratic discourse.\n\n[QUESTION] What does the word \"credible\" or \"credibility\" most nearly mean in the context of the passage?",
+          "choices": {
+            "A": "Popularity and entertainment value",
+            "B": "Trustworthiness and factual accuracy",
+            "C": "Speed of internet download",
+            "D": "Emotional appeal"
+          },
+          "correct": "B",
+          "reason": "Sa konteksto ng balita at impormasyon, ang \"credibility\" ay tumutukoy sa pagiging mapagkakatiwalaan at totoo ng isang source."
+        },
+        "25": {
+          "question": "[PASSAGE] Antibiotic resistance occurs when bacteria evolve to withstand the drugs designed to kill them. A major driver of this global health threat is the misuse and overuse of antibiotics in humans and livestock—such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage. When bacteria become resistant, common infections become harder to treat, leading to prolonged hospital stays, higher medical costs, and increased mortality.\n\n[QUESTION] What causes antibiotic resistance according to the text?",
+          "choices": {
+            "A": "Taking vitamins daily",
+            "B": "Misuse and overuse of antibiotics in humans and livestock",
+            "C": "Washing hands too frequently with soap",
+            "D": "Eating organic fruits and vegetables"
+          },
+          "correct": "B",
+          "reason": "Nakasaad sa ikalawang pangungusap na ang pangunahing sanhi nito ay \"misuse and overuse of antibiotics in humans and livestock.\""
+        },
+        "26": {
+          "question": "[PASSAGE] Antibiotic resistance occurs when bacteria evolve to withstand the drugs designed to kill them. A major driver of this global health threat is the misuse and overuse of antibiotics in humans and livestock—such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage. When bacteria become resistant, common infections become harder to treat, leading to prolonged hospital stays, higher medical costs, and increased mortality.\n\n[QUESTION] Which behavior is cited as an example of antibiotic misuse?",
+          "choices": {
+            "A": "Completing the full course of prescribed medicine",
+            "B": "Consulting a doctor before taking medication",
+            "C": "Taking antibiotics for viral infections like the common cold",
+            "D": "Getting vaccinated against preventable diseases"
+          },
+          "correct": "C",
+          "reason": "Diretsong binanggit sa teksto: \"...such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage.\""
+        },
+        "27": {
+          "question": "[PASSAGE] Antibiotic resistance occurs when bacteria evolve to withstand the drugs designed to kill them. A major driver of this global health threat is the misuse and overuse of antibiotics in humans and livestock—such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage. When bacteria become resistant, common infections become harder to treat, leading to prolonged hospital stays, higher medical costs, and increased mortality.\n\n[QUESTION] What is a consequence of bacteria becoming resistant to antibiotics?",
+          "choices": {
+            "A": "Common infections become easier and cheaper to cure.",
+            "B": "Common infections become harder to treat, increasing medical costs and mortality.",
+            "C": "Viruses automatically turn into harmless bacteria.",
+            "D": "Hospitals no longer need doctors."
+          },
+          "correct": "B",
+          "reason": "Ayon sa huling pangungusap, nagreresulta ito sa mas mahirap na gamutan, mas matagal na pagkaka-ospital, mas mataas na gastos, at pagkamatay."
+        },
+        "28": {
+          "question": "[PASSAGE] Public service is built on the foundational principle that a public office is a public trust. Civil servants are expected to uphold the highest standards of integrity, accountability, and responsiveness in serving the citizenry. Rather than viewing government positions as avenues for personal gain or political favoritism, public officials must prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\n\n[QUESTION] What is the foundational principle of public service mentioned in the passage?",
+          "choices": {
+            "A": "Public office is a family inheritance.",
+            "B": "Public office is a public trust.",
+            "C": "Public office guarantees financial wealth.",
+            "D": "Public office is reserved only for politicians."
+          },
+          "correct": "B",
+          "reason": "Makikita ito mismo sa unang pangungusap (at nakasaad din sa 1987 Philippine Constitution, Art. XI, Sec. 1)."
+        },
+        "29": {
+          "question": "[PASSAGE] Public service is built on the foundational principle that a public office is a public trust. Civil servants are expected to uphold the highest standards of integrity, accountability, and responsiveness in serving the citizenry. Rather than viewing government positions as avenues for personal gain or political favoritism, public officials must prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\n\n[QUESTION] How should public resources be managed according to the text?",
+          "choices": {
+            "A": "Secretly and exclusively for political allies",
+            "B": "Transparently and efficiently for the welfare of the community",
+            "C": "Slowly to save government funds",
+            "D": "Without any public accountability"
+          },
+          "correct": "B",
+          "reason": "Sabi sa huling pangungusap: \"...prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\""
+        },
+        "30": {
+          "question": "[PASSAGE] Public service is built on the foundational principle that a public office is a public trust. Civil servants are expected to uphold the highest standards of integrity, accountability, and responsiveness in serving the citizenry. Rather than viewing government positions as avenues for personal gain or political favoritism, public officials must prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\n\n[QUESTION] Which quality is NOT mentioned as an expectation for civil servants?",
+          "choices": {
+            "A": "Integrity",
+            "B": "Accountability",
+            "C": "Responsiveness",
+            "D": "Political favoritism"
+          },
+          "correct": "D",
+          "reason": "Ang political favoritism ay bagay na dapat iwasan ayon sa teksto (\"Rather than viewing government positions as avenues for personal gain or political favoritism...\")."
+        }
+      }
+    }
+  ]
+}

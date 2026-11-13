@@ -1,43 +1,21 @@
-// Per-subject quiz storage. Each subject has its own localStorage key.
+// Quiz PROGRESS + STATS only. The questions themselves live in contentStore.js.
 //
-// Content format (flat — no titles, no levels):
-//   {
-//     "_batch": "Items 1-10",   // optional label for this import
-//     "1": { "question": "...", "choices": {"A":"...","B":"...","C":"..."}, "correct": "A", "reason": "..." },
-//     "2": { ... }
-//   }
-//
-// No limit on batches/items. Re-using the same "_batch" label merges into
-// that batch; a different label creates a new one.
+// "scope" = "<subjectId>/<topicId>"  (one quiz = one topic of one subject).
+// Old flat quizzes (data/defaultQuizzes/<id>.json) keep their old progress key.
+import { getQuizTopic, LEGACY_TOPIC_ID } from "./contentStore";
+import { answersMatch } from "./components/QuizShared";
 
-function contentKey(subjectId) {
-  return `cseReviewer_quiz_${subjectId}`;
+export function makeScope(subjectId, topicId) {
+  return `${subjectId}/${topicId}`;
 }
-function progressKey(subjectId) {
-  return `cseReviewer_progress_${subjectId}`;
+function splitScope(scope) {
+  const s = String(scope);
+  const i = s.indexOf("/");
+  return i < 0 ? [s, LEGACY_TOPIC_ID] : [s.slice(0, i), s.slice(i + 1)];
 }
-
-function emptyStore() {
-  return { batches: {}, entries: {} };
-}
-
-function loadStore(subjectId) {
-  try {
-    const raw = localStorage.getItem(contentKey(subjectId));
-    if (!raw) return emptyStore();
-    const parsed = JSON.parse(raw);
-    return { batches: parsed.batches || {}, entries: parsed.entries || {} };
-  } catch {
-    return emptyStore();
-  }
-}
-
-function saveStore(subjectId, store) {
-  localStorage.setItem(contentKey(subjectId), JSON.stringify(store));
-}
-
-function normalizeLabel(label) {
-  return String(label || "").trim().toLowerCase();
+function progressKey(scope) {
+  const [s, t] = splitScope(scope);
+  return t === LEGACY_TOPIC_ID ? `cseReviewer_progress_${s}` : `cseReviewer_progress_${s}__${t}`;
 }
 
 function numericSort(a, b) {
@@ -47,148 +25,22 @@ function numericSort(a, b) {
   return String(a).localeCompare(String(b), undefined, { numeric: true });
 }
 
-export function getAllEntries(subjectId) {
-  return loadStore(subjectId).entries;
+const NO_ENTRIES = {};
+
+export function getAllEntries(scope) {
+  const [s, t] = splitScope(scope);
+  return getQuizTopic(s, t)?.entries || NO_ENTRIES;
 }
 
-export function getSortedItemIds(subjectId) {
-  const entries = getAllEntries(subjectId);
-  return Object.keys(entries).sort(numericSort);
+export function getSortedItemIds(scope) {
+  return Object.keys(getAllEntries(scope)).sort(numericSort);
 }
 
-export function getAllBatches(subjectId) {
-  const store = loadStore(subjectId);
-  return Object.values(store.batches).sort((a, b) => b.importedAt.localeCompare(a.importedAt));
-}
+// ---------- Progress (resume where you stopped) ----------
 
-export function getBatchEntries(subjectId, batchId) {
-  const store = loadStore(subjectId);
-  const batch = store.batches[batchId];
-  if (!batch) return [];
-  return batch.itemIds.map((id) => ({ id, ...(store.entries[id] || {}) }));
-}
-
-export function getImportedCount(subjectId) {
-  return Object.keys(loadStore(subjectId).entries).length;
-}
-
-// Mag-import ng isang flat batch para sa isang subject. Returns { count, label, skipped }.
-export function importSubjectQuizJson(subjectId, jsonText) {
-  const parsed = JSON.parse(jsonText);
-  const rawLabel = parsed._batch;
-  if (parsed._batch !== undefined) delete parsed._batch;
-  if (parsed._title !== undefined) delete parsed._title; // fallback kung "_title" ang nagamit mo dati
-
-  // Huwag ibagsak ang BUONG batch dahil lang sa iilang sirang item —
-  // i-skip na lang ang mga invalid, at ituloy ang pag-import ng mga valid.
-  const skipped = [];
-  for (const id of Object.keys(parsed)) {
-    const item = parsed[id];
-    const invalid =
-      !item || typeof item !== "object" ||
-      !item.question || typeof item.question !== "string" || !item.question.trim() ||
-      !item.correct || typeof item.correct !== "string" || !item.correct.trim();
-    if (invalid) {
-      skipped.push(id);
-      delete parsed[id];
-    }
-  }
-
-  const ids = Object.keys(parsed);
-  if (!ids.length) {
-    throw new Error(
-      skipped.length
-        ? `Nothing imported: all ${skipped.length} items are missing a "question" or "correct" answer (IDs: ${skipped.slice(0, 10).join(", ")}${skipped.length > 10 ? "…" : ""}).`
-        : "The pasted JSON is empty."
-    );
-  }
-
-  const store = loadStore(subjectId);
-
-  let existingBatchId = null;
-  const label = (rawLabel && String(rawLabel).trim()) || null;
-  if (label) {
-    const normalized = normalizeLabel(label);
-    for (const [bId, batch] of Object.entries(store.batches)) {
-      if (normalizeLabel(batch.label) === normalized) { existingBatchId = bId; break; }
-    }
-  }
-
-  for (const id of ids) {
-    const existing = store.entries[id];
-    store.entries[id] = existing ? { ...existing, ...parsed[id] } : parsed[id];
-  }
-
-  if (existingBatchId) {
-    const batch = store.batches[existingBatchId];
-    const existingIds = new Set(batch.itemIds);
-    for (const id of ids) { if (!existingIds.has(id)) batch.itemIds.push(id); }
-    batch.importedAt = new Date().toISOString();
-  } else {
-    const sorted = [...ids].sort(numericSort);
-    const batchId = `sb_${Date.now()}`;
-    const fallback = `Items ${sorted[0]}–${sorted[sorted.length - 1]}`;
-    store.batches[batchId] = {
-      id: batchId,
-      label: label || fallback,
-      importedAt: new Date().toISOString(),
-      itemIds: ids,
-    };
-  }
-
-  saveStore(subjectId, store);
-  if (skipped.length) {
-    console.warn(`[${subjectId}] Skipped ${skipped.length} invalid item(s) during import:`, skipped);
-  }
-  return { count: Object.keys(store.entries).length, label: label || "New batch", skipped };
-}
-
-export function renameBatch(subjectId, batchId, newLabel) {
-  const store = loadStore(subjectId);
-  if (!store.batches[batchId]) return;
-  const trimmed = newLabel.trim();
-  if (trimmed) store.batches[batchId].label = trimmed;
-  saveStore(subjectId, store);
-}
-
-export function deleteBatch(subjectId, batchId) {
-  const store = loadStore(subjectId);
-  const batch = store.batches[batchId];
-  if (!batch) return;
-  for (const id of batch.itemIds) {
-    let usedElsewhere = false;
-    for (const [bId, b] of Object.entries(store.batches)) {
-      if (bId !== batchId && b.itemIds.includes(id)) { usedElsewhere = true; break; }
-    }
-    if (!usedElsewhere) delete store.entries[id];
-  }
-  delete store.batches[batchId];
-  saveStore(subjectId, store);
-}
-
-export function getExportAllJson(subjectId) {
-  return JSON.stringify(getAllEntries(subjectId), null, 2);
-}
-
-export function saveRawEntries(subjectId, jsonText) {
-  const parsed = JSON.parse(jsonText);
-  const store = loadStore(subjectId);
-  for (const id of Object.keys(parsed)) {
-    const existing = store.entries[id];
-    store.entries[id] = existing ? { ...existing, ...parsed[id] } : parsed[id];
-  }
-  saveStore(subjectId, store);
-}
-
-export function clearAllImports(subjectId) {
-  saveStore(subjectId, emptyStore());
-}
-
-// ---------- Progress (resume kung saan huling nag-stop) ----------
-
-export function getSubjectProgress(subjectId) {
+export function getSubjectProgress(scope) {
   try {
-    const raw = localStorage.getItem(progressKey(subjectId));
+    const raw = localStorage.getItem(progressKey(scope));
     if (!raw) return { answers: {}, currentIndex: 0 };
     const parsed = JSON.parse(raw);
     return { answers: parsed.answers || {}, currentIndex: parsed.currentIndex || 0 };
@@ -197,26 +49,25 @@ export function getSubjectProgress(subjectId) {
   }
 }
 
-export function saveSubjectProgress(subjectId, progress) {
+export function saveSubjectProgress(scope, progress) {
   try {
     const payload = { ...progress, updatedAt: new Date().toISOString() };
-    localStorage.setItem(progressKey(subjectId), JSON.stringify(payload));
+    localStorage.setItem(progressKey(scope), JSON.stringify(payload));
   } catch {}
 }
 
-export function resetSubjectProgress(subjectId) {
-  localStorage.removeItem(progressKey(subjectId));
+export function resetSubjectProgress(scope) {
+  try { localStorage.removeItem(progressKey(scope)); } catch {}
 }
 
-// Stats para sa dalawang progress circle sa dashboard.
-export function getSubjectStats(subjectId) {
-  const entries = getAllEntries(subjectId);
-  const itemIds = Object.keys(entries);
-  const total = itemIds.length;
-  const progress = getSubjectProgress(subjectId);
+// Stats for the two progress circles.
+export function getSubjectStats(scope) {
+  const entries = getAllEntries(scope);
+  const total = Object.keys(entries).length;
+  const progress = getSubjectProgress(scope);
   const answeredIds = Object.keys(progress.answers).filter((id) => entries[id]);
   const answeredCount = answeredIds.length;
-  const correctCount = answeredIds.filter((id) => progress.answers[id] === entries[id].correct).length;
+  const correctCount = answeredIds.filter((id) => answersMatch(progress.answers[id], entries[id].correct)).length;
   return {
     total,
     answeredCount,
@@ -226,28 +77,16 @@ export function getSubjectStats(subjectId) {
   };
 }
 
-// ============================================================
-// DEFAULT SEED — auto-import every data/defaultQuizzes/<subjectId>.json
-// into localStorage when that subject has no questions yet.
-// Call seedDefaultQuizzes() once at app start (e.g. in main.jsx).
-// ============================================================
-const defaultModules = import.meta.glob('./data/defaultQuizzes/*.json', { eager: true });
-const defaultDataMap = {};
-for (const [path, mod] of Object.entries(defaultModules)) {
-  const subjectId = path.split('/').pop().replace('.json', '');
-  defaultDataMap[subjectId] = mod.default ?? mod;
-}
-
-export function seedDefaultQuizzes() {
-  for (const [subjectId, data] of Object.entries(defaultDataMap)) {
-    if (!Object.keys(data).length) continue; // empty file — nothing to seed
-    if (Object.keys(getAllEntries(subjectId)).length > 0) continue; // already seeded
-    try {
-      const result = importSubjectQuizJson(subjectId, JSON.stringify(data));
-      const skippedNote = result.skipped.length ? `, skipped ${result.skipped.length} invalid: ${result.skipped.join(", ")}` : "";
-      console.log(`✅ Seeded ${subjectId} (${result.count} items${skippedNote})`);
-    } catch (e) {
-      console.warn(`Failed to seed ${subjectId}:`, e);
-    }
+// Added-up stats for a whole subject (all its topics).
+export function getSubjectTotals(subjectId, topicIds) {
+  let total = 0;
+  let answeredCount = 0;
+  let correctCount = 0;
+  for (const t of topicIds) {
+    const s = getSubjectStats(makeScope(subjectId, t));
+    total += s.total;
+    answeredCount += s.answeredCount;
+    correctCount += s.correctCount;
   }
+  return { total, answeredCount, correctCount, percentAnswered: total ? (answeredCount / total) * 100 : 0 };
 }
