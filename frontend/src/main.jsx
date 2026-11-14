@@ -1,7 +1,7 @@
 import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import AccessGate from "./components/AccessGate";
 import { AuthProvider } from "./authContext";
 import AccountOverlay from "./components/AccountOverlay";
 
@@ -15,6 +15,7 @@ class ErrorBoundary extends React.Component {
         <div style={{ padding: 20, background: "#1e1e1e", color: "#ff6b6b", fontFamily: "monospace", whiteSpace: "pre-wrap", minHeight: "100vh" }}>
           <h1>App Error</h1>
           <pre>{this.state.error.toString()}</pre>
+          <button onClick={() => window.location.reload()} style={{ marginTop: 16, padding: "10px 16px" }}>Reload</button>
         </div>
       );
     }
@@ -26,7 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ErrorBoundary>
       <AuthProvider>
-        <App />
+        <AccessGate />
         <AccountOverlay />
       </AuthProvider>
     </ErrorBoundary>

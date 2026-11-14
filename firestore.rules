@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('isAdmin', false) == true;
+    }
+
+    match /users/{uid} {
+
+      function validSelfUpdate() {
+        let changed = request.resource.data.diff(resource.data).affectedKeys();
+        let newD = request.resource.data;
+        let oldPending = resource.data.get('pendingPurchases', []);
+        return changed.hasOnly(['fullName', 'devices', 'lastSeenAt', 'trial', 'pendingPurchases', 'email', 'displayName', 'photoURL'])
+          && (!('fullName' in changed) || (newD.fullName is string && newD.fullName.size() > 0 && newD.fullName.size() <= 100))
+          && (!('devices' in changed) || (newD.devices is list && newD.devices.size() <= 2))
+          && (!('lastSeenAt' in changed) || newD.lastSeenAt == request.time)
+          && (!('trial' in changed) || (!('trial' in resource.data) && newD.trial.keys().hasOnly(['startedAt', 'days']) && newD.trial.days == 3 && newD.trial.startedAt == request.time))
+          && (!('pendingPurchases' in changed) || (newD.pendingPurchases is list
+                && newD.pendingPurchases.size() == oldPending.size() + 1
+                && newD.pendingPurchases.size() <= 6
+                && newD.pendingPurchases[0:oldPending.size()] == oldPending
+                && newD.pendingPurchases[oldPending.size()].plan == 'PROMO'));
+      }
+
+      allow get: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow list: if isAdmin();
+
+      allow create: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email', 'displayName', 'photoURL', 'fullName', 'createdAt', 'devices'])
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.devices is list
+        && request.resource.data.devices.size() <= 2;
+
+      allow update: if isAdmin() || (signedIn() && request.auth.uid == uid && validSelfUpdate());
+
+      allow delete: if false;
+    }
+  }
+}

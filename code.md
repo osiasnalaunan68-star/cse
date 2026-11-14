@@ -46,41 +46,74 @@ export default {
 ```
 import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { IS_DEV } from "./env";
+import { useAuth } from "./authContext";
 import LibraryBrowser from "./pages/LibraryBrowser";
 import QuizBrowser from "./pages/QuizBrowser";
+import FeesView from "./pages/FeesView";
+import SettingsView from "./pages/SettingsView";
+import AccountButton from "./components/AccountButton";
 
-// Dev Panel: Vite turns import.meta.env.DEV into `false` in production builds, so this
-// whole branch (and the DevPanel files) is dropped — real users can never reach it.
 const DevPanel = import.meta.env.DEV ? lazy(() => import("./pages/DevPanel")) : null;
+
+const AdminPanel = lazy(() =>
+  import("./pages/AdminPanel").catch(() => ({
+    default: () => <p className="p-6 text-center text-sm text-slate-500">Couldn't load the Admin Panel. Check your connection and try again.</p>,
+  }))
+);
 
 const DARK_KEY = "cseReviewer_darkMode";
 const NAV0 = { subjectId: null, topicId: null };
 
+const iconProps = { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.7, strokeLinecap: "round", strokeLinejoin: "round" };
+
 const IconBook = (p) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...p}>
+  <svg {...iconProps} {...p}>
     <path d="M2 5.5C4 4 7 4 12 6c5-2 8-2 10-.5V19c-2-1.5-5-1.5-10 .5-5-2-8-2-10-.5V5.5Z" />
     <path d="M12 6v13.5" />
   </svg>
 );
 const IconQuiz = (p) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...p}>
+  <svg {...iconProps} {...p}>
     <rect x="5" y="4" width="14" height="17" rx="2" />
     <path d="M9 4V3h6v1M9 11l1.5 1.5L13 10M9 16h6" />
   </svg>
 );
+const IconTag = (p) => (
+  <svg {...iconProps} {...p}>
+    <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+    <circle cx="7.5" cy="7.5" r="1" fill="currentColor" />
+  </svg>
+);
+const IconSettings = (p) => (
+  <svg {...iconProps} {...p}>
+    <line x1="21" x2="14" y1="4" y2="4" /><line x1="10" x2="3" y1="4" y2="4" />
+    <line x1="21" x2="12" y1="12" y2="12" /><line x1="8" x2="3" y1="12" y2="12" />
+    <line x1="21" x2="16" y1="20" y2="20" /><line x1="12" x2="3" y1="20" y2="20" />
+    <line x1="14" x2="14" y1="2" y2="6" /><line x1="8" x2="8" y1="10" y2="14" /><line x1="16" x2="16" y1="18" y2="22" />
+  </svg>
+);
+const IconCrown = (p) => (
+  <svg {...iconProps} {...p}>
+    <path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7z" />
+    <path d="M5 20h14" />
+  </svg>
+);
 const IconTool = (p) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" {...p}>
+  <svg {...iconProps} {...p}>
     <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-.7-.7-2.3 2.7-2.7Z" />
   </svg>
 );
 
-const TABS = [
+const BASE_TABS = [
   { id: "library", label: "Library", Icon: IconBook },
   { id: "quiz", label: "Quiz", Icon: IconQuiz },
+  { id: "fees", label: "Fees", Icon: IconTag },
+  { id: "settings", label: "Settings", Icon: IconSettings },
 ];
-if (import.meta.env.DEV) TABS.push({ id: "dev", label: "Dev", Icon: IconTool });
 
 export default function App() {
+  const { profile } = useAuth();
+  const isAdmin = !!profile?.isAdmin;
   const [tab, setTab] = useState("library");
   const [nav, setNav] = useState({ library: NAV0, quiz: NAV0 });
   const [dark, setDark] = useState(() => {
@@ -88,17 +121,25 @@ export default function App() {
   });
   const mainRef = useRef(null);
 
+  const TABS = [...BASE_TABS];
+  if (isAdmin) TABS.push({ id: "admin", label: "Admin", Icon: IconCrown });
+  if (import.meta.env.DEV) TABS.push({ id: "dev", label: "Dev", Icon: IconTool });
+
   useEffect(() => {
     try { localStorage.setItem(DARK_KEY, String(dark)); } catch {}
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
 
-  // jump back to the top whenever the screen changes
+  useEffect(() => {
+    if (tab === "admin" && !isAdmin) setTab("library");
+  }, [tab, isAdmin]);
+
   useEffect(() => {
     mainRef.current?.scrollTo(0, 0);
   }, [tab, nav.library.subjectId, nav.library.topicId, nav.quiz.subjectId, nav.quiz.topicId]);
 
   const navSetter = (which) => (n) => setNav((p) => ({ ...p, [which]: n }));
+  const loading = <p className="p-6 text-center text-sm text-slate-400">Loading…</p>;
 
   return (
     <div className="flex h-[100dvh] flex-col bg-parchment dark:bg-navy-950">
@@ -108,20 +149,22 @@ export default function App() {
           {IS_DEV && (
             <span className="rounded-md bg-purple-100 px-1.5 py-0.5 text-[11px] font-semibold text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">DEV</span>
           )}
-          <button
-            onClick={() => setDark((v) => !v)}
-            className="rounded-full border border-parchment-200 px-3 py-1.5 text-xs font-medium text-slate-600 dark:border-navy-700 dark:text-slate-300"
-          >
-            {dark ? "Light" : "Dark"}
-          </button>
+          <AccountButton />
         </div>
       </header>
 
       <main ref={mainRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
         {tab === "library" && <LibraryBrowser nav={nav.library} setNav={navSetter("library")} />}
         {tab === "quiz" && <QuizBrowser nav={nav.quiz} setNav={navSetter("quiz")} />}
+        {tab === "fees" && <FeesView />}
+        {tab === "settings" && <SettingsView darkMode={dark} setDarkMode={setDark} />}
+        {tab === "admin" && isAdmin && (
+          <Suspense fallback={loading}>
+            <AdminPanel />
+          </Suspense>
+        )}
         {IS_DEV && DevPanel && tab === "dev" && (
-          <Suspense fallback={<p className="p-6 text-center text-sm text-slate-400">Loading…</p>}>
+          <Suspense fallback={loading}>
             <DevPanel />
           </Suspense>
         )}
@@ -136,12 +179,12 @@ export default function App() {
                 key={id}
                 onClick={() => setTab(id)}
                 aria-current={active ? "page" : undefined}
-                className={`flex flex-1 flex-col items-center gap-0.5 py-2 text-xs font-semibold ${
+                className={`flex min-w-0 flex-1 flex-col items-center gap-0.5 py-2 text-[11px] font-semibold ${
                   active ? "text-navy-900 dark:text-gold-400" : "text-slate-400 dark:text-slate-500"
                 }`}
               >
                 <Icon className="h-6 w-6" />
-                {label}
+                <span className="max-w-full truncate">{label}</span>
               </button>
             );
           })}
@@ -149,6 +192,108 @@ export default function App() {
       </nav>
     </div>
   );
+}
+```
+
+## File: ./frontend/src/access.js
+```
+export const TRIAL_DAYS = 3;
+export const DAY_MS = 24 * 60 * 60 * 1000;
+
+const OFFSET_KEY = "cse_clockOffset";
+const MAXSEEN_KEY = "cse_clockMaxSeen";
+
+let offset = 0;
+let maxSeen = 0;
+try {
+  offset = Number(localStorage.getItem(OFFSET_KEY)) || 0;
+  maxSeen = Number(localStorage.getItem(MAXSEEN_KEY)) || 0;
+} catch (_) {}
+
+export function persistClock() {
+  try {
+    localStorage.setItem(OFFSET_KEY, String(offset));
+    localStorage.setItem(MAXSEEN_KEY, String(maxSeen));
+  } catch (_) {}
+}
+
+export function setServerClock(serverMs) {
+  offset = serverMs - Date.now();
+  maxSeen = serverMs;
+  persistClock();
+}
+
+export function serverNow() {
+  const est = Date.now() + offset;
+  if (est > maxSeen) maxSeen = est;
+  return maxSeen;
+}
+
+export function toMs(v) {
+  if (v == null) return null;
+  if (typeof v === "number") return v;
+  if (typeof v.toMillis === "function") return v.toMillis();
+  if (typeof v.seconds === "number") return v.seconds * 1000 + Math.floor((v.nanoseconds || 0) / 1e6);
+  if (v instanceof Date) return v.getTime();
+  return null;
+}
+
+export function addMonths(ms, months) {
+  const d = new Date(ms);
+  d.setMonth(d.getMonth() + months);
+  return d.getTime();
+}
+
+export function formatTimeLeft(ms) {
+  if (!ms || ms <= 0) return "Expired";
+  const d = Math.floor(ms / DAY_MS);
+  const h = Math.floor((ms % DAY_MS) / 3600000);
+  const m = Math.floor((ms % 3600000) / 60000);
+  if (d > 0) return d + "d " + h + "h";
+  if (h > 0) return h + "h " + m + "m";
+  return Math.max(1, m) + "m";
+}
+
+export function formatDateShort(ms) {
+  try {
+    return new Date(ms).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  } catch (_) {
+    return "";
+  }
+}
+
+export function getTrialInfo(profile, now = serverNow()) {
+  const t = profile && profile.trial;
+  let start = t ? toMs(t.startedAt) : null;
+  let days = t ? (Number(t.days) || 0) : 0;
+  let fromCreated = false;
+  if (start == null) { start = toMs(profile && profile.createdAt); days = TRIAL_DAYS; fromCreated = true; }
+  if (start == null) return { exists: false, active: false, endsAt: null, msLeft: 0 };
+  const endsAt = start + days * DAY_MS;
+  if (fromCreated && endsAt <= now) return { exists: false, active: false, endsAt: null, msLeft: 0 };
+  const msLeft = Math.max(0, endsAt - now);
+  return { exists: true, active: msLeft > 0, endsAt, msLeft };
+}
+
+export function getAppAccessInfo(profile, now = serverNow()) {
+  const a = profile && profile.appAccess;
+  const exp = toMs(a && a.expiresAt);
+  if (!a || exp == null) return { exists: false, active: false, plan: null, expiresAt: null, msLeft: 0 };
+  const msLeft = Math.max(0, exp - now);
+  return { exists: true, active: msLeft > 0, plan: a.plan || null, expiresAt: exp, msLeft };
+}
+
+export function getAccess(profile, opts) {
+  const clockReady = !opts || opts.clockReady !== false;
+  const now = serverNow();
+  if (!profile) return { state: "none", trial: getTrialInfo(null, now), app: getAppAccessInfo(null, now), msLeft: 0 };
+  const trial = getTrialInfo(profile, now);
+  const app = getAppAccessInfo(profile, now);
+  if (profile.isAdmin) return { state: "admin", trial, app, msLeft: 0 };
+  if (app.active) return { state: "paid", trial, app, msLeft: app.msLeft };
+  if (trial.active) return { state: "trial", trial, app, msLeft: trial.msLeft };
+  if (!trial.exists && !clockReady) return { state: "loading", trial, app, msLeft: 0 };
+  return { state: "expired", trial, app, msLeft: 0 };
 }
 ```
 
@@ -170,6 +315,930 @@ export async function copyPromptAndOpen(prompt, appUrl) {
     // Clipboard can silently fail on some Android WebViews.
   }
   window.open(appUrl, "_blank", "noopener,noreferrer");
+}
+```
+
+## File: ./frontend/src/authContext.jsx
+```
+import { createContext, useContext, useEffect, useState, useCallback, useMemo, useRef } from "react";
+import {
+  signInWithRedirect, signInWithPopup, getRedirectResult, onAuthStateChanged, signOut,
+  setPersistence, indexedDBLocalPersistence,
+} from "firebase/auth";
+import { doc, getDoc, setDoc, updateDoc, serverTimestamp, onSnapshot, runTransaction, getDocFromServer } from "firebase/firestore";
+import { auth, db, googleProvider } from "./firebase";
+import { setServerClock, persistClock, getAccess, TRIAL_DAYS } from "./access";
+
+const DEVICE_ID_KEY = "cse_deviceId";
+const PENDING_SIGNIN_KEY = "cse_pendingSignIn";
+const PROFILE_CACHE_KEY = "cse_profileCache_";
+const MAX_DEVICES = 2;
+
+function makeId() {
+  if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+  return "dev-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+}
+
+function getOrCreateDeviceId() {
+  let id = localStorage.getItem(DEVICE_ID_KEY);
+  if (!id) {
+    id = makeId();
+    localStorage.setItem(DEVICE_ID_KEY, id);
+  }
+  return id;
+}
+
+function guessDeviceLabel() {
+  const ua = navigator.userAgent || "";
+  if (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()) {
+    return "CSE Reviewer App (Android)";
+  }
+  if (/Android/i.test(ua)) return "Android · Chrome";
+  if (/iPhone|iPad|iPod/i.test(ua)) return "iOS · Safari";
+  return "Desktop · Browser";
+}
+
+const AuthCtx = createContext(null);
+
+export function AuthProvider({ children }) {
+  const [user, setUser] = useState(null);
+  const [profile, setProfile] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [needsFullName, setNeedsFullName] = useState(false);
+  const [deviceLimitReached, setDeviceLimitReached] = useState(false);
+  const [overlayOpen, setOverlayOpen] = useState(() => localStorage.getItem(PENDING_SIGNIN_KEY) === "1");
+  const [authError, setAuthError] = useState(null);
+  const [profileError, setProfileError] = useState(null);
+  const [signingIn, setSigningIn] = useState(() => localStorage.getItem(PENDING_SIGNIN_KEY) === "1");
+  const currentDeviceId = getOrCreateDeviceId();
+
+  const [serverData, setServerData] = useState(null);
+  const [clockReady, setClockReady] = useState(false);
+  const [tick, setTick] = useState(0);
+  const [intentPlanId, setIntentPlanId] = useState(null);
+  const initDoneFor = useRef(null);
+  const uid = user ? user.uid : null;
+
+  useEffect(() => {
+    if (!uid) {
+      setServerData(null);
+      setClockReady(false);
+      initDoneFor.current = null;
+      return;
+    }
+    const ref = doc(db, "users", uid);
+    const unsub = onSnapshot(
+      ref,
+      { includeMetadataChanges: true },
+      (snap) => {
+        if (!snap.exists()) return;
+        setServerData(snap.data());
+        if (snap.metadata.fromCache || snap.metadata.hasPendingWrites || initDoneFor.current === uid) return;
+        initDoneFor.current = uid;
+        (async () => {
+          let applied = true;
+          try {
+            await runTransaction(db, async (tx) => {
+              const s = await tx.get(ref);
+              if (!s.exists()) { applied = false; return; }
+              const d = s.data();
+              const upd = { lastSeenAt: serverTimestamp() };
+              if (!d.trial) upd.trial = { startedAt: serverTimestamp(), days: TRIAL_DAYS };
+              tx.update(ref, upd);
+            });
+            if (!applied) { initDoneFor.current = null; return; }
+            const fresh = await getDocFromServer(ref);
+            const ls = fresh.data() && fresh.data().lastSeenAt;
+            if (ls && ls.toMillis) setServerClock(ls.toMillis());
+          } catch (e) {
+            console.warn("trial/clock sync failed:", e);
+          }
+          setClockReady(true);
+        })();
+      },
+      (err) => {
+        console.warn("profile listener error:", err);
+        setClockReady(true);
+      }
+    );
+    const fallback = setTimeout(() => setClockReady(true), 6000);
+    return () => { unsub(); clearTimeout(fallback); };
+  }, [uid]);
+
+  useEffect(() => {
+    const id = setInterval(() => { setTick((t) => t + 1); persistClock(); }, 15000);
+    return () => clearInterval(id);
+  }, []);
+
+  useEffect(() => {
+    if (!uid) return;
+    const KEY = "cse_seen_ping_" + uid;
+    const ping = () => {
+      try {
+        if (document.visibilityState === "hidden") return;
+        const last = Number(localStorage.getItem(KEY)) || 0;
+        if (Date.now() - last < 6 * 60 * 60 * 1000) return;
+        localStorage.setItem(KEY, String(Date.now()));
+        updateDoc(doc(db, "users", uid), { lastSeenAt: serverTimestamp() })
+          .catch(() => { try { localStorage.removeItem(KEY); } catch (_) {} });
+      } catch (_) {}
+    };
+    document.addEventListener("visibilitychange", ping);
+    window.addEventListener("online", ping);
+    window.addEventListener("focus", ping);
+    return () => {
+      document.removeEventListener("visibilitychange", ping);
+      window.removeEventListener("online", ping);
+      window.removeEventListener("focus", ping);
+    };
+  }, [uid]);
+
+  const mergedProfile = useMemo(() => {
+    if (!profile || !serverData) return profile;
+    const pick = {};
+    ["appAccess", "trial", "createdAt", "pendingPurchases", "isAdmin"].forEach((k) => {
+      pick[k] = serverData[k];
+    });
+    return { ...profile, ...pick };
+  }, [profile, serverData]);
+
+  const access = getAccess(mergedProfile, { clockReady });
+
+  const syncProfile = useCallback(async (fbUser) => {
+    setProfileError(null);
+    try {
+      const ref = doc(db, "users", fbUser.uid);
+      const snap = await getDoc(ref);
+
+      if (!snap.exists()) {
+        const fresh = {
+          email: fbUser.email || "",
+          displayName: fbUser.displayName || "",
+          photoURL: fbUser.photoURL || "",
+          fullName: null,
+          createdAt: serverTimestamp(),
+          devices: [{ id: currentDeviceId, label: guessDeviceLabel(), lastActive: Date.now() }],
+        };
+        await setDoc(ref, fresh);
+        setProfile(fresh);
+        try { localStorage.setItem(PROFILE_CACHE_KEY + fbUser.uid, JSON.stringify(fresh)); } catch (_) {}
+        setNeedsFullName(true);
+        setDeviceLimitReached(false);
+        return;
+      }
+
+      const data = snap.data();
+      try { localStorage.setItem(PROFILE_CACHE_KEY + fbUser.uid, JSON.stringify(data)); } catch (_) {}
+      const devices = data.devices || [];
+      const already = devices.find((d) => d.id === currentDeviceId);
+
+      if (already) {
+        const updated = devices.map((d) =>
+          d.id === currentDeviceId ? { ...d, lastActive: Date.now() } : d
+        );
+        if (!already.lastActive || Date.now() - already.lastActive > 6 * 60 * 60 * 1000) {
+          updateDoc(ref, { devices: updated }).catch((e) => console.warn("device update failed:", e));
+        }
+        setProfile({ ...data, devices: updated });
+        setDeviceLimitReached(false);
+      } else if (devices.length < MAX_DEVICES) {
+        const updated = [...devices, { id: currentDeviceId, label: guessDeviceLabel(), lastActive: Date.now() }];
+        updateDoc(ref, { devices: updated }).catch((e) => console.warn("device update failed:", e));
+        setProfile({ ...data, devices: updated });
+        setDeviceLimitReached(false);
+      } else {
+        setProfile(data);
+        setDeviceLimitReached(true);
+      }
+      setNeedsFullName(!data.fullName);
+    } catch (err) {
+      console.warn("syncProfile failed:", err);
+      setProfileError((err && err.code ? err.code : "error") + (err && err.message ? " — " + err.message : ""));
+      let restored = false;
+      try {
+        const cached = localStorage.getItem(PROFILE_CACHE_KEY + fbUser.uid);
+        if (cached) { setProfile(JSON.parse(cached)); restored = true; }
+      } catch (_) {}
+      if (!restored) {
+        setProfile({
+          email: fbUser.email || "",
+          displayName: fbUser.displayName || "",
+          photoURL: fbUser.photoURL || "",
+          fullName: fbUser.displayName || fbUser.email || "",
+          devices: [{ id: currentDeviceId, label: guessDeviceLabel(), lastActive: Date.now() }],
+          _localOnly: true,
+        });
+        setNeedsFullName(false);
+      }
+      setDeviceLimitReached(false);
+    }
+  }, [currentDeviceId]);
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, async (fbUser) => {
+      setUser(fbUser);
+      if (fbUser) {
+        let hasCached = false;
+        try {
+          const cached = localStorage.getItem(PROFILE_CACHE_KEY + fbUser.uid);
+          if (cached) {
+            const parsedCached = JSON.parse(cached);
+            setProfile(parsedCached);
+            setNeedsFullName(!parsedCached.fullName);
+            hasCached = true;
+          }
+        } catch (_) {}
+        if (hasCached) {
+          setLoading(false);
+          syncProfile(fbUser);
+        } else {
+          await syncProfile(fbUser);
+          setLoading(false);
+        }
+      } else {
+        setProfile(null);
+        setProfileError(null);
+        setNeedsFullName(false);
+        setDeviceLimitReached(false);
+        setLoading(false);
+      }
+    });
+    return unsub;
+  }, [syncProfile]);
+
+  useEffect(() => {
+    const wasPending = localStorage.getItem(PENDING_SIGNIN_KEY) === "1";
+    getRedirectResult(auth)
+      .catch((err) => {
+        console.warn("getRedirectResult error:", err);
+        const code = err?.code || "unknown-error";
+        const msg = err?.message || "";
+        setAuthError(`[${code}] ${msg || "Sign-in could not be completed. Please try again."}`);
+      })
+      .finally(() => {
+        if (wasPending) {
+          localStorage.removeItem(PENDING_SIGNIN_KEY);
+          setSigningIn(false);
+        }
+      });
+  }, []);
+
+  const signInWithGoogle = useCallback(async () => {
+    setAuthError(null);
+    setSigningIn(true);
+    localStorage.setItem(PENDING_SIGNIN_KEY, "1");
+    try {
+      await setPersistence(auth, indexedDBLocalPersistence);
+    } catch (persistErr) {
+      console.warn("setPersistence failed:", persistErr);
+    }
+    try {
+      const isLocalDev = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+      if (isLocalDev) {
+        await signInWithPopup(auth, googleProvider);
+        localStorage.removeItem(PENDING_SIGNIN_KEY);
+        setSigningIn(false);
+      } else {
+        await signInWithRedirect(auth, googleProvider);
+      }
+    } catch (err) {
+      console.warn("Google sign-in error:", err);
+      const code = err?.code || "unknown-error";
+      const msg = err?.message || "";
+      setAuthError(`[${code}] ${msg || "Sign-in could not be completed. Please try again."}`);
+      setSigningIn(false);
+      localStorage.removeItem(PENDING_SIGNIN_KEY);
+    }
+  }, []);
+
+  const signOutUser = useCallback(() => signOut(auth), []);
+
+  const completeFullName = useCallback(async (fullName) => {
+    if (!user) return;
+    await updateDoc(doc(db, "users", user.uid), { fullName });
+    setProfile((p) => ({ ...p, fullName }));
+    setNeedsFullName(false);
+  }, [user]);
+
+  const removeDevice = useCallback(async (deviceId) => {
+    if (!user || !profile) return;
+    const ref = doc(db, "users", user.uid);
+    const updated = (profile.devices || []).filter((d) => d.id !== deviceId);
+    await updateDoc(ref, { devices: updated });
+    setProfile((p) => ({ ...p, devices: updated }));
+
+    if (deviceId === currentDeviceId) {
+      await signOut(auth);
+      return;
+    }
+    if (deviceLimitReached) {
+      await syncProfile(user);
+    }
+  }, [user, profile, currentDeviceId, deviceLimitReached, syncProfile]);
+
+  const value = {
+    user, profile: mergedProfile, loading, needsFullName, deviceLimitReached, currentDeviceId,
+    access, clockReady, tick, intentPlanId, setIntentPlanId,
+    overlayOpen, setOverlayOpen, authError, profileError, signingIn,
+    signInWithGoogle, signOutUser, completeFullName, removeDevice,
+  };
+
+  return <AuthCtx.Provider value={value}>{children}</AuthCtx.Provider>;
+}
+
+export function useAuth() {
+  const ctx = useContext(AuthCtx);
+  if (!ctx) throw new Error("useAuth must be used inside AuthProvider");
+  return ctx;
+}
+```
+
+## File: ./frontend/src/components/AccessGate.jsx
+```
+import { useState, useEffect, useRef } from "react";
+import { useAuth } from "../authContext";
+import App from "../App";
+import { TRIAL_DAYS, DAY_MS, formatTimeLeft, formatDateShort, toMs } from "../access";
+import { PROMO_PLAN } from "../payments";
+
+const ICONS = {
+  clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></>,
+  tag: <><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r="1" fill="currentColor" /></>,
+  book: <><path d="M3 5c3-1.4 6-1.4 9 0M12 5c3-1.4 6-1.4 9 0M3 5v13c3-1.4 6-1.4 9 0M12 5v13c3-1.4 6-1.4 9 0" /></>,
+  signal: <path d="M4 20h2v-6H4v6Zm6.5 0h2V9h-2v11Zm6.5 0h2V4h-2v16Z" />,
+  warn: <><path d="M12 9v4" /><circle cx="12" cy="16.2" r="0.3" fill="currentColor" /><path d="M10.3 3.9 2.5 18a1.8 1.8 0 0 0 1.6 2.7h15.8a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0Z" /></>,
+};
+function Icon({ name, className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+      {ICONS[name] || null}
+    </svg>
+  );
+}
+
+const pageCls = "safe-top flex min-h-[100dvh] flex-col items-center bg-parchment px-5 py-6 dark:bg-navy-950";
+const sealCls = "mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-seal text-seal dark:border-gold-400 dark:text-gold-400";
+const outlineBtn = "w-full rounded-xl border border-parchment-200 px-4 py-2.5 text-sm font-medium text-slate-500 dark:border-navy-700 dark:text-slate-300";
+
+function Splash({ text }) {
+  return (
+    <div className="safe-top flex min-h-[100dvh] flex-col items-center justify-center gap-4 bg-parchment px-6 text-center dark:bg-navy-950">
+      <span className={sealCls} aria-hidden><Icon name="book" className="h-6 w-6" /></span>
+      <div className="h-9 w-9 animate-spin rounded-full border-4 border-parchment-200 border-t-navy-900 dark:border-navy-700 dark:border-t-gold-400" role="status" aria-label="Loading" />
+      <p className="text-sm font-medium text-slate-600 dark:text-slate-300">{text}</p>
+      <p className="max-w-xs rounded-xl bg-parchment-50/80 px-4 py-3 text-left text-xs leading-relaxed text-slate-500 shadow-sm dark:bg-navy-900/70 dark:text-slate-400">
+        Tip: if loading takes too long, turn Airplane Mode on, then off, and reopen the app.
+      </p>
+    </div>
+  );
+}
+
+// Not signed in: short intro + Google login (starts the free trial).
+function GuestWelcome() {
+  const { signInWithGoogle, signingIn, authError } = useAuth();
+  return (
+    <div className="safe-top flex min-h-[100dvh] flex-col bg-parchment dark:bg-navy-950">
+      <main className="flex flex-1 flex-col items-center justify-center px-5 py-6">
+        <div className="w-full max-w-md rounded-xl border border-parchment-200 bg-parchment-50 p-6 text-center dark:border-navy-700 dark:bg-navy-900">
+          <span className={sealCls} aria-hidden><Icon name="book" className="h-6 w-6" /></span>
+          <h1 className="mt-3 text-2xl font-bold text-navy-900 dark:text-parchment-50">CSE Reviewer</h1>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+            Study the Library, practice with the Quiz, and use the AI Study Guide for your Civil Service Exam.
+          </p>
+          <p className="mt-4 rounded-xl bg-gold-50 px-3 py-2 text-sm font-semibold text-navy-900 dark:bg-navy-800 dark:text-gold-400">
+            {TRIAL_DAYS}-day free trial — everything unlocked
+          </p>
+        </div>
+      </main>
+      <div className="border-t border-parchment-200 bg-parchment-50/90 p-4 dark:border-navy-800 dark:bg-navy-900/90" style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 16px)" }}>
+        {authError && <p className="mb-2 text-center text-xs text-red-600 dark:text-red-400">{authError}</p>}
+        <button onClick={signInWithGoogle} disabled={signingIn} className="mx-auto flex h-12 w-full max-w-md items-center justify-center gap-1.5 rounded-xl bg-gold-500 text-sm font-bold text-navy-900 shadow-sm active:bg-gold-600 disabled:opacity-50">
+          {signingIn ? "Waiting for Google..." : "Login with Google — start your free trial"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// Trial and access are over: only the plan + sign out are shown.
+function Paywall() {
+  const { user, profile, signOutUser, setOverlayOpen, setIntentPlanId } = useAuth();
+  const pending = [...(profile?.pendingPurchases || [])].sort((a, b) => (a.requestedAt || 0) - (b.requestedAt || 0));
+  const choose = () => { setIntentPlanId(PROMO_PLAN.id); setOverlayOpen(true); };
+
+  return (
+    <div className={pageCls}>
+      <div className="w-full max-w-md space-y-4">
+        <div className="text-center">
+          <span className={sealCls} aria-hidden><Icon name="clock" className="h-6 w-6" /></span>
+          <h1 className="mt-2 text-xl font-bold text-navy-900 dark:text-parchment-50">Your access has ended</h1>
+          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Get the All Access promo to continue. {user?.email}</p>
+        </div>
+
+        {pending.length > 0 && (
+          <div className="flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 p-3 text-center text-sm text-amber-800 dark:border-amber-700 dark:bg-amber-950/30 dark:text-amber-300">
+            <Icon name="clock" className="h-4 w-4 flex-shrink-0" /> Pending payment ({pending[pending.length - 1].referenceCode}). Please wait for confirmation.
+          </div>
+        )}
+
+        <button onClick={choose} className="w-full rounded-xl border-2 border-gold-500 bg-gold-50 px-4 py-4 text-left active:opacity-80 dark:border-gold-400 dark:bg-navy-900">
+          <span className="flex items-center justify-between gap-3">
+            <span>
+              <span className="block text-base font-extrabold text-navy-900 dark:text-parchment-50">{PROMO_PLAN.label}</span>
+              <span className="mt-1 block text-xs text-slate-600 dark:text-slate-300">{PROMO_PLAN.tagline}</span>
+              <span className="mt-1 flex items-center gap-1 text-xs font-semibold text-gold-600 dark:text-gold-400">
+                <Icon name="clock" className="h-3.5 w-3.5" /> Valid for {PROMO_PLAN.days} days
+              </span>
+            </span>
+            <span className="text-3xl font-extrabold text-navy-900 dark:text-parchment-50">₱{PROMO_PLAN.price}</span>
+          </span>
+        </button>
+
+        <p className="text-center text-xs text-slate-400">Pay via GCash · Maya · MariBank. Payments are confirmed manually by the admin.</p>
+        <button onClick={signOutUser} className={outlineBtn}>Sign out</button>
+      </div>
+    </div>
+  );
+}
+
+// Firestore could not be reached AND nothing is cached: do not show the paywall
+// to someone who may have paid. Ask them to reconnect instead.
+function CantVerify() {
+  const { signOutUser } = useAuth();
+  return (
+    <div className={pageCls}>
+      <div className="w-full max-w-md space-y-4 text-center">
+        <span className={sealCls} aria-hidden><Icon name="warn" className="h-6 w-6" /></span>
+        <h1 className="text-xl font-bold text-navy-900 dark:text-parchment-50">Can't check your access</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">Connect to the internet once so the app can confirm your account, then try again.</p>
+        <button onClick={() => window.location.reload()} className="w-full rounded-xl bg-navy-900 px-4 py-3 text-sm font-semibold text-white active:bg-navy-800 dark:bg-navy-700">Try again</button>
+        <button onClick={signOutUser} className={outlineBtn}>Sign out</button>
+      </div>
+    </div>
+  );
+}
+
+// "Your access was updated" toast when the admin approves a payment.
+function UnlockToast() {
+  const { user, profile } = useAuth();
+  const exp = profile && profile.appAccess ? toMs(profile.appAccess.expiresAt) || 0 : 0;
+  const seen = useRef(null);
+  const [msg, setMsg] = useState(null);
+
+  useEffect(() => { seen.current = null; }, [user ? user.uid : null]);
+  useEffect(() => {
+    if (!profile) return;
+    if (seen.current === null) { seen.current = exp; return; }
+    if (exp > seen.current && exp > Date.now()) setMsg("Your access was updated! Valid until " + formatDateShort(exp));
+    seen.current = exp;
+  }, [exp, profile]);
+  useEffect(() => {
+    if (!msg) return;
+    const id = setTimeout(() => setMsg(null), 9000);
+    return () => clearTimeout(id);
+  }, [msg]);
+
+  if (!msg) return null;
+  return (
+    <div className="pointer-events-none fixed inset-x-0 top-0 z-[70] flex justify-center px-4" style={{ paddingTop: "calc(env(safe-area-inset-top) + 12px)" }}>
+      <button onClick={() => setMsg(null)} className="pointer-events-auto rounded-2xl bg-verdigris px-4 py-3 text-sm font-semibold text-white shadow-xl">{msg}</button>
+    </div>
+  );
+}
+
+// Reminder: paid access < 7 days left, or trial < 1 day left.
+function RenewBanner() {
+  const { user, access, overlayOpen, setOverlayOpen, setIntentPlanId } = useAuth();
+  const [, setTick] = useState(0);
+  const uid = user ? user.uid : null;
+  const kind = !access ? null
+    : access.state === "paid" && access.msLeft < 7 * DAY_MS ? "paid"
+    : access.state === "trial" && access.msLeft < DAY_MS ? "trial" : null;
+  if (!uid || !kind || overlayOpen) return null;
+  const KEY = "cse_renew_dismiss_" + uid;
+  let last = 0;
+  try { last = Number(localStorage.getItem(KEY)) || 0; } catch (_) {}
+  if (Date.now() - last < 12 * 60 * 60 * 1000) return null;
+  const open = () => { setIntentPlanId(PROMO_PLAN.id); setOverlayOpen(true); };
+  const later = () => { try { localStorage.setItem(KEY, String(Date.now())); } catch (_) {} setTick((n) => n + 1); };
+  return (
+    <div className="fixed inset-x-3 z-[45] mx-auto max-w-md rounded-xl border border-gold-500 bg-parchment-50 p-3 shadow-lg dark:bg-navy-800" style={{ bottom: "calc(env(safe-area-inset-bottom) + 76px)" }}>
+      <p className="flex items-center gap-1.5 text-sm font-semibold text-navy-900 dark:text-parchment-50">
+        <Icon name={kind === "paid" ? "clock" : "tag"} className="h-4 w-4 flex-shrink-0 text-seal dark:text-gold-400" />
+        {kind === "paid" ? "Your access ends in " : "Your free trial ends in "}{formatTimeLeft(access.msLeft)}
+      </p>
+      <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
+        {kind === "paid" ? "Renew early and your remaining days are kept." : "Get All Access and keep studying without interruption."}
+      </p>
+      <div className="mt-2 flex gap-2">
+        <button onClick={open} className="flex-1 rounded-xl bg-navy-900 py-2 text-sm font-semibold text-white active:bg-navy-800 dark:bg-navy-700">
+          {kind === "paid" ? "Renew" : "Get All Access"} · ₱{PROMO_PLAN.price}
+        </button>
+        <button onClick={later} className="rounded-xl border border-parchment-200 px-4 py-2 text-sm font-medium text-slate-500 dark:border-navy-700 dark:text-slate-300">Later</button>
+      </div>
+    </div>
+  );
+}
+
+function OfflinePill() {
+  const [online, setOnline] = useState(() => typeof navigator === "undefined" || navigator.onLine !== false);
+  useEffect(() => {
+    const on = () => setOnline(true);
+    const off = () => setOnline(false);
+    window.addEventListener("online", on);
+    window.addEventListener("offline", off);
+    return () => { window.removeEventListener("online", on); window.removeEventListener("offline", off); };
+  }, []);
+  if (online) return null;
+  return (
+    <div className="pointer-events-none fixed inset-x-0 z-[60] flex justify-center" style={{ top: "calc(env(safe-area-inset-top) + 4px)" }}>
+      <span className="flex items-center gap-1.5 rounded-full bg-navy-900/90 px-3 py-1 text-[11px] font-semibold text-white shadow dark:bg-parchment-50/90 dark:text-navy-900"><Icon name="signal" className="h-3 w-3" /> Offline</span>
+    </div>
+  );
+}
+
+// Small "time left" pill (trial, or paid with < 7 days). Can be hidden with ✕.
+function AccessPill({ access }) {
+  const { user, overlayOpen, setOverlayOpen } = useAuth();
+  const [, setTick] = useState(0);
+  if (overlayOpen) return null;
+  let label = null;
+  if (access.state === "trial") label = "Free trial · " + formatTimeLeft(access.msLeft) + " left";
+  else if (access.state === "paid" && access.msLeft < 7 * DAY_MS) label = "Access · " + formatTimeLeft(access.msLeft) + " left";
+  if (!label) return null;
+  const KEY = "cse_pill_hidden_" + (user ? user.uid : "x") + "_" + access.state;
+  let hidden = false;
+  try { hidden = localStorage.getItem(KEY) === "1"; } catch (_) {}
+  if (hidden) return null;
+  const hide = () => { try { localStorage.setItem(KEY, "1"); } catch (_) {} setTick((n) => n + 1); };
+  return (
+    <div className="fixed left-3 z-40 flex items-center rounded-full bg-navy-900/90 text-[11px] font-semibold text-white shadow-lg backdrop-blur dark:bg-parchment-50/90 dark:text-navy-900" style={{ bottom: "calc(env(safe-area-inset-bottom) + 68px)" }}>
+      <button onClick={() => setOverlayOpen(true)} className="rounded-l-full py-1.5 pl-3 pr-1 active:opacity-70">{label}</button>
+      <button onClick={hide} aria-label="Hide time left" className="flex h-8 w-8 items-center justify-center rounded-r-full text-sm opacity-70 active:opacity-100">✕</button>
+    </div>
+  );
+}
+
+function AccessGateInner() {
+  const { user, profile, loading, signingIn, needsFullName, deviceLimitReached, access } = useAuth();
+
+  if (loading || signingIn) return <Splash text="Loading…" />;
+  if (!user) return <GuestWelcome />;
+  // AccountOverlay (in main.jsx) opens by itself for the name / device-limit steps.
+  if (!profile || needsFullName || deviceLimitReached) return <Splash text="Finishing your account setup…" />;
+  if (access.state === "loading") return <Splash text="Checking your trial…" />;
+  if (access.state === "expired") return profile._localOnly ? <CantVerify /> : <Paywall />;
+
+  return (
+    <>
+      <App />
+      <AccessPill access={access} />
+    </>
+  );
+}
+
+export default function AccessGate() {
+  return (
+    <>
+      <AccessGateInner />
+      <UnlockToast />
+      <RenewBanner />
+      <OfflinePill />
+    </>
+  );
+}
+```
+
+## File: ./frontend/src/components/AccountButton.jsx
+```
+import { useState } from "react";
+import { useAuth } from "../authContext";
+
+export default function AccountButton() {
+  const { profile, setOverlayOpen } = useAuth();
+  const [imgFailed, setImgFailed] = useState(false);
+  const showPhoto = !!profile?.photoURL && !imgFailed;
+  return (
+    <button
+      onClick={() => setOverlayOpen(true)}
+      aria-label="Open profile"
+      className="flex h-10 w-10 flex-shrink-0 touch-manipulation flex-col items-center justify-center gap-0.5 rounded-xl border border-parchment-200 bg-parchment-50 shadow-sm active:bg-parchment dark:border-navy-700 dark:bg-navy-800 dark:active:bg-navy-700"
+    >
+      {showPhoto ? (
+        <img
+          src={profile.photoURL}
+          alt=""
+          referrerPolicy="no-referrer"
+          onError={() => setImgFailed(true)}
+          className="h-4 w-4 rounded-full object-cover"
+        />
+      ) : (
+        <svg className="h-4 w-4 text-navy-700 dark:text-parchment-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <circle cx="12" cy="8" r="3.4" />
+          <path d="M5 20c1.3-3.6 4.2-5.5 7-5.5s5.7 1.9 7 5.5" />
+        </svg>
+      )}
+      <span className="text-[9px] font-semibold leading-none text-slate-600 dark:text-slate-300">Profile</span>
+    </button>
+  );
+}
+```
+
+## File: ./frontend/src/components/AccountOverlay.jsx
+```
+import { useState, useEffect } from "react";
+import { useAuth } from "../authContext";
+import { PAYMENT_METHODS, PROMO_PLAN, generateReferenceCode, submitPendingPurchase } from "../payments";
+import { TRIAL_DAYS, formatTimeLeft, formatDateShort } from "../access";
+
+const ICONS = {
+  warning: <><path d="M12 9v4" /><circle cx="12" cy="16.2" r="0.3" fill="currentColor" /><path d="M10.3 3.9 2.5 18a1.8 1.8 0 0 0 1.6 2.7h15.8a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0Z" /></>,
+  clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></>,
+  tag: <><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r="1" fill="currentColor" /></>,
+  crown: <path d="M4 18h16M4 18l-1.3-9 5 3.5L12 6l4.3 6.5 5-3.5L20 18" />,
+  check: <path d="M20 6 9 17l-5-5" />,
+  mail: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></>,
+  download: <><path d="M12 4v11" /><path d="M7 11l5 5 5-5" /><path d="M5 20h14" /></>,
+  back: <path d="M15 6l-6 6 6 6" />,
+};
+function Icon({ name, className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+      {ICONS[name] || null}
+    </svg>
+  );
+}
+
+function formatDate(ts) {
+  try {
+    return new Date(ts).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  } catch {
+    return "";
+  }
+}
+
+export default function AccountOverlay() {
+  const {
+    user, profile, loading, needsFullName, deviceLimitReached, currentDeviceId,
+    overlayOpen, setOverlayOpen, authError, signingIn,
+    signInWithGoogle, signOutUser, completeFullName, removeDevice,
+    profileError, access, intentPlanId, setIntentPlanId,
+  } = useAuth();
+  const [nameInput, setNameInput] = useState("");
+
+  const [step, setStep] = useState("profile");
+  const [selectedMethod, setSelectedMethod] = useState(null);
+  const [referenceCode, setReferenceCode] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [copied, setCopied] = useState("");
+  const plan = PROMO_PLAN;
+
+  useEffect(() => {
+    if (user && (needsFullName || deviceLimitReached) && !overlayOpen) setOverlayOpen(true);
+  }, [user, needsFullName, deviceLimitReached, overlayOpen, setOverlayOpen]);
+
+  useEffect(() => {
+    if (!overlayOpen) {
+      setStep("profile");
+      setSelectedMethod(null);
+      setReferenceCode(null);
+      setSubmitted(false);
+      setSubmitting(false);
+    }
+  }, [overlayOpen]);
+
+  useEffect(() => {
+    if (!overlayOpen || !intentPlanId || !user || !profile) return;
+    const hit = intentPlanId === plan.id;
+    setIntentPlanId(null);
+    if (!hit) return;
+    setSelectedMethod(null);
+    setSubmitted(false);
+    setReferenceCode(generateReferenceCode(plan.id));
+    setStep("payment-method");
+  }, [overlayOpen, intentPlanId, user, profile]);
+
+  if (!overlayOpen) return null;
+
+  const startPurchase = () => {
+    setSelectedMethod(null);
+    setSubmitted(false);
+    setReferenceCode(generateReferenceCode(plan.id));
+    setStep("payment-method");
+  };
+
+  const copyText = async (key, text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(key);
+      setTimeout(() => setCopied(""), 1500);
+    } catch (_) {
+      window.prompt("Copy this:", text);
+    }
+  };
+
+  const selectMethod = (methodId) => { setSelectedMethod(methodId); setStep("qr"); };
+  const backToProfile = () => { setStep("profile"); setSelectedMethod(null); setSubmitted(false); };
+  const backToMethods = () => { setStep("payment-method"); setSelectedMethod(null); setSubmitted(false); };
+
+  const confirmPaid = async () => {
+    if (!user || !selectedMethod || !referenceCode) return;
+    setSubmitting(true);
+    try {
+      await submitPendingPurchase(user.uid, {
+        planId: plan.id,
+        price: plan.price,
+        method: selectedMethod,
+        referenceCode,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.warn("submitPendingPurchase failed:", err);
+      alert("Could not submit. Please try again:\n" + (err?.message || err));
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const activeMethod = PAYMENT_METHODS.find((m) => m.id === selectedMethod) || null;
+  const pending = profile?.pendingPurchases || [];
+
+  let appAccessStatus = null;
+  if (access?.state === "admin") appAccessStatus = { icon: "crown", text: "Admin" };
+  else if (access?.state === "paid") appAccessStatus = { icon: "check", text: `Active until ${formatDateShort(access.app.expiresAt)} (${formatTimeLeft(access.msLeft)} left)` };
+  else if (access?.state === "trial") appAccessStatus = { icon: "tag", text: `Free trial: ${formatTimeLeft(access.msLeft)} left` };
+  else if (access?.state === "expired" || access?.state === "loading") appAccessStatus = { icon: "clock", text: "Your trial has ended. Get the All Access promo." };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 backdrop-blur-sm sm:items-center" onClick={() => setOverlayOpen(false)}>
+      <div className="max-h-[85vh] w-full overflow-y-auto rounded-t-xl bg-parchment-50 p-5 dark:bg-slate-800 sm:max-w-sm sm:rounded-xl" onClick={(e) => e.stopPropagation()}>
+        {loading && <p className="py-8 text-center text-slate-400">Loading...</p>}
+
+        {!loading && !user && (
+          <div className="space-y-4 py-4 text-center">
+            <p className="text-lg font-semibold text-navy-900 dark:text-parchment-50">
+              Sign in with Google to start your {TRIAL_DAYS}-day free trial
+            </p>
+            <button onClick={signInWithGoogle} disabled={signingIn} className="w-full rounded-xl bg-navy-900 px-4 py-3 font-medium text-white disabled:opacity-50 dark:bg-navy-700">
+              {signingIn ? "Waiting for Google..." : "Sign in with Google"}
+            </button>
+            {authError && <p className="text-sm text-red-600 dark:text-red-400">{authError}</p>}
+            <button onClick={() => setOverlayOpen(false)} className="text-sm text-slate-400">Cancel</button>
+          </div>
+        )}
+
+        {!loading && user && deviceLimitReached && (
+          <div className="space-y-3 py-2">
+            <p className="text-lg font-semibold text-navy-900 dark:text-parchment-50">This Google account is already signed in on 2 devices</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">Remove one device below to use it here.</p>
+            <div className="space-y-2">
+              {(profile?.devices || []).map((d) => (
+                <div key={d.id} className="flex items-center justify-between rounded-lg bg-parchment p-3 dark:bg-navy-900/40">
+                  <div>
+                    <p className="text-sm font-medium text-slate-700 dark:text-slate-200">{d.label}</p>
+                    <p className="text-xs text-slate-400">Last active: {formatDate(d.lastActive)}</p>
+                  </div>
+                  <button onClick={() => removeDevice(d.id)} className="rounded-lg border border-red-200 px-3 py-1.5 text-xs font-medium text-red-600 dark:border-red-800 dark:text-red-400">Remove</button>
+                </div>
+              ))}
+            </div>
+            <button onClick={signOutUser} className="w-full text-sm text-slate-400">Sign out</button>
+          </div>
+        )}
+
+        {!loading && user && !deviceLimitReached && needsFullName && (
+          <div className="space-y-3 py-2">
+            <p className="text-lg font-semibold text-navy-900 dark:text-parchment-50">What is your full name?</p>
+            <input value={nameInput} onChange={(e) => setNameInput(e.target.value)} placeholder="Full name" className="w-full rounded-xl border border-parchment-200 px-4 py-3 dark:border-navy-700 dark:bg-navy-900 dark:text-slate-100" />
+            <button disabled={!nameInput.trim()} onClick={() => completeFullName(nameInput.trim())} className="w-full rounded-xl bg-navy-900 px-4 py-3 font-medium text-white disabled:opacity-40 dark:bg-navy-700">Done</button>
+          </div>
+        )}
+
+        {!loading && user && !deviceLimitReached && !needsFullName && step === "profile" && (
+          <div className="space-y-4 py-2">
+            {profileError && (
+              <div className="flex items-start gap-1.5 rounded-lg border border-red-200 bg-red-50 p-2.5 text-xs text-red-700 dark:border-red-800 dark:bg-red-950/30 dark:text-red-300">
+                <Icon name="warning" className="mt-0.5 h-3.5 w-3.5 flex-shrink-0" /> Your account could not be saved to the server. Error: {profileError}
+              </div>
+            )}
+            <div className="flex items-center gap-3">
+              {profile?.photoURL && <img src={profile.photoURL} alt="" referrerPolicy="no-referrer" className="h-14 w-14 rounded-full object-cover" />}
+              <div>
+                <p className="font-semibold text-navy-900 dark:text-parchment-50">{profile?.fullName}</p>
+                <p className="text-xs text-slate-400">{profile?.email}</p>
+              </div>
+            </div>
+
+            <div>
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-slate-400">App Access</p>
+              {appAccessStatus && (
+                <div className="mb-2 flex items-start gap-1.5 rounded-lg bg-parchment px-3 py-2 text-sm text-slate-600 dark:bg-navy-900/40 dark:text-slate-300">
+                  <Icon name={appAccessStatus.icon} className="mt-0.5 h-4 w-4 flex-shrink-0" /> {appAccessStatus.text}
+                </div>
+              )}
+              {pending.length > 0 && (
+                <p className="mb-2 flex items-center gap-1.5 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:bg-amber-950/20 dark:text-amber-300">
+                  <Icon name="clock" className="h-3.5 w-3.5 flex-shrink-0" /> Payment pending ({pending[pending.length - 1].referenceCode}) — waiting for confirmation.
+                </p>
+              )}
+              <button onClick={startPurchase} className="w-full rounded-xl border-2 border-gold-500 bg-navy-900 px-3 py-3 text-center text-white active:bg-navy-800 dark:bg-navy-700">
+                <span className="block text-sm font-extrabold">{plan.label} — ₱{plan.price}</span>
+                <span className="mt-1 block text-[11px] font-normal opacity-90">{plan.tagline}</span>
+                <span className="mt-1 flex items-center justify-center gap-1 text-[11px] font-semibold text-gold-400"><Icon name="clock" className="h-3 w-3" /> Valid for {plan.days} days only</span>
+              </button>
+            </div>
+
+            <div>
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-slate-400">Devices ({(profile?.devices || []).length}/2)</p>
+              <div className="space-y-1.5">
+                {(profile?.devices || []).map((d) => (
+                  <div key={d.id} className="flex items-center justify-between rounded-lg bg-parchment px-3 py-2 dark:bg-navy-900/40">
+                    <div>
+                      <p className="text-sm text-slate-600 dark:text-slate-300">
+                        {d.label} {d.id === currentDeviceId && <span className="text-verdigris dark:text-verdigris-300">(this device)</span>}
+                      </p>
+                      <p className="text-xs text-slate-400">{formatDate(d.lastActive)}</p>
+                    </div>
+                    <button onClick={() => removeDevice(d.id)} className="rounded-lg border border-red-200 px-2.5 py-1 text-xs text-red-600 dark:border-red-800 dark:text-red-400">Remove</button>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <button onClick={signOutUser} className="w-full rounded-xl border border-parchment-200 px-4 py-2.5 text-sm font-medium text-slate-500 dark:border-navy-700 dark:text-slate-300">Sign out</button>
+            <button onClick={() => setOverlayOpen(false)} className="w-full text-sm text-slate-400">Close</button>
+          </div>
+        )}
+
+        {!loading && user && !deviceLimitReached && !needsFullName && step === "payment-method" && (
+          <div className="space-y-4 py-2">
+            <button onClick={backToProfile} className="flex items-center gap-1 text-sm text-slate-400"><Icon name="back" className="h-3.5 w-3.5" /> Back</button>
+            <div className="rounded-xl bg-parchment p-4 text-center dark:bg-navy-900/40">
+              <p className="text-sm text-slate-500 dark:text-slate-400">{plan.label}</p>
+              <p className="text-2xl font-bold text-navy-900 dark:text-parchment-50">₱{plan.price}</p>
+              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">All Access · everything unlocked · valid for {plan.days} days</p>
+            </div>
+            <p className="text-sm font-medium text-slate-600 dark:text-slate-300">Choose a payment method:</p>
+            <div className="space-y-2">
+              {PAYMENT_METHODS.map((m) => (
+                <button key={m.id} onClick={() => selectMethod(m.id)} className="w-full rounded-xl border border-parchment-200 px-4 py-3 text-left text-sm font-semibold text-slate-700 active:bg-parchment dark:border-navy-700 dark:text-slate-200 dark:active:bg-slate-900/40">{m.label}</button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {!loading && user && !deviceLimitReached && !needsFullName && step === "qr" && activeMethod && (
+          <div className="space-y-4 py-2">
+            {!submitted ? (
+              <>
+                <button onClick={backToMethods} className="flex items-center gap-1 text-sm text-slate-400"><Icon name="back" className="h-3.5 w-3.5" /> Back</button>
+                <div className="rounded-xl border-2 border-red-500 bg-red-50 p-3 text-center dark:border-red-400 dark:bg-red-950/30">
+                  <p className="flex items-start gap-1.5 text-left text-sm font-bold leading-snug text-red-700 dark:text-red-300">
+                    <Icon name="warning" className="mt-0.5 h-4 w-4 flex-shrink-0" />
+                    Ilagay sa note ang iyong email address para makita namin na ikaw talaga ang nag-avail, and wait for our confirmation.
+                  </p>
+                  {profile?.email && (
+                    <div className="mt-1 flex items-center justify-center gap-2">
+                      <p className="flex items-center gap-1 break-all text-xs font-semibold text-slate-700 dark:text-slate-200"><Icon name="mail" className="h-3.5 w-3.5 flex-shrink-0" /> {profile.email}</p>
+                      <button onClick={() => copyText("email", profile.email)} className="flex-shrink-0 rounded-full border border-slate-300 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600 active:bg-slate-100 dark:border-navy-700 dark:text-slate-300">{copied === "email" ? "Copied ✓" : "Copy"}</button>
+                    </div>
+                  )}
+                </div>
+                <img src={activeMethod.qr} alt={`${activeMethod.label} QR code`} className="mx-auto w-full max-w-[280px] rounded-xl border border-parchment-200 dark:border-navy-700" />
+                <a href={activeMethod.qr} download={activeMethod.id + "-qr.png"} className="mx-auto flex w-fit items-center gap-1.5 rounded-full border border-parchment-200 px-4 py-1.5 text-xs font-semibold text-slate-600 active:bg-parchment dark:border-navy-700 dark:text-slate-300"><Icon name="download" className="h-3.5 w-3.5" /> Save QR (or take a screenshot)</a>
+                <div className="rounded-xl bg-amber-50 p-3 text-center dark:bg-amber-950/30">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Reference Code — write it in the payment note</p>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-xl font-bold tracking-widest text-navy-900 dark:text-amber-400">{referenceCode}</p>
+                    <button onClick={() => copyText("ref", referenceCode)} className="flex-shrink-0 rounded-full border border-slate-300 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600 active:bg-slate-100 dark:border-navy-700 dark:text-slate-300">{copied === "ref" ? "Copied ✓" : "Copy"}</button>
+                  </div>
+                </div>
+                <p className="text-center text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+                  1. Scan the QR code with your {activeMethod.label} app.<br />
+                  2. Pay ₱{plan.price} and write your email address + the reference code in the note/message.<br />
+                  3. Tap "I've paid" below.
+                </p>
+                <div className="sticky -bottom-5 -mx-5 -mb-7 border-t border-parchment-200 bg-parchment-50 px-5 pt-3 dark:border-navy-700 dark:bg-navy-800" style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 12px)" }}>
+                  <p className="mb-2 text-center text-[11px] text-slate-500 dark:text-slate-400">Tap only after you have sent the payment.</p>
+                  <button onClick={confirmPaid} disabled={submitting} className="w-full rounded-xl bg-navy-900 px-4 py-3 text-sm font-semibold text-white disabled:opacity-50 dark:bg-navy-700">
+                    {submitting ? "Submitting..." : "✅ I've paid"}
+                  </button>
+                </div>
+              </>
+            ) : (
+              <div className="space-y-3 py-4 text-center">
+                <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-seal text-seal dark:border-gold-400 dark:text-gold-400" aria-hidden><Icon name="clock" className="h-6 w-6" /></span>
+                <p className="font-semibold text-navy-900 dark:text-parchment-50">Your purchase is pending</p>
+                <p className="text-sm text-slate-500 dark:text-slate-400">It will be confirmed manually within a few hours. Reference code: <span className="font-semibold">{referenceCode}</span></p>
+                <button onClick={backToProfile} className="w-full rounded-xl border border-parchment-200 px-4 py-2.5 text-sm font-medium text-slate-500 dark:border-navy-700 dark:text-slate-300">Back to Profile</button>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
 }
 ```
 
@@ -906,6 +1975,31 @@ export async function copyText(text) {
 export const IS_DEV = import.meta.env.DEV;
 ```
 
+## File: ./frontend/src/firebase.js
+```
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAwk9cwnbizKi-IM-dvwd8C69wPaafWUR4",
+  authDomain: "cse-reviewer-ph-fcfbc.firebaseapp.com",
+  projectId: "civil-service-564fe",
+  storageBucket: "civil-service-564fe.firebasestorage.app",
+  messagingSenderId: "418319058791",
+  appId: "1:418319058791:web:ce1aa06ab63d71663911c2",
+};
+
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const googleProvider = new GoogleAuthProvider();
+
+enableIndexedDbPersistence(db).catch((err) => {
+  console.warn("Firestore offline persistence not enabled:", err.code || err);
+});
+```
+
 ## File: ./frontend/src/index.css
 ```
 @tailwind base;
@@ -926,7 +2020,9 @@ export const IS_DEV = import.meta.env.DEV;
 import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import AccessGate from "./components/AccessGate";
+import { AuthProvider } from "./authContext";
+import AccountOverlay from "./components/AccountOverlay";
 
 class ErrorBoundary extends React.Component {
   constructor(props) { super(props); this.state = { error: null }; }
@@ -938,6 +2034,7 @@ class ErrorBoundary extends React.Component {
         <div style={{ padding: 20, background: "#1e1e1e", color: "#ff6b6b", fontFamily: "monospace", whiteSpace: "pre-wrap", minHeight: "100vh" }}>
           <h1>App Error</h1>
           <pre>{this.state.error.toString()}</pre>
+          <button onClick={() => window.location.reload()} style={{ marginTop: 16, padding: "10px 16px" }}>Reload</button>
         </div>
       );
     }
@@ -948,10 +2045,1024 @@ class ErrorBoundary extends React.Component {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ErrorBoundary>
-      <App />
+      <AuthProvider>
+        <AccessGate />
+        <AccountOverlay />
+      </AuthProvider>
     </ErrorBoundary>
   </React.StrictMode>
 );
+```
+
+## File: ./frontend/src/pages/AdminOverview.jsx
+```
+import { useMemo, useState } from "react";
+import { getAccess, serverNow, toMs, DAY_MS } from "../access";
+
+const APP_NAME = "CSE Reviewer";
+const CHART_DAYS = 14;
+
+const STATUS_ROWS = [
+  { key: "paid", label: "Paid access", light: "bg-gold-500", dark: "dark:bg-gold-400" },
+  { key: "trial", label: "On free trial", light: "bg-navy-700", dark: "dark:bg-sky-400" },
+  { key: "expired", label: "Trial or access ended", light: "bg-slate-400", dark: "dark:bg-slate-500" },
+  { key: "none", label: "No trial yet", light: "bg-slate-300", dark: "dark:bg-slate-600" },
+];
+
+export function maskEmail(email) {
+  if (!email || email.indexOf("@") < 1) return email || "";
+  const at = email.lastIndexOf("@");
+  const local = email.slice(0, at);
+  const domain = email.slice(at);
+  if (local.length <= 4) return local.slice(0, 1) + "****" + domain;
+  return local.slice(0, 2) + "****" + local.slice(-2) + domain;
+}
+
+function accessKey(u) {
+  const a = getAccess(u);
+  if (a.state === "expired" && !a.trial.exists) return "none";
+  return a.state;
+}
+
+function dayKey(d) {
+  return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+}
+
+function shortDate(ms) {
+  try {
+    return new Date(ms).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  } catch (_) {
+    return "";
+  }
+}
+
+function ago(ms, now) {
+  if (!ms) return "never";
+  const m = Math.floor((now - ms) / 60000);
+  if (m < 1) return "just now";
+  if (m < 60) return m + "m ago";
+  const h = Math.floor(m / 60);
+  if (h < 24) return h + "h ago";
+  return Math.floor(h / 24) + "d ago";
+}
+
+const CHIP_SLATE = "bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-300";
+const CHIP_PAID = "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300";
+const STATUS_CHIP = {
+  paid: ["Paid", CHIP_PAID],
+  trial: ["Trial", "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300"],
+  expired: ["Ended", CHIP_SLATE],
+  none: ["No trial", CHIP_SLATE],
+};
+
+const NEW_FILTERS = [["24h", "24 hrs", 1], ["7d", "7 days", 7], ["30d", "30 days", 30], ["all", "All", null]];
+
+function compute(users) {
+  const now = serverNow();
+  const members = users.filter((u) => !u.isAdmin);
+
+  const days = [];
+  const dayIndex = {};
+  for (let i = CHART_DAYS - 1; i >= 0; i--) {
+    const d = new Date(now - i * DAY_MS);
+    dayIndex[dayKey(d)] = days.length;
+    days.push({ ms: d.getTime(), count: 0 });
+  }
+
+  const status = { paid: 0, trial: 0, expired: 0, none: 0 };
+  let active7 = 0, new7 = 0, new30 = 0, revenue = 0, payers = 0;
+
+  members.forEach((u) => {
+    const seen = toMs(u.lastSeenAt);
+    if (seen && now - seen <= 7 * DAY_MS) active7++;
+
+    const created = toMs(u.createdAt);
+    if (created) {
+      const age = now - created;
+      if (age <= 7 * DAY_MS) new7++;
+      if (age <= 30 * DAY_MS) new30++;
+      const k = dayKey(new Date(created));
+      if (k in dayIndex) days[dayIndex[k]].count++;
+    }
+
+    const key = accessKey(u);
+    if (key === "paid") status.paid++;
+    else if (key === "trial") status.trial++;
+    else if (key === "expired") status.expired++;
+    else status.none++;
+
+    let spent = 0;
+    [].concat(u.paymentHistory || [], u.appAccessHistory || []).forEach((h) => {
+      const p = Number(h && h.price) || 0;
+      if (p > 0 && h.method !== "manual") spent += p;
+    });
+    if (spent > 0) { revenue += spent; payers++; }
+  });
+
+  const all = members
+    .map((u) => ({ u, created: toMs(u.createdAt), seen: toMs(u.lastSeenAt), key: accessKey(u) }))
+    .sort((a, b) => (b.created || 0) - (a.created || 0));
+  const recent = all.filter((r) => r.created).slice(0, 5);
+
+  const pending = users.reduce((n, u) => n + (u.pendingPurchases || []).length, 0);
+
+  return { now, total: members.length, active7, new7, new30, status, days, revenue, payers, recent, all, pending };
+}
+
+function Bar({ label, sub, value, max, barClass, trackClass, labelClass }) {
+  const pct = max > 0 && value > 0 ? Math.max(3, Math.round((value / max) * 100)) : 0;
+  return (
+    <div>
+      <div className="mb-1 flex items-baseline justify-between gap-3 text-sm">
+        <span className={"min-w-0 truncate " + labelClass}>
+          {label}
+          {sub && <span className="ml-1.5 text-xs opacity-60">{sub}</span>}
+        </span>
+        <span className="flex-shrink-0 font-semibold tabular-nums">{value}</span>
+      </div>
+      <div className={"h-2.5 w-full overflow-hidden rounded-full " + trackClass}>
+        <div className={"h-full rounded-full " + barClass} style={{ width: pct + "%" }} />
+      </div>
+    </div>
+  );
+}
+
+export default function AdminOverview({ users }) {
+  const [share, setShare] = useState(false);
+  const [showRevenue, setShowRevenue] = useState(false);
+  const [newFilter, setNewFilter] = useState("7d");
+  const [shown, setShown] = useState(20);
+  const s = useMemo(() => compute(users), [users]);
+  const inRange = (r, d) => d == null || (r.created && s.now - r.created <= d * DAY_MS);
+  const newCounts = Object.fromEntries(NEW_FILTERS.map(([id, , d]) => [id, s.all.filter((r) => inRange(r, d)).length]));
+  const newList = s.all.filter((r) => inRange(r, NEW_FILTERS.find((f) => f[0] === newFilter)[2]));
+
+  const t = (light, dark) => (share ? light : light + " " + dark);
+
+  const revenueVisible = !share || showRevenue;
+  const maxStatus = Math.max(1, ...Object.values(s.status));
+  const maxDay = Math.max(1, ...s.days.map((d) => d.count));
+  const payRate = s.total > 0 ? Math.round((s.payers / s.total) * 100) : 0;
+
+  const track = t("bg-slate-100", "dark:bg-slate-700");
+  const labelCls = t("text-slate-700", "dark:text-slate-300");
+  const barNavy = t("bg-navy-700", "dark:bg-sky-400");
+  const muted = t("text-slate-500", "dark:text-slate-400");
+  const asOf = new Date(s.now).toLocaleString(undefined, {
+    month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit",
+  });
+
+  const switchBtn = (on) =>
+    "relative h-6 w-11 flex-shrink-0 rounded-full transition-colors " +
+    (on ? "bg-emerald-600" : "bg-slate-300 dark:bg-slate-600");
+  const switchKnob = (on) =>
+    "absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-all " + (on ? "left-[22px]" : "left-0.5");
+
+  return (
+    <div className="space-y-3">
+      <div className="space-y-2 rounded-xl border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-800">
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-navy-900 dark:text-slate-100">Share mode</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              {share
+                ? "Emails are masked and pending items are hidden. Screenshot the card below."
+                : "Off: full names, emails, and pending items are visible (for you only)."}
+            </p>
+          </div>
+          <button onClick={() => setShare(!share)} className={switchBtn(share)} role="switch" aria-checked={share} aria-label="Share mode">
+            <span className={switchKnob(share)} />
+          </button>
+        </div>
+        {share && (
+          <div className="flex items-center justify-between gap-3 border-t border-slate-100 pt-2 dark:border-slate-700">
+            <p className="text-sm text-slate-600 dark:text-slate-300">Show revenue</p>
+            <button onClick={() => setShowRevenue(!showRevenue)} className={switchBtn(showRevenue)} role="switch" aria-checked={showRevenue} aria-label="Show revenue">
+              <span className={switchKnob(showRevenue)} />
+            </button>
+          </div>
+        )}
+      </div>
+
+      <div className={"overflow-hidden rounded-2xl border " + t("border-slate-200 bg-white text-slate-900", "dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100")}>
+        <div className="h-1.5 bg-gold-500" />
+        <div className="space-y-6 p-5">
+          <div>
+            <h2 className={"font-display text-xl font-bold " + t("text-navy-900", "dark:text-slate-50")}>{APP_NAME} user overview</h2>
+            <p className={"text-xs " + muted}>As of {asOf}</p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-x-4 gap-y-5">
+            {[
+              ["Total users", s.total],
+              ["Active in 7 days", s.active7],
+              ["New this week", s.new7],
+              ["New in 30 days", s.new30],
+            ].map(([label, value]) => (
+              <div key={label}>
+                <p className={"font-display text-3xl font-bold tabular-nums " + t("text-navy-900", "dark:text-slate-50")}>{value}</p>
+                <p className={"text-sm " + muted}>{label}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-3">
+            <p className={"text-sm font-semibold " + t("text-navy-900", "dark:text-slate-100")}>Access status</p>
+            {STATUS_ROWS.map((r) => (
+              <Bar
+                key={r.key}
+                label={r.label}
+                value={s.status[r.key]}
+                max={maxStatus}
+                barClass={t(r.light, r.dark)}
+                trackClass={track}
+                labelClass={labelCls}
+              />
+            ))}
+          </div>
+
+          <div>
+            <p className={"mb-3 text-sm font-semibold " + t("text-navy-900", "dark:text-slate-100")}>New sign-ups, last {CHART_DAYS} days</p>
+            <div className="flex h-24 items-end gap-1">
+              {s.days.map((d) => (
+                <div key={d.ms} className="flex h-full min-w-0 flex-1 flex-col items-center justify-end gap-0.5">
+                  {d.count > 0 && <span className={"text-[10px] font-semibold tabular-nums " + muted}>{d.count}</span>}
+                  <div
+                    className={"w-full rounded-t " + (d.count > 0 ? barNavy : t("bg-slate-200", "dark:bg-slate-700"))}
+                    style={{ height: d.count > 0 ? Math.max(6, Math.round((d.count / maxDay) * 100)) + "%" : "3px" }}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className={"mt-1.5 flex justify-between text-[11px] " + muted}>
+              <span>{shortDate(s.days[0].ms)}</span>
+              <span>{shortDate(s.days[s.days.length - 1].ms)}</span>
+            </div>
+          </div>
+
+          {revenueVisible && (
+            <div className={"rounded-xl border p-4 " + t("border-gold-100 bg-gold-50", "dark:border-slate-700 dark:bg-slate-800")}>
+              <p className={"text-sm " + muted}>Estimated revenue</p>
+              <p className={"font-display text-3xl font-bold tabular-nums " + t("text-navy-900", "dark:text-slate-50")}>
+                ₱{s.revenue.toLocaleString()}
+              </p>
+              <p className={"mt-1 text-xs " + muted}>
+                {s.payers} paying user{s.payers === 1 ? "" : "s"} · {payRate}% of all users
+              </p>
+            </div>
+          )}
+
+          {!share && (
+            <div>
+              <p className="mb-2 text-sm font-semibold text-navy-900 dark:text-slate-100">New users</p>
+              <div className="mb-2 flex flex-wrap gap-1.5">
+                {NEW_FILTERS.map(([id, label]) => (
+                  <button
+                    key={id}
+                    onClick={() => { setNewFilter(id); setShown(20); }}
+                    className={"rounded-full border px-3 py-1 text-xs font-semibold " + (newFilter === id ? "border-navy-900 bg-navy-900 text-white dark:border-slate-100 dark:bg-slate-100 dark:text-navy-900" : "border-slate-200 text-slate-500 dark:border-slate-700 dark:text-slate-400")}
+                  >
+                    {label} ({newCounts[id]})
+                  </button>
+                ))}
+              </div>
+              {newList.length === 0 && <p className="py-4 text-center text-sm text-slate-400">No users in this range.</p>}
+              <ul className="divide-y divide-slate-100 dark:divide-slate-700">
+                {newList.slice(0, shown).map(({ u, created, seen, key }) => {
+                  const chip = STATUS_CHIP[key] || STATUS_CHIP.none;
+                  return (
+                    <li key={u.uid} className="flex items-center justify-between gap-3 py-2">
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-medium">{u.fullName || "(no name)"}</p>
+                        <p className="truncate text-xs text-slate-500 dark:text-slate-400">{u.email}</p>
+                        <p className="text-[11px] text-slate-400">{created ? "Joined " + shortDate(created) : "Joined: unknown"} · seen {ago(seen, s.now)}</p>
+                      </div>
+                      <span className={"flex-shrink-0 rounded-full px-2 py-0.5 text-[11px] font-semibold " + chip[1]}>{chip[0]}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+              {newList.length > shown && (
+                <button onClick={() => setShown(shown + 20)} className="mt-2 w-full rounded-xl border border-slate-200 py-2 text-xs font-semibold text-slate-600 dark:border-slate-700 dark:text-slate-300">
+                  Show more ({newList.length - shown} left)
+                </button>
+              )}
+            </div>
+          )}
+
+          {share && s.recent.length > 0 && (
+            <div>
+              <p className={"mb-2 text-sm font-semibold " + t("text-navy-900", "dark:text-slate-100")}>Recent sign-ups</p>
+              <ul className={"divide-y " + t("divide-slate-100", "dark:divide-slate-700")}>
+                {s.recent.map(({ u, created }) => (
+                  <li key={u.uid} className="flex items-center justify-between gap-3 py-2">
+                    <div className="min-w-0">
+                      <p className="truncate text-sm font-medium">{u.fullName || "(no name)"}</p>
+                      <p className={"truncate text-xs " + muted}>{maskEmail(u.email)}</p>
+                    </div>
+                    <span className={"flex-shrink-0 text-xs " + muted}>{shortDate(created)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {!share && s.pending > 0 && (
+            <div className="rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900 dark:border-amber-900 dark:bg-amber-950/20 dark:text-amber-300">
+              ⏳ Pending approvals: {s.pending}
+            </div>
+          )}
+
+          <p className={"border-t pt-3 text-[11px] " + t("border-slate-100 text-slate-400", "dark:border-slate-700 dark:text-slate-500")}>
+            Counts come from the app's actual user records. Admin accounts are excluded.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+```
+
+## File: ./frontend/src/pages/AdminPanel.jsx
+```
+import { useState, useEffect, useMemo, useRef } from "react";
+import { collection, getDocs, doc, updateDoc, arrayUnion, deleteField, Timestamp, runTransaction, writeBatch } from "firebase/firestore";
+import { db } from "../firebase";
+import AdminOverview from "./AdminOverview";
+import { PAYMENT_METHODS, PROMO_PLAN } from "../payments";
+import {
+  TRIAL_DAYS, DAY_MS, serverNow, getTrialInfo, getAppAccessInfo,
+  getAccess, formatTimeLeft, formatDateShort, toMs, addMonths,
+} from "../access";
+
+const METHOD_LABELS = Object.fromEntries(PAYMENT_METHODS.map((m) => [m.id, m.label]));
+
+const TRIAGE = {
+  pending: { label: "Pending", dot: "bg-amber-500", chip: "border-amber-300 text-amber-700 dark:border-amber-700 dark:text-amber-400" },
+  none: { label: "None", dot: "bg-slate-400", chip: "border-slate-300 text-slate-500 dark:border-slate-600 dark:text-slate-400" },
+  subscribed: { label: "Subscribed", dot: "bg-emerald-500", chip: "border-emerald-300 text-emerald-700 dark:border-emerald-700 dark:text-emerald-400" },
+};
+
+const STATE_UI = {
+  admin: { label: "Admin", cls: "bg-purple-100 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300" },
+  paid: { label: "App Access", cls: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300" },
+  trial: { label: "On trial", cls: "bg-sky-100 text-sky-700 dark:bg-sky-950/40 dark:text-sky-300" },
+  expired: { label: "Expired", cls: "bg-red-100 text-red-700 dark:bg-red-950/40 dark:text-red-300" },
+  none: { label: "No trial yet", cls: "bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400" },
+};
+
+function waitInfo(requestedAt) {
+  const t = toMs(requestedAt);
+  if (!t) return null;
+  const mins = Math.max(0, Math.floor((serverNow() - t) / 60000));
+  const label = mins < 60 ? mins + "m"
+    : mins < 1440 ? Math.floor(mins / 60) + "h " + (mins % 60) + "m"
+    : Math.floor(mins / 1440) + "d " + Math.floor((mins % 1440) / 60) + "h";
+  const cls = mins >= 720 ? "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300"
+    : mins >= 180 ? "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300"
+    : "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300";
+  return { label, cls };
+}
+
+function formatDateTime(ts) {
+  try {
+    return new Date(ts).toLocaleString(undefined, { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" });
+  } catch {
+    return "";
+  }
+}
+
+function defaultTriage(userData) {
+  if (userData.triageStatus) return userData.triageStatus;
+  return (userData.pendingPurchases || []).length > 0 ? "pending" : "none";
+}
+
+function accessKey(u) {
+  const a = getAccess(u);
+  if (a.state === "expired" && !a.trial.exists) return "none";
+  return a.state;
+}
+
+function StateChip({ u }) {
+  const key = accessKey(u);
+  const a = getAccess(u);
+  const ui = STATE_UI[key] || STATE_UI.none;
+  let extra = "";
+  if (key === "trial" || key === "paid") extra = " · " + formatTimeLeft(a.msLeft);
+  return <span className={"rounded-full px-2 py-0.5 text-[11px] font-semibold " + ui.cls}>{ui.label}{extra}</span>;
+}
+
+export default function AdminPanel() {
+  const [users, setUsers] = useState(null);
+  const [error, setError] = useState(null);
+  const [query, setQuery] = useState("");
+  const [busyKey, setBusyKey] = useState(null);
+  const [tab, setTab] = useState("overview");
+  const [trialFilter, setTrialFilter] = useState("all");
+  const [monthsInput, setMonthsInput] = useState({});
+  const [bulkBusy, setBulkBusy] = useState(false);
+  const [copiedRef, setCopiedRef] = useState("");
+  const lastLoad = useRef(0);
+
+  const loadUsers = async () => {
+    setError(null);
+    try {
+      const snap = await getDocs(collection(db, "users"));
+      const list = snap.docs.map((d) => ({ uid: d.id, ...d.data() }));
+      list.sort((a, b) => (a.fullName || a.email || "").localeCompare(b.fullName || b.email || ""));
+      setUsers(list);
+      lastLoad.current = Date.now();
+      return list;
+    } catch (err) {
+      console.warn("AdminPanel load failed:", err);
+      setError(err?.message || String(err));
+      setUsers([]);
+      return [];
+    }
+  };
+
+  useEffect(() => { loadUsers(); }, []);
+
+  const filtered = useMemo(() => {
+    if (!users) return [];
+    const q = query.trim().toLowerCase();
+    if (!q) return users;
+    const hasRef = (u) => (u.pendingPurchases || []).some((p) => (p.referenceCode || "").toLowerCase().includes(q));
+    return users.filter((u) =>
+      (u.fullName || "").toLowerCase().includes(q) || (u.email || "").toLowerCase().includes(q) || hasRef(u)
+    );
+  }, [users, query]);
+
+  const patchUser = (uid, patch) => {
+    setUsers((prev) => prev.map((u) => (u.uid === uid ? { ...u, ...patch } : u)));
+  };
+
+  const run = async (key, u, payload, localPatch) => {
+    setBusyKey(key);
+    try {
+      await updateDoc(doc(db, "users", u.uid), payload);
+      patchUser(u.uid, localPatch);
+    } catch (err) {
+      console.warn("admin write failed:", err);
+      alert("Something went wrong. Please try again:\n" + (err?.message || err));
+    } finally {
+      setBusyKey(null);
+    }
+  };
+
+  const txn = async (key, u, build) => {
+    setBusyKey(key);
+    try {
+      const ref = doc(db, "users", u.uid);
+      const res = await runTransaction(db, async (t) => {
+        const snap = await t.get(ref);
+        if (!snap.exists()) throw new Error("User document no longer exists.");
+        const out = build(snap.data());
+        if (!out) return null;
+        t.update(ref, out.write);
+        return out.patch;
+      });
+      if (res) patchUser(u.uid, res);
+      else { alert("Already handled or no longer pending. Refreshing the list."); await loadUsers(); }
+    } catch (err) {
+      console.warn("admin transaction failed:", err);
+      alert("Something went wrong. Please try again:\n" + (err?.message || err));
+    } finally {
+      setBusyKey(null);
+    }
+  };
+
+  const setTriage = (u, status) =>
+    run(u.uid + ":triage", u, { triageStatus: status }, { triageStatus: status });
+
+  const approvePending = async (u, p) => {
+    if (p.plan !== PROMO_PLAN.id) { alert("Unknown plan: " + p.plan + ". Nothing was changed."); return; }
+    const diff = PROMO_PLAN.price !== p.price ? "⚠️ Price mismatch: the user paid ₱" + p.price + " but the plan is now ₱" + PROMO_PLAN.price + ". " : "";
+    if (!window.confirm(diff + "Approve " + PROMO_PLAN.label + " ₱" + p.price + " for " + (u.fullName || u.email) + "?")) return;
+    const ref = doc(db, "users", u.uid);
+    setBusyKey(u.uid + ":pp:" + p.referenceCode);
+    try {
+      const res = await runTransaction(db, async (tx) => {
+        const snap = await tx.get(ref);
+        if (!snap.exists()) throw new Error("User document no longer exists.");
+        const d = snap.data();
+        const done = (d.paymentHistory || []).some((h) => h.referenceCode === p.referenceCode);
+        const pending = (d.pendingPurchases || []).some((x) => x.referenceCode === p.referenceCode);
+        if (done || !pending) return null;
+        const now = serverNow();
+        const days = PROMO_PLAN.days || 30;
+        const remaining = (d.pendingPurchases || []).filter((x) => x.referenceCode !== p.referenceCode);
+
+        const cur = getAppAccessInfo(d, now);
+        const appExpiresAt = (cur.active ? cur.expiresAt : now) + days * DAY_MS;
+        const appAccess = { plan: p.plan, expiresAt: appExpiresAt };
+
+        tx.update(ref, {
+          pendingPurchases: remaining,
+          triageStatus: "subscribed",
+          appAccess,
+          paymentHistory: arrayUnion({ kind: "promo", plan: p.plan, price: p.price, method: p.method, referenceCode: p.referenceCode, approvedAt: now, days }),
+          appAccessHistory: arrayUnion({ plan: p.plan, price: 0, referenceCode: p.referenceCode, method: "promo-purchase", approvedAt: now, expiresAt: appExpiresAt, days }),
+        });
+        return { pendingPurchases: remaining, triageStatus: "subscribed", appAccess };
+      });
+      if (res) patchUser(u.uid, res);
+      else { alert("Already approved or no longer pending (ref " + p.referenceCode + "). Nothing was changed."); await loadUsers(); }
+    } catch (err) {
+      console.warn("approvePending failed:", err);
+      alert("Something went wrong. Please try again:\n" + (err?.message || err));
+    } finally {
+      setBusyKey(null);
+    }
+  };
+
+  // Approve every pending payment in one go. Each one still runs in its own
+  // transaction (same logic as approvePending), so nothing can be granted twice.
+  // Skipped for manual review: users with 2+ pendings, wrong plan, price mismatch.
+  const approveAllPending = async () => {
+    if (bulkBusy || busyKey || !users) return;
+    const all = [];
+    users.forEach((u) => (u.pendingPurchases || []).forEach((p) => all.push({ u, p })));
+    const ok = [];
+    const skipped = [];
+    all.forEach((r) => {
+      const many = (r.u.pendingPurchases || []).length > 1;
+      if (many) skipped.push(r.p.referenceCode + " (2+ pendings from one user)");
+      else if (r.p.plan !== PROMO_PLAN.id) skipped.push(r.p.referenceCode + " (unknown plan)");
+      else if (r.p.price !== PROMO_PLAN.price) skipped.push(r.p.referenceCode + " (price mismatch)");
+      else ok.push(r);
+    });
+    if (ok.length === 0) { alert("Nothing can be approved automatically.\n" + skipped.join("\n")); return; }
+    const total = ok.reduce((n, r) => n + (Number(r.p.price) || 0), 0);
+    const msg =
+      "Approve " + ok.length + " pending payments (total ₱" + total + ")?\n\n" +
+      "Only continue if your GCash / Maya / MariBank received about ₱" + total + " with these reference codes. Users can type fake requests." +
+      (skipped.length ? "\n\nWill be SKIPPED for manual review (" + skipped.length + "):\n" + skipped.join("\n") : "") +
+      "\n\nType APPROVE to continue.";
+    const typed = window.prompt(msg);
+    if (!typed || typed.trim().toUpperCase() !== "APPROVE") return;
+
+    setBulkBusy(true);
+    let done = 0;
+    const failed = [];
+    for (const { u, p } of ok) {
+      try {
+        const ref = doc(db, "users", u.uid);
+        const res = await runTransaction(db, async (tx) => {
+          const snap = await tx.get(ref);
+          if (!snap.exists()) throw new Error("User document no longer exists.");
+          const d = snap.data();
+          const already = (d.paymentHistory || []).some((h) => h.referenceCode === p.referenceCode);
+          const pending = (d.pendingPurchases || []).some((x) => x.referenceCode === p.referenceCode);
+          if (already || !pending) return null;
+          const now = serverNow();
+          const days = PROMO_PLAN.days || 30;
+          const remaining = (d.pendingPurchases || []).filter((x) => x.referenceCode !== p.referenceCode);
+          const cur = getAppAccessInfo(d, now);
+          const appExpiresAt = (cur.active ? cur.expiresAt : now) + days * DAY_MS;
+          const appAccess = { plan: p.plan, expiresAt: appExpiresAt };
+          tx.update(ref, {
+            pendingPurchases: remaining,
+            triageStatus: "subscribed",
+            appAccess,
+            paymentHistory: arrayUnion({ kind: "promo", plan: p.plan, price: p.price, method: p.method, referenceCode: p.referenceCode, approvedAt: now, days }),
+            appAccessHistory: arrayUnion({ plan: p.plan, price: 0, referenceCode: p.referenceCode, method: "promo-purchase", approvedAt: now, expiresAt: appExpiresAt, days }),
+          });
+          return true;
+        });
+        if (res) done++;
+      } catch (err) {
+        console.warn("approveAllPending failed for", p.referenceCode, err);
+        failed.push(p.referenceCode);
+      }
+    }
+    setBulkBusy(false);
+    await loadUsers();
+    alert("Approved " + done + " of " + ok.length + "." +
+      (failed.length ? "\nFailed (try again): " + failed.join(", ") : "") +
+      (skipped.length ? "\nSkipped for manual review: " + skipped.join(", ") : ""));
+  };
+
+  const rejectPending = async (u, p) => {
+    if (!window.confirm("Remove this pending request (ref " + p.referenceCode + ")?")) return;
+    await txn(u.uid + ":pp:" + p.referenceCode, u, (d) => {
+      const list = d.pendingPurchases || [];
+      if (!list.some((x) => x.referenceCode === p.referenceCode)) return null;
+      const remaining = list.filter((x) => x.referenceCode !== p.referenceCode);
+      return { write: { pendingPurchases: remaining }, patch: { pendingPurchases: remaining } };
+    });
+  };
+
+  const manualGrant = async (u, months) => {
+    if (!window.confirm("Give " + (u.fullName || u.email) + " " + months + " month(s) of App Access?")) return;
+    const now = serverNow();
+    await txn(u.uid + ":acc", u, (d) => {
+      const cur = getAppAccessInfo(d, now);
+      const newExpiresAt = addMonths(cur.active ? cur.expiresAt : now, months);
+      const appAccess = { plan: "M" + months, expiresAt: newExpiresAt };
+      return {
+        write: {
+          appAccess,
+          appAccessHistory: arrayUnion({ plan: "M" + months, price: 0, referenceCode: "MANUAL", method: "manual", approvedAt: now, expiresAt: newExpiresAt }),
+        },
+        patch: { appAccess },
+      };
+    });
+  };
+
+  const doManualGrant = (u) => {
+    const raw = (monthsInput[u.uid] ?? "").trim();
+    const months = Math.floor(Number(raw));
+    if (!raw || !Number.isFinite(months) || months <= 0) {
+      alert("Type a whole number of months (1 or more) first.");
+      return;
+    }
+    manualGrant(u, months);
+  };
+
+  const restartAccess = async (u) => {
+    if (!window.confirm("Restart " + (u.fullName || u.email) + " to a fresh " + PROMO_PLAN.days + " days? Any remaining time will be replaced, not added to.")) return;
+    await txn(u.uid + ":acc", u, () => {
+      const now = serverNow();
+      const expiresAt = now + PROMO_PLAN.days * DAY_MS;
+      const appAccess = { plan: PROMO_PLAN.id, expiresAt };
+      return {
+        write: {
+          appAccess,
+          appAccessHistory: arrayUnion({ plan: PROMO_PLAN.id, price: 0, referenceCode: "MANUAL-RESTART", method: "manual-restart", approvedAt: now, expiresAt, days: PROMO_PLAN.days }),
+        },
+        patch: { appAccess },
+      };
+    });
+  };
+
+  const removeAccess = async (u) => {
+    if (!window.confirm("Remove App Access for " + (u.fullName || u.email) + "?")) return;
+    await run(u.uid + ":acc", u, { appAccess: deleteField() }, { appAccess: undefined });
+  };
+
+  const restartAllPaid = async () => {
+    if (bulkBusy || busyKey) return;
+    setBulkBusy(true);
+    try {
+      const fresh = await loadUsers();
+      const now = serverNow();
+      const expiresAt = now + PROMO_PLAN.days * DAY_MS;
+      const eligible = fresh.filter((u) => !u.isAdmin && getAppAccessInfo(u, now).active);
+
+      if (eligible.length === 0) {
+        alert("Walang currently-paid user na ire-restart.");
+        return;
+      }
+      if (!window.confirm(
+        "Restart " + eligible.length + " paid user(s) to exactly " + PROMO_PLAN.days + " days from now?\n\n" +
+        "Papalitan ang natitirang oras nila (hindi idadagdag). Trial-only, expired, at admin accounts ay hindi kasama."
+      )) return;
+
+      const CHUNK = 450;
+      const patches = {};
+      for (let i = 0; i < eligible.length; i += CHUNK) {
+        const slice = eligible.slice(i, i + CHUNK);
+        const batch = writeBatch(db);
+        slice.forEach((u) => {
+          const appAccess = { plan: PROMO_PLAN.id, expiresAt };
+          batch.update(doc(db, "users", u.uid), {
+            appAccess,
+            appAccessHistory: arrayUnion({ plan: PROMO_PLAN.id, price: 0, referenceCode: "BULK-RESTART", method: "manual-restart", approvedAt: now, expiresAt, days: PROMO_PLAN.days }),
+          });
+          patches[u.uid] = { appAccess };
+        });
+        await batch.commit();
+      }
+
+      setUsers((prev) => prev.map((u) => (patches[u.uid] ? { ...u, ...patches[u.uid] } : u)));
+      alert("✅ Na-restart ang " + eligible.length + " paid user(s) sa " + PROMO_PLAN.days + " days.");
+    } catch (err) {
+      console.warn("restartAllPaid failed:", err);
+      alert("May problema: " + (err?.message || err));
+    } finally {
+      setBulkBusy(false);
+    }
+  };
+
+  const writeTrial = (u, days) => {
+    const startedAt = serverNow();
+    return run(u.uid + ":trial", u, { trial: { startedAt: Timestamp.fromMillis(startedAt), days } }, { trial: { startedAt, days } });
+  };
+
+  const grantTrial = (u) => {
+    if (!window.confirm("Restart the " + TRIAL_DAYS + "-day trial for " + (u.fullName || u.email) + " from now?")) return;
+    return writeTrial(u, TRIAL_DAYS);
+  };
+
+  const extendTrial = (u, extraDays) => {
+    const left = getTrialInfo(u).msLeft / DAY_MS;
+    return writeTrial(u, left + extraDays);
+  };
+
+  const endTrial = (u) => {
+    if (!window.confirm("End the trial for " + (u.fullName || u.email) + " now?")) return;
+    return writeTrial(u, 0);
+  };
+
+  const pendingRows = useMemo(() => {
+    const rows = [];
+    filtered.forEach((u) => {
+      (u.pendingPurchases || []).forEach((p) => rows.push({ u, p }));
+    });
+    return rows.sort((a, b) => (a.p.requestedAt || 0) - (b.p.requestedAt || 0));
+  }, [filtered]);
+
+  const trialRows = useMemo(() => {
+    return filtered.filter((u) => {
+      const k = accessKey(u);
+      if (trialFilter === "all") return true;
+      if (trialFilter === "trial") return k === "trial";
+      if (trialFilter === "expired") return k === "expired";
+      if (trialFilter === "none") return k === "none";
+      if (trialFilter === "paid") return k === "paid" || k === "admin";
+      return true;
+    });
+  }, [filtered, trialFilter, users]);
+
+  const rawPendingCount = (users || []).reduce((n, u) => n + (u.pendingPurchases || []).length, 0);
+  const paidCount = useMemo(() => (users || []).filter((u) => !u.isAdmin && getAppAccessInfo(u).active).length, [users]);
+
+  const expiringRows = useMemo(() => {
+    const now = serverNow();
+    const rows = [];
+    filtered.forEach((u) => {
+      if (u.isAdmin) return;
+      const app = getAppAccessInfo(u, now);
+      if (app.active && app.msLeft <= 7 * DAY_MS) rows.push({ u, endsAt: app.expiresAt });
+    });
+    return rows.sort((a, b) => a.endsAt - b.endsAt);
+  }, [filtered, users]);
+
+  const copyReminder = async (u, endsAt) => {
+    const first = (u.fullName || "there").split(" ")[0];
+    const text = "Hi " + first + "! Your CSE Reviewer access is ending soon (" + formatDateShort(endsAt) + "). You can renew anytime from the Fees tab. If you renew early, your remaining days are kept. Thank you!";
+    try {
+      await navigator.clipboard.writeText(text);
+      alert("Reminder copied. Paste it into Messenger or SMS.");
+    } catch (_) {
+      window.prompt("Copy this message:", text);
+    }
+  };
+
+  const TABS = [
+    { id: "overview", label: "📊 Overview" },
+    { id: "users", label: "👥 Users" },
+    { id: "pending", label: "💳 Pending", count: rawPendingCount },
+    { id: "expiring", label: "⏳ Expiring", count: expiringRows.length },
+    { id: "trial", label: "🎁 Trial" },
+  ];
+
+  const btn = "min-h-[34px] rounded-full px-3 py-1.5 text-xs font-semibold transition-colors disabled:opacity-50 ";
+  const btnGhost = btn + "border border-slate-200 text-slate-600 active:bg-slate-100 dark:border-slate-600 dark:text-slate-300 dark:active:bg-slate-700";
+  const btnGreen = btn + "bg-emerald-600 text-white active:bg-emerald-700";
+  const btnRed = btn + "border border-red-200 text-red-600 active:bg-red-50 dark:border-red-800 dark:text-red-400";
+  const inputCls = "w-16 rounded-lg border border-slate-200 px-2 py-1.5 text-center text-xs font-semibold dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100";
+
+  const PendingCard = ({ u, p }) => {
+    const wait = waitInfo(p.requestedAt);
+    const app = getAppAccessInfo(u, serverNow());
+    const nPending = (u.pendingPurchases || []).length;
+    const mismatch = p.plan === PROMO_PLAN.id && p.price !== PROMO_PLAN.price;
+    const copyRef = async () => {
+      try {
+        await navigator.clipboard.writeText(p.referenceCode);
+        setCopiedRef(p.referenceCode);
+        setTimeout(() => setCopiedRef(""), 1200);
+      } catch (_) {
+        window.prompt("Copy this:", p.referenceCode);
+      }
+    };
+    const warn = "rounded-full bg-red-100 px-2 py-0.5 text-[11px] font-semibold text-red-700 dark:bg-red-900/30 dark:text-red-300";
+    return (
+      <div className="rounded-xl border border-amber-200 bg-amber-50 p-3 dark:border-amber-900 dark:bg-amber-950/20">
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <p className="truncate font-semibold text-navy-900 dark:text-slate-100">{u.fullName || "(no name)"}</p>
+            <p className="truncate text-xs text-slate-400">{u.email}</p>
+          </div>
+          {wait && <span className={"flex-shrink-0 rounded-full px-2 py-0.5 text-[11px] font-semibold " + wait.cls}>⏱ {wait.label}</span>}
+        </div>
+        <p className="mt-2 text-sm font-semibold text-navy-900 dark:text-amber-300">
+          {p.plan === PROMO_PLAN.id ? PROMO_PLAN.label : p.plan} · ₱{p.price} · {METHOD_LABELS[p.method] || p.method}
+        </p>
+        <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
+          <span>Ref: <span className="font-semibold">{p.referenceCode}</span></span>
+          <button onClick={copyRef} className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px] font-semibold text-slate-600 active:bg-slate-100 dark:border-slate-600 dark:text-slate-300">{copiedRef === p.referenceCode ? "Copied ✓" : "Copy"}</button>
+          <span>· {formatDateTime(p.requestedAt)}</span>
+        </div>
+        <div className="mt-1.5 flex flex-wrap gap-1.5">
+          {mismatch && <span className={warn}>⚠️ Paid ₱{p.price} · plan is ₱{PROMO_PLAN.price}</span>}
+          {nPending > 1 && <span className={warn}>⚠️ {nPending} pending requests (possible double payment)</span>}
+          <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600 dark:bg-slate-700 dark:text-slate-300">
+            {app.active ? "Active until " + formatDateShort(app.expiresAt) + " · renewal adds days" : "No active access"}
+          </span>
+        </div>
+        <div className="mt-3 flex gap-2">
+          <button onClick={() => approvePending(u, p)} disabled={!!busyKey} className={btnGreen}>✅ Approve</button>
+          <button onClick={() => rejectPending(u, p)} disabled={!!busyKey} className={btnRed}>✕ Reject</button>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-4 p-4 pb-10">
+      <div>
+        <h1 className="text-2xl font-bold text-navy-900 dark:text-slate-50">👑 Admin Panel</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          One All Access bundle (₱{PROMO_PLAN.price} · {PROMO_PLAN.days} days) — grant months, restart to {PROMO_PLAN.days} days, or approve pending payments below.
+        </p>
+      </div>
+
+      <div className="flex gap-1.5 overflow-x-auto pb-1">
+        {TABS.map((t) => (
+          <button
+            key={t.id}
+            onClick={() => { setTab(t.id); if (t.id === "pending" && Date.now() - lastLoad.current > 60000) loadUsers(); }}
+            className={"flex-shrink-0 rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-colors " + (tab === t.id ? "border-navy-900 bg-navy-900 text-white dark:border-slate-100 dark:bg-slate-100 dark:text-navy-900" : "border-slate-200 text-slate-600 dark:border-slate-700 dark:text-slate-300")}
+          >
+            {t.label}
+            {t.count > 0 && <span className="ml-1.5 rounded-full bg-amber-500 px-1.5 py-0.5 text-[10px] font-bold text-white">{t.count}</span>}
+          </button>
+        ))}
+      </div>
+
+      <div className="flex gap-2">
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search name, email or ref code..."
+          className="flex-1 rounded-xl border border-slate-200 px-4 py-2.5 text-sm dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100"
+        />
+        <button onClick={loadUsers} className="rounded-xl border border-slate-200 px-3 py-2.5 text-sm text-slate-500 active:bg-slate-100 dark:border-slate-600 dark:text-slate-300 dark:active:bg-slate-700" aria-label="Refresh">⟳</button>
+      </div>
+
+      {users === null && <p className="py-8 text-center text-slate-400">Loading users...</p>}
+
+      {tab === "overview" && users !== null && !error && <AdminOverview users={users} />}
+
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-red-800 dark:border-red-800 dark:bg-red-950/30 dark:text-red-200">
+          <p className="font-bold">⚠️ Unable to load users</p>
+          <p className="text-sm">{error}</p>
+        </div>
+      )}
+
+      {tab === "users" && users !== null && !error && (
+        <div className="space-y-3">
+          <div className="rounded-xl border-2 border-gold-400 bg-gold-50 p-3 dark:border-gold-600 dark:bg-slate-800/60">
+            <p className="text-sm font-semibold text-navy-900 dark:text-slate-100">🔁 Restart ALL paid users</p>
+            <p className="mt-0.5 text-xs text-slate-600 dark:text-slate-400">
+              One click: resets App Access of every currently-paid user to exactly {PROMO_PLAN.days} days from now. Replaces remaining time (hindi idinadagdag). Hindi kasama ang trial-only, expired, o admin accounts. Hindi apektado ng search box sa itaas.
+            </p>
+            <button onClick={restartAllPaid} disabled={bulkBusy || !!busyKey} className={btnGreen + " mt-2"}>
+              {bulkBusy ? "Restarting…" : "↺ Restart " + PROMO_PLAN.days + "d for all paid (" + paidCount + ")"}
+            </button>
+          </div>
+
+          {filtered.length === 0 && <p className="py-8 text-center text-slate-400">No users found.</p>}
+          {filtered.map((u) => {
+            const triage = defaultTriage(u);
+            const t = TRIAGE[triage] || TRIAGE.none;
+            const app = getAppAccessInfo(u);
+            const busy = busyKey === u.uid + ":acc" || bulkBusy;
+            return (
+              <div key={u.uid} className="rounded-xl border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-800">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="truncate font-semibold text-navy-900 dark:text-slate-100">{u.fullName || "(no name)"}</p>
+                    <p className="truncate text-xs text-slate-400">{u.email}</p>
+                  </div>
+                  <span className={"flex flex-shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-semibold " + t.chip}>
+                    <span className={"h-2 w-2 rounded-full " + t.dot} aria-hidden />
+                    {t.label}
+                  </span>
+                </div>
+
+                <div className="mt-3 flex gap-1.5">
+                  {Object.entries(TRIAGE).map(([status, cfg]) => (
+                    <button
+                      key={status}
+                      onClick={() => setTriage(u, status)}
+                      disabled={busyKey === u.uid + ":triage"}
+                      className={"flex-1 rounded-lg border px-2 py-1 text-[11px] font-medium transition-colors disabled:opacity-50 " + (triage === status ? cfg.chip + " bg-slate-50 dark:bg-slate-900/40" : "border-slate-200 text-slate-400 dark:border-slate-700")}
+                    >
+                      {cfg.label}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="mt-3 border-t border-slate-100 pt-3 dark:border-slate-700">
+                  <div className="mb-2 flex items-center justify-between gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">All Access</p>
+                    <StateChip u={u} />
+                  </div>
+                  {app.exists && (
+                    <p className="mb-2 text-xs text-slate-500 dark:text-slate-400">
+                      {app.active ? "Until " : "Ended on "}{formatDateShort(app.expiresAt)}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <input
+                      type="number"
+                      min="1"
+                      inputMode="numeric"
+                      value={monthsInput[u.uid] ?? ""}
+                      onChange={(e) => setMonthsInput((prev) => ({ ...prev, [u.uid]: e.target.value }))}
+                      placeholder="mo"
+                      aria-label="Months to grant"
+                      className={inputCls}
+                    />
+                    <button onClick={() => doManualGrant(u)} disabled={busy} className={btnGhost}>＋ Grant</button>
+                    <button onClick={() => restartAccess(u)} disabled={busy} className={btnGreen}>↺ Restart {PROMO_PLAN.days}d</button>
+                    {app.exists && <button onClick={() => removeAccess(u)} disabled={busy} className={btnRed}>Remove</button>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {tab === "pending" && users !== null && !error && (
+        <div className="space-y-3">
+          <p className="text-sm font-semibold text-navy-900 dark:text-slate-100">⏳ Pending approvals ({pendingRows.length}){pendingRows.length > 0 && waitInfo(pendingRows[0].p.requestedAt) ? " · oldest waiting " + waitInfo(pendingRows[0].p.requestedAt).label : ""}</p>
+          {pendingRows.length > 1 && (
+            <button onClick={approveAllPending} disabled={bulkBusy || !!busyKey} className={btnGreen}>
+              {bulkBusy ? "Approving…" : "✅ Approve all (" + pendingRows.length + ")"}
+            </button>
+          )}
+          {pendingRows.length === 0 && <p className="py-8 text-center text-slate-400">No pending payments. 🎉</p>}
+          {pendingRows.map(({ u, p }) => (
+            <PendingCard key={u.uid + p.referenceCode} u={u} p={p} />
+          ))}
+        </div>
+      )}
+
+      {tab === "trial" && users !== null && !error && (
+        <div className="space-y-3">
+          <div className="flex flex-wrap gap-1.5">
+            {[["all", "All"], ["trial", "On trial"], ["expired", "Expired"], ["none", "No trial yet"], ["paid", "Paid/Admin"]].map(([id, label]) => (
+              <button key={id} onClick={() => setTrialFilter(id)} className={"rounded-full border px-3 py-1 text-xs font-semibold " + (trialFilter === id ? "border-navy-900 bg-navy-900 text-white dark:border-slate-100 dark:bg-slate-100 dark:text-navy-900" : "border-slate-200 text-slate-500 dark:border-slate-700 dark:text-slate-400")}>
+                {label}
+              </button>
+            ))}
+          </div>
+          <p className="text-xs text-slate-400">{trialRows.length} user(s)</p>
+
+          {trialRows.map((u) => {
+            const tr = getTrialInfo(u);
+            return (
+              <div key={u.uid} className="rounded-xl border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-800">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold text-navy-900 dark:text-slate-100">{u.fullName || "(no name)"}</p>
+                    <p className="truncate text-xs text-slate-400">{u.email}</p>
+                  </div>
+                  <StateChip u={u} />
+                </div>
+                {tr.exists && (
+                  <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400">
+                    {tr.active ? "Trial until " : "Trial ended on "}{formatDateTime(tr.endsAt)}
+                  </p>
+                )}
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  <button onClick={() => grantTrial(u)} disabled={busyKey === u.uid + ":trial"} className={btnGreen}>{tr.exists ? "↺ Restart " + TRIAL_DAYS + "d" : "＋ Grant " + TRIAL_DAYS + "d"}</button>
+                  <button onClick={() => extendTrial(u, 1)} disabled={busyKey === u.uid + ":trial"} className={btnGhost}>+1 day</button>
+                  <button onClick={() => extendTrial(u, 3)} disabled={busyKey === u.uid + ":trial"} className={btnGhost}>+3 days</button>
+                  {tr.exists && tr.active && <button onClick={() => endTrial(u)} disabled={busyKey === u.uid + ":trial"} className={btnRed}>End</button>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {tab === "expiring" && users !== null && !error && (
+        <div className="space-y-3">
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            App Access ending within 7 days. Tap “Copy reminder” and paste it into Messenger or SMS.
+          </p>
+          {expiringRows.length === 0 && <p className="py-8 text-center text-slate-400">Nobody is expiring in the next 7 days. 🎉</p>}
+          {expiringRows.map(({ u, endsAt }) => (
+            <div key={u.uid} className="rounded-xl border border-slate-200 bg-white p-3 dark:border-slate-700 dark:bg-slate-800">
+              <p className="truncate text-sm font-semibold text-navy-900 dark:text-slate-100">{u.fullName || "(no name)"}</p>
+              <p className="truncate text-xs text-slate-400">{u.email}</p>
+              <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">App Access · ends {formatDateShort(endsAt)} ({formatTimeLeft(endsAt - serverNow())} left)</p>
+              <button onClick={() => copyReminder(u, endsAt)} className={btnGreen + " mt-2"}>📋 Copy reminder</button>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 ```
 
 ## File: ./frontend/src/pages/DevLibraryPanel.jsx
@@ -1298,6 +3409,98 @@ export default function DevQuizPanel() {
           {list.map((it) => <TopicCard key={it.key} item={it} onChanged={refresh} />)}
         </ul>
       </div>
+    </div>
+  );
+}
+```
+
+## File: ./frontend/src/pages/FeesView.jsx
+```
+import { useAuth } from "../authContext";
+import { PROMO_PLAN, PAYMENT_METHODS } from "../payments";
+import { formatTimeLeft, formatDateShort } from "../access";
+
+const ICONS = {
+  crown: <><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7z" /><path d="M5 20h14" /></>,
+  check: <path d="M20 6 9 17l-5-5" />,
+  clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></>,
+  tag: <><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r="1" fill="currentColor" /></>,
+};
+function Icon({ name, className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      {ICONS[name]}
+    </svg>
+  );
+}
+
+export default function FeesView() {
+  const { user, profile, access, setOverlayOpen, setIntentPlanId } = useAuth();
+  const pending = (profile?.pendingPurchases || []).slice().sort((a, b) => (a.requestedAt || 0) - (b.requestedAt || 0));
+  const isPaid = access?.state === "paid";
+
+  const payNow = () => {
+    if (user) setIntentPlanId(PROMO_PLAN.id);
+    setOverlayOpen(true);
+  };
+
+  let status = null;
+  if (access?.state === "admin") status = { icon: "crown", text: "Admin — everything is unlocked." };
+  else if (isPaid) status = { icon: "check", text: "Active until " + formatDateShort(access.app.expiresAt) + " (" + formatTimeLeft(access.msLeft) + " left). Renew early and your remaining days are kept." };
+  else if (access?.state === "trial") status = { icon: "tag", text: "Free trial: " + formatTimeLeft(access.msLeft) + " left" };
+  else if (access?.state === "expired") status = { icon: "clock", text: "Your trial has ended. Get the promo to continue." };
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-4 p-4 pb-10">
+      <div>
+        <h1 className="mb-1 text-2xl font-bold text-navy-900 dark:text-parchment-50">Fees</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">The promo bundle and where to pay.</p>
+      </div>
+
+      {status && (
+        <div className="flex items-start gap-2 rounded-xl border border-parchment-200 bg-parchment-50 px-4 py-3 text-sm text-slate-600 dark:border-navy-700 dark:bg-navy-800 dark:text-slate-300">
+          <Icon name={status.icon} className="mt-0.5 h-4 w-4 flex-shrink-0 text-seal dark:text-gold-400" />{status.text}
+        </div>
+      )}
+
+      {pending.length > 0 && (
+        <div className="flex items-start gap-2 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-700 dark:bg-amber-950/30 dark:text-amber-300">
+          <Icon name="clock" className="mt-0.5 h-4 w-4 flex-shrink-0" /> Payment pending ({pending[pending.length - 1].referenceCode}) — waiting for confirmation.
+        </div>
+      )}
+
+      <section className="rounded-2xl border-2 border-gold-500 bg-parchment-50 p-4 dark:bg-navy-800">
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <p className="text-base font-extrabold text-navy-900 dark:text-parchment-50">{PROMO_PLAN.label}</p>
+            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{PROMO_PLAN.tagline}</p>
+          </div>
+          <span className="flex-shrink-0 text-3xl font-extrabold text-navy-900 dark:text-parchment-50">₱{PROMO_PLAN.price}</span>
+        </div>
+        <ul className="mt-3 space-y-1 text-sm text-slate-700 dark:text-slate-200">
+          {PROMO_PLAN.includes.map((line) => (
+            <li key={line} className="flex items-center gap-1.5"><Icon name="check" className="h-3.5 w-3.5 flex-shrink-0 text-verdigris dark:text-verdigris-300" /> {line}</li>
+          ))}
+        </ul>
+        <p className="mt-3 flex items-center gap-1.5 text-xs font-semibold text-gold-600 dark:text-gold-400"><Icon name="clock" className="h-3.5 w-3.5" /> Valid for {PROMO_PLAN.days} days only</p>
+        <button onClick={payNow} className="mt-4 flex min-h-[48px] w-full items-center justify-center rounded-xl bg-navy-900 px-4 py-3 text-sm font-bold text-white active:bg-navy-800 dark:bg-navy-700">
+          {user ? (isPaid ? "Renew" : "Pay now") + " · ₱" + PROMO_PLAN.price : "Sign in to get started"}
+        </button>
+      </section>
+
+      <section className="rounded-2xl border border-parchment-200 bg-parchment-50 p-4 dark:border-navy-700 dark:bg-navy-800">
+        <h2 className="mb-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">How to pay</h2>
+        <div className="mb-3 flex flex-wrap gap-2">
+          {PAYMENT_METHODS.map((m) => (
+            <span key={m.id} className="rounded-full border border-parchment-200 px-3 py-1 text-sm font-semibold text-slate-700 dark:border-navy-700 dark:text-slate-200">{m.label}</span>
+          ))}
+        </div>
+        <ol className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+          <li>1. Tap <b>Pay now</b> above and choose GCash, Maya, or MariBank.</li>
+          <li>2. Scan the QR code and pay ₱{PROMO_PLAN.price}. Write your <b>email address</b> and the <b>reference code</b> in the payment note.</li>
+          <li>3. Tap <b>I've paid</b>. Payments are confirmed manually by the admin within a few hours.</li>
+        </ol>
+      </section>
     </div>
   );
 }
@@ -1728,6 +3931,96 @@ export default function QuizBrowser({ nav, setNav }) {
 }
 ```
 
+## File: ./frontend/src/pages/SettingsView.jsx
+```
+import { useAuth } from "../authContext";
+import { formatTimeLeft, formatDateShort } from "../access";
+
+function Toggle({ enabled, onChange }) {
+  return (
+    <button type="button" role="switch" aria-checked={enabled} onClick={() => onChange(!enabled)} className={`relative inline-flex h-8 w-14 flex-shrink-0 items-center rounded-full transition-colors duration-300 ${enabled ? "bg-navy-700" : "bg-slate-300"}`}>
+      <span className={`inline-block h-6 w-6 transform rounded-full bg-parchment-50 shadow-md transition-transform duration-300 ${enabled ? "translate-x-7" : "translate-x-1"}`} />
+    </button>
+  );
+}
+
+const card = "mb-6 rounded-2xl border border-parchment-200 bg-parchment-50 p-4 dark:border-navy-700 dark:bg-navy-800";
+const h2 = "mb-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500";
+const btn = "flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl border border-parchment-200 px-4 py-2.5 text-sm font-semibold text-slate-700 active:bg-slate-100 dark:border-navy-700 dark:text-slate-200 dark:active:bg-slate-700";
+
+export default function SettingsView({ darkMode, setDarkMode }) {
+  const { user, profile, access, signingIn, authError, signInWithGoogle, signOutUser, setOverlayOpen } = useAuth();
+
+  let accessText = null;
+  if (access?.state === "admin") accessText = "Admin";
+  else if (access?.state === "paid") accessText = "All Access until " + formatDateShort(access.app.expiresAt) + " (" + formatTimeLeft(access.msLeft) + " left)";
+  else if (access?.state === "trial") accessText = "Free trial: " + formatTimeLeft(access.msLeft) + " left";
+  else if (access?.state === "expired") accessText = "Trial ended";
+
+  return (
+    <div className="mx-auto max-w-2xl p-4 pb-10">
+      <h1 className="mb-1 text-2xl font-bold text-navy-900 dark:text-parchment-50">Settings</h1>
+      <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">Customize your study experience.</p>
+
+      <section className={card}>
+        <h2 className={h2}>Account</h2>
+        {user ? (
+          <div className="space-y-3">
+            <div className="flex items-center gap-3">
+              {profile?.photoURL && <img src={profile.photoURL} alt="" referrerPolicy="no-referrer" className="h-12 w-12 rounded-full object-cover" />}
+              <div className="min-w-0">
+                <p className="truncate font-semibold text-navy-900 dark:text-parchment-50">{profile?.fullName || profile?.displayName || "Signed in"}</p>
+                <p className="truncate text-xs text-slate-400">{profile?.email || user.email}</p>
+                {accessText && <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{accessText}</p>}
+              </div>
+            </div>
+            <button onClick={() => setOverlayOpen(true)} className={btn}>Open profile</button>
+            <button onClick={signOutUser} className={btn}>Sign out</button>
+          </div>
+        ) : (
+          <div className="space-y-3">
+            <p className="text-sm text-slate-500 dark:text-slate-400">Sign in with Google to start your free trial and get All Access.</p>
+            {authError && <p className="text-xs text-red-600 dark:text-red-400">{authError}</p>}
+            <button onClick={signInWithGoogle} disabled={signingIn} className="flex min-h-[44px] w-full items-center justify-center rounded-xl bg-navy-900 px-4 py-2.5 text-sm font-semibold text-white disabled:opacity-50 dark:bg-navy-700">
+              {signingIn ? "Waiting for Google..." : "Sign in with Google"}
+            </button>
+          </div>
+        )}
+      </section>
+
+      <section className={card}>
+        <h2 className={h2}>Appearance</h2>
+        <div className="flex items-center justify-between gap-4 rounded-xl py-1">
+          <div className="min-w-0">
+            <p className="font-medium text-navy-900 dark:text-parchment-50">Dark Mode</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">Easier on the eyes in low light.</p>
+          </div>
+          <Toggle enabled={darkMode} onChange={setDarkMode} />
+        </div>
+      </section>
+
+      <section className={card}>
+        <h2 className={h2}>About this App</h2>
+        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">CSE Reviewer — a Civil Service Exam study companion with a reading library and practice quizzes.</p>
+        <p className="mt-2 text-xs text-slate-400 dark:text-slate-500">Version 1.0.0</p>
+      </section>
+
+      <section className="rounded-2xl border border-parchment-200 bg-parchment-50 p-4 dark:border-navy-700 dark:bg-navy-800">
+        <h2 className={h2}>Developer</h2>
+        <div className="flex items-center gap-3">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-navy-900 text-lg font-bold text-white dark:bg-navy-700">O</div>
+          <div className="min-w-0">
+            <p className="font-semibold text-navy-900 dark:text-parchment-50">Osias</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400">App developer &amp; maintainer</p>
+          </div>
+        </div>
+        <a href="https://osiasnalaunan68-star.github.io/osias-personal-portfolio" target="_blank" rel="noopener noreferrer" className="mt-4 flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-navy-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm active:bg-navy-800 dark:bg-navy-700 dark:active:bg-navy-600">View Developer Portfolio</a>
+      </section>
+    </div>
+  );
+}
+```
+
 ## File: ./frontend/src/pages/SubjectDashboard.jsx
 ```
 import { useState, useEffect, useCallback, useMemo } from "react";
@@ -1976,6 +4269,66 @@ export default function SubjectDashboard({ subjectId, subjectLabel }) {
         )}
       </div>
     </div>
+  );
+}
+```
+
+## File: ./frontend/src/payments.js
+```
+import gcashQr from "./assets/payment/gcash-qr.png";
+import mayaQr from "./assets/payment/maya-qr.png";
+import maribankQr from "./assets/payment/maribank-qr.png";
+import { doc, setDoc, arrayUnion } from "firebase/firestore";
+import { db, auth } from "./firebase";
+
+// >>> Dito palitan ang presyo / araw <<<
+export const PROMO_PRICE = 50;
+export const PROMO_DAYS = 30;
+export const PROMO_PLAN = {
+  id: "PROMO",
+  kind: "promo",
+  label: "All Access Promo",
+  tagline: "One promo, everything unlocked. This is the only plan available right now.",
+  price: PROMO_PRICE,
+  days: PROMO_DAYS,
+  includes: ["Full Library (all subjects & topics)", "Full Quiz (all subjects & topics)", "Full app access"],
+};
+
+export const PAYMENT_METHODS = [
+  { id: "gcash", label: "GCash", qr: gcashQr },
+  { id: "maya", label: "Maya", qr: mayaQr },
+  { id: "maribank", label: "MariBank", qr: maribankQr },
+];
+
+const REF_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+export function generateReferenceCode(planId) {
+  let suffix = "";
+  for (let i = 0; i < 4; i++) {
+    suffix += REF_CHARS[Math.floor(Math.random() * REF_CHARS.length)];
+  }
+  return `${planId}-${suffix}`;
+}
+
+export async function submitPendingPurchase(uid, { planId, price, method, referenceCode }) {
+  const ref = doc(db, "users", uid);
+  const u = auth.currentUser;
+
+  await setDoc(
+    ref,
+    {
+      email: (u && u.email) || "",
+      displayName: (u && u.displayName) || "",
+      photoURL: (u && u.photoURL) || "",
+      pendingPurchases: arrayUnion({
+        plan: planId,
+        price,
+        method,
+        referenceCode,
+        requestedAt: Date.now(),
+      }),
+    },
+    { merge: true }
   );
 }
 ```

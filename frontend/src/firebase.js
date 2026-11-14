@@ -2,14 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
 
-// >>> PALITAN ng config ng SARILING Firebase project ng CSE Reviewer. <<<
 const firebaseConfig = {
-  apiKey: "PASTE_API_KEY",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "PASTE_SENDER_ID",
-  appId: "PASTE_APP_ID",
+  apiKey: "AIzaSyAwk9cwnbizKi-IM-dvwd8C69wPaafWUR4",
+  authDomain: "cse-reviewer-ph-fcfbc.firebaseapp.com",
+  projectId: "civil-service-564fe",
+  storageBucket: "civil-service-564fe.firebasestorage.app",
+  messagingSenderId: "418319058791",
+  appId: "1:418319058791:web:ce1aa06ab63d71663911c2",
 };
 
 export const app = initializeApp(firebaseConfig);
