@@ -1314,7 +1314,7 @@ import { Crumb, ListRow, IconBadge, EmptyState } from "../components/NavParts";
 
 const MODE_KEY = "cseReviewer_readMode";
 const FONT_KEY = "cseReviewer_fontScale";
-const INDENT = ["ml-0", "ml-4", "ml-8", "ml-12", "ml-16"];
+const INDENT = ["ml-0", "ml-2 sm:ml-4", "ml-4 sm:ml-8", "ml-6 sm:ml-12", "ml-8 sm:ml-16"];
 const FONT_MIN = 0.85;
 const FONT_MAX = 1.6;
 
@@ -1441,12 +1441,15 @@ function ParagraphBlock({ topic, section, para, reading, fontScale, onAsk }) {
   return (
     <div className={`${INDENT[para.indent] || "ml-0"} ${reading ? "my-4" : "rounded-xl bg-parchment-50 p-3 dark:bg-navy-800/60"}`}>
       <div className="flex gap-2" style={{ fontSize: `${fontScale}rem` }}>
-        {para.label && (
+        {para.label && para.label.length <= 5 && (
           <span className={`flex-shrink-0 select-none font-semibold tabular-nums text-slate-500 dark:text-slate-400 ${reading ? "font-display leading-loose" : "leading-relaxed"}`}>
             {para.label}
           </span>
         )}
         <p className={`min-w-0 flex-1 select-text whitespace-pre-wrap text-navy-900 dark:text-slate-300 ${reading ? "font-display leading-loose" : "leading-relaxed"}`}>
+          {para.label && para.label.length > 5 && (
+            <span className="select-none font-semibold text-slate-500 dark:text-slate-400">{para.label}{" "}</span>
+          )}
           {para.text}
         </p>
       </div>
