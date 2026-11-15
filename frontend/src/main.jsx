@@ -33,3 +33,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </ErrorBoundary>
   </React.StrictMode>
 );
+
+// Register the service worker (needed for the browser's one-tap install prompt).
+import { isNativeApp } from "./pwaInstall";
+if ("serviceWorker" in navigator && import.meta.env.PROD && !isNativeApp()) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register(import.meta.env.BASE_URL + "sw.js").catch(() => {});
+  });
+}
+
+import { precacheOffline } from "./offlineCache";
+if ("serviceWorker" in navigator && import.meta.env.PROD && !isNativeApp()) {
+  navigator.serviceWorker.ready.then(() => setTimeout(precacheOffline, 3000)).catch(() => {});
+}

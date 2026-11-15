@@ -1,0 +1,1404 @@
+{
+ "subject": "Logical Reasoning",
+ "subject_icon": "🧩",
+ "topic": "Abstract Reasoning",
+ "topic_order": 1,
+ "questions": {
+  "1": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q01-fig.jpg",
+    "w": 318,
+    "h": 358
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "2": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q02-fig.jpg",
+    "w": 299,
+    "h": 359
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "3": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q03-fig.jpg",
+    "w": 299,
+    "h": 356
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "4": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q04-fig.jpg",
+    "w": 309,
+    "h": 389
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "5": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q05-fig.jpg",
+    "w": 318,
+    "h": 390
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "6": {
+   "question": "Study the hexagon pyramid. The lines in each hexagon follow a set rule based on the two hexagons directly below it. Which of A–D replaces the hexagon with the question mark?",
+   "figure": {
+    "src": "abstract/q06-fig.jpg",
+    "w": 324,
+    "h": 317
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "A",
+   "reason": "Sagot: A (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "7": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q07-fig.jpg",
+    "w": 284,
+    "h": 281
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "8": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q08-fig.jpg",
+    "w": 271,
+    "h": 282
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "9": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q09-fig.jpg",
+    "w": 275,
+    "h": 283
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "10": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q10-fig.jpg",
+    "w": 268,
+    "h": 277
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "11": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q11-fig.jpg",
+    "w": 291,
+    "h": 300
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "12": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q12-fig.jpg",
+    "w": 289,
+    "h": 300
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "13": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q13-fig.jpg",
+    "w": 296,
+    "h": 289
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "A",
+   "reason": "Sagot: A (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "14": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q14-fig.jpg",
+    "w": 275,
+    "h": 289
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "15": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q15-fig.jpg",
+    "w": 290,
+    "h": 299
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "16": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q16-fig.jpg",
+    "w": 289,
+    "h": 295
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "17": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q17-fig.jpg",
+    "w": 288,
+    "h": 295
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "18": {
+   "question": "Select the missing piece (A–D) so that the whole square will contain an even, symmetrical pattern.",
+   "figure": {
+    "src": "abstract/q18-fig.jpg",
+    "w": 291,
+    "h": 291
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q18-a.jpg",
+     "w": 137,
+     "h": 132
+    },
+    "B": {
+     "src": "abstract/q18-b.jpg",
+     "w": 147,
+     "h": 137
+    },
+    "C": {
+     "src": "abstract/q18-c.jpg",
+     "w": 140,
+     "h": 135
+    },
+    "D": {
+     "src": "abstract/q18-d.jpg",
+     "w": 138,
+     "h": 139
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Isipin ang buong parisukat at hanapin ang axis of symmetry. Piliin ang piraso na gagawa sa buong pattern na pantay at simetriko."
+  },
+  "19": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q19.jpg",
+    "w": 1155,
+    "h": 204,
+    "x0": 0,
+    "x1": 0.1329
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.1329,
+     "x1": 0.3762
+    },
+    "B": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.3762,
+     "x1": 0.5905
+    },
+    "C": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.5905,
+     "x1": 0.8043
+    },
+    "D": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.8043,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "20": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q20.jpg",
+    "w": 1178,
+    "h": 201,
+    "x0": 0,
+    "x1": 0.1783
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.1783,
+     "x1": 0.3973
+    },
+    "B": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.3973,
+     "x1": 0.6044
+    },
+    "C": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.6044,
+     "x1": 0.812
+    },
+    "D": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.812,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "21": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q21.jpg",
+    "w": 1116,
+    "h": 198,
+    "x0": 0,
+    "x1": 0.1595
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.1595,
+     "x1": 0.3692
+    },
+    "B": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.3692,
+     "x1": 0.5874
+    },
+    "C": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.5874,
+     "x1": 0.8065
+    },
+    "D": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.8065,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "22": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q22.jpg",
+    "w": 1163,
+    "h": 207,
+    "x0": 0,
+    "x1": 0.1389
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.1389,
+     "x1": 0.3917
+    },
+    "B": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.3917,
+     "x1": 0.6002
+    },
+    "C": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.6002,
+     "x1": 0.8117
+    },
+    "D": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.8117,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "23": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q23.jpg",
+    "w": 1182,
+    "h": 214,
+    "x0": 0,
+    "x1": 0.1455
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.1455,
+     "x1": 0.4023
+    },
+    "B": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.4023,
+     "x1": 0.6062
+    },
+    "C": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.6062,
+     "x1": 0.808
+    },
+    "D": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.808,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "24": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q24.jpg",
+    "w": 1162,
+    "h": 211,
+    "x0": 0,
+    "x1": 0.173
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.173,
+     "x1": 0.3916
+    },
+    "B": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.3916,
+     "x1": 0.6015
+    },
+    "C": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.6015,
+     "x1": 0.8111
+    },
+    "D": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.8111,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "A",
+   "reason": "Sagot: A (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "25": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q25.jpg",
+    "w": 1173,
+    "h": 213,
+    "x0": 0,
+    "x1": 0.1505
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.1505,
+     "x1": 0.3964
+    },
+    "B": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.3964,
+     "x1": 0.6044
+    },
+    "C": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.6044,
+     "x1": 0.8133
+    },
+    "D": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.8133,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "26": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q26.jpg",
+    "w": 1171,
+    "h": 212,
+    "x0": 0,
+    "x1": 0.205
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.205,
+     "x1": 0.4325
+    },
+    "B": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.4325,
+     "x1": 0.6281
+    },
+    "C": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.6281,
+     "x1": 0.8224
+    },
+    "D": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.8224,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "27": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q27.jpg",
+    "w": 1164,
+    "h": 198,
+    "x0": 0,
+    "x1": 0.1508
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.1508,
+     "x1": 0.393
+    },
+    "B": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.393,
+     "x1": 0.6044
+    },
+    "C": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.6044,
+     "x1": 0.8153
+    },
+    "D": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.8153,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "28": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q28.jpg",
+    "w": 1141,
+    "h": 185,
+    "x0": 0,
+    "x1": 0.149
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.149,
+     "x1": 0.3966
+    },
+    "B": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.3966,
+     "x1": 0.6109
+    },
+    "C": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.6109,
+     "x1": 0.8247
+    },
+    "D": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.8247,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "29": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q29.jpg",
+    "w": 1150,
+    "h": 187,
+    "x0": 0,
+    "x1": 0.1439
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.1439,
+     "x1": 0.4022
+    },
+    "B": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.4022,
+     "x1": 0.6148
+    },
+    "C": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.6148,
+     "x1": 0.8274
+    },
+    "D": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.8274,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "30": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q30.jpg",
+    "w": 1168,
+    "h": 226,
+    "x0": 0,
+    "x1": 0.1789
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.1789,
+     "x1": 0.4174
+    },
+    "B": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.4174,
+     "x1": 0.6134
+    },
+    "C": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.6134,
+     "x1": 0.8095
+    },
+    "D": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.8095,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  }
+ }
+}

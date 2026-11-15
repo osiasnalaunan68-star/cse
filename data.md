@@ -2780,1366 +2780,1411 @@
   ]
 }```
 
-## File: ./frontend/src/data/quiz/cse-quiz-imported-2026-11-13 (1).json
+## File: ./frontend/src/data/quiz/cse-quiz-abstract-reasoning.json
 ```
 {
-  "format": "cse-quiz",
-  "version": 1,
-  "exportedAt": "2026-11-13T12:44:45.440Z",
-  "topics": [
-    {
-      "subject": "Verbal Ability",
-      "subject_icon": "📖",
-      "topic": "Vocabulary",
-      "topic_order": 1,
-      "questions": {
-        "1": {
-          "question": "The manager made a lucrative business proposal that benefited all partners. (Choose the closest meaning of 'lucrative')",
-          "choices": {
-            "A": "risky",
-            "B": "profitable",
-            "C": "complex",
-            "D": "temporary"
-          },
-          "correct": "B",
-          "reason": "Ang \"lucrative\" ay nangangahulugang kumikita o nagbibigay ng malaking tubo (profitable)."
-        },
-        "2": {
-          "question": "Her meticulous attention to detail ensured there were no errors in the final report. (Choose the closest meaning of 'meticulous')",
-          "choices": {
-            "A": "careless",
-            "B": "hasty",
-            "C": "thorough",
-            "D": "casual"
-          },
-          "correct": "C",
-          "reason": "Ang \"meticulous\" ay ibig sabihin ay sobrang busisi, maingat, at masusi (thorough/detailed)."
-        },
-        "3": {
-          "question": "The politician's ambiguous statement left the reporters confused about his true stance. (Choose the closest meaning of 'ambiguous')",
-          "choices": {
-            "A": "clear",
-            "B": "straightforward",
-            "C": "vague",
-            "D": "honest"
-          },
-          "correct": "C",
-          "reason": "Ang \"ambiguous\" ay may dalawa o higit pang kahulugan o malabo (vague/unclear)."
-        },
-        "4": {
-          "question": "Despite facing numerous hardships, she remained resilient and achieved her goals. (Choose the closest meaning of 'resilient')",
-          "choices": {
-            "A": "fragile",
-            "B": "flexible",
-            "C": "persistent",
-            "D": "weak"
-          },
-          "correct": "C",
-          "reason": "Ang \"resilient\" ay ang kakayahang bumangon muli o magpatuloy sa kabila ng pagsubok (persistent/strong)."
-        },
-        "5": {
-          "question": "The CEO decided to mitigate the risks by hiring an external auditor. (Choose the closest meaning of 'mitigate')",
-          "choices": {
-            "A": "increase",
-            "B": "evaluate",
-            "C": "lessen",
-            "D": "ignore"
-          },
-          "correct": "C",
-          "reason": "Ang \"mitigate\" ay nangangahulugang bawasan ang tindi o epekto ng isang masamang bagay (lessen/reduce)."
-        },
-        "6": {
-          "question": "His audacious plan to climb the mountain without oxygen amazed everyone. (Choose the closest meaning of 'audacious')",
-          "choices": {
-            "A": "timid",
-            "B": "bold",
-            "C": "foolish",
-            "D": "cautious"
-          },
-          "correct": "B",
-          "reason": "Ang \"audacious\" ay matapang, mapangahas, o daring (bold/fearless)."
-        },
-        "7": {
-          "question": "The committee reached a consensus after hours of intense debate. (Choose the closest meaning of 'consensus')",
-          "choices": {
-            "A": "disagreement",
-            "B": "deadlock",
-            "C": "agreement",
-            "D": "compromise"
-          },
-          "correct": "C",
-          "reason": "Ang \"consensus\" ay pangkalahatang kasunduan ng grupo (general agreement)."
-        },
-        "8": {
-          "question": "The museum houses a collection of ancient artifacts dating back to the Stone Age. (Choose the closest meaning of 'ancient')",
-          "choices": {
-            "A": "modern",
-            "B": "antique",
-            "C": "replica",
-            "D": "broken"
-          },
-          "correct": "B",
-          "reason": "Ang \"ancient\" ay napakaluma o sinauna (antique/very old)."
-        },
-        "9": {
-          "question": "She showed great candor when she admitted her mistake during the meeting. (Choose the closest meaning of 'candor')",
-          "choices": {
-            "A": "dishonesty",
-            "B": "shyness",
-            "C": "frankness",
-            "D": "arrogance"
-          },
-          "correct": "C",
-          "reason": "Ang \"candor\" ay pagiging tapat at prangka sa pagsasalita (frankness/openness)."
-        },
-        "10": {
-          "question": "The teacher gave a concise explanation, making the complex topic easy to understand. (Choose the closest meaning of 'concise')",
-          "choices": {
-            "A": "lengthy",
-            "B": "brief",
-            "C": "complicated",
-            "D": "boring"
-          },
-          "correct": "B",
-          "reason": "Ang \"concise\" ay maikli ngunit siksik at malinaw (brief and clear)."
-        },
-        "11": {
-          "question": "His frugal lifestyle allowed him to save enough money to buy a house. (Choose the closest meaning of 'frugal')",
-          "choices": {
-            "A": "extravagant",
-            "B": "wasteful",
-            "C": "thrifty",
-            "D": "greedy"
-          },
-          "correct": "C",
-          "reason": "Ang \"frugal\" ay matipid sa pera o resources (thrifty/wise spender)."
-        },
-        "12": {
-          "question": "The heavy rain hindered the rescue operations in the flooded town. (Choose the closest meaning of 'hindered')",
-          "choices": {
-            "A": "delayed",
-            "B": "helped",
-            "C": "accelerated",
-            "D": "guided"
-          },
-          "correct": "A",
-          "reason": "Ang \"hinder\" ay nagpapatagal, pumipigil, o humahadlang sa isang gawain (delayed/obstructed)."
-        },
-        "13": {
-          "question": "The detective found tangible evidence linking the suspect to the crime scene. (Choose the closest meaning of 'tangible')",
-          "choices": {
-            "A": "imaginary",
-            "B": "concrete",
-            "C": "invisible",
-            "D": "weak"
-          },
-          "correct": "B",
-          "reason": "Ang \"tangible\" ay nahahawakan, totoo, o konkretong ebidensya (real/concrete)."
-        },
-        "14": {
-          "question": "Local residents expressed apathy toward the upcoming local elections, showing low voter turnout. (Choose the closest meaning of 'apathy')",
-          "choices": {
-            "A": "enthusiasm",
-            "B": "indifference",
-            "C": "anger",
-            "D": "support"
-          },
-          "correct": "B",
-          "reason": "Ang \"apathy\" ay kawalan ng interes o pakialam sa mga nangyayari (indifference)."
-        },
-        "15": {
-          "question": "The novice programmer struggled with the advanced coding syntax. (Choose the closest meaning of 'novice')",
-          "choices": {
-            "A": "expert",
-            "B": "beginner",
-            "C": "veteran",
-            "D": "master"
-          },
-          "correct": "B",
-          "reason": "Ang \"novice\" ay baguhan o wala pang masyadong karanasan (beginner)."
-        },
-        "16": {
-          "question": "The ubiquitous presence of smartphones has changed how people communicate. (Choose the closest meaning of 'ubiquitous')",
-          "choices": {
-            "A": "rare",
-            "B": "limited",
-            "C": "omnipresent",
-            "D": "hidden"
-          },
-          "correct": "C",
-          "reason": "Ang \"ubiquitous\" ay nangangahulugang laging nakikita o laganap kahit saan (found everywhere/omnipresent)."
-        },
-        "17": {
-          "question": "She made a prudent decision to invest in government bonds rather than high-risk stocks. (Choose the closest meaning of 'prudent')",
-          "choices": {
-            "A": "foolish",
-            "B": "wise",
-            "C": "reckless",
-            "D": "hasty"
-          },
-          "correct": "B",
-          "reason": "Ang \"prudent\" ay matalino, maingat, at may magandang pagpapasiya (wise/sensible)."
-        },
-        "18": {
-          "question": "The ephemeral beauty of the sunset lasted only a few minutes. (Choose the closest meaning of 'ephemeral')",
-          "choices": {
-            "A": "eternal",
-            "B": "fleeting",
-            "C": "bright",
-            "D": "dull"
-          },
-          "correct": "B",
-          "reason": "Ang \"ephemeral\" ay panandalian o mabilis mawala (fleeting/short-lived)."
-        },
-        "19": {
-          "question": "His gregarious personality makes him the life of every party. (Choose the closest meaning of 'gregarious')",
-          "choices": {
-            "A": "antisocial",
-            "B": "shy",
-            "C": "outgoing",
-            "D": "quiet"
-          },
-          "correct": "C",
-          "reason": "Ang \"gregarious\" ay palakaibigan at mahilig makisalamuha (sociable/outgoing)."
-        },
-        "20": {
-          "question": "The company faced a severe financial crisis after the market crash. (Choose the closest meaning of 'severe')",
-          "choices": {
-            "A": "mild",
-            "B": "minor",
-            "C": "serious",
-            "D": "brief"
-          },
-          "correct": "C",
-          "reason": "Ang \"severe\" ay malubha o matindi (serious/grave)."
-        },
-        "21": {
-          "question": "The paucity of medical supplies caused panic among the patients. (Choose the closest meaning of 'paucity')",
-          "choices": {
-            "A": "abundance",
-            "B": "scarcity",
-            "C": "quality",
-            "D": "cost"
-          },
-          "correct": "B",
-          "reason": "Ang \"paucity\" ay kakulangan o kakaunti (scarcity/lack)."
-        },
-        "22": {
-          "question": "The artist used vibrant colors to make the painting look lively. (Choose the closest meaning of 'vibrant')",
-          "choices": {
-            "A": "dull",
-            "B": "bright",
-            "C": "dark",
-            "D": "faded"
-          },
-          "correct": "B",
-          "reason": "Ang \"vibrant\" ay makulay, masigla, at matingkad (bright and full of life)."
-        },
-        "23": {
-          "question": "It is mandatory for all government employees to wear their proper uniform. (Choose the closest meaning of 'mandatory')",
-          "choices": {
-            "A": "optional",
-            "B": "required",
-            "C": "prohibited",
-            "D": "recommended"
-          },
-          "correct": "B",
-          "reason": "Ang \"mandatory\" ay sapilitan o kailangang sundin (required/compulsory)."
-        },
-        "24": {
-          "question": "The benevolent donor gave millions of pesos to orphanages. (Choose the closest meaning of 'benevolent')",
-          "choices": {
-            "A": "cruel",
-            "B": "selfish",
-            "C": "kind",
-            "D": "greedy"
-          },
-          "correct": "C",
-          "reason": "Ang \"benevolent\" ay mapagkawanggawa at mabait (kind-hearted/charitable)."
-        },
-        "25": {
-          "question": "The teacher's lucid explanation helped the students grasp the algebra formula. (Choose the closest meaning of 'lucid')",
-          "choices": {
-            "A": "confusing",
-            "B": "clear",
-            "C": "vague",
-            "D": "lengthy"
-          },
-          "correct": "B",
-          "reason": "Ang \"lucid\" ay malinaw at madaling intindihin (clear and easily understood)."
-        },
-        "26": {
-          "question": "The old bridge is obsolete and needs to be replaced by a modern structure. (Choose the closest meaning of 'obsolete')",
-          "choices": {
-            "A": "modern",
-            "B": "outdated",
-            "C": "functional",
-            "D": "sturdy"
-          },
-          "correct": "B",
-          "reason": "Ang \"obsolete\" ay lipas na sa panahon o hindi na ginagamit (outdated)."
-        },
-        "27": {
-          "question": "He showed zeal in organizing the community outreach program. (Choose the closest meaning of 'zeal')",
-          "choices": {
-            "A": "laziness",
-            "B": "enthusiasm",
-            "C": "hesitation",
-            "D": "sadness"
-          },
-          "correct": "B",
-          "reason": "Ang \"zeal\" ay masidhing sigla o determinasyon (enthusiasm/passion)."
-        },
-        "28": {
-          "question": "The twins have distinct personalities despite looking identical. (Choose the closest meaning of 'distinct')",
-          "choices": {
-            "A": "similar",
-            "B": "identical",
-            "C": "different",
-            "D": "boring"
-          },
-          "correct": "C",
-          "reason": "Ang \"distinct\" ay magkaiba o may malinaw na pagkakaiba (separate or different)."
-        },
-        "29": {
-          "question": "The arduous hike tested the physical endurance of the mountaineers. (Choose the closest meaning of 'arduous')",
-          "choices": {
-            "A": "easy",
-            "B": "short",
-            "C": "difficult",
-            "D": "fun"
-          },
-          "correct": "C",
-          "reason": "Ang \"arduous\" ay mahirap, nakakapagod, at nangangailangan ng matinding lakas (difficult/strenuous)."
-        },
-        "30": {
-          "question": "The suspect tried to elude the police by hiding in an abandoned building. (Choose the closest meaning of 'elude')",
-          "choices": {
-            "A": "confront",
-            "B": "escape",
-            "C": "attack",
-            "D": "help"
-          },
-          "correct": "B",
-          "reason": "Ang \"elude\" ay umiwas, tumakas, o magtago sa mga umuusig (escape/evade)."
-        }
-      }
+ "subject": "Logical Reasoning",
+ "subject_icon": "🧩",
+ "topic": "Abstract Reasoning",
+ "topic_order": 1,
+ "questions": {
+  "1": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q01-fig.jpg",
+    "w": 318,
+    "h": 358
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.0,
+     "x1": 0.25
     },
-    {
-      "subject": "Verbal Ability",
-      "subject_icon": "📖",
-      "topic": "Grammar and Correct Usage",
-      "topic_order": 2,
-      "questions": {
-        "1": {
-          "question": "Which sentence is grammatically correct?",
-          "choices": {
-            "A": "Each of the employees have submitted their reports.",
-            "B": "Each of the employees has submitted his or her report.",
-            "C": "Each of the employees have submitted his or her report.",
-            "D": "Each of the employees has submitted their reports."
-          },
-          "correct": "B",
-          "reason": "Ang \"Each\" ay singular subject kaya dapat singular verb (\"has\") at singular pronoun (\"his or her\")."
-        },
-        "2": {
-          "question": "Neither the teacher nor the students _____ present in the classroom.",
-          "choices": {
-            "A": "was",
-            "B": "were",
-            "C": "is",
-            "D": "am"
-          },
-          "correct": "B",
-          "reason": "Sa \"neither... nor\", ang verb ay umaayon sa malapit na subject (ang \"students\" ay plural, kaya \"were\")."
-        },
-        "3": {
-          "question": "The team of researchers _____ finished conducting the experiment.",
-          "choices": {
-            "A": "have",
-            "B": "has",
-            "C": "are",
-            "D": "were"
-          },
-          "correct": "B",
-          "reason": "Ang collective noun na \"team\" ay tinuturing na isa o singular dito kasi kumikilos sila bilang isang yunit (takes singular verb \"has\")."
-        },
-        "4": {
-          "question": "Choose the correct sentence:",
-          "choices": {
-            "A": "She is more smarter than her brother.",
-            "B": "She is smarter than her brother.",
-            "C": "She is more smart than her brother.",
-            "D": "She is the smartest between her brother and her."
-          },
-          "correct": "B",
-          "reason": "Ang comparative form ng \"smart\" ay \"smarter\". Hindi na kailangang lagyan ng \"more\"."
-        },
-        "5": {
-          "question": "Choose the correct sentence:",
-          "choices": {
-            "A": "I prefer reading books than watching television.",
-            "B": "I prefer reading books over watching television.",
-            "C": "I prefer to read books than to watch television.",
-            "D": "I prefer reading books from watching television."
-          },
-          "correct": "B",
-          "reason": "Ang tamang preposition pagkatapos ng \"prefer\" kapag nagkukumpara ay \"to\" o \"over\", hindi \"than\"."
-        },
-        "6": {
-          "question": "Everyone must bring _____ own calculator to the examination.",
-          "choices": {
-            "A": "their",
-            "B": "his or her",
-            "C": "our",
-            "D": "your"
-          },
-          "correct": "B",
-          "reason": "Ang \"everyone\" ay singular indefinite pronoun kaya singular pronoun din ang gagamitin (\"his or her\")."
-        },
-        "7": {
-          "question": "Choose the correct sentence:",
-          "choices": {
-            "A": "The committee presented their findings yesterday.",
-            "B": "The committee presented its findings yesterday.",
-            "C": "The committee have presented their findings yesterday.",
-            "D": "The committee were presenting its findings yesterday."
-          },
-          "correct": "B",
-          "reason": "Dito, ang committee ay kumikilos bilang iisang buong grupo kaya singular pronoun (\"its\") ang ginamit."
-        },
-        "8": {
-          "question": "Physics _____ my hardest subject this semester.",
-          "choices": {
-            "A": "are",
-            "B": "is",
-            "C": "were",
-            "D": "have been"
-          },
-          "correct": "B",
-          "reason": "Ang mga pangalan ng subject gaya ng Physics, Mathematics, at Economics ay nagtatapos sa \"s\" pero singular ang form kaya singular verb (\"is\") ang kasama."
-        },
-        "9": {
-          "question": "Ten thousand pesos _____ a lot of money for a student.",
-          "choices": {
-            "A": "are",
-            "B": "is",
-            "C": "were",
-            "D": "have"
-          },
-          "correct": "B",
-          "reason": "Ang mga sumatotal na pera, oras, o distansya ay tinuturing bilang iisang halaga o singular quantity kaya \"is\" ang ginagamit."
-        },
-        "10": {
-          "question": "Choose the correct sentence structure:",
-          "choices": {
-            "A": "Walking down the street, the rain started to fall.",
-            "B": "Walking down the street, an umbrella was opened by me.",
-            "C": "Walking down the street, I felt the cold rain start to fall.",
-            "D": "While walking down the street, the storm began."
-          },
-          "correct": "C",
-          "reason": "Maiiwasan ang \"misplaced modifier\". Ang gumagawa ng kilos na \"walking\" ay dapat ang kasunod na subject (\"I\")."
-        },
-        "11": {
-          "question": "Choose the correct spelling:",
-          "choices": {
-            "A": "Accomodation",
-            "B": "Accommodation",
-            "C": "Acomodation",
-            "D": "Acommodation"
-          },
-          "correct": "B",
-          "reason": "Ang tamang baybay ay may dalawang \"c\" at dalawang \"m\" (Accommodation)."
-        },
-        "12": {
-          "question": "Choose the correct spelling:",
-          "choices": {
-            "A": "Questionnaire",
-            "B": "Questionaire",
-            "C": "Questionnair",
-            "D": "Questionare"
-          },
-          "correct": "A",
-          "reason": "Double \"n\" at may \"re\" sa dula ang tamang spelling ng questionnaire."
-        },
-        "13": {
-          "question": "Choose the correct spelling:",
-          "choices": {
-            "A": "Millennium",
-            "B": "Millenium",
-            "C": "Milenium",
-            "D": "Milleniumm"
-          },
-          "correct": "A",
-          "reason": "Double \"l\" at double \"n\" ang tamang spelling nito."
-        },
-        "14": {
-          "question": "Choose the sentence with correct punctuation and grammar:",
-          "choices": {
-            "A": "Its a beautiful day for a picnic.",
-            "B": "It's a beautiful day for a picnic.",
-            "C": "Its' a beautiful day for a picnic.",
-            "D": "It is a beautiful day, for a picnic."
-          },
-          "correct": "B",
-          "reason": "Ang \"It's\" ay contraction ng \"It is\". Ang \"its\" naman ay possessive pronoun (walang apostrophe)."
-        },
-        "15": {
-          "question": "Between you and _____, I think the project will succeed.",
-          "choices": {
-            "A": "I",
-            "B": "me",
-            "C": "myself",
-            "D": "he"
-          },
-          "correct": "B",
-          "reason": "Pagkatapos ng preposition na \"between\", ang pronoun ay dapat nasa objective case (\"me\", hindi \"I\")."
-        },
-        "16": {
-          "question": "She is the _____ of the two sisters.",
-          "choices": {
-            "A": "taller",
-            "B": "tallest",
-            "C": "most tall",
-            "D": "more taller"
-          },
-          "correct": "A",
-          "reason": "Kapag nagkukumpara ng dalawang bagay o tao lang, ang gagamitin ay comparative form (\"taller\"), hindi superlative (\"tallest\")."
-        },
-        "17": {
-          "question": "Neither of the suspects _____ admitted to the crime.",
-          "choices": {
-            "A": "has",
-            "B": "have",
-            "C": "were",
-            "D": "are"
-          },
-          "correct": "A",
-          "reason": "Ang \"Neither\" ay laging singular kaya singular verb (\"has\") ang dapat gamitin."
-        },
-        "18": {
-          "question": "The number of applicants _____ increasing every year.",
-          "choices": {
-            "A": "are",
-            "B": "is",
-            "C": "were",
-            "D": "have been"
-          },
-          "correct": "B",
-          "reason": "Pag sinabing \"The number of\", singular ito (\"is\"). Pero pag \"A number of\", plural yun."
-        },
-        "19": {
-          "question": "A number of students _____ absent due to the flu.",
-          "choices": {
-            "A": "is",
-            "B": "was",
-            "C": "are",
-            "D": "has been"
-          },
-          "correct": "C",
-          "reason": "Ang \"A number of\" ay nangangahulugang \"several\" o marami kaya plural verb (\"are\") ang kasunod."
-        },
-        "20": {
-          "question": "Choose the correct sentence:",
-          "choices": {
-            "A": "He speaks English good.",
-            "B": "He speaks English well.",
-            "C": "He is speaking English good.",
-            "D": "He spoke English goodly."
-          },
-          "correct": "B",
-          "reason": "Ang \"well\" ay adverb na naglalarawan kung paano niya sinasalita ang English. Ang \"good\" ay adjective."
-        },
-        "21": {
-          "question": "The news about the exam results _____ surprising.",
-          "choices": {
-            "A": "were",
-            "B": "are",
-            "C": "is",
-            "D": "have been"
-          },
-          "correct": "C",
-          "reason": "Ang salitang \"news\" ay laging tinuturing na singular noun kaya singular verb (\"is\") ang gamitin."
-        },
-        "22": {
-          "question": "Choose the correct sentence:",
-          "choices": {
-            "A": "Whomever wins the contest will receive a cash prize.",
-            "B": "Whoever wins the contest will receive a cash prize.",
-            "C": "Whomever you choose will be fine.",
-            "D": "Whoever you choose will be fired."
-          },
-          "correct": "B",
-          "reason": "Ang \"Whoever\" ay subject ng verb na \"wins\". Kaya subjective case ang kailangan."
-        },
-        "23": {
-          "question": "Give the book to _____ asked for it first.",
-          "choices": {
-            "A": "whoever",
-            "B": "whomever",
-            "C": "who",
-            "D": "whom"
-          },
-          "correct": "A",
-          "reason": "Ang \"whoever\" ay subject ng clause na \"asked for it first\"."
-        },
-        "24": {
-          "question": "She sings much _____ than her sister.",
-          "choices": {
-            "A": "good",
-            "B": "well",
-            "C": "better",
-            "D": "best"
-          },
-          "correct": "C",
-          "reason": "Nagkukumpara sa pagitan ng dalawa kaya comparative adverb na \"better\" ang kailangan."
-        },
-        "25": {
-          "question": "Mount Apo is the _____ mountain in the Philippines.",
-          "choices": {
-            "A": "high",
-            "B": "higher",
-            "C": "highest",
-            "D": "most high"
-          },
-          "correct": "C",
-          "reason": "Nagkukumpara sa higit sa dalawa (lahat ng bundok sa bansa) kaya superlative form (\"highest\") ang gagamitin."
-        },
-        "26": {
-          "question": "I look forward to _____ you at the conference.",
-          "choices": {
-            "A": "see",
-            "B": "seeing",
-            "C": "saw",
-            "D": "seen"
-          },
-          "correct": "B",
-          "reason": "Ang phrasal verb na \"look forward to\" ay sinusundan ng gerund (-ing form), hindi base verb."
-        },
-        "27": {
-          "question": "If I _____ rich, I would travel around the world.",
-          "choices": {
-            "A": "am",
-            "B": "was",
-            "C": "were",
-            "D": "will be"
-          },
-          "correct": "C",
-          "reason": "Ito ay Second Conditional (hypothetical/contrary to fact). Ang gagamitin para sa lahat ng subject ay \"were\"."
-        },
-        "28": {
-          "question": "By next year, she _____ graduated from college.",
-          "choices": {
-            "A": "will",
-            "B": "will have",
-            "C": "has",
-            "D": "had"
-          },
-          "correct": "B",
-          "reason": "Ginagamit ang Future Perfect tense (\"will have + past participle\") para sa aksyon na matatapos bago ang isang tiyak na panahon sa hinaharap."
-        },
-        "29": {
-          "question": "Choose the correct sentence:",
-          "choices": {
-            "A": "She is one of those women who works hard.",
-            "B": "She is one of those women who work hard.",
-            "C": "She is one of those woman who works hard.",
-            "D": "She is one of those woman who work hard."
-          },
-          "correct": "B",
-          "reason": "Ang antecedent ng \"who\" ay \"women\" (plural), kaya ang verb ay dapat plural din (\"work\")."
-        },
-        "30": {
-          "question": "Hard _____ he tried, he couldn't solve the puzzle.",
-          "choices": {
-            "A": "as",
-            "B": "though",
-            "C": "although",
-            "D": "when"
-          },
-          "correct": "A",
-          "reason": "Ang pormat na \"Adjective/Adverb + as/though + subject + verb\" ay ginagamit para magpahayag ng contrast (kahit gaano pa niya sinubukan)."
-        }
-      }
+    "B": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.25,
+     "x1": 0.5
     },
-    {
-      "subject": "Verbal Ability",
-      "subject_icon": "📖",
-      "topic": "Paragraph Organization",
-      "topic_order": 3,
-      "questions": {
-        "1": {
-          "question": "Arrange the sentences to form a logical paragraph:\n1. The government launched a nationwide tree-planting campaign last month.\n2. Volunteers from different sectors gathered early in the morning to participate.\n3. Within a few hours, thousands of saplings were successfully planted along the riverbanks.\n4. This initiative aims to prevent soil erosion and mitigate flooding during heavy rains.",
-          "choices": {
-            "A": "1-4-2-3",
-            "B": "4-1-2-3",
-            "C": "1-2-3-4",
-            "D": "2-1-3-4"
-          },
-          "correct": "A",
-          "reason": "Inilalahad muna ang pangunahing ideya o proyekto (1), sinundan ng layunin nito (4), pagkatapos ay ang pagdating ng mga volunteers (2), at ang huli ay ang resulta ng kanilang ginawa (3)."
-        },
-        "2": {
-          "question": "Arrange the sentences to form a logical paragraph:\n1. Proper waste segregation is essential for effective recycling.\n2. When households separate biodegradable from non-biodegradable trash, processing becomes much easier.\n3. Furthermore, it helps reduce the volume of waste sent to landfills.\n4. Therefore, local communities must strictly implement segregation policies.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "1-3-2-4",
-            "C": "2-1-3-4",
-            "D": "4-1-2-3"
-          },
-          "correct": "A",
-          "reason": "Nagsisimula sa topic sentence (1), pinaliwanag kung paano (2), nagdagdag pa ng benepisyo gamit ang \"Furthermore\" (3), at nagtapos sa konklusyon/rekomendasyon gamit ang \"Therefore\" (4)."
-        },
-        "3": {
-          "question": "Arrange the sentences to form a logical paragraph:\n1. Reading books expands our vocabulary and improves critical thinking skills.\n2. In today's digital age, however, many people prefer scrolling through social media feeds.\n3. Despite these distractions, making time for reading remains a valuable habit.\n4. It offers a mental escape and deepens our understanding of different perspectives.",
-          "choices": {
-            "A": "2-1-4-3",
-            "B": "1-4-2-3",
-            "C": "1-2-3-4",
-            "D": "2-3-1-4"
-          },
-          "correct": "B",
-          "reason": "Inilatag muna ang benepisyo ng pagbabasa (1 at 4), ipinapakita ang counter-trend o problema ngayon (2), at nagtapos sa payo o solusyon sa kabila ng distraction (3)."
-        },
-        "4": {
-          "question": "Arrange the sentences to form a logical paragraph:\n1. First, gather all the necessary ingredients and measuring tools.\n2. Baking a cake requires patience and precision.\n3. Once everything is ready, preheat your oven to the required temperature.\n4. Finally, mix the batter gently and bake it for thirty minutes.",
-          "choices": {
-            "A": "2-1-3-4",
-            "B": "1-2-3-4",
-            "C": "2-3-1-4",
-            "D": "4-3-2-1"
-          },
-          "correct": "A",
-          "reason": "Ang (2) ang general intro statement, sinundan ng unang hakbang gamit ang \"First\" (1), kasunod ang pag-preheat (3), at nagtapos sa \"Finally\" (4)."
-        },
-        "5": {
-          "question": "Arrange the sentences to form a logical paragraph:\n1. The invention of the internet revolutionized global communication.\n2. People can now connect with friends and colleagues across oceans in mere seconds.\n3. Businesses have also expanded their markets globally through e-commerce platforms.\n4. Truly, technology has transformed our society in unimaginable ways.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "1-3-2-4",
-            "C": "2-1-3-4",
-            "D": "4-1-2-3"
-          },
-          "correct": "A",
-          "reason": "Main topic ang internet (1), epekto sa komunikasyon (2), epekto sa negosyo (3), at pangkalahatang konklusyon (4)."
-        },
-        "6": {
-          "question": "Which sentence does not belong in the paragraph below about sleep?\n(1) Getting adequate sleep is crucial for overall physical and mental health.\n(2) During sleep, the brain repairs tissues and consolidates memories.\n(3) Drinking coffee in the morning helps many people wake up faster.\n(4) Chronic sleep deprivation can lead to weakened immune systems and cognitive decline.",
-          "choices": {
-            "A": "Sentence 1",
-            "B": "Sentence 2",
-            "C": "Sentence 3",
-            "D": "Sentence 4"
-          },
-          "correct": "C",
-          "reason": "Ang talata ay tungkol sa kahalagahan ng tulog (sleep), habang ang Sentence 3 ay tungkol sa pag-inom ng kape (coffee), kaya ito ay out-of-topic."
-        },
-        "7": {
-          "question": "Choose the best logical order for these sentences:\n1. This leads to reduced crop yields and food shortages.\n2. Climate change brings prolonged droughts and unpredictable weather patterns.\n3. Farmers struggle to irrigate their fields without steady water supplies.\n4. Consequently, global food security is severely threatened.",
-          "choices": {
-            "A": "2-3-1-4",
-            "B": "2-1-3-4",
-            "C": "1-2-3-4",
-            "D": "4-2-3-1"
-          },
-          "correct": "A",
-          "reason": "Climate change ang ugat (2), epekto sa magsasaka (3), epekto sa ani (1), at ang pangkalahatang epekto sa buong mundo o food security (4)."
-        },
-        "8": {
-          "question": "Which sentence is the best opening sentence for a paragraph about renewable energy?",
-          "choices": {
-            "A": "Solar panels convert sunlight directly into electricity.",
-            "B": "Renewable energy sources are becoming vital in reducing carbon footprints and combating climate change.",
-            "C": "Wind turbines generate power by capturing kinetic energy from the wind.",
-            "D": "Fossil fuels will eventually run out in the near future."
-          },
-          "correct": "B",
-          "reason": "Ito ang pinaka-general at main topic sentence na sumasaklaw sa buong tema ng renewable energy."
-        },
-        "9": {
-          "question": "Arrange the sentences logically:\n1. Financial literacy equips individuals with the skills to manage money wisely.\n2. Unfortunately, many schools still lack comprehensive financial education programs.\n3. As a result, adults often struggle with debt management and retirement planning.\n4. Integrating this subject into the curriculum is therefore a crucial step forward.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "2-1-3-4",
-            "C": "1-3-2-4",
-            "D": "3-2-1-4"
-          },
-          "correct": "A",
-          "reason": "Kahalagahan ng financial literacy (1), problema sa sistema (2), negatibong epekto ng problema (3), at solusyon/rekomendasyon (4)."
-        },
-        "10": {
-          "question": "Which sentence does not belong in a paragraph about healthy eating habits?\n(1) Eating a balanced diet rich in fruits and vegetables promotes longevity.\n(2) Vitamins and minerals boost our immune system against diseases.\n(3) Regular cardiovascular exercise is important for heart health.\n(4) Incorporating whole grains provides sustained daily energy.",
-          "choices": {
-            "A": "Sentence 1",
-            "B": "Sentence 2",
-            "C": "Sentence 3",
-            "D": "Sentence 4"
-          },
-          "correct": "C",
-          "reason": "Ang talata ay tungkol sa pagkain (diet/nutrition), samantalang ang Sentence 3 ay tungkol sa ehersisyo (exercise)."
-        },
-        "11": {
-          "question": "Arrange the sentences logically:\n1. Public transportation plays a vital role in reducing urban traffic congestion.\n2. When commuters opt for trains and buses instead of private cars, fewer vehicles crowd the highways.\n3. Additionally, mass transit significantly lowers greenhouse gas emissions per passenger.\n4. Investing in modern, reliable public transport is therefore essential for sustainable cities.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "4-1-2-3",
-            "C": "1-3-2-4",
-            "D": "2-1-3-4"
-          },
-          "correct": "A",
-          "reason": "Nagsisimula sa main topic (1), pinaliwanag ang epekto sa trapiko (2), nagdagdag ng isa pang benepisyo gamit ang \"Additionally\" (3), at nagtapos sa konklusyon gamit ang \"therefore\" (4)."
-        },
-        "12": {
-          "question": "Which sentence does not belong in a paragraph about cyber hygiene?\n(1) Practicing good cyber hygiene protects personal data from online threats.\n(2) Using strong, unique passwords for every account prevents unauthorized access.\n(3) Buying the latest gaming laptop improves video editing speed.\n(4) Enabling two-factor authentication adds an extra layer of security against hackers.",
-          "choices": {
-            "A": "Sentence 1",
-            "B": "Sentence 2",
-            "C": "Sentence 3",
-            "D": "Sentence 4"
-          },
-          "correct": "C",
-          "reason": "Ang talata ay tungkol sa online security (cyber hygiene), habang ang Sentence 3 ay tungkol sa bilis ng laptop sa video editing."
-        },
-        "13": {
-          "question": "Arrange the sentences logically:\n1. First, soak the dried beans in water overnight to soften them.\n2. Cooking bean soup from scratch requires simple preparation steps.\n3. Next, drain the water and boil the beans with herbs and spices until tender.\n4. Finally, mash a portion of the beans to thicken the broth before serving hot.",
-          "choices": {
-            "A": "2-1-3-4",
-            "B": "1-2-3-4",
-            "C": "2-3-1-4",
-            "D": "4-1-3-2"
-          },
-          "correct": "A",
-          "reason": "Intro sentence muna (2), tapos sundan ang sequence words: \"First\" (1), \"Next\" (3), at \"Finally\" (4)."
-        },
-        "14": {
-          "question": "Choose the best concluding sentence for a paragraph about volunteering:",
-          "choices": {
-            "A": "Many non-profit organizations rely on donations to buy office supplies.",
-            "B": "Volunteering requires people to wake up early on weekends.",
-            "C": "Ultimately, giving time to help others not only uplifts communities but also fosters personal fulfillment.",
-            "D": "Some students volunteer just to get extra credit in school."
-          },
-          "correct": "C",
-          "reason": "Gumamit ito ng concluding transition (\"Ultimately\") at binuod ang pangkalahatang benepisyo ng pagbo-volunteer."
-        },
-        "15": {
-          "question": "Arrange the sentences logically:\n1. Urban gardening is gaining popularity among city dwellers with limited yard space.\n2. By using vertical planters and recycled containers, residents can grow fresh herbs and vegetables on balconies.\n3. This practice not only provides organic produce at home but also helps cool down concrete surroundings.\n4. As food prices continue to rise, growing one's own food offers both economic and environmental rewards.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "2-1-4-3",
-            "C": "4-2-1-3",
-            "D": "1-4-2-3"
-          },
-          "correct": "A",
-          "reason": "Ipinakilala ang konsepto ng urban gardening (1), paano ito ginagawa (2), ang mga benepisyo nito (3), at ang pangkalahatang halaga nito ngayon (4)."
-        },
-        "16": {
-          "question": "Which sentence does not belong in a paragraph about time management?\n(1) Effective time management allows professionals to meet deadlines without burning out.\n(2) Creating a daily to-do list helps prioritize urgent and important tasks.\n(3) Eliminating digital distractions during work blocks boosts overall focus.\n(4) Drinking eight glasses of water a day keeps the skin hydrated.",
-          "choices": {
-            "A": "Sentence 1",
-            "B": "Sentence 2",
-            "C": "Sentence 3",
-            "D": "Sentence 4"
-          },
-          "correct": "D",
-          "reason": "Ang talata ay tungkol sa pamamahala ng oras at trabaho, samantalang ang Sentence 4 ay tungkol sa pag-inom ng tubig."
-        },
-        "17": {
-          "question": "Arrange the sentences logically:\n1. However, excessive screen time before bed can disrupt the body's natural sleep cycle.\n2. Smartphones and tablets have made information accessible at our fingertips.\n3. To prevent insomnia, experts recommend turning off electronic devices at least an hour before sleeping.\n4. The blue light emitted by screens suppresses melatonin, the hormone responsible for sleep.",
-          "choices": {
-            "A": "2-1-4-3",
-            "B": "1-2-3-4",
-            "C": "2-4-1-3",
-            "D": "4-1-2-3"
-          },
-          "correct": "A",
-          "reason": "Magandang dulot ng gadgets (2), ang problema gamit ang \"However\" (1), siyentipikong paliwanag ng problema (4), at ang rekomendasyon o solusyon (3)."
-        },
-        "18": {
-          "question": "Arrange the sentences logically:\n1. As a result, many coastal towns experienced severe flooding and power outages.\n2. A super typhoon made landfall in the eastern provinces late last night.\n3. Emergency response teams were immediately deployed to rescue stranded residents.\n4. The storm brought torrential rains and destructive winds exceeding 200 kilometers per hour.",
-          "choices": {
-            "A": "2-4-1-3",
-            "B": "2-1-4-3",
-            "C": "4-2-1-3",
-            "D": "1-2-3-4"
-          },
-          "correct": "A",
-          "reason": "Pangyayari (2), paglalarawan sa lakas ng bagyo (4), ang resulta nito gamit ang \"As a result\" (1), at ang aksyon ng gobyerno/rescuers (3)."
-        },
-        "19": {
-          "question": "Which sentence is the best opening sentence for a paragraph about teamwork in the workplace?",
-          "choices": {
-            "A": "When employees blame each other for mistakes, projects fail.",
-            "B": "Strong teamwork is the cornerstone of any successful and innovative organization.",
-            "C": "Regular team-building outings are usually held at beach resorts.",
-            "D": "Some employees prefer working alone in quiet cubicles."
-          },
-          "correct": "B",
-          "reason": "Ito ay isang malinaw at general topic sentence na nagpapakilala sa kahalagahan ng teamwork."
-        },
-        "20": {
-          "question": "Arrange the sentences logically:\n1. Tourism brings significant revenue and job opportunities to local communities.\n2. Nevertheless, unregulated tourist arrivals can overwhelm fragile ecosystems and pollute beaches.\n3. Finding a balance between economic growth and environmental conservation is key to sustainable tourism.\n4. Hotels, restaurants, and transport operators thrive when visitors flock to popular destinations.",
-          "choices": {
-            "A": "1-4-2-3",
-            "B": "1-2-3-4",
-            "C": "4-1-2-3",
-            "D": "2-1-4-3"
-          },
-          "correct": "A",
-          "reason": "Positibong epekto ng turismo (1), konkretong halimbawa nito (4), ang negatibong bahagi gamit ang \"Nevertheless\" (2), at ang balanseng solusyon (3)."
-        },
-        "21": {
-          "question": "Which sentence does not belong in a paragraph about learning a second language?\n(1) Learning a second language enhances cognitive flexibility and memory retention.\n(2) Bilingual individuals often have better career prospects in multinational companies.\n(3) Traveling to different countries requires a valid passport and visa.\n(4) Moreover, speaking another tongue fosters deeper appreciation for diverse cultures.",
-          "choices": {
-            "A": "Sentence 1",
-            "B": "Sentence 2",
-            "C": "Sentence 3",
-            "D": "Sentence 4"
-          },
-          "correct": "C",
-          "reason": "Tungkol sa benepisyo ng pag-aaral ng ibang lenggwahe ang buong talata, kaya out-of-place ang Sentence 3 na tungkol sa passport at visa."
-        },
-        "22": {
-          "question": "Arrange the sentences logically:\n1. Before signing any lease agreement, tenants should carefully read all terms and conditions.\n2. Pay close attention to clauses regarding security deposits, maintenance responsibilities, and renewal policies.\n3. Doing so prevents unexpected financial disputes with the landlord later on.\n4. If anything seems unclear, ask for written clarification prior to finalizing the contract.",
-          "choices": {
-            "A": "1-2-4-3",
-            "B": "1-4-2-3",
-            "C": "2-1-3-4",
-            "D": "3-1-2-4"
-          },
-          "correct": "A",
-          "reason": "Main advice (1), ano ang dapat tingnan (2), ano ang gagawin kung may malabo (4), at ang magandang resulta ng pag-iingat na ito gamit ang \"Doing so\" (3)."
-        },
-        "23": {
-          "question": "Arrange the sentences logically:\n1. Honeybees are vital pollinators responsible for fertilizing a third of the crops we eat.\n2. Unfortunately, pesticide use and habitat loss have caused global bee populations to decline rapidly.\n3. Without these tiny insects, global agricultural production would suffer catastrophic losses.\n4. Protecting bee habitats and adopting eco-friendly farming are urgent priorities today.",
-          "choices": {
-            "A": "1-3-2-4",
-            "B": "1-2-3-4",
-            "C": "2-1-3-4",
-            "D": "3-1-2-4"
-          },
-          "correct": "A",
-          "reason": "Papel ng honeybees (1), ano ang mangyayari kung wala sila (3), ang banta sa kanila ngayon gamit ang \"Unfortunately\" (2), at ang panawagan sa pagkilos (4)."
-        },
-        "24": {
-          "question": "Which sentence is the best concluding sentence for a paragraph about lifelong learning?",
-          "choices": {
-            "A": "Libraries offer free access to thousands of books and journals.",
-            "B": "Many universities now offer online degree programs for working adults.",
-            "C": "In a rapidly changing world, committing to lifelong learning ensures both personal growth and career adaptability.",
-            "D": "Graduating from college is a proud moment for every family."
-          },
-          "correct": "C",
-          "reason": "Binubuod nito ang pangunahing punto ng talata tungkol sa kahalagahan ng patuloy na pag-aaral."
-        },
-        "25": {
-          "question": "Arrange the sentences logically:\n1. First, assess your monthly income and list all fixed expenses such as rent and utilities.\n2. Creating a realistic personal budget is the foundation of financial stability.\n3. Next, allocate a specific percentage of your remaining funds toward savings and debt repayment.\n4. Finally, track your daily spending to ensure you stay within your set limits.",
-          "choices": {
-            "A": "2-1-3-4",
-            "B": "1-2-3-4",
-            "C": "2-3-1-4",
-            "D": "4-1-3-2"
-          },
-          "correct": "A",
-          "reason": "Topic sentence (2), tapos sundan ang transition words: \"First\" (1), \"Next\" (3), at \"Finally\" (4)."
-        },
-        "26": {
-          "question": "Which sentence does not belong in a paragraph about coral reefs?\n(1) Coral reefs are often called the rainforests of the sea due to their rich biodiversity.\n(2) They provide shelter and food for thousands of marine organisms.\n(3) Deep-sea oil drilling requires massive offshore platforms and specialized engineers.\n(4) Rising ocean temperatures, however, cause coral bleaching that threatens these ecosystems.",
-          "choices": {
-            "A": "Sentence 1",
-            "B": "Sentence 2",
-            "C": "Sentence 3",
-            "D": "Sentence 4"
-          },
-          "correct": "C",
-          "reason": "Tungkol sa coral reefs at marine ecosystem ang talata; hindi konektado ang deep-sea oil drilling engineering."
-        },
-        "27": {
-          "question": "Arrange the sentences logically:\n1. Solar energy has become increasingly affordable over the past decade.\n2. Advancements in photovoltaic technology have lowered manufacturing costs while boosting efficiency.\n3. Consequently, more households and businesses are installing rooftop solar panels to cut electricity bills.\n4. This shift toward clean energy also reduces reliance on imported fossil fuels.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "2-1-4-3",
-            "C": "1-3-2-4",
-            "D": "3-1-2-4"
-          },
-          "correct": "A",
-          "reason": "Main statement (1), dahilan kung bakit naging mura (2), ang direktang resulta gamit ang \"Consequently\" (3), at karagdagang benepisyo gamit ang \"This shift... also\" (4)."
-        },
-        "28": {
-          "question": "Arrange the sentences logically:\n1. Effective communication requires both clear speaking and active listening.\n2. Many conflicts arise simply because people focus on formulating their reply rather than understanding the speaker.\n3. By paying full attention and asking clarifying questions, listeners show respect and prevent misunderstandings.\n4. Mastering this two-way skill strengthens both personal relationships and professional teamwork.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "2-1-3-4",
-            "C": "1-3-2-4",
-            "D": "4-1-2-3"
-          },
-          "correct": "A",
-          "reason": "Kahulugan ng effective communication (1), karaniwang pagkakamali (2), paano itama ang pagkakamali (3), at ang magandang resulta nito (4)."
-        },
-        "29": {
-          "question": "Which sentence is the best opening sentence for a paragraph about public libraries?",
-          "choices": {
-            "A": "Late fees are charged when borrowers fail to return books on time.",
-            "B": "Public libraries remain indispensable community hubs that provide equal access to knowledge and digital resources.",
-            "C": "Librarians organize books using the Dewey Decimal Classification system.",
-            "D": "Quiet zones are strictly enforced on the second floor of the building."
-          },
-          "correct": "B",
-          "reason": "Ipinapakilala nito ang pangkalahatang halaga ng public libraries sa komunidad."
-        },
-        "30": {
-          "question": "Arrange the sentences logically:\n1. Plastic pollution has become one of the most pressing environmental crises worldwide.\n2. Single-use plastics, such as straws and shopping bags, often end up in oceans where marine animals mistake them for food.\n3. To combat this problem, several cities have banned disposable plastics and promoted reusable alternatives.\n4. Individual consumers can also help by carrying eco-bags and refusing unnecessary plastic packaging.",
-          "choices": {
-            "A": "1-2-3-4",
-            "B": "1-3-2-4",
-            "C": "2-1-3-4",
-            "D": "3-4-1-2"
-          },
-          "correct": "A",
-          "reason": "Pangkalahatang problema (1), partikular na halimbawa at epekto (2), aksyon ng mga lungsod/gobyerno (3), at aksyon ng mga indibidwal gamit ang \"also\" (4)."
-        }
-      }
+    "C": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.5,
+     "x1": 0.75
     },
-    {
-      "subject": "Verbal Ability",
-      "subject_icon": "📖",
-      "topic": "Reading Comprehension",
-      "topic_order": 4,
-      "questions": {
-        "1": {
-          "question": "[PASSAGE] Baguio City, known as the Summer Capital of the Philippines, faces mounting environmental challenges due to rapid urbanization. Once celebrated for its cool climate and pine-scented air, the city now grapples with heavy traffic congestion, air pollution, and water scarcity. Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures. Local government units and environmental advocates are now pushing for stricter zoning laws and sustainable tourism practices to preserve what remains of the city's natural heritage.\n\n[QUESTION] What is the primary problem discussed in the passage?",
-          "choices": {
-            "A": "Lack of tourists visiting Baguio City",
-            "B": "Environmental degradation caused by rapid urbanization in Baguio",
-            "C": "The rising cost of real estate properties in the mountains",
-            "D": "The extreme cold climate of the Summer Capital"
-          },
-          "correct": "B",
-          "reason": "Sinasabi sa teksto na ang mabilis na urbanisasyon ay nagdudulot ng mga problema sa kalikasan tulad ng trapiko, polusyon, at kawalan ng tubig."
-        },
-        "2": {
-          "question": "[PASSAGE] Baguio City, known as the Summer Capital of the Philippines, faces mounting environmental challenges due to rapid urbanization. Once celebrated for its cool climate and pine-scented air, the city now grapples with heavy traffic congestion, air pollution, and water scarcity. Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures. Local government units and environmental advocates are now pushing for stricter zoning laws and sustainable tourism practices to preserve what remains of the city's natural heritage.\n\n[QUESTION] According to the text, what caused the loss of numerous pine trees?",
-          "choices": {
-            "A": "Heavy rainfall and typhoons",
-            "B": "Unchecked real estate development and concrete construction",
-            "C": "Government-mandated tree cutting programs",
-            "D": "Air pollution from vehicles"
-          },
-          "correct": "B",
-          "reason": "Nabanggit sa text: \"Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures.\""
-        },
-        "3": {
-          "question": "[PASSAGE] Baguio City, known as the Summer Capital of the Philippines, faces mounting environmental challenges due to rapid urbanization. Once celebrated for its cool climate and pine-scented air, the city now grapples with heavy traffic congestion, air pollution, and water scarcity. Unchecked real estate development has led to the cutting down of numerous pine trees, replacing natural landscapes with concrete structures. Local government units and environmental advocates are now pushing for stricter zoning laws and sustainable tourism practices to preserve what remains of the city's natural heritage.\n\n[QUESTION] What solution are local officials and advocates pushing for?",
-          "choices": {
-            "A": "Total closure of Baguio City to all tourists",
-            "B": "Building more concrete high-rise buildings",
-            "C": "Stricter zoning laws and sustainable tourism practices",
-            "D": "Relocating all residents to lowland areas"
-          },
-          "correct": "C",
-          "reason": "Ayon sa huling pangungusap, nagtutulungan sila para sa \"stricter zoning laws and sustainable tourism practices.\""
-        },
-        "4": {
-          "question": "[PASSAGE] Mangroves play a vital ecological role in coastal areas. They act as natural buffers against storm surges, typhoons, and coastal erosion, protecting vulnerable human settlements. Furthermore, mangrove forests serve as crucial breeding grounds and nurseries for various marine species, including fish and crustaceans, which sustain local fishing communities. Despite these immense benefits, large areas of mangroves are continually cleared for aquaculture ponds and coastal development, threatening both biodiversity and coastal safety.\n\n[QUESTION] What is the main idea of the passage?",
-          "choices": {
-            "A": "Coastal communities rely entirely on aquaculture for income.",
-            "B": "Mangroves are essential for ecological protection and marine life, but they face destruction.",
-            "C": "Typhoons are becoming stronger because of global warming.",
-            "D": "Fish and crustaceans can only survive in artificial ponds."
-          },
-          "correct": "B",
-          "reason": "Binibigyang-diin ng talata ang kahalagahan ng mangroves at ang banta ng pagkasira nito."
-        },
-        "5": {
-          "question": "[PASSAGE] Mangroves play a vital ecological role in coastal areas. They act as natural buffers against storm surges, typhoons, and coastal erosion, protecting vulnerable human settlements. Furthermore, mangrove forests serve as crucial breeding grounds and nurseries for various marine species, including fish and crustaceans, which sustain local fishing communities. Despite these immense benefits, large areas of mangroves are continually cleared for aquaculture ponds and coastal development, threatening both biodiversity and coastal safety.\n\n[QUESTION] How do mangroves protect coastal human settlements?",
-          "choices": {
-            "A": "By absorbing harmful air pollutants",
-            "B": "By serving as natural buffers against storm surges and erosion",
-            "C": "By providing wood for building houses",
-            "D": "By filtering drinking water supplies"
-          },
-          "correct": "B",
-          "reason": "Sabi sa teksto: \"They act as natural buffers against storm surges, typhoons, and coastal erosion.\""
-        },
-        "6": {
-          "question": "[PASSAGE] Mangroves play a vital ecological role in coastal areas. They act as natural buffers against storm surges, typhoons, and coastal erosion, protecting vulnerable human settlements. Furthermore, mangrove forests serve as crucial breeding grounds and nurseries for various marine species, including fish and crustaceans, which sustain local fishing communities. Despite these immense benefits, large areas of mangroves are continually cleared for aquaculture ponds and coastal development, threatening both biodiversity and coastal safety.\n\n[QUESTION] Why are mangrove forests being cleared according to the text?",
-          "choices": {
-            "A": "For highway expansion projects",
-            "B": "For aquaculture ponds and coastal development",
-            "C": "To plant agricultural crops",
-            "D": "To build recreational parks"
-          },
-          "correct": "B",
-          "reason": "Direksyong binanggit sa huling pangungusap: \"...cleared for aquaculture ponds and coastal development.\""
-        },
-        "7": {
-          "question": "[PASSAGE] Financial literacy is an essential life skill that empowers individuals to make informed decisions about money management, budgeting, and investing. Unfortunately, many young adults enter the workforce without basic knowledge of how compound interest works or how to build an emergency fund. Without these foundational skills, they often fall into consumer debt traps. Educational institutions and financial institutions must collaborate to integrate practical financial training into school curricula to secure the economic well-being of future generations.\n\n[QUESTION] What does the author suggest to solve the problem of financial illiteracy?",
-          "choices": {
-            "A": "Banning credit cards for young adults",
-            "B": "Integrating practical financial training into school curricula",
-            "C": "Increasing the minimum wage for fresh graduates",
-            "D": "Giving government cash subsidies to everyone"
-          },
-          "correct": "B",
-          "reason": "Ayon sa huling pangungusap, kailangang isama ang practical financial training sa kurikulum ng paaralan."
-        },
-        "8": {
-          "question": "[PASSAGE] Financial literacy is an essential life skill that empowers individuals to make informed decisions about money management, budgeting, and investing. Unfortunately, many young adults enter the workforce without basic knowledge of how compound interest works or how to build an emergency fund. Without these foundational skills, they often fall into consumer debt traps. Educational institutions and financial institutions must collaborate to integrate practical financial training into school curricula to secure the economic well-being of future generations.\n\n[QUESTION] What happens to young adults who lack basic financial skills?",
-          "choices": {
-            "A": "They become successful entrepreneurs automatically.",
-            "B": "They easily build large emergency funds.",
-            "C": "They often fall into consumer debt traps.",
-            "D": "They invest all their money in real estate."
-          },
-          "correct": "C",
-          "reason": "Nakasaad sa teksto: \"...they often fall into consumer debt traps.\""
-        },
-        "9": {
-          "question": "[PASSAGE] Financial literacy is an essential life skill that empowers individuals to make informed decisions about money management, budgeting, and investing. Unfortunately, many young adults enter the workforce without basic knowledge of how compound interest works or how to build an emergency fund. Without these foundational skills, they often fall into consumer debt traps. Educational institutions and financial institutions must collaborate to integrate practical financial training into school curricula to secure the economic well-being of future generations.\n\n[QUESTION] Which of the following is NOT mentioned as a benefit of financial literacy?",
-          "choices": {
-            "A": "Making informed decisions about money",
-            "B": "Understanding how compound interest works",
-            "C": "Guaranteeing a promotion at work",
-            "D": "Effective budgeting and investing"
-          },
-          "correct": "C",
-          "reason": "Walang nabanggit sa teksto tungkol sa job promotion; ang binanggit lang ay money management, budgeting, investing, at compound interest."
-        },
-        "10": {
-          "question": "[PASSAGE] The rise of artificial intelligence (AI) has sparked intense debate regarding its impact on the modern workforce. While pessimists argue that automation will replace millions of jobs, leading to widespread unemployment, optimists contend that AI will create entirely new industries and increase overall productivity. Experts suggest that rather than fearing technological displacement, workers should focus on upskilling and continuous learning. By mastering skills that require human empathy, creativity, and complex problem-solving, workers can remain valuable in an AI-driven economy.\n\n[QUESTION] What is the central theme of the passage?",
-          "choices": {
-            "A": "The history of computer science and automation",
-            "B": "The impact of artificial intelligence on jobs and workforce adaptation",
-            "C": "Why AI will completely destroy human civilization",
-            "D": "The technical coding languages used to build AI"
-          },
-          "correct": "B",
-          "reason": "Tinatalakay ng talata kung paano naaapektuhan ng AI ang mga manggagawa at kung paano sila dapat mag-adapt."
-        },
-        "11": {
-          "question": "[PASSAGE] The rise of artificial intelligence (AI) has sparked intense debate regarding its impact on the modern workforce. While pessimists argue that automation will replace millions of jobs, leading to widespread unemployment, optimists contend that AI will create entirely new industries and increase overall productivity. Experts suggest that rather than fearing technological displacement, workers should focus on upskilling and continuous learning. By mastering skills that require human empathy, creativity, and complex problem-solving, workers can remain valuable in an AI-driven economy.\n\n[QUESTION] According to the text, what should workers do to remain valuable?",
-          "choices": {
-            "A": "Protest against automation in factories",
-            "B": "Stop using computers and smartphones",
-            "C": "Focus on upskilling and mastering human-centric skills",
-            "D": "Work longer hours every single day"
-          },
-          "correct": "C",
-          "reason": "Sabi sa teksto, mag-focus sa upskilling at sa mga skills na may kinalaman sa empathy, creativity, at problem-solving."
-        },
-        "12": {
-          "question": "[PASSAGE] The rise of artificial intelligence (AI) has sparked intense debate regarding its impact on the modern workforce. While pessimists argue that automation will replace millions of jobs, leading to widespread unemployment, optimists contend that AI will create entirely new industries and increase overall productivity. Experts suggest that rather than fearing technological displacement, workers should focus on upskilling and continuous learning. By mastering skills that require human empathy, creativity, and complex problem-solving, workers can remain valuable in an AI-driven economy.\n\n[QUESTION] What is the optimists' view on artificial intelligence?",
-          "choices": {
-            "A": "It will destroy all existing businesses.",
-            "B": "It will create new industries and increase productivity.",
-            "C": "It will make human labor completely unnecessary for survival.",
-            "D": "It will lower global internet speeds."
-          },
-          "correct": "B",
-          "reason": "Nakasaad na ang mga optimista ay naniniwalang \"AI will create entirely new industries and increase overall productivity.\""
-        },
-        "13": {
-          "question": "[PASSAGE] Regular physical activity is one of the most effective ways to maintain physical and mental well-being. Engaging in exercises such as brisk walking, swimming, or cycling strengthens the cardiovascular system, improves muscle tone, and helps regulate body weight. Beyond physical health, exercise stimulates the release of endorphins—chemicals in the brain that act as natural mood lifters—which help reduce stress, anxiety, and symptoms of depression.\n\n[QUESTION] Which of the following is a mental health benefit of exercise mentioned in the text?",
-          "choices": {
-            "A": "Lowering blood pressure instantly",
-            "B": "Releasing endorphins that reduce stress and anxiety",
-            "C": "Increasing body muscle mass",
-            "D": "Curing all forms of genetic disorders"
-          },
-          "correct": "B",
-          "reason": "Sabi sa huling pangungusap, ang exercise ay nagre-release ng endorphins na pampababa ng stress at anxiety."
-        },
-        "14": {
-          "question": "[PASSAGE] Regular physical activity is one of the most effective ways to maintain physical and mental well-being. Engaging in exercises such as brisk walking, swimming, or cycling strengthens the cardiovascular system, improves muscle tone, and helps regulate body weight. Beyond physical health, exercise stimulates the release of endorphins—chemicals in the brain that act as natural mood lifters—which help reduce stress, anxiety, and symptoms of depression.\n\n[QUESTION] What kind of exercises are suggested in the passage?",
-          "choices": {
-            "A": "Extreme weightlifting and boxing",
-            "B": "Brisk walking, swimming, or cycling",
-            "C": "Marathon running every single day",
-            "D": "Yoga and meditation only"
-          },
-          "correct": "B",
-          "reason": "Diretsong binanggit sa teksto ang \"brisk walking, swimming, or cycling.\""
-        },
-        "15": {
-          "question": "[PASSAGE] Regular physical activity is one of the most effective ways to maintain physical and mental well-being. Engaging in exercises such as brisk walking, swimming, or cycling strengthens the cardiovascular system, improves muscle tone, and helps regulate body weight. Beyond physical health, exercise stimulates the release of endorphins—chemicals in the brain that act as natural mood lifters—which help reduce stress, anxiety, and symptoms of depression.\n\n[QUESTION] What is the overall tone and purpose of the passage?",
-          "choices": {
-            "A": "To warn people against dangerous sports injuries",
-            "B": "To inform and encourage readers about the benefits of physical activity",
-            "C": "To advertise local gyms and fitness centers",
-            "D": "To criticize people who do not exercise"
-          },
-          "correct": "B",
-          "reason": "Layunin ng teksto na ipaalam ang mga magagandang epekto ng regular na ehersisyo sa katawan at isip."
-        },
-        "16": {
-          "question": "[PASSAGE] The Banaue Rice Terraces, carved into the mountains of Ifugao over two thousand years ago by indigenous ancestors, stand as a testament to Filipino ingenuity and sustainable agriculture. Fed by an ancient irrigation system channeling water from the rainforests above, these 'stairways to the sky' prevent soil erosion while producing staple crops. Today, however, the terraces face threats from modernization, climate change, and out-migration of younger generations seeking urban jobs, prompting urgent preservation efforts.\n\n[QUESTION] How are the Banaue Rice Terraces irrigated according to the passage?",
-          "choices": {
-            "A": "Through modern electric water pumps",
-            "B": "By an ancient system channeling water from rainforests above",
-            "C": "Solely through seasonal typhoon rains",
-            "D": "By diverting water from nearby lowland rivers"
-          },
-          "correct": "B",
-          "reason": "Diretsong nakasaad sa ikalawang pangungusap: \"Fed by an ancient irrigation system channeling water from the rainforests above...\""
-        },
-        "17": {
-          "question": "[PASSAGE] The Banaue Rice Terraces, carved into the mountains of Ifugao over two thousand years ago by indigenous ancestors, stand as a testament to Filipino ingenuity and sustainable agriculture. Fed by an ancient irrigation system channeling water from the rainforests above, these 'stairways to the sky' prevent soil erosion while producing staple crops. Today, however, the terraces face threats from modernization, climate change, and out-migration of younger generations seeking urban jobs, prompting urgent preservation efforts.\n\n[QUESTION] Which of the following is NOT mentioned as a current threat to the terraces?",
-          "choices": {
-            "A": "Modernization",
-            "B": "Climate change",
-            "C": "Volcanic eruptions",
-            "D": "Out-migration of younger generations"
-          },
-          "correct": "C",
-          "reason": "Ang mga nabanggit na banta sa teksto ay modernization, climate change, at out-migration ng mga kabataan—walang nabanggit na volcanic eruptions."
-        },
-        "18": {
-          "question": "[PASSAGE] The Banaue Rice Terraces, carved into the mountains of Ifugao over two thousand years ago by indigenous ancestors, stand as a testament to Filipino ingenuity and sustainable agriculture. Fed by an ancient irrigation system channeling water from the rainforests above, these 'stairways to the sky' prevent soil erosion while producing staple crops. Today, however, the terraces face threats from modernization, climate change, and out-migration of younger generations seeking urban jobs, prompting urgent preservation efforts.\n\n[QUESTION] What does the phrase \"testament to Filipino ingenuity\" imply about the ancestors who built the terraces?",
-          "choices": {
-            "A": "They relied on foreign engineers to design the mountains.",
-            "B": "They possessed remarkable skill, creativity, and engineering knowledge.",
-            "C": "They built the terraces purely for tourist attraction.",
-            "D": "They destroyed the rainforests to plant rice."
-          },
-          "correct": "B",
-          "reason": "Ang salitang \"ingenuity\" ay nangangahulugang pagiging malikhain, matalino, at mahusay sa paglutas ng problema."
-        },
-        "19": {
-          "question": "[PASSAGE] Telecommuting, or working from home, shifted from a rare perk to a mainstream work arrangement following global health crises. For employees, remote work eliminates exhausting daily commutes, lowers transportation expenses, and offers greater flexibility to balance family responsibilities. Employers also benefit through reduced office overhead costs and access to a wider talent pool beyond geographic boundaries. Nevertheless, organizations must address challenges such as digital fatigue, blurred work-life boundaries, and maintaining team cohesion virtually.\n\n[QUESTION] What is one advantage of remote work for employers mentioned in the text?",
-          "choices": {
-            "A": "Eliminating the need for internet connections",
-            "B": "Reduced office overhead costs and access to a wider talent pool",
-            "C": "Guaranteeing that employees work twice as fast",
-            "D": "Avoiding payment of employee salaries"
-          },
-          "correct": "B",
-          "reason": "Nakasaad sa ikatlong pangungusap: \"Employers also benefit through reduced office overhead costs and access to a wider talent pool...\""
-        },
-        "20": {
-          "question": "[PASSAGE] Telecommuting, or working from home, shifted from a rare perk to a mainstream work arrangement following global health crises. For employees, remote work eliminates exhausting daily commutes, lowers transportation expenses, and offers greater flexibility to balance family responsibilities. Employers also benefit through reduced office overhead costs and access to a wider talent pool beyond geographic boundaries. Nevertheless, organizations must address challenges such as digital fatigue, blurred work-life boundaries, and maintaining team cohesion virtually.\n\n[QUESTION] What challenge associated with telecommuting must organizations address?",
-          "choices": {
-            "A": "Increased traffic congestion on highways",
-            "B": "Higher spending on office electricity",
-            "C": "Blurred work-life boundaries and digital fatigue",
-            "D": "Lack of qualified applicants worldwide"
-          },
-          "correct": "C",
-          "reason": "Nabanggit sa huling pangungusap ang \"digital fatigue, blurred work-life boundaries, and maintaining team cohesion.\""
-        },
-        "21": {
-          "question": "[PASSAGE] Telecommuting, or working from home, shifted from a rare perk to a mainstream work arrangement following global health crises. For employees, remote work eliminates exhausting daily commutes, lowers transportation expenses, and offers greater flexibility to balance family responsibilities. Employers also benefit through reduced office overhead costs and access to a wider talent pool beyond geographic boundaries. Nevertheless, organizations must address challenges such as digital fatigue, blurred work-life boundaries, and maintaining team cohesion virtually.\n\n[QUESTION] What is the main idea of the passage?",
-          "choices": {
-            "A": "Remote work is completely ineffective and should be abolished.",
-            "B": "Telecommuting offers mutual benefits to workers and employers, though it presents new challenges.",
-            "C": "Employees only want to work from home to avoid doing their jobs.",
-            "D": "Office buildings are no longer needed in modern cities."
-          },
-          "correct": "B",
-          "reason": "Balanseng tinalakay ng talata ang mga benepisyo para sa parehong empleyado at employer, pati na ang mga hamon nito."
-        },
-        "22": {
-          "question": "[PASSAGE] In an era dominated by social media, misinformation spreads faster than verified facts. Sensationalized headlines and manipulated images are often designed to trigger strong emotional reactions, prompting users to share content without checking its credibility. Practicing media literacy—such as verifying sources, cross-checking facts across reputable news outlets, and examining publication dates—is essential for citizens to make informed decisions and protect democratic discourse.\n\n[QUESTION] Why do users often share misinformation without verifying it?",
-          "choices": {
-            "A": "Because verified news websites are banned online",
-            "B": "Because sensationalized content triggers strong emotional reactions",
-            "C": "Because social media platforms require users to share every post",
-            "D": "Because fact-checking websites charge expensive fees"
-          },
-          "correct": "B",
-          "reason": "Sabi sa ikalawang pangungusap: \"...designed to trigger strong emotional reactions, prompting users to share content without checking its credibility.\""
-        },
-        "23": {
-          "question": "[PASSAGE] In an era dominated by social media, misinformation spreads faster than verified facts. Sensationalized headlines and manipulated images are often designed to trigger strong emotional reactions, prompting users to share content without checking its credibility. Practicing media literacy—such as verifying sources, cross-checking facts across reputable news outlets, and examining publication dates—is essential for citizens to make informed decisions and protect democratic discourse.\n\n[QUESTION] Which of the following is an example of practicing media literacy according to the passage?",
-          "choices": {
-            "A": "Sharing posts immediately if they have many likes",
-            "B": "Cross-checking facts across reputable news outlets",
-            "C": "Reading only the headlines of articles",
-            "D": "Ignoring publication dates on news stories"
-          },
-          "correct": "B",
-          "reason": "Isa ito sa mga halimbawang ibinigay sa huling pangungusap: \"...verifying sources, cross-checking facts across reputable news outlets, and examining publication dates.\""
-        },
-        "24": {
-          "question": "[PASSAGE] In an era dominated by social media, misinformation spreads faster than verified facts. Sensationalized headlines and manipulated images are often designed to trigger strong emotional reactions, prompting users to share content without checking its credibility. Practicing media literacy—such as verifying sources, cross-checking facts across reputable news outlets, and examining publication dates—is essential for citizens to make informed decisions and protect democratic discourse.\n\n[QUESTION] What does the word \"credible\" or \"credibility\" most nearly mean in the context of the passage?",
-          "choices": {
-            "A": "Popularity and entertainment value",
-            "B": "Trustworthiness and factual accuracy",
-            "C": "Speed of internet download",
-            "D": "Emotional appeal"
-          },
-          "correct": "B",
-          "reason": "Sa konteksto ng balita at impormasyon, ang \"credibility\" ay tumutukoy sa pagiging mapagkakatiwalaan at totoo ng isang source."
-        },
-        "25": {
-          "question": "[PASSAGE] Antibiotic resistance occurs when bacteria evolve to withstand the drugs designed to kill them. A major driver of this global health threat is the misuse and overuse of antibiotics in humans and livestock—such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage. When bacteria become resistant, common infections become harder to treat, leading to prolonged hospital stays, higher medical costs, and increased mortality.\n\n[QUESTION] What causes antibiotic resistance according to the text?",
-          "choices": {
-            "A": "Taking vitamins daily",
-            "B": "Misuse and overuse of antibiotics in humans and livestock",
-            "C": "Washing hands too frequently with soap",
-            "D": "Eating organic fruits and vegetables"
-          },
-          "correct": "B",
-          "reason": "Nakasaad sa ikalawang pangungusap na ang pangunahing sanhi nito ay \"misuse and overuse of antibiotics in humans and livestock.\""
-        },
-        "26": {
-          "question": "[PASSAGE] Antibiotic resistance occurs when bacteria evolve to withstand the drugs designed to kill them. A major driver of this global health threat is the misuse and overuse of antibiotics in humans and livestock—such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage. When bacteria become resistant, common infections become harder to treat, leading to prolonged hospital stays, higher medical costs, and increased mortality.\n\n[QUESTION] Which behavior is cited as an example of antibiotic misuse?",
-          "choices": {
-            "A": "Completing the full course of prescribed medicine",
-            "B": "Consulting a doctor before taking medication",
-            "C": "Taking antibiotics for viral infections like the common cold",
-            "D": "Getting vaccinated against preventable diseases"
-          },
-          "correct": "C",
-          "reason": "Diretsong binanggit sa teksto: \"...such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage.\""
-        },
-        "27": {
-          "question": "[PASSAGE] Antibiotic resistance occurs when bacteria evolve to withstand the drugs designed to kill them. A major driver of this global health threat is the misuse and overuse of antibiotics in humans and livestock—such as taking antibiotics for viral infections like the common cold, or failing to complete a prescribed dosage. When bacteria become resistant, common infections become harder to treat, leading to prolonged hospital stays, higher medical costs, and increased mortality.\n\n[QUESTION] What is a consequence of bacteria becoming resistant to antibiotics?",
-          "choices": {
-            "A": "Common infections become easier and cheaper to cure.",
-            "B": "Common infections become harder to treat, increasing medical costs and mortality.",
-            "C": "Viruses automatically turn into harmless bacteria.",
-            "D": "Hospitals no longer need doctors."
-          },
-          "correct": "B",
-          "reason": "Ayon sa huling pangungusap, nagreresulta ito sa mas mahirap na gamutan, mas matagal na pagkaka-ospital, mas mataas na gastos, at pagkamatay."
-        },
-        "28": {
-          "question": "[PASSAGE] Public service is built on the foundational principle that a public office is a public trust. Civil servants are expected to uphold the highest standards of integrity, accountability, and responsiveness in serving the citizenry. Rather than viewing government positions as avenues for personal gain or political favoritism, public officials must prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\n\n[QUESTION] What is the foundational principle of public service mentioned in the passage?",
-          "choices": {
-            "A": "Public office is a family inheritance.",
-            "B": "Public office is a public trust.",
-            "C": "Public office guarantees financial wealth.",
-            "D": "Public office is reserved only for politicians."
-          },
-          "correct": "B",
-          "reason": "Makikita ito mismo sa unang pangungusap (at nakasaad din sa 1987 Philippine Constitution, Art. XI, Sec. 1)."
-        },
-        "29": {
-          "question": "[PASSAGE] Public service is built on the foundational principle that a public office is a public trust. Civil servants are expected to uphold the highest standards of integrity, accountability, and responsiveness in serving the citizenry. Rather than viewing government positions as avenues for personal gain or political favoritism, public officials must prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\n\n[QUESTION] How should public resources be managed according to the text?",
-          "choices": {
-            "A": "Secretly and exclusively for political allies",
-            "B": "Transparently and efficiently for the welfare of the community",
-            "C": "Slowly to save government funds",
-            "D": "Without any public accountability"
-          },
-          "correct": "B",
-          "reason": "Sabi sa huling pangungusap: \"...prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\""
-        },
-        "30": {
-          "question": "[PASSAGE] Public service is built on the foundational principle that a public office is a public trust. Civil servants are expected to uphold the highest standards of integrity, accountability, and responsiveness in serving the citizenry. Rather than viewing government positions as avenues for personal gain or political favoritism, public officials must prioritize the welfare of the community, ensuring that public resources are managed transparently and efficiently.\n\n[QUESTION] Which quality is NOT mentioned as an expectation for civil servants?",
-          "choices": {
-            "A": "Integrity",
-            "B": "Accountability",
-            "C": "Responsiveness",
-            "D": "Political favoritism"
-          },
-          "correct": "D",
-          "reason": "Ang political favoritism ay bagay na dapat iwasan ayon sa teksto (\"Rather than viewing government positions as avenues for personal gain or political favoritism...\")."
-        }
-      }
+    "D": {
+     "src": "abstract/q01-choices.jpg",
+     "w": 587,
+     "h": 112,
+     "x0": 0.75,
+     "x1": 1.0
     }
-  ]
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "2": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q02-fig.jpg",
+    "w": 299,
+    "h": 359
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q02-choices.png",
+     "w": 781,
+     "h": 145,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "3": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q03-fig.jpg",
+    "w": 299,
+    "h": 356
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q03-choices.jpg",
+     "w": 568,
+     "h": 104,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "4": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q04-fig.jpg",
+    "w": 309,
+    "h": 389
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q04-choices.jpg",
+     "w": 635,
+     "h": 114,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "5": {
+   "question": "Which circle (A–D) fits logically into the blank top circle? The diagram is built up starting from the bottom row.",
+   "figure": {
+    "src": "abstract/q05-fig.jpg",
+    "w": 318,
+    "h": 390
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q05-choices.jpg",
+     "w": 631,
+     "h": 165,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "6": {
+   "question": "Study the hexagon pyramid. The lines in each hexagon follow a set rule based on the two hexagons directly below it. Which of A–D replaces the hexagon with the question mark?",
+   "figure": {
+    "src": "abstract/q06-fig.jpg",
+    "w": 324,
+    "h": 317
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q06-choices.jpg",
+     "w": 844,
+     "h": 111,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "A",
+   "reason": "Sagot: A (ayon sa answer key ng reviewer). Tip: Tingnan ang dalawang figure sa ibabang row at alamin kung paano sila pinagsasama (alin ang nananatili, nawawala, o nadadagdag) para mabuo ang nasa itaas. I-apply ang parehong rule sa pyramid na may tanong."
+  },
+  "7": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q07-fig.jpg",
+    "w": 284,
+    "h": 281
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q07-choices.jpg",
+     "w": 769,
+     "h": 147,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "8": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q08-fig.jpg",
+    "w": 271,
+    "h": 282
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q08-choices.jpg",
+     "w": 854,
+     "h": 121,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "9": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q09-fig.jpg",
+    "w": 275,
+    "h": 283
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q09-choices.jpg",
+     "w": 585,
+     "h": 83,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "10": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q10-fig.jpg",
+    "w": 268,
+    "h": 277
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q10-choices.jpg",
+     "w": 605,
+     "h": 148,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "11": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q11-fig.jpg",
+    "w": 291,
+    "h": 300
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q11-choices.jpg",
+     "w": 828,
+     "h": 165,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "12": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q12-fig.jpg",
+    "w": 289,
+    "h": 300
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q12-choices.jpg",
+     "w": 823,
+     "h": 133,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "13": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q13-fig.jpg",
+    "w": 296,
+    "h": 289
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q13-choices.jpg",
+     "w": 581,
+     "h": 105,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "A",
+   "reason": "Sagot: A (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "14": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q14-fig.jpg",
+    "w": 275,
+    "h": 289
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q14-choices.jpg",
+     "w": 811,
+     "h": 113,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "15": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q15-fig.jpg",
+    "w": 290,
+    "h": 299
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q15-choices.jpg",
+     "w": 808,
+     "h": 109,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "16": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q16-fig.jpg",
+    "w": 289,
+    "h": 295
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q16-choices.jpg",
+     "w": 815,
+     "h": 152,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "17": {
+   "question": "Which of the squares (A–D) fits in at the square with the question mark?",
+   "figure": {
+    "src": "abstract/q17-fig.jpg",
+    "w": 288,
+    "h": 295
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.0,
+     "x1": 0.25
+    },
+    "B": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.25,
+     "x1": 0.5
+    },
+    "C": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.5,
+     "x1": 0.75
+    },
+    "D": {
+     "src": "abstract/q17-choices.jpg",
+     "w": 780,
+     "h": 118,
+     "x0": 0.75,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang pattern sa bawat row at column (pagbabago ng hugis, shading, posisyon, o bilang ng linya), tapos piliin ang choice na kumukumpleto sa pattern."
+  },
+  "18": {
+   "question": "Select the missing piece (A–D) so that the whole square will contain an even, symmetrical pattern.",
+   "figure": {
+    "src": "abstract/q18-fig.jpg",
+    "w": 291,
+    "h": 291
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q18-a.jpg",
+     "w": 137,
+     "h": 132
+    },
+    "B": {
+     "src": "abstract/q18-b.jpg",
+     "w": 147,
+     "h": 137
+    },
+    "C": {
+     "src": "abstract/q18-c.jpg",
+     "w": 140,
+     "h": 135
+    },
+    "D": {
+     "src": "abstract/q18-d.jpg",
+     "w": 138,
+     "h": 139
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Isipin ang buong parisukat at hanapin ang axis of symmetry. Piliin ang piraso na gagawa sa buong pattern na pantay at simetriko."
+  },
+  "19": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q19.jpg",
+    "w": 1155,
+    "h": 204,
+    "x0": 0,
+    "x1": 0.1329
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.1329,
+     "x1": 0.3762
+    },
+    "B": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.3762,
+     "x1": 0.5905
+    },
+    "C": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.5905,
+     "x1": 0.8043
+    },
+    "D": {
+     "src": "abstract/q19.jpg",
+     "w": 1155,
+     "h": 204,
+     "x0": 0.8043,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "20": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q20.jpg",
+    "w": 1178,
+    "h": 201,
+    "x0": 0,
+    "x1": 0.1783
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.1783,
+     "x1": 0.3973
+    },
+    "B": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.3973,
+     "x1": 0.6044
+    },
+    "C": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.6044,
+     "x1": 0.812
+    },
+    "D": {
+     "src": "abstract/q20.jpg",
+     "w": 1178,
+     "h": 201,
+     "x0": 0.812,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "21": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q21.jpg",
+    "w": 1116,
+    "h": 198,
+    "x0": 0,
+    "x1": 0.1595
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.1595,
+     "x1": 0.3692
+    },
+    "B": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.3692,
+     "x1": 0.5874
+    },
+    "C": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.5874,
+     "x1": 0.8065
+    },
+    "D": {
+     "src": "abstract/q21.jpg",
+     "w": 1116,
+     "h": 198,
+     "x0": 0.8065,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "22": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q22.jpg",
+    "w": 1163,
+    "h": 207,
+    "x0": 0,
+    "x1": 0.1389
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.1389,
+     "x1": 0.3917
+    },
+    "B": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.3917,
+     "x1": 0.6002
+    },
+    "C": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.6002,
+     "x1": 0.8117
+    },
+    "D": {
+     "src": "abstract/q22.jpg",
+     "w": 1163,
+     "h": 207,
+     "x0": 0.8117,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "23": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q23.jpg",
+    "w": 1182,
+    "h": 214,
+    "x0": 0,
+    "x1": 0.1455
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.1455,
+     "x1": 0.4023
+    },
+    "B": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.4023,
+     "x1": 0.6062
+    },
+    "C": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.6062,
+     "x1": 0.808
+    },
+    "D": {
+     "src": "abstract/q23.jpg",
+     "w": 1182,
+     "h": 214,
+     "x0": 0.808,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "24": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q24.jpg",
+    "w": 1162,
+    "h": 211,
+    "x0": 0,
+    "x1": 0.173
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.173,
+     "x1": 0.3916
+    },
+    "B": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.3916,
+     "x1": 0.6015
+    },
+    "C": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.6015,
+     "x1": 0.8111
+    },
+    "D": {
+     "src": "abstract/q24.jpg",
+     "w": 1162,
+     "h": 211,
+     "x0": 0.8111,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "A",
+   "reason": "Sagot: A (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "25": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q25.jpg",
+    "w": 1173,
+    "h": 213,
+    "x0": 0,
+    "x1": 0.1505
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.1505,
+     "x1": 0.3964
+    },
+    "B": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.3964,
+     "x1": 0.6044
+    },
+    "C": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.6044,
+     "x1": 0.8133
+    },
+    "D": {
+     "src": "abstract/q25.jpg",
+     "w": 1173,
+     "h": 213,
+     "x0": 0.8133,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "26": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q26.jpg",
+    "w": 1171,
+    "h": 212,
+    "x0": 0,
+    "x1": 0.205
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.205,
+     "x1": 0.4325
+    },
+    "B": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.4325,
+     "x1": 0.6281
+    },
+    "C": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.6281,
+     "x1": 0.8224
+    },
+    "D": {
+     "src": "abstract/q26.jpg",
+     "w": 1171,
+     "h": 212,
+     "x0": 0.8224,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "27": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q27.jpg",
+    "w": 1164,
+    "h": 198,
+    "x0": 0,
+    "x1": 0.1508
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.1508,
+     "x1": 0.393
+    },
+    "B": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.393,
+     "x1": 0.6044
+    },
+    "C": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.6044,
+     "x1": 0.8153
+    },
+    "D": {
+     "src": "abstract/q27.jpg",
+     "w": 1164,
+     "h": 198,
+     "x0": 0.8153,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "28": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q28.jpg",
+    "w": 1141,
+    "h": 185,
+    "x0": 0,
+    "x1": 0.149
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.149,
+     "x1": 0.3966
+    },
+    "B": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.3966,
+     "x1": 0.6109
+    },
+    "C": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.6109,
+     "x1": 0.8247
+    },
+    "D": {
+     "src": "abstract/q28.jpg",
+     "w": 1141,
+     "h": 185,
+     "x0": 0.8247,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "C",
+   "reason": "Sagot: C (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "29": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q29.jpg",
+    "w": 1150,
+    "h": 187,
+    "x0": 0,
+    "x1": 0.1439
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.1439,
+     "x1": 0.4022
+    },
+    "B": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.4022,
+     "x1": 0.6148
+    },
+    "C": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.6148,
+     "x1": 0.8274
+    },
+    "D": {
+     "src": "abstract/q29.jpg",
+     "w": 1150,
+     "h": 187,
+     "x0": 0.8274,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "B",
+   "reason": "Sagot: B (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  },
+  "30": {
+   "question": "Select the figure (A–D) from the choices at the right which contains the figure on the left.",
+   "figure": {
+    "src": "abstract/q30.jpg",
+    "w": 1168,
+    "h": 226,
+    "x0": 0,
+    "x1": 0.1789
+   },
+   "choiceImages": {
+    "A": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.1789,
+     "x1": 0.4174
+    },
+    "B": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.4174,
+     "x1": 0.6134
+    },
+    "C": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.6134,
+     "x1": 0.8095
+    },
+    "D": {
+     "src": "abstract/q30.jpg",
+     "w": 1168,
+     "h": 226,
+     "x0": 0.8095,
+     "x1": 1.0
+    }
+   },
+   "choices": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+   },
+   "correct": "D",
+   "reason": "Sagot: D (ayon sa answer key ng reviewer). Tip: Hanapin ang figure sa kaliwa sa loob ng bawat choice. Ang tamang sagot ay yung may eksaktong hugis at sukat nito, hindi lang kahawig."
+  }
+ }
 }```
 
 ## File: ./frontend/src/data/quiz/cse-quiz-imported-2026-11-13 (2).json
@@ -8202,6 +8247,810 @@
           },
           "correct": "C",
           "reason": "Environmental responsibility means making daily choices that protect natural resources and reduce pollution."
+        }
+      }
+    }
+  ]
+}```
+
+## File: ./frontend/src/data/quiz/cse-quiz-imported-2026-11-14 (1).json
+```
+{
+  "format": "cse-quiz",
+  "version": 1,
+  "exportedAt": "2026-11-14T17:06:18.445Z",
+  "topics": [
+    {
+      "subject": "Filipino",
+      "subject_icon": "🇵🇭",
+      "topic": "Pag-unawa sa Binasa",
+      "topic_order": 5,
+      "questions": {
+        "1": {
+          "question": "[TULA - 'Sa Langit Kong Gusto' ni Czarmaine Feliciano]\nBuod: Tatlong saknong na nagsasalaysay ng pagnanais ng persona na makapunta sa langit na gusto niya, kung saan may mga anghel na nanonood. Kinaiinggitan niya ang mga ibong lumilipad at gusto rin niyang lumipad nang mataas, at aakyat siya agad kung may hagdan patungo roon.\n\n[QUESTION] Ano ang nais mapuntahan ng manunula?",
+          "choices": {
+            "A": "ibon",
+            "B": "langit",
+            "C": "anghel",
+            "D": "hagdan"
+          },
+          "correct": "B",
+          "reason": "Ang paulit-ulit na linya ng tula ay tungkol sa 'langit na gusto' ng persona, kaya langit ang nais mapuntahan. Hindi ibon, anghel, o hagdan ang destinasyon; ang mga iyon ay bahagi lang ng imahe."
+        },
+        "2": {
+          "question": "[TULA - 'Sa Langit Kong Gusto']\nBuod: Sa ikalawang saknong, inilarawan ng persona ang mga ibon at ginamit ang salitang 'katulad nila' upang ihambing ang kanyang sarili sa kanila.\n\n[QUESTION] Ano ang tayutay na ginamit sa unang dalawang linya ng ikalawang saknong?",
+          "choices": {
+            "A": "pagtutulad",
+            "B": "pagwawangis",
+            "C": "pagmamalabis",
+            "D": "pagbibigay katauhan"
+          },
+          "correct": "A",
+          "reason": "Sa ikalawang saknong, ginamit ang salitang pagtutulad ('katulad nila'), kaya pagtutulad (simile). Ang pagwawangis ay direktang paghahambing nang walang 'tulad/parang'; ang pagmamalabis ay eksaherasyon; ang pagbibigay-katauhan ay pagbibigay ng katangian ng tao sa bagay."
+        },
+        "3": {
+          "question": "[TULA - 'Sa Langit Kong Gusto']\nBuod: Tatlong saknong: (1) pagnanais makarating sa langit, (2) pagkainggit sa mga ibon, (3) pag-akyat kung may hagdan.\n\n[QUESTION] Sa anong saknong ipinahihiwatig ng manunula ang pangunahing kaisipan ng kanyang tula?",
+          "choices": {
+            "A": "unang saknong",
+            "B": "ikalawang saknong",
+            "C": "ikatlong saknong",
+            "D": "walang pangunahing kaisipan"
+          },
+          "correct": "A",
+          "reason": "Ang unang saknong ang malinaw na nagsasabi ng pangunahing kaisipan: ang hangarin ng persona na makarating sa kanyang minimithing langit. Ang ikalawa at ikatlong saknong ay nagpapalawak at nagbibigay ng detalye."
+        },
+        "4": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] \"Ang kabataan ang pag-asa ng bayan.\" Ito ang sinabi ni Dr. Jose Rizal, ang ating pambansang bayani. Malaki ang pagtitiwala niya sa angking talino at kakayahan ng mga kabataan. Naniniwala siya na mahahango ang bansang Pilipinas sa tiyak na kasawian kung sila, ang mga kabataan, ang magkakaroon ng tunay na pag-ibig sa bayan. Maraming maitutulong ang mga kabataan sa pagpapaunlad ng bansa. Maaaring simulan nila ang pagmamalasakit sa kani-kanilang mga pamayanan. Sa mga proyektong inilulunsad ng pamahalaan, may mga gawaing pangkabataan katulad ng pagpapaganda ng kapaligiran at paglilinis ng mga sari-sariling bakuran. Makatutulong din ang mga kabataan sa pagpapanatili ng katahimikan at kapayapaan sa mga pamayanan. Ngunit, bakit tila yata ang mga kabataang ito ang bibigo sa dakilang pangarap ng yumaong bayani? Bakit tila nais nilang sikilin ang damdaming makabayang siyang sandata sa pagtatanggol sa Inang Bayan?\n\n[QUESTION] Alin sa mga sumusunod ang HINDI nagpapakita ng pagmamalasakit sa pamayanan?",
+          "choices": {
+            "A": "Pakikiisa sa mga proyekto ng pamayanan.",
+            "B": "Pagpapanatili ng kapayapaan at katahimikan.",
+            "C": "Pagliinis ng mga sari-sariling bakuran.",
+            "D": "Pakikiisa sa kapuwa kabataang may masamang bisyo."
+          },
+          "correct": "D",
+          "reason": "Ang HINDI pagmamalasakit sa pamayanan ay ang pakikiisa sa kapwa kabataang may masamang bisyo (D), dahil hindi ito nakatutulong sa kaayusan o kaunlaran. Ang A, B, at C ay nabanggit sa teksto bilang mga paraan ng pagtulong."
+        },
+        "5": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] Naniniwala si Rizal na mahahango ang bansang Pilipinas sa tiyak na kasawian kung ang mga kabataan ay magkakaroon ng tunay na pag-ibig sa bayan. Maraming maitutulong ang kabataan: pagmamalasakit sa pamayanan, pakikiisa sa mga proyekto, paglilinis ng bakuran, at pagpapanatili ng kapayapaan.\n\n[QUESTION] Paano maiaahon ng kabataan ang bansang Pilipinas sa tiyak na kasawian?",
+          "choices": {
+            "A": "Sa pamamagitan ng pagkakaroon ng tunay na pag-ibig sa bayan.",
+            "B": "Sa pamamagitan ng pagtugon sa kani-kaniyang kagustuhan lamang.",
+            "C": "Parehong tama ang a at b.",
+            "D": "Walang tamang sagot."
+          },
+          "correct": "A",
+          "reason": "Ayon sa talata, mahahango ang bansa sa kasawian kung ang mga kabataan ang magkakaroon ng tunay na pag-ibig sa bayan. Kaya A. Ang B ('kani-kaniyang kagustuhan lamang') ay salungat sa diwa ng pagmamalasakit."
+        },
+        "6": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] ...Ngunit, bakit tila yata ang mga kabataang ito ang bibigo sa dakilang pangarap ng yumaong bayani? Bakit tila nais nilang sikilin ang damdaming makabayang siyang sandata sa pagtatanggol sa Inang Bayan?\n\n[QUESTION] Ano ang nadarama ng may-akda sa kabataan na kanyang ipinahiwatig sa dalawang huling pangungusap ng talata?",
+          "choices": {
+            "A": "Tuwa sapagkat tunay na pag-asa ng bayan ang kabataan.",
+            "B": "Lungkot dahil tila bibiguin ng mga kabataan ang paniniwala ni Rizal.",
+            "C": "Galak dahil patuloy ang kabataan sa pagpapaunlad ng bayan.",
+            "D": "Dalamhati sapagkat naaalala niya ang kabataan ni Rizal."
+          },
+          "correct": "B",
+          "reason": "Sa dalawang huling pangungusap, nagtatanong ang may-akda kung bakit tila nais pang sikilin ng mga kabataan ang makabayang damdamin. Ipinapakita nito ang lungkot dahil tila bibiguin ng kabataan ang paniniwala ni Rizal. Hindi tuwa o galak (A, C)."
+        },
+        "7": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] Ang buong talata ay nagsisimula sa siping: \"Ang kabataan ang pag-asa ng bayan.\"\n\n[QUESTION] 'Ang kabataan ay pag-asa ng bayan.' Ano ang implikasyon ng pangungusap na ito?",
+          "choices": {
+            "A": "Masagana ang bayan",
+            "B": "Mapayapa ang bayan",
+            "C": "May suliranin ang bayan",
+            "D": "May bayani ang bayan"
+          },
+          "correct": "C",
+          "reason": "Ang 'implikasyon' ay ang ibig sabihin nang hindi tahasang sinasabi. Kung kailangan ng bayan ang kabataan bilang pag-asa, ipinahihiwatig nito na may suliranin ang bayan na kailangang lutasin. Halimbawa: 'Ikaw ang pag-asa ng pamilya' ay nagpapahiwatig na may hirap ang pamilya."
+        },
+        "8": {
+          "question": "[PASSAGE - Ang Santan] Ang pang-agham na pangalan ay Ixora coccinea L. at karaniwang tinatawag na halamang Santan sa ating bayan. Ito ay isa sa mga kaaya-ayang halaman na pampalamuti. Maraming klase ang Santan – may puti, pula, dilaw at malaginto. Iba-iba rin ang laki – may mahaba pero makitid ang mga dahon, samantalang ang iba ay mas malapad at maikli. May mabangong Santan at mayroon ding walang amoy. Ang Ixora coccinea L. ay galing sa India. Mahalaga ito dahil sa maaaring ipanggamot. Ang solusyon mula sa pinakulong ugat ay maaaring purga. Maaaring ipainom sa nagduduwal at sa sinisinok. Nakatutulong ito sa pagkakaroon ng gana sa pagkain. Mabuti rin ito sa di dinadatnan at nagtatae. Para sa makating lalamunan, maaaring ipangmumog ito. Iyong binayong sariwang sanga nito ay mainam na gamot at pantapal sa pilay, mga maysakit na bahagi ng katawan, eksema at sa mga galis. Mabisang gamot ang Santan.\n\n[QUESTION] Ano ang Ixora coccinea L.?",
+          "choices": {
+            "A": "Pangalan ng punungkahoy.",
+            "B": "Pang-agham na pangalan ng Santan.",
+            "C": "Pang-agham na pangalan ng prutas.",
+            "D": "Pang-agham na pangalan ng mga halamang namumulaklak."
+          },
+          "correct": "B",
+          "reason": "Ayon sa talata, ang Ixora coccinea L. ay ang pang-agham na pangalan ng halamang Santan. Hindi ito pangalan ng punungkahoy o prutas, at hindi ito para sa lahat ng halamang namumulaklak."
+        },
+        "9": {
+          "question": "[PASSAGE - Ang Santan] Maraming klase ang Santan – may puti, pula, dilaw at malaginto. May mabangong Santan at mayroon ding walang amoy. Ang Ixora coccinea L. ay galing sa India. Mahalaga ito dahil sa maaaring ipanggamot.\n\n[QUESTION] Alin sa mga sumusunod na pangungusap ang wasto?",
+          "choices": {
+            "A": "Ang lahat ng Santan ay mabango.",
+            "B": "Ang Santang pula ay galing sa Tsina.",
+            "C": "Maraming klase ang Santan ngunit walang malaginto ang kulay.",
+            "D": "Maaaring ipanggamot ang Santan."
+          },
+          "correct": "D",
+          "reason": "Ang wasto ay 'Maaaring ipanggamot ang Santan' (D). Mali ang A (may walang amoy), mali ang B (galing sa India, hindi Tsina), at mali ang C (may malaginto)."
+        },
+        "10": {
+          "question": "[PASSAGE - Ang Santan] Ang solusyon mula sa pinakulong ugat ay maaaring purga. Maaaring ipainom sa nagduduwal at sa sinisinok. Nakatutulong ito sa pagkakaroon ng gana sa pagkain. Mabuti rin ito sa di dinadatnan at nagtatae. Para sa makating lalamunan, maaaring ipangmumog ito. Iyong binayong sariwang sanga nito ay mainam na gamot at pantapal sa pilay.\n\n[QUESTION] Anong bahagi ng Santan ang may pinakamaraming gamit bilang gamot?",
+          "choices": {
+            "A": "dahon",
+            "B": "bulaklak",
+            "C": "ugat",
+            "D": "sanga"
+          },
+          "correct": "C",
+          "reason": "Ang ugat ang may pinakamaraming gamit ayon sa talata: purga, para sa nagduduwal at sinisinok, para sa gana sa pagkain, at para sa nagtatae. Ang sanga ay pantapal; ang bulaklak ay hindi binanggit na gamot."
+        },
+        "11": {
+          "question": "[PASSAGE - Ang Santan] Ang talata ay naglalarawan ng Santan: pangalan, uri, pinagmulan, at gamit.\n\n[QUESTION] Ano ang pinakamabuting pamagat para sa talatang nabasa?",
+          "choices": {
+            "A": "Ang Ugat ng Santan",
+            "B": "Ang Santan",
+            "C": "Ang Santan Bilang Gamot",
+            "D": "Mga Uri ng Santan"
+          },
+          "correct": "B",
+          "reason": "Ang buong talata ay naglalarawan ng Santan (pangalan, uri, pinagmulan, at gamit), kaya 'Ang Santan' ang pinakasaklaw. Ang Ugat ng Santan, Santan Bilang Gamot, at Mga Uri ng Santan ay bahagi lang ng talata."
+        },
+        "12": {
+          "question": "[PASSAGE - Ang Santan] Ang solusyon mula sa pinakulong ugat ay maaaring purga. Nakatutulong ito sa pagkakaroon ng gana sa pagkain. Mabuti rin ito sa di dinadatnan at nagtatae. Iyong binayong sariwang sanga nito ay mainam na gamot at pantapal sa pilay.\n\n[QUESTION] Alin sa mga sumusunod ang wastong gamit ng solusyon mula sa pinakulong ugat ng Santan?",
+          "choices": {
+            "A": "Maaaring pampagana ng pagkain",
+            "B": "Maaaring pantapal sa pilay",
+            "C": "Maaaring gawing palamuti",
+            "D": "Maaaring pang-alis ng eksema at galis"
+          },
+          "correct": "A",
+          "reason": "Ayon sa teksto, ang solusyon mula sa pinakulong ugat ay nakatutulong sa pagkakaroon ng gana sa pagkain, kaya A. Ang pantapal sa pilay ay galing sa binayong sariwang sanga (B), hindi sa ugat."
+        },
+        "13": {
+          "question": "[PASSAGE - Kahalagahan ng Pagbabasa] Bakit mahalaga ang pagbabasa sa ating buhay? Sapagkat naging malawak at masalimuot ang buhay ng tao sa daigdig, kasama na ang mga kaugalian ng mga tao. Sa pagbabasa, naririto ang kasanayan sa pagkilala ng mga salita, pag-unawa, paggamit ng sanggunian, mga kasanayan sa pag-iisip, panlasa, saloobin, at kawilihan. Dagdag pa rito ang pagpasok ng mga bagong kaalaman, mga bagong tuklas sa larangan ng siyensiya, teknolohiya, sining. Ang mga balitang pandaigdig at babasahing inilalathala taun-taon, ang mga mahuhusay na aklat sa aklatan na di pa man nalalaman o nababasa ng isang tao sa buong buhay niya ay ilan sa mga bagay-bagay na maaaring bigyang pansin sa pagbabasa.\n\n[QUESTION] Ano ang pangunahing diwa ng seleksiyon?",
+          "choices": {
+            "A": "Ang bilang ng nababasa",
+            "B": "Ang kahalagahan ng aklat",
+            "C": "Ang kahalagahan ng pagbabasa",
+            "D": "Ang hirap ng pagbabasa"
+          },
+          "correct": "C",
+          "reason": "Ang buong talata ay tungkol sa kung bakit mahalaga ang pagbabasa (kasanayan, bagong kaalaman, atbp.). Kaya C. Ang aklat (B) ay isa lang bahagi ng pagbabasa."
+        },
+        "14": {
+          "question": "[PASSAGE - Kahalagahan ng Pagbabasa] Sa pagbabasa, naririto ang kasanayan sa pagkilala ng mga salita, pag-unawa, paggamit ng sanggunian, mga kasanayan sa pag-iisip, panlasa, saloobin, at kawilihan. Dagdag pa rito ang pagpasok ng mga bagong kaalaman, mga bagong tuklas sa siyensiya, teknolohiya, sining.\n\n[QUESTION] Bakit mahalaga ang pagbabasa?",
+          "choices": {
+            "A": "Sapagkat sa halos lahat ng gawain, kasangkot ang pagbabasa.",
+            "B": "Sapagkat mararating ang daigdig ng pangarap sa pagbabasa.",
+            "C": "Lahat ng nabanggit ay tama.",
+            "D": "Walang tamang sagot."
+          },
+          "correct": "C",
+          "reason": "Ayon sa key, C ('Lahat ng nabanggit ay tama'). Binanggit sa talata ang kasangkot na kasanayan at bagong kaalaman, at maiuugnay rin dito ang pagpasok sa mundo ng pangarap."
+        },
+        "15": {
+          "question": "[PASSAGE - Kahalagahan ng Pagbabasa] Ang talata ay naglalahad kung bakit mahalaga ang pagbabasa sa buhay ng tao.\n\n[QUESTION] Ano ang pinakamainam na pamagat ng nabasa?",
+          "choices": {
+            "A": "Ang Kahalagahan ng Pagbabasa",
+            "B": "Pagbabasa at Kaunlaran",
+            "C": "Pagbabasa ng mga Pilipino",
+            "D": "Sa Makulay na Mundo ng Pagbabasa"
+          },
+          "correct": "A",
+          "reason": "Ang 'Ang Kahalagahan ng Pagbabasa' ang pinakadirektang titulo na tumutugma sa pangunahing diwa ng talata. Ang B, C, at D ay masyadong makitid o hindi tinalakay."
+        },
+        "16": {
+          "question": "[PASSAGE - Ang Mata] Nakikita sa mata ang iba't ibang emosyon. Tuwa, lungkot, pighati, pangamba, pag-asam, pakiusap. Ito ang salamin ng kaluluwa ng tao. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit. Noon, ang mata ay isa lang bahagi ng mukha. Ngayon, ito'y pinalalamutian sa kasayahan, at ginagamit sa kasamaan. Ngunit maaari rin itong puhunan sa pagandahan. Tunay ngang maraming gamit ang matang minumuta, kinakapitan ng sakit, lumalabo at ginagamit sa pagtingin.\n\n[QUESTION] Ano ang paksang pangungusap sa talata?",
+          "choices": {
+            "A": "Nakikita sa mata ang iba't ibang emosyon.",
+            "B": "Ito ang salamin sa kaluluwa ng tao.",
+            "C": "Sa pamamagitan nito, nakapagpapahayag siya ng damdamin.",
+            "D": "Tunay ngang maraming gamit ang matang minumuta, kinakapitan ng sakit, lumalabo at ginagamit sa pagtingin."
+          },
+          "correct": "D",
+          "reason": "Ayon sa key, ang paksang pangungusap ay ang huli (D): 'Tunay ngang maraming gamit ang matang...' Ito ang sumasaklaw sa buong talata (gamit ng mata). Ang A, B, at C ay mga detalyeng sumusuporta. Paalala: kung minsan, nasa dulo ang paksang pangungusap (inductive structure)."
+        },
+        "17": {
+          "question": "[PASSAGE - Ang Mata] Ang talata ay naglalahad ng emosyon sa mata, gamit sa palamuti, gamit sa kasamaan, at iba pang gamit.\n\n[QUESTION] Ano ang pinakamainam na pamagat sa talata?",
+          "choices": {
+            "A": "Ang Mga Emosyon sa Mata",
+            "B": "Mata: Bahagi ng Mukha",
+            "C": "Ang Iba't Ibang Gamit ng Mata",
+            "D": "Mga Sakit sa Mata"
+          },
+          "correct": "C",
+          "reason": "Ang talata ay naglalahad ng iba't ibang gamit ng mata (emosyon, palamuti, kasamaan, atbp.), kaya 'Ang Iba't Ibang Gamit ng Mata' ang pinakaangkop. Ang A at D ay isang aspekto lang."
+        },
+        "18": {
+          "question": "[PASSAGE - Ang Mata] Nakikita sa mata ang iba't ibang emosyon. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit. Tunay ngang maraming gamit ang matang minumuta, kinakapitan ng sakit, lumalabo at ginagamit sa pagtingin.\n\n[QUESTION] Alin sa mga sumusunod ang hindi nabanggit na nagagawa ng mata?",
+          "choices": {
+            "A": "nagpapahiwatig ng emosyon",
+            "B": "nagpapakita ng matinding karamdaman",
+            "C": "nagbabadya ng galit",
+            "D": "nanunukso"
+          },
+          "correct": "B",
+          "reason": "Ang hindi nabanggit ay ang 'nagpapakita ng matinding karamdaman.' Nabanggit lang na kinakapitan ng sakit ang mata, pero hindi na nagpapakita ito ng matinding karamdaman. Ang A, C, at D ay nabanggit (emosyon, galit, nanunukso)."
+        },
+        "19": {
+          "question": "[PASSAGE - Ang Mata] Noon, ang mata ay isa lang bahagi ng mukha. Ngayon, ito'y pinalalamutian sa kasayahan, at ginagamit sa kasamaan. Ngunit maaari rin itong puhunan sa pagandahan. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit.\n\n[QUESTION] Paano nagbago ang pananaw ng tao hinggil sa mga mata?",
+          "choices": {
+            "A": "Natutuhan na nilang gamitin ang mata upang magpahiwatig ng iba't ibang emosyon.",
+            "B": "Natuklasan nila na ang mata ay nakikitaan ng sakit.",
+            "C": "Natuklasan nila na ang mata ay maaaring mabulag.",
+            "D": "Natutuhan nila na may palamuti para sa mga mata."
+          },
+          "correct": "A",
+          "reason": "Ayon sa key, A (natutuhan nilang gamitin ang mata para magpahiwatig ng emosyon). May mga bahagi ng talata na sumusuporta rin sa D (palamuti), pero ang A ang pinaka-komprehensibong pagbabago."
+        },
+        "20": {
+          "question": "[PASSAGE - Ang Mata] ...ginagamit sa kasamaan. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit.\n\n[QUESTION] Anong parirala ang nagpapahiwatig ng paggamit ng mata sa kasamaan?",
+          "choices": {
+            "A": "mapungay na mata",
+            "B": "matang nagsusumamo",
+            "C": "nanlilisik na mata",
+            "D": "matambaka"
+          },
+          "correct": "C",
+          "reason": "Ang 'nanlilisik na mata' ay nagpapahiwatig ng galit o masamang intensyon. Ang mapungay at nagsusumamo ay malambot o nagmamakaawa."
+        },
+        "21": {
+          "question": "[GRAPO - Minimum Wage in Metro Manila (Source: Regional Tripartite Wages & Productivity Board – NCR)]\nDatos: Nov 1990 = ₱106.00 | Jan 1991 = ₱118.00 | Dec 1993 = ₱135.00 | Apr 1994 = ₱145.00 | May 1996 = ₱165.00 | May 1997 = ₱185.00 | Feb 1998 = ₱198.00 | Oct 1999 = ₱223.50\n\n[QUESTION] Tungkol saan ang grapong nabasa?",
+          "choices": {
+            "A": "Pinakamataas na pasahod sa Maynila sa iba't ibang taon.",
+            "B": "Pinakamababang pasahod sa Maynila sa iba't ibang taon.",
+            "C": "Regional Tripartite Wages and Productivity Board",
+            "D": "Bilang ng mga manggagawang napasahod sa iba't ibang taon."
+          },
+          "correct": "B",
+          "reason": "Ang grapo ay pamagat na 'Minimum Wage in Metro Manila,' kaya tungkol ito sa pinakamababang pasahod sa Maynila sa iba't ibang taon. Ang 'pinakamataas' at 'bilang ng manggagawa' ay hindi ipinapakita."
+        },
+        "22": {
+          "question": "[GRAPO - Minimum Wage] Datos: Nov 1990 = ₱106 | Jan 1991 = ₱118 | Dec 1993 = ₱135 | Apr 1994 = ₱145 | May 1996 = ₱165 | May 1997 = ₱185 | Feb 1998 = ₱198 | Oct 1999 = ₱223.50\n\n[QUESTION] Gaano kalaki ang pagkakaiba ng pasahod noong Oktubre 1999 at noong Mayo 1996?",
+          "choices": {
+            "A": "₱78.50",
+            "B": "₱38.50",
+            "C": "₱388.50",
+            "D": "₱58.50"
+          },
+          "correct": "D",
+          "reason": "Basahin ang grapo: Oct 1999 = ₱223.50 at May 1996 = ₱165.00. Pagkakaiba = 223.50 − 165.00 = ₱58.50."
+        },
+        "23": {
+          "question": "[GRAPO - Minimum Wage] Datos: Nov 1990 = ₱106 | Jan 1991 = ₱118 | Dec 1993 = ₱135 | Apr 1994 = ₱145 | May 1996 = ₱165 | May 1997 = ₱185 | Feb 1998 = ₱198 | Oct 1999 = ₱223.50\n\n[QUESTION] Kailan nagkaroon ng pinakamababang pagtaas ng pasahod ayon sa grapo?",
+          "choices": {
+            "A": "Nobyembre 1990",
+            "B": "Enero 1991",
+            "C": "Disyembre 1993",
+            "D": "Abril 1994"
+          },
+          "correct": "D",
+          "reason": "Hanapin ang pinakamaliit na pagtaas sa pagitan ng magkakasunod na punto: Dec 1993 (₱135) → Apr 1994 (₱145) = ₱10 lang, ang pinakamababa sa lahat. Kaya Abril 1994."
+        },
+        "24": {
+          "question": "[GRAPO - Minimum Wage] Datos: Apr 1994 = ₱145 | May 1996 = ₱165\n\n[QUESTION] Gaano katagal naging pinakamababang pasahod ng mga empleyado ang halagang ₱145?",
+          "choices": {
+            "A": "dalawang buwan",
+            "B": "dalawampu't apat na buwan",
+            "C": "limang buwan",
+            "D": "dalawampu't limang buwan"
+          },
+          "correct": "D",
+          "reason": "Ang ₱145 ay nagsimula noong Apr 1994 hanggang bago tumaas sa ₱165 noong May 1996. Mula Apr 1994 hanggang Apr 1996 ay 24 na buwan; kasama ang Mayo, 25 buwan."
+        },
+        "25": {
+          "question": "[GRAPO - Minimum Wage] Datos: Nov 1990 = ₱106 | Jan 1991 = ₱118 | Dec 1993 = ₱135 | Apr 1994 = ₱145 | May 1996 = ₱165 | May 1997 = ₱185 | Feb 1998 = ₱198 | Oct 1999 = ₱223.50\n\n[QUESTION] Ilang beses nagkaroon ng dalawampung piso (₱20) pagtaas sa minimum wage?",
+          "choices": {
+            "A": "isa",
+            "B": "dalawa",
+            "C": "tatlo",
+            "D": "wala"
+          },
+          "correct": "B",
+          "reason": "Hanapin ang pagtaas na eksaktong ₱20: Apr 1994 (₱145) → May 1996 (₱165) at May 1996 (₱165) → May 1997 (₱185). Dalawang beses."
+        },
+        "26": {
+          "question": "[TSART - Badyet at Katayuang Pangmilitar ng mga Piling Bansa (Asiaweek, June 9, 2000)]\nDatos (Brunei | RP | Japan | China | Malaysia | Thailand | S. Korea | India):\nBadyet Militar: $357M | $1B | $41.1B | $11B | $3.3B | $2B | $13.2B | $10B\n% ng Badyet Militar sa GDP: 6.5% | 1.5% | 1.1% | 1.6% | 3.75% | 1.5% | 3.1% | 2.1%\nBilang ng Tropang Militar: 5,000 | 110,000 | 236,300 | 2,480,000 | 105,000 | 306,000 | 672,000 | 1,173,000\nSasakyang Pandagat: 6 | 88 | 179 | 1,149 | 56 | 149 | 198 | 140\nPangdigmaang Sasakyang Panghimpapawid: 6 | 141 | 517 | 4,086 | 104 | 234 | 568 | 975\n\n[QUESTION] Anong pamagat ang angkop sa tsart sa itaas?",
+          "choices": {
+            "A": "Badyet para sa Militar ng Iba't Ibang Bansa",
+            "B": "Kalagayang Pang-Ekonomiya",
+            "C": "Badyet at Katayuang Pangmilitar ng mga Piling Bansa",
+            "D": "Bilang ng mga Militar sa Iba't Ibang Bansa"
+          },
+          "correct": "C",
+          "reason": "Ang tsart ay nagpapakita ng badyet na pang-militar, porsiyento ng GDP, bilang ng tropa, at mga sasakyang pandagat at panghimpapawid, kaya 'Badyet at Katayuang Pangmilitar ng mga Piling Bansa.'"
+        },
+        "27": {
+          "question": "[TSART - Katayuang Pangmilitar] Bilang ng Tropang Militar: Brunei 5,000 | RP 110,000 | Japan 236,300 | China 2,480,000 | Malaysia 105,000 | Thailand 306,000 | S. Korea 672,000 | India 1,173,000\n\n[QUESTION] Anong bansa ang may pinakamataas na bilang ng tropa?",
+          "choices": {
+            "A": "Japan",
+            "B": "South Korea",
+            "C": "Brunei",
+            "D": "Malaysia"
+          },
+          "correct": "B",
+          "reason": "Sa tsart, ang bilang ng tropa ay: South Korea 672,000, Japan 236,300, Malaysia 105,000, Brunei 5,000. Sa mga choices, ang pinakamataas ay South Korea (B). Ang Malaysia ay 105,000 lang."
+        },
+        "28": {
+          "question": "[TSART - Katayuang Pangmilitar] % ng Badyet Militar sa GDP: Brunei 6.5% | RP 1.5% | Japan 1.1% | China 1.6% | Malaysia 3.75% | Thailand 1.5% | S. Korea 3.1% | India 2.1%\n\n[QUESTION] Anong bansa ang may inilalaang pinakamalaking porsiyento ng GDP para sa badyet militar?",
+          "choices": {
+            "A": "Japan",
+            "B": "South Korea",
+            "C": "Brunei",
+            "D": "Malaysia"
+          },
+          "correct": "C",
+          "reason": "Sa hanay ng '% ng Badyet Militar sa GDP,' ang Brunei ay 6.5%, ang pinakamataas sa mga choices (Japan 1.1%, S. Korea 3.1%, Malaysia 3.75%)."
+        },
+        "29": {
+          "question": "[TSART - Katayuang Pangmilitar] Badyet Militar: Japan $41.1B, S. Korea $13.2B, Malaysia $3.3B, Brunei $357M. % ng GDP: Japan 1.1%, S. Korea 3.1%, Malaysia 3.75%, Brunei 6.5%\n\n[QUESTION] Anong bansa ang may pinakamalaking GDP?",
+          "choices": {
+            "A": "Japan",
+            "B": "Brunei",
+            "C": "Malaysia",
+            "D": "South Korea"
+          },
+          "correct": "A",
+          "reason": "Ang GDP ay makukuha sa pamamagitan ng badyet ÷ porsiyento ng GDP. Japan: $41.1B ÷ 1.1% ≈ $3.7 trilyon; S. Korea ≈ $426B; Malaysia ≈ $88B; Brunei ≈ $5.5B. Kaya Japan ang pinakamalaki."
+        },
+        "30": {
+          "question": "[TSART - Katayuang Pangmilitar] Brunei: Badyet $357M (6.5% ng GDP), Tropa 5,000, Sasakyang Pandagat 6, Panghimpapawid 6.\n\n[QUESTION] Ano ang maaaring dahilan kung bakit mababa lamang ang bilang ng katayuang pangmilitar ng Brunei?",
+          "choices": {
+            "A": "Kulang sila sa pananalapi",
+            "B": "Maliit na bansa lamang ang Brunei",
+            "C": "Hindi nila kailangan ang militar",
+            "D": "Walang nais magsundalo sa kanilang mga tao."
+          },
+          "correct": "B",
+          "reason": "Maliit na bansa lamang ang Brunei, kaya natural na maliit din ang bilang ng sundalo (5,000) at mga sasakyang pandigma. Ang A at C ay hindi sinusuportahan ng tsart (malaki ang 6.5% ng GDP na inilalaan nila)."
+        }
+      }
+    },
+    {
+      "subject": "Filipino",
+      "subject_icon": "🇵🇭",
+      "topic": "Pagtatalata",
+      "topic_order": 6,
+      "questions": {
+        "1": {
+          "question": "[TALATA I]\nA. Ayon sa batas na ito, pagbabayarin ang mga may-ari ng kumpanya at sasakyan na nakapipinsala sa kalidad ng hangin dahil sa mga usok na binubuga nito.\nB. Ang 'Clean Air Act' ay isang batas na naglalayong mapanatiling malinis ang ating hangin.\nC. Sa ibang banda naman, ang mga kumpanyang magkakabit o maglalagay ng mga gamit laban sa polusyon sa kanilang lugar ay bibigyan ng 'tax break'.\nD. Ano nga ba ang 'Clean Air Act'?\n\n[QUESTION] Ano ang wastong ayos ng mga pangungusap na makabubuo ng isang makabuluhang talata?",
+          "choices": {
+            "A": "A-D-B-C",
+            "B": "B-D-A-C",
+            "C": "D-A-B-C",
+            "D": "D-B-A-C"
+          },
+          "correct": "D",
+          "reason": "Ang unang pangungusap ay ang tanong na D ('Ano nga ba ang Clean Air Act?') na naghahanda ng paksa. Sumusunod ang B (kahulugan ng batas), tapos A ('Ayon sa batas na ito...' — ang 'batas na ito' ay tinutukoy ang Clean Air Act mula sa B), at huli ang C na nagsisimula sa 'Sa ibang banda' (kabilang panig). Kaya D-B-A-C."
+        },
+        "2": {
+          "question": "[TALATA I — wastong ayos: D-B-A-C]\nD. Ano nga ba ang 'Clean Air Act'?\nB. Ang 'Clean Air Act' ay isang batas na naglalayong mapanatiling malinis ang ating hangin.\nA. Ayon sa batas na ito, pagbabayarin ang mga may-ari ng kumpanya at sasakyan na nakapipinsala sa kalidad ng hangin dahil sa mga usok na binubuga nito.\nC. Sa ibang banda naman, ang mga kumpanyang magkakabit o maglalagay ng mga gamit laban sa polusyon sa kanilang lugar ay bibigyan ng 'tax break'.\n\n[QUESTION] Kung daragdagan ng isang pangwakas na pangungusap ang mga nasa itaas, alin sa mga sumusunod ang pinaka-angkop?",
+          "choices": {
+            "A": "Ang 'Clean Air Act' ang tamang solusyon sa lahat ng polusyon.",
+            "B": "Alamin ang tungkol sa 'Clean Air Act'.",
+            "C": "Kung ikaw ang may-ari ng kumpanya, sang-ayon ka ba sa 'Clean Air Act'?",
+            "D": "Tumulong mapanatiling malinis ang hangin."
+          },
+          "correct": "C",
+          "reason": "Ang pinakamainam na pangwakas ay tanong na nag-iiwan ng pagninilay (C), dahil sinusundan nito ang istilo ng talata na nagsimula sa tanong. Ang A ay sobrang pagpapahayag ('tamang solusyon sa lahat'), ang B ay panimula sa halip na wakas, at ang D ay panawagan na wala sa talata."
+        },
+        "3": {
+          "question": "[TALATA I — wastong ayos: D-B-A-C]\nD. Ano nga ba ang 'Clean Air Act'?\nB. Ang 'Clean Air Act' ay isang batas na naglalayong mapanatiling malinis ang ating hangin.\nA. Ayon sa batas na ito, pagbabayarin ang mga may-ari ng kumpanya at sasakyan na nakapipinsala sa kalidad ng hangin dahil sa mga usok na binubuga nito.\nC. Sa ibang banda naman, ang mga kumpanyang magkakabit o maglalagay ng mga gamit laban sa polusyon sa kanilang lugar ay bibigyan ng 'tax break'.\n\n[QUESTION] Ano ang pinaka-angkop na pamagat sa nabuong talata?",
+          "choices": {
+            "A": "Ang Kalinisan",
+            "B": "Ang Clean Air Act",
+            "C": "Ang Hangin",
+            "D": "Ang Kumpanya"
+          },
+          "correct": "B",
+          "reason": "Ang buong talata ay tungkol sa batas na Clean Air Act, kaya 'Ang Clean Air Act' ang pinakaangkop. Ang Kalinisan, Ang Hangin, at Ang Kumpanya ay masyadong malawak o makitid."
+        },
+        "4": {
+          "question": "[TALATA II]\nA. Ayon sa saligang batas, maraming mga katangiang dapat taglayin ang sino mang nagnanais na maging Presidente ng bansa.\nB. Ikalawa, nararapat din na siya ay rehistradong botante at marunong bumasa at sumulat.\nC. Isa pang mahalagang katangian ay kinakailangang 40 taon man lamang siya sa araw ng halalan.\nD. Isa sa mga katangiang ito ay nararapat na isa siyang katutubong ipinanganak na mamamayan ng Pilipinas.\nE. At ang huli ay nararapat na siya ay residente ng Pilipinas sa loob ng sampung taon bago dumating ang halalan.\n\n[QUESTION] Ano ang wastong pagkakasunod-sunod ng mga pangungusap na makabubuo ng makabuluhang talata?",
+          "choices": {
+            "A": "A-B-C-D-E",
+            "B": "A-B-D-C-E",
+            "C": "A-D-B-C-E",
+            "D": "A-D-C-B-E"
+          },
+          "correct": "C",
+          "reason": "Ang A ang paksang pangungusap ('maraming katangian'). Sumusunod ang D ('Isa sa mga katangiang ito'), tapos B ('Ikalawa'), C ('Isa pang mahalagang katangian'), at huli ang E ('At ang huli'). Mga hudyat ang 'Isa sa,' 'Ikalawa,' 'Isa pang,' 'At ang huli.' Kaya A-D-B-C-E."
+        },
+        "5": {
+          "question": "[TALATA II — wastong ayos: A-D-B-C-E]\nA. Ayon sa saligang batas, maraming mga katangiang dapat taglayin ang sino mang nagnanais na maging Presidente ng bansa.\nD. Isa sa mga katangiang ito ay nararapat na isa siyang katutubong ipinanganak na mamamayan ng Pilipinas.\nB. Ikalawa, nararapat din na siya ay rehistradong botante at marunong bumasa at sumulat.\nC. Isa pang mahalagang katangian ay kinakailangang 40 taon man lamang siya sa araw ng halalan.\nE. At ang huli ay nararapat na siya ay residente ng Pilipinas sa loob ng sampung taon bago dumating ang halalan.\n\n[QUESTION] Ano ang pamamaraang ginamit upang mabuo ang talata?",
+          "choices": {
+            "A": "pagbibigay ng sanhi at bunga",
+            "B": "paglalarawan",
+            "C": "paghahambing",
+            "D": "pag-iisa-isa o enumerasyon"
+          },
+          "correct": "D",
+          "reason": "Ginamitan ng enumerasyon (pag-iisa-isa) ang talata: inilista ang mga katangian ng Presidente isa-isa (katutubo, botante, 40 taong gulang, residente). Hindi ito sanhi-bunga o paglalarawan."
+        },
+        "6": {
+          "question": "[TALATA II — wastong ayos: A-D-B-C-E]\nA. Ayon sa saligang batas, maraming mga katangiang dapat taglayin ang sino mang nagnanais na maging Presidente ng bansa.\nD. Isa sa mga katangiang ito ay nararapat na isa siyang katutubong ipinanganak na mamamayan ng Pilipinas.\nB. Ikalawa, nararapat din na siya ay rehistradong botante at marunong bumasa at sumulat.\nC. Isa pang mahalagang katangian ay kinakailangang 40 taon man lamang siya sa araw ng halalan.\nE. At ang huli ay nararapat na siya ay residente ng Pilipinas sa loob ng sampung taon bago dumating ang halalan.\n\n[QUESTION] Anong pangungusap ang nagsasabing hindi maaaring maging Presidente ng bansa ang isang dayuhan?",
+          "choices": {
+            "A": "pangungusap B",
+            "B": "pangungusap C",
+            "C": "pangungusap D",
+            "D": "pangungusap E"
+          },
+          "correct": "C",
+          "reason": "Ang D ang nagsasabing 'katutubong ipinanganak na mamamayan ng Pilipinas,' kaya hindi puwedeng maging Presidente ang dayuhan. Ang B (botante), C (edad), at E (residente) ay iba pang katangian."
+        },
+        "7": {
+          "question": "[TALATA III]\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\n[QUESTION] Ano ang wastong pagkakasunud-sunod ng mga pangungusap na makabubuo ng isang makabuluhang talata?",
+          "choices": {
+            "A": "A-B-C-D",
+            "B": "C-A-B-D",
+            "C": "C-B-D-A",
+            "D": "C-B-A-D"
+          },
+          "correct": "B",
+          "reason": "Ang C ang nauna ('pinakaunang pangkat... Ita'), kasunod ang A ('Ang mga ito...' ay tumutukoy sa Ita at kanilang pinagmulan), tapos B ('Sila ay sinundan ng Indones'), at huli ang D ('ang huling pangkat... Malay'). Kaya C-A-B-D."
+        },
+        "8": {
+          "question": "[TALATA III — wastong ayos: C-A-B-D]\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\n[QUESTION] Ano ang pambungad na paksang pangungusap ang angkop para sa talatang nabuo?",
+          "choices": {
+            "A": "May tatlong pangkat ng tao ang dumating rito sa Pilipinas noong unang panahon.",
+            "B": "Tatlong tao lamang ang pangkat ng mga sinaunang Pilipino.",
+            "C": "Tatlong pangkat ang mga Pilipino ngayon.",
+            "D": "May tatlong sinaunang Pilipino."
+          },
+          "correct": "A",
+          "reason": "Ang talata ay naglalahad ng tatlong pangkat (Ita, Indones, Malay) na dumating sa Pilipinas noong unang panahon, kaya A. Ang B, C, at D ay mali dahil hindi tama ang bilang ng 'mga tao' o 'mga Pilipino ngayon.'"
+        },
+        "9": {
+          "question": "[TALATA III — wastong ayos: C-A-B-D]\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\n[QUESTION] Ano ang angkop na pamagat para sa talata?",
+          "choices": {
+            "A": "Ita, Indones at Malay",
+            "B": "Mga Pangkat ng Tao mula sa Asya",
+            "C": "Sino Ako?",
+            "D": "Ang mga Unang Pangkat ng mga Pilipino"
+          },
+          "correct": "D",
+          "reason": "Ang 'Ang mga Unang Pangkat ng mga Pilipino' ang sumasaklaw sa buong talata. Ang Ita, Indones at Malay ay listahan lang, ang Mga Pangkat ng Tao mula sa Asya ay malabo, at ang 'Sino Ako?' ay hindi angkop."
+        },
+        "10": {
+          "question": "[TALATA III — orihinal na ayos: C-A-B-D]\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\nBagong pangungusap E: 'Ang mga Indones ay dumating nang dalawang bugso may limang libong taon na ang nakaraan.'\n\n[QUESTION] Kung idaragdag bilang pangungusap E ang nasa itaas, ano ang magiging panibagong pagkakasunud-sunod ng mga pangungusap upang makabuo ng makabuluhang talata?",
+          "choices": {
+            "A": "A-B-E-C-D",
+            "B": "C-A-B-E-D",
+            "C": "C-B-E-D-A",
+            "D": "C-B-E-A-D"
+          },
+          "correct": "B",
+          "reason": "Ang bagong pangungusap E ay tungkol sa Indones, kaya ilalagay ito pagkatapos ng B (na unang nagbanggit sa Indones) at bago ang D (Malay). Kaya C-A-B-E-D."
+        }
+      }
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Philippine Constitution (Extended)",
+      "topic_order": 5,
+      "questions": {
+        "1": {
+          "question": "What do you call the introductory part of the Constitution?",
+          "choices": {
+            "A": "Preface",
+            "B": "Amendments",
+            "C": "Preamble",
+            "D": "Bill of Rights"
+          },
+          "correct": "C",
+          "reason": "Ang Preamble ang panimulang bahagi ng Saligang Batas (nagsisimula sa 'We, the sovereign Filipino people...'). Ang Bill of Rights ay Article III, at ang amendments ay mga pagbabago sa Konstitusyon. Halimbawa: parang 'pambungad na talata' ng buong batas."
+        },
+        "2": {
+          "question": "What form of government does the Philippines adopt?",
+          "choices": {
+            "A": "Republican",
+            "B": "Democratic",
+            "C": "neither a nor b",
+            "D": "both a and b"
+          },
+          "correct": "D",
+          "reason": "Ayon sa Art. II, Sec. 1, 'The Philippines is a democratic and republican State.' Kaya parehong tama ang A at B. Republican = may kinatawan ang mamamayan; democratic = nasa mamamayan ang kapangyarihan."
+        },
+        "3": {
+          "question": "What is the power of the State to take private property for public use upon payment of a just compensation?",
+          "choices": {
+            "A": "right of confiscation",
+            "B": "right of limiting resources",
+            "C": "right of sequestration",
+            "D": "right of eminent domain"
+          },
+          "correct": "D",
+          "reason": "Ang 'eminent domain' ay kapangyarihan ng Estado na kunin ang pribadong ari-arian para sa pampublikong gamit kapalit ng makatarungang bayad (just compensation). Halimbawa: pagkuha ng lupa para sa bagong kalsada, at binabayaran ang may-ari."
+        },
+        "4": {
+          "question": "Who among the following may issue a warrant of arrest or a search warrant?",
+          "choices": {
+            "A": "a senator",
+            "B": "a judge",
+            "C": "a congressman",
+            "D": "the President"
+          },
+          "correct": "B",
+          "reason": "Ayon sa Art. III, Sec. 2, ang warrant of arrest o search warrant ay ipinapalabas lang ng hukom (judge) pagkatapos ng pagtukoy ng probable cause. Hindi ito kapangyarihan ng senador, kongresista, o Pangulo."
+        },
+        "5": {
+          "question": "A foreigner may acquire Filipino citizenship through",
+          "choices": {
+            "A": "naturalization",
+            "B": "extradition",
+            "C": "rebirth",
+            "D": "Visa application"
+          },
+          "correct": "A",
+          "reason": "Ang naturalization ay ang legal na proseso para maging mamamayan ang dayuhan. Ang extradition ay pagpapabalik ng tao sa ibang bansa para litisin, at ang visa ay pahintulot lang na pumasok o manatili, hindi pagkamamamayan."
+        },
+        "6": {
+          "question": "The right to vote is also known as ____________.",
+          "choices": {
+            "A": "suffrage",
+            "B": "naturalization",
+            "C": "democracy",
+            "D": "plebiscite"
+          },
+          "correct": "A",
+          "reason": "Ang suffrage ay karapatang bumoto. Ang plebisito ay pagboto para sa pagtanggap o pagtanggi sa isang panukala, at ang democracy ay uri ng pamahalaan."
+        },
+        "7": {
+          "question": "How many Senators are there in the Senate?",
+          "choices": {
+            "A": "twenty-five",
+            "B": "twenty-four",
+            "C": "twelve",
+            "D": "thirty"
+          },
+          "correct": "B",
+          "reason": "Ang Senado ay binubuo ng 24 na senador (Art. VI, Sec. 2), na inihalal ng buong bansa at may anim na taong termino. Hindi ito 12 (kalahati lang ang inihahalal tuwing eleksyon)."
+        },
+        "8": {
+          "question": "What is the minimum age requirement of a Senator?",
+          "choices": {
+            "A": "thirty",
+            "B": "twenty-five",
+            "C": "twenty",
+            "D": "thirty-five"
+          },
+          "correct": "D",
+          "reason": "Ang senador ay dapat natural-born na Pilipino, hindi bababa sa 35 taong gulang sa araw ng halalan, marunong bumasa at sumulat, at rehistradong botante. Ang 25 ay para sa mga miyembro ng House of Representatives."
+        },
+        "9": {
+          "question": "Which of the following bills do not originate from the House of Representatives?",
+          "choices": {
+            "A": "Appropriation bills",
+            "B": "Revenue or tariff bills",
+            "C": "Amnesty",
+            "D": "Private bills"
+          },
+          "correct": "C",
+          "reason": "Ayon sa Art. VI, Sec. 24, sa House nagmumula ang appropriation, revenue/tariff, public debt, local, at private bills. Ang amnesty ay hindi bill na nagmumula sa House; ito ay ipinagkakaloob ng Pangulo na may pagsang-ayon ng mayorya ng Kongreso. Kaya C."
+        },
+        "10": {
+          "question": "The Members of the Lower House are",
+          "choices": {
+            "A": "elected by region and by party list",
+            "B": "elected by region and appointed by the President",
+            "C": "elected by district and party list",
+            "D": "elected by district and appointed by the Senators"
+          },
+          "correct": "C",
+          "reason": "Ang Mababang Kapulungan (House of Representatives) ay binubuo ng mga kinatawan na inihalal ayon sa distrito at party-list (Art. VI, Sec. 5). Walang appointed na miyembro."
+        },
+        "11": {
+          "question": "The legislative power of the government shall be vested in the",
+          "choices": {
+            "A": "President",
+            "B": "Congress",
+            "C": "Supreme Court",
+            "D": "all of the above"
+          },
+          "correct": "B",
+          "reason": "Ayon sa Art. VI, Sec. 1, ang kapangyarihang lehislatibo ay nasa Kongreso (Senado at House). Ang Pangulo ay ehekutibo at ang Korte Suprema ay hudisyal. Halimbawa: paggawa ng batas ay trabaho ng Kongreso."
+        },
+        "12": {
+          "question": "Which of the following may disqualify a person from running for Presidency?",
+          "choices": {
+            "A": "He is sixty years old on the day of the election.",
+            "B": "He lived abroad five years preceding the election.",
+            "C": "He has Filipino parents but was born in the United States.",
+            "D": "He is a registered voter."
+          },
+          "correct": "B",
+          "reason": "Ang kandidato sa pagka-Pangulo ay dapat natural-born, rehistradong botante, nakababasa at nakasusulat, hindi bababa sa 40 taong gulang, at residente ng Pilipinas nang hindi bababa sa 10 taon bago ang halalan. Ang pagtira sa ibang bansa nang limang taon bago ang halalan ay sisira sa 10-taong residency, kaya ito ang magdidiskuwalipika."
+        },
+        "13": {
+          "question": "Which of the following shows the transfer of power should the President be incapable of discharging his duties?",
+          "choices": {
+            "A": "President → Vice-President → Senate President → House Speaker",
+            "B": "President → Vice-President → Chief Justice → Senate President",
+            "C": "President → Vice-President → Chief Justice → House Speaker",
+            "D": "President → Vice-President → House Speaker → Senate President"
+          },
+          "correct": "A",
+          "reason": "Ayon sa Art. VII, Secs. 7–8, kapag hindi kayang gampanan ng Pangulo ang tungkulin, ang pagkakasunod ay Pangulo → Bise-Presidente → Senate President → Speaker ng House. Hindi kabilang ang Chief Justice."
+        },
+        "14": {
+          "question": "A member of the Supreme Court",
+          "choices": {
+            "A": "must have been for fifteen years or more, a judge of a lower court.",
+            "B": "must have been for ten years, a judge of the Court of Appeals",
+            "C": "may not be a member of the Philippine Bar",
+            "D": "may be a naturalized citizen"
+          },
+          "correct": "A",
+          "reason": "Ayon sa Art. VIII, Sec. 7, ang miyembro ng Korte Suprema ay natural-born na Pilipino, 40 taong gulang pataas, at nakapaglingkod nang hindi bababa sa 15 taon bilang hukom ng mababang hukuman (o naging abogado). Kailangan ding miyembro ng Philippine Bar. Hindi puwede ang naturalized citizen."
+        },
+        "15": {
+          "question": "The Supreme Court is composed of",
+          "choices": {
+            "A": "a Chief Justice and fourteen Associate Justices",
+            "B": "two Chief Justices and fourteen Associate Justices",
+            "C": "a Chief Justice and twelve Associate Justices",
+            "D": "a Chief Justice and an indefinite number of Associate Justices"
+          },
+          "correct": "A",
+          "reason": "Ang Korte Suprema ay binubuo ng isang Chief Justice at 14 na Associate Justices, kabuuang 15 (Art. VIII, Sec. 4)."
+        },
+        "16": {
+          "question": "Which of the following is a Constitutional Commission?",
+          "choices": {
+            "A": "Commission on Human Rights",
+            "B": "Philippine Commission on Good Government",
+            "C": "Civil Service Commission",
+            "D": "Commission on Natural Resources"
+          },
+          "correct": "C",
+          "reason": "Ang tatlong Constitutional Commissions sa Art. IX ay ang Civil Service Commission, Commission on Elections, at Commission on Audit. Ang Commission on Human Rights ay may batayan sa Konstitusyon (Art. XIII) pero hindi kabilang sa tatlo; ang PCGG ay itinatag ng executive order."
+        },
+        "17": {
+          "question": "What branch of government has the sole right to initiate all cases of impeachment?",
+          "choices": {
+            "A": "Senate",
+            "B": "Commission on Elections",
+            "C": "House of Representatives",
+            "D": "Judiciary"
+          },
+          "correct": "C",
+          "reason": "Ang House of Representatives ang may eksklusibong kapangyarihang magsimula ng lahat ng kaso ng impeachment (Art. XI, Sec. 3). Ang Senado ang nagsisilbing hukuman na dumidinig dito."
+        },
+        "18": {
+          "question": "Which of the following is not removable from office by impeachment?",
+          "choices": {
+            "A": "Member of the Supreme Court",
+            "B": "Member of the Constitutional Commissions",
+            "C": "The Ombudsman",
+            "D": "Senators"
+          },
+          "correct": "D",
+          "reason": "Ang mga impeachable officers ay ang Pangulo, Bise-Presidente, miyembro ng Korte Suprema, mga Constitutional Commission, at Ombudsman. Hindi kabilang ang mga senador; sila ay maaaring patalsikin sa pamamagitan ng expulsion ng kanilang kapulungan."
+        },
+        "19": {
+          "question": "The national language of the Philippines is",
+          "choices": {
+            "A": "Pilipino",
+            "B": "English and Filipino",
+            "C": "Tagalog",
+            "D": "Filipino"
+          },
+          "correct": "D",
+          "reason": "Ang pambansang wika ay Filipino (Art. XIV, Sec. 6). Ang English at Filipino ang mga opisyal na wika, pero ang 'pambansang wika' ay Filipino lang."
+        },
+        "20": {
+          "question": "Who may propose any amendment to, or revision of the Constitution?",
+          "choices": {
+            "A": "Congress or a Constitutional Convention",
+            "B": "Congress and a Constitutional Convention",
+            "C": "Judiciary and Congress",
+            "D": "Judiciary and Constitutional Convention"
+          },
+          "correct": "A",
+          "reason": "Ayon sa Art. XVII, ang Kongreso (bilang constituent assembly sa pamamagitan ng boto ng ¾ ng lahat ng miyembro) o ang Constitutional Convention ang maaaring magpanukala ng pagbabago. Pagkatapos, kailangan ng ratipikasyon ng taumbayan sa plebisito. Hindi puwede ang Judiciary."
+        },
+        "21": {
+          "question": "What tax is paid by individuals who derive compensation income?",
+          "choices": {
+            "A": "Value added tax",
+            "B": "Excise tax",
+            "C": "Income tax",
+            "D": "Real estate tax"
+          },
+          "correct": "C",
+          "reason": "Ang income tax ay buwis sa kinikita (kasama ang sahod o compensation income). Ang VAT ay sa pagbebenta ng produkto o serbisyo, at ang real estate tax ay sa ari-arian."
+        },
+        "22": {
+          "question": "When is the deadline for filing income tax returns for every taxable year?",
+          "choices": {
+            "A": "April 15",
+            "B": "April 30",
+            "C": "March 15",
+            "D": "March 30"
+          },
+          "correct": "A",
+          "reason": "Ang karaniwang deadline ng annual income tax return ng indibidwal ay Abril 15 (NIRC)."
+        },
+        "23": {
+          "question": "Which of the following statements is true about taxes?",
+          "choices": {
+            "A": "It is a voluntary payment",
+            "B": "It is payable both in cash and in kind",
+            "C": "It is an enforced contribution",
+            "D": "It is based on one's desire to pay."
+          },
+          "correct": "C",
+          "reason": "Ang buwis ay 'enforced contribution' (sapilitang kontribusyon) na ipinapataw ng Estado at hindi boluntaryo. Karaniwan itong binabayaran sa pera, hindi sa gusto ng nagbabayad."
+        },
+        "24": {
+          "question": "What tax is imposed on one's right to transmit property at death, and is measured by the value of the property?",
+          "choices": {
+            "A": "Excise tax",
+            "B": "Withholding tax",
+            "C": "Donor's tax",
+            "D": "Estate tax"
+          },
+          "correct": "D",
+          "reason": "Ang estate tax ay buwis sa karapatang ipamana ang ari-arian pagkamatay ng may-ari, batay sa halaga ng ari-arian. Ang donor's tax ay para sa ari-ariang ibinigay habang buhay pa ang may-ari."
+        },
+        "25": {
+          "question": "Which of the following is classified as being a 'Head of the Family' for income tax purposes?",
+          "choices": {
+            "A": "a married individual with dependents",
+            "B": "an unmarried individual with dependents",
+            "C": "a married individual without dependents",
+            "D": "an unmarried individual without dependents"
+          },
+          "correct": "B",
+          "reason": "Sa lumang probisyon ng NIRC, ang 'head of the family' ay isang walang-asawa (o hiwalay sa batas) na may mga dependent (hal. anak o magulang na sinusuportahan). Mula nang ipatupad ang TRAIN law, wala nang personal exemption, pero sa historical context ng exam, ito ang sagot."
+        },
+        "26": {
+          "question": "What Act implements the mandate for the 'State to make essential goods, health and other social services available to all the people at affordable cost'?",
+          "choices": {
+            "A": "Land Reform Program",
+            "B": "Generics Act",
+            "C": "Resettlement Act",
+            "D": "Freedom Act"
+          },
+          "correct": "B",
+          "reason": "Ang Generics Act (RA 6675) ang nagpapatupad ng mandato na gawing abot-kaya ang mga gamot at pangkalusugang serbisyo (sa pamamagitan ng generic na gamot). Ang Land Reform ay para sa lupa, ang Resettlement ay para sa paglilipat ng tirahan."
+        },
+        "27": {
+          "question": "Which of the following is true about elective local officials?",
+          "choices": {
+            "A": "The term of office is three years",
+            "B": "Barangay officials' term of office is indefinite",
+            "C": "An official may be reelected indefinitely",
+            "D": "An official may not serve for less than three terms"
+          },
+          "correct": "A",
+          "reason": "Ang mga halal na lokal na opisyal (gobernador, alkalde, atbp.) ay may termino na tatlong taon at hanggang tatlong magkakasunod na termino lamang (Art. X, Sec. 8)."
+        },
+        "28": {
+          "question": "What may be classified as alienable lands of the public domain?",
+          "choices": {
+            "A": "forest",
+            "B": "mineral lands",
+            "C": "national park",
+            "D": "agricultural lands"
+          },
+          "correct": "D",
+          "reason": "Ang agricultural lands ang tanging nabanggit na puwedeng ipamahagi bilang alienable lands of the public domain (Art. XII, Sec. 3). Ang forest, mineral, at national parks ay hindi maaaring ipamigay o ipagbili."
+        },
+        "29": {
+          "question": "What is the maximum equity for aliens in a corporation or association in the exploration, development, and utilization of natural resources?",
+          "choices": {
+            "A": "60%",
+            "B": "40%",
+            "C": "50%",
+            "D": "30%"
+          },
+          "correct": "B",
+          "reason": "Ayon sa Art. XII, Sec. 2, ang paggalugad at paggamit ng likas-yaman ay para sa mga Pilipino o mga korporasyong may hindi bababa sa 60% Pilipino ang puhunan. Kaya ang pinakamataas na bahagi ng dayuhan ay 40%."
+        },
+        "30": {
+          "question": "What is recognized by the State as the foundation of the nation?",
+          "choices": {
+            "A": "barangay",
+            "B": "community",
+            "C": "family",
+            "D": "municipality"
+          },
+          "correct": "C",
+          "reason": "Ayon sa Art. XV, Sec. 1, kinikilala ng Estado ang pamilya bilang pundasyon ng bansa. Halimbawa: ang edukasyon at pagpapalaki ng anak ay nagsisimula sa pamilya."
         }
       }
     }

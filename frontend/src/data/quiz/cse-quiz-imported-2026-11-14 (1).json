@@ -1,0 +1,801 @@
+{
+  "format": "cse-quiz",
+  "version": 1,
+  "exportedAt": "2026-11-14T17:06:18.445Z",
+  "topics": [
+    {
+      "subject": "Filipino",
+      "subject_icon": "🇵🇭",
+      "topic": "Pag-unawa sa Binasa",
+      "topic_order": 5,
+      "questions": {
+        "1": {
+          "question": "[TULA - 'Sa Langit Kong Gusto' ni Czarmaine Feliciano]\nBuod: Tatlong saknong na nagsasalaysay ng pagnanais ng persona na makapunta sa langit na gusto niya, kung saan may mga anghel na nanonood. Kinaiinggitan niya ang mga ibong lumilipad at gusto rin niyang lumipad nang mataas, at aakyat siya agad kung may hagdan patungo roon.\n\n[QUESTION] Ano ang nais mapuntahan ng manunula?",
+          "choices": {
+            "A": "ibon",
+            "B": "langit",
+            "C": "anghel",
+            "D": "hagdan"
+          },
+          "correct": "B",
+          "reason": "Ang paulit-ulit na linya ng tula ay tungkol sa 'langit na gusto' ng persona, kaya langit ang nais mapuntahan. Hindi ibon, anghel, o hagdan ang destinasyon; ang mga iyon ay bahagi lang ng imahe."
+        },
+        "2": {
+          "question": "[TULA - 'Sa Langit Kong Gusto']\nBuod: Sa ikalawang saknong, inilarawan ng persona ang mga ibon at ginamit ang salitang 'katulad nila' upang ihambing ang kanyang sarili sa kanila.\n\n[QUESTION] Ano ang tayutay na ginamit sa unang dalawang linya ng ikalawang saknong?",
+          "choices": {
+            "A": "pagtutulad",
+            "B": "pagwawangis",
+            "C": "pagmamalabis",
+            "D": "pagbibigay katauhan"
+          },
+          "correct": "A",
+          "reason": "Sa ikalawang saknong, ginamit ang salitang pagtutulad ('katulad nila'), kaya pagtutulad (simile). Ang pagwawangis ay direktang paghahambing nang walang 'tulad/parang'; ang pagmamalabis ay eksaherasyon; ang pagbibigay-katauhan ay pagbibigay ng katangian ng tao sa bagay."
+        },
+        "3": {
+          "question": "[TULA - 'Sa Langit Kong Gusto']\nBuod: Tatlong saknong: (1) pagnanais makarating sa langit, (2) pagkainggit sa mga ibon, (3) pag-akyat kung may hagdan.\n\n[QUESTION] Sa anong saknong ipinahihiwatig ng manunula ang pangunahing kaisipan ng kanyang tula?",
+          "choices": {
+            "A": "unang saknong",
+            "B": "ikalawang saknong",
+            "C": "ikatlong saknong",
+            "D": "walang pangunahing kaisipan"
+          },
+          "correct": "A",
+          "reason": "Ang unang saknong ang malinaw na nagsasabi ng pangunahing kaisipan: ang hangarin ng persona na makarating sa kanyang minimithing langit. Ang ikalawa at ikatlong saknong ay nagpapalawak at nagbibigay ng detalye."
+        },
+        "4": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] \"Ang kabataan ang pag-asa ng bayan.\" Ito ang sinabi ni Dr. Jose Rizal, ang ating pambansang bayani. Malaki ang pagtitiwala niya sa angking talino at kakayahan ng mga kabataan. Naniniwala siya na mahahango ang bansang Pilipinas sa tiyak na kasawian kung sila, ang mga kabataan, ang magkakaroon ng tunay na pag-ibig sa bayan. Maraming maitutulong ang mga kabataan sa pagpapaunlad ng bansa. Maaaring simulan nila ang pagmamalasakit sa kani-kanilang mga pamayanan. Sa mga proyektong inilulunsad ng pamahalaan, may mga gawaing pangkabataan katulad ng pagpapaganda ng kapaligiran at paglilinis ng mga sari-sariling bakuran. Makatutulong din ang mga kabataan sa pagpapanatili ng katahimikan at kapayapaan sa mga pamayanan. Ngunit, bakit tila yata ang mga kabataang ito ang bibigo sa dakilang pangarap ng yumaong bayani? Bakit tila nais nilang sikilin ang damdaming makabayang siyang sandata sa pagtatanggol sa Inang Bayan?\n\n[QUESTION] Alin sa mga sumusunod ang HINDI nagpapakita ng pagmamalasakit sa pamayanan?",
+          "choices": {
+            "A": "Pakikiisa sa mga proyekto ng pamayanan.",
+            "B": "Pagpapanatili ng kapayapaan at katahimikan.",
+            "C": "Pagliinis ng mga sari-sariling bakuran.",
+            "D": "Pakikiisa sa kapuwa kabataang may masamang bisyo."
+          },
+          "correct": "D",
+          "reason": "Ang HINDI pagmamalasakit sa pamayanan ay ang pakikiisa sa kapwa kabataang may masamang bisyo (D), dahil hindi ito nakatutulong sa kaayusan o kaunlaran. Ang A, B, at C ay nabanggit sa teksto bilang mga paraan ng pagtulong."
+        },
+        "5": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] Naniniwala si Rizal na mahahango ang bansang Pilipinas sa tiyak na kasawian kung ang mga kabataan ay magkakaroon ng tunay na pag-ibig sa bayan. Maraming maitutulong ang kabataan: pagmamalasakit sa pamayanan, pakikiisa sa mga proyekto, paglilinis ng bakuran, at pagpapanatili ng kapayapaan.\n\n[QUESTION] Paano maiaahon ng kabataan ang bansang Pilipinas sa tiyak na kasawian?",
+          "choices": {
+            "A": "Sa pamamagitan ng pagkakaroon ng tunay na pag-ibig sa bayan.",
+            "B": "Sa pamamagitan ng pagtugon sa kani-kaniyang kagustuhan lamang.",
+            "C": "Parehong tama ang a at b.",
+            "D": "Walang tamang sagot."
+          },
+          "correct": "A",
+          "reason": "Ayon sa talata, mahahango ang bansa sa kasawian kung ang mga kabataan ang magkakaroon ng tunay na pag-ibig sa bayan. Kaya A. Ang B ('kani-kaniyang kagustuhan lamang') ay salungat sa diwa ng pagmamalasakit."
+        },
+        "6": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] ...Ngunit, bakit tila yata ang mga kabataang ito ang bibigo sa dakilang pangarap ng yumaong bayani? Bakit tila nais nilang sikilin ang damdaming makabayang siyang sandata sa pagtatanggol sa Inang Bayan?\n\n[QUESTION] Ano ang nadarama ng may-akda sa kabataan na kanyang ipinahiwatig sa dalawang huling pangungusap ng talata?",
+          "choices": {
+            "A": "Tuwa sapagkat tunay na pag-asa ng bayan ang kabataan.",
+            "B": "Lungkot dahil tila bibiguin ng mga kabataan ang paniniwala ni Rizal.",
+            "C": "Galak dahil patuloy ang kabataan sa pagpapaunlad ng bayan.",
+            "D": "Dalamhati sapagkat naaalala niya ang kabataan ni Rizal."
+          },
+          "correct": "B",
+          "reason": "Sa dalawang huling pangungusap, nagtatanong ang may-akda kung bakit tila nais pang sikilin ng mga kabataan ang makabayang damdamin. Ipinapakita nito ang lungkot dahil tila bibiguin ng kabataan ang paniniwala ni Rizal. Hindi tuwa o galak (A, C)."
+        },
+        "7": {
+          "question": "[PASSAGE - 'Kabataan: Pag-asa ng Bayan'] Ang buong talata ay nagsisimula sa siping: \"Ang kabataan ang pag-asa ng bayan.\"\n\n[QUESTION] 'Ang kabataan ay pag-asa ng bayan.' Ano ang implikasyon ng pangungusap na ito?",
+          "choices": {
+            "A": "Masagana ang bayan",
+            "B": "Mapayapa ang bayan",
+            "C": "May suliranin ang bayan",
+            "D": "May bayani ang bayan"
+          },
+          "correct": "C",
+          "reason": "Ang 'implikasyon' ay ang ibig sabihin nang hindi tahasang sinasabi. Kung kailangan ng bayan ang kabataan bilang pag-asa, ipinahihiwatig nito na may suliranin ang bayan na kailangang lutasin. Halimbawa: 'Ikaw ang pag-asa ng pamilya' ay nagpapahiwatig na may hirap ang pamilya."
+        },
+        "8": {
+          "question": "[PASSAGE - Ang Santan] Ang pang-agham na pangalan ay Ixora coccinea L. at karaniwang tinatawag na halamang Santan sa ating bayan. Ito ay isa sa mga kaaya-ayang halaman na pampalamuti. Maraming klase ang Santan – may puti, pula, dilaw at malaginto. Iba-iba rin ang laki – may mahaba pero makitid ang mga dahon, samantalang ang iba ay mas malapad at maikli. May mabangong Santan at mayroon ding walang amoy. Ang Ixora coccinea L. ay galing sa India. Mahalaga ito dahil sa maaaring ipanggamot. Ang solusyon mula sa pinakulong ugat ay maaaring purga. Maaaring ipainom sa nagduduwal at sa sinisinok. Nakatutulong ito sa pagkakaroon ng gana sa pagkain. Mabuti rin ito sa di dinadatnan at nagtatae. Para sa makating lalamunan, maaaring ipangmumog ito. Iyong binayong sariwang sanga nito ay mainam na gamot at pantapal sa pilay, mga maysakit na bahagi ng katawan, eksema at sa mga galis. Mabisang gamot ang Santan.\n\n[QUESTION] Ano ang Ixora coccinea L.?",
+          "choices": {
+            "A": "Pangalan ng punungkahoy.",
+            "B": "Pang-agham na pangalan ng Santan.",
+            "C": "Pang-agham na pangalan ng prutas.",
+            "D": "Pang-agham na pangalan ng mga halamang namumulaklak."
+          },
+          "correct": "B",
+          "reason": "Ayon sa talata, ang Ixora coccinea L. ay ang pang-agham na pangalan ng halamang Santan. Hindi ito pangalan ng punungkahoy o prutas, at hindi ito para sa lahat ng halamang namumulaklak."
+        },
+        "9": {
+          "question": "[PASSAGE - Ang Santan] Maraming klase ang Santan – may puti, pula, dilaw at malaginto. May mabangong Santan at mayroon ding walang amoy. Ang Ixora coccinea L. ay galing sa India. Mahalaga ito dahil sa maaaring ipanggamot.\n\n[QUESTION] Alin sa mga sumusunod na pangungusap ang wasto?",
+          "choices": {
+            "A": "Ang lahat ng Santan ay mabango.",
+            "B": "Ang Santang pula ay galing sa Tsina.",
+            "C": "Maraming klase ang Santan ngunit walang malaginto ang kulay.",
+            "D": "Maaaring ipanggamot ang Santan."
+          },
+          "correct": "D",
+          "reason": "Ang wasto ay 'Maaaring ipanggamot ang Santan' (D). Mali ang A (may walang amoy), mali ang B (galing sa India, hindi Tsina), at mali ang C (may malaginto)."
+        },
+        "10": {
+          "question": "[PASSAGE - Ang Santan] Ang solusyon mula sa pinakulong ugat ay maaaring purga. Maaaring ipainom sa nagduduwal at sa sinisinok. Nakatutulong ito sa pagkakaroon ng gana sa pagkain. Mabuti rin ito sa di dinadatnan at nagtatae. Para sa makating lalamunan, maaaring ipangmumog ito. Iyong binayong sariwang sanga nito ay mainam na gamot at pantapal sa pilay.\n\n[QUESTION] Anong bahagi ng Santan ang may pinakamaraming gamit bilang gamot?",
+          "choices": {
+            "A": "dahon",
+            "B": "bulaklak",
+            "C": "ugat",
+            "D": "sanga"
+          },
+          "correct": "C",
+          "reason": "Ang ugat ang may pinakamaraming gamit ayon sa talata: purga, para sa nagduduwal at sinisinok, para sa gana sa pagkain, at para sa nagtatae. Ang sanga ay pantapal; ang bulaklak ay hindi binanggit na gamot."
+        },
+        "11": {
+          "question": "[PASSAGE - Ang Santan] Ang talata ay naglalarawan ng Santan: pangalan, uri, pinagmulan, at gamit.\n\n[QUESTION] Ano ang pinakamabuting pamagat para sa talatang nabasa?",
+          "choices": {
+            "A": "Ang Ugat ng Santan",
+            "B": "Ang Santan",
+            "C": "Ang Santan Bilang Gamot",
+            "D": "Mga Uri ng Santan"
+          },
+          "correct": "B",
+          "reason": "Ang buong talata ay naglalarawan ng Santan (pangalan, uri, pinagmulan, at gamit), kaya 'Ang Santan' ang pinakasaklaw. Ang Ugat ng Santan, Santan Bilang Gamot, at Mga Uri ng Santan ay bahagi lang ng talata."
+        },
+        "12": {
+          "question": "[PASSAGE - Ang Santan] Ang solusyon mula sa pinakulong ugat ay maaaring purga. Nakatutulong ito sa pagkakaroon ng gana sa pagkain. Mabuti rin ito sa di dinadatnan at nagtatae. Iyong binayong sariwang sanga nito ay mainam na gamot at pantapal sa pilay.\n\n[QUESTION] Alin sa mga sumusunod ang wastong gamit ng solusyon mula sa pinakulong ugat ng Santan?",
+          "choices": {
+            "A": "Maaaring pampagana ng pagkain",
+            "B": "Maaaring pantapal sa pilay",
+            "C": "Maaaring gawing palamuti",
+            "D": "Maaaring pang-alis ng eksema at galis"
+          },
+          "correct": "A",
+          "reason": "Ayon sa teksto, ang solusyon mula sa pinakulong ugat ay nakatutulong sa pagkakaroon ng gana sa pagkain, kaya A. Ang pantapal sa pilay ay galing sa binayong sariwang sanga (B), hindi sa ugat."
+        },
+        "13": {
+          "question": "[PASSAGE - Kahalagahan ng Pagbabasa] Bakit mahalaga ang pagbabasa sa ating buhay? Sapagkat naging malawak at masalimuot ang buhay ng tao sa daigdig, kasama na ang mga kaugalian ng mga tao. Sa pagbabasa, naririto ang kasanayan sa pagkilala ng mga salita, pag-unawa, paggamit ng sanggunian, mga kasanayan sa pag-iisip, panlasa, saloobin, at kawilihan. Dagdag pa rito ang pagpasok ng mga bagong kaalaman, mga bagong tuklas sa larangan ng siyensiya, teknolohiya, sining. Ang mga balitang pandaigdig at babasahing inilalathala taun-taon, ang mga mahuhusay na aklat sa aklatan na di pa man nalalaman o nababasa ng isang tao sa buong buhay niya ay ilan sa mga bagay-bagay na maaaring bigyang pansin sa pagbabasa.\n\n[QUESTION] Ano ang pangunahing diwa ng seleksiyon?",
+          "choices": {
+            "A": "Ang bilang ng nababasa",
+            "B": "Ang kahalagahan ng aklat",
+            "C": "Ang kahalagahan ng pagbabasa",
+            "D": "Ang hirap ng pagbabasa"
+          },
+          "correct": "C",
+          "reason": "Ang buong talata ay tungkol sa kung bakit mahalaga ang pagbabasa (kasanayan, bagong kaalaman, atbp.). Kaya C. Ang aklat (B) ay isa lang bahagi ng pagbabasa."
+        },
+        "14": {
+          "question": "[PASSAGE - Kahalagahan ng Pagbabasa] Sa pagbabasa, naririto ang kasanayan sa pagkilala ng mga salita, pag-unawa, paggamit ng sanggunian, mga kasanayan sa pag-iisip, panlasa, saloobin, at kawilihan. Dagdag pa rito ang pagpasok ng mga bagong kaalaman, mga bagong tuklas sa siyensiya, teknolohiya, sining.\n\n[QUESTION] Bakit mahalaga ang pagbabasa?",
+          "choices": {
+            "A": "Sapagkat sa halos lahat ng gawain, kasangkot ang pagbabasa.",
+            "B": "Sapagkat mararating ang daigdig ng pangarap sa pagbabasa.",
+            "C": "Lahat ng nabanggit ay tama.",
+            "D": "Walang tamang sagot."
+          },
+          "correct": "C",
+          "reason": "Ayon sa key, C ('Lahat ng nabanggit ay tama'). Binanggit sa talata ang kasangkot na kasanayan at bagong kaalaman, at maiuugnay rin dito ang pagpasok sa mundo ng pangarap."
+        },
+        "15": {
+          "question": "[PASSAGE - Kahalagahan ng Pagbabasa] Ang talata ay naglalahad kung bakit mahalaga ang pagbabasa sa buhay ng tao.\n\n[QUESTION] Ano ang pinakamainam na pamagat ng nabasa?",
+          "choices": {
+            "A": "Ang Kahalagahan ng Pagbabasa",
+            "B": "Pagbabasa at Kaunlaran",
+            "C": "Pagbabasa ng mga Pilipino",
+            "D": "Sa Makulay na Mundo ng Pagbabasa"
+          },
+          "correct": "A",
+          "reason": "Ang 'Ang Kahalagahan ng Pagbabasa' ang pinakadirektang titulo na tumutugma sa pangunahing diwa ng talata. Ang B, C, at D ay masyadong makitid o hindi tinalakay."
+        },
+        "16": {
+          "question": "[PASSAGE - Ang Mata] Nakikita sa mata ang iba't ibang emosyon. Tuwa, lungkot, pighati, pangamba, pag-asam, pakiusap. Ito ang salamin ng kaluluwa ng tao. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit. Noon, ang mata ay isa lang bahagi ng mukha. Ngayon, ito'y pinalalamutian sa kasayahan, at ginagamit sa kasamaan. Ngunit maaari rin itong puhunan sa pagandahan. Tunay ngang maraming gamit ang matang minumuta, kinakapitan ng sakit, lumalabo at ginagamit sa pagtingin.\n\n[QUESTION] Ano ang paksang pangungusap sa talata?",
+          "choices": {
+            "A": "Nakikita sa mata ang iba't ibang emosyon.",
+            "B": "Ito ang salamin sa kaluluwa ng tao.",
+            "C": "Sa pamamagitan nito, nakapagpapahayag siya ng damdamin.",
+            "D": "Tunay ngang maraming gamit ang matang minumuta, kinakapitan ng sakit, lumalabo at ginagamit sa pagtingin."
+          },
+          "correct": "D",
+          "reason": "Ayon sa key, ang paksang pangungusap ay ang huli (D): 'Tunay ngang maraming gamit ang matang...' Ito ang sumasaklaw sa buong talata (gamit ng mata). Ang A, B, at C ay mga detalyeng sumusuporta. Paalala: kung minsan, nasa dulo ang paksang pangungusap (inductive structure)."
+        },
+        "17": {
+          "question": "[PASSAGE - Ang Mata] Ang talata ay naglalahad ng emosyon sa mata, gamit sa palamuti, gamit sa kasamaan, at iba pang gamit.\n\n[QUESTION] Ano ang pinakamainam na pamagat sa talata?",
+          "choices": {
+            "A": "Ang Mga Emosyon sa Mata",
+            "B": "Mata: Bahagi ng Mukha",
+            "C": "Ang Iba't Ibang Gamit ng Mata",
+            "D": "Mga Sakit sa Mata"
+          },
+          "correct": "C",
+          "reason": "Ang talata ay naglalahad ng iba't ibang gamit ng mata (emosyon, palamuti, kasamaan, atbp.), kaya 'Ang Iba't Ibang Gamit ng Mata' ang pinakaangkop. Ang A at D ay isang aspekto lang."
+        },
+        "18": {
+          "question": "[PASSAGE - Ang Mata] Nakikita sa mata ang iba't ibang emosyon. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit. Tunay ngang maraming gamit ang matang minumuta, kinakapitan ng sakit, lumalabo at ginagamit sa pagtingin.\n\n[QUESTION] Alin sa mga sumusunod ang hindi nabanggit na nagagawa ng mata?",
+          "choices": {
+            "A": "nagpapahiwatig ng emosyon",
+            "B": "nagpapakita ng matinding karamdaman",
+            "C": "nagbabadya ng galit",
+            "D": "nanunukso"
+          },
+          "correct": "B",
+          "reason": "Ang hindi nabanggit ay ang 'nagpapakita ng matinding karamdaman.' Nabanggit lang na kinakapitan ng sakit ang mata, pero hindi na nagpapakita ito ng matinding karamdaman. Ang A, C, at D ay nabanggit (emosyon, galit, nanunukso)."
+        },
+        "19": {
+          "question": "[PASSAGE - Ang Mata] Noon, ang mata ay isa lang bahagi ng mukha. Ngayon, ito'y pinalalamutian sa kasayahan, at ginagamit sa kasamaan. Ngunit maaari rin itong puhunan sa pagandahan. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit.\n\n[QUESTION] Paano nagbago ang pananaw ng tao hinggil sa mga mata?",
+          "choices": {
+            "A": "Natutuhan na nilang gamitin ang mata upang magpahiwatig ng iba't ibang emosyon.",
+            "B": "Natuklasan nila na ang mata ay nakikitaan ng sakit.",
+            "C": "Natuklasan nila na ang mata ay maaaring mabulag.",
+            "D": "Natutuhan nila na may palamuti para sa mga mata."
+          },
+          "correct": "A",
+          "reason": "Ayon sa key, A (natutuhan nilang gamitin ang mata para magpahiwatig ng emosyon). May mga bahagi ng talata na sumusuporta rin sa D (palamuti), pero ang A ang pinaka-komprehensibong pagbabago."
+        },
+        "20": {
+          "question": "[PASSAGE - Ang Mata] ...ginagamit sa kasamaan. Sa pamamagitan nito, nakapagpapahayag siya ng pag-ibig, nakakakuha ng pansin, nanunukso, at maaaring magbadya ng galit.\n\n[QUESTION] Anong parirala ang nagpapahiwatig ng paggamit ng mata sa kasamaan?",
+          "choices": {
+            "A": "mapungay na mata",
+            "B": "matang nagsusumamo",
+            "C": "nanlilisik na mata",
+            "D": "matambaka"
+          },
+          "correct": "C",
+          "reason": "Ang 'nanlilisik na mata' ay nagpapahiwatig ng galit o masamang intensyon. Ang mapungay at nagsusumamo ay malambot o nagmamakaawa."
+        },
+        "21": {
+          "question": "[GRAPO - Minimum Wage in Metro Manila (Source: Regional Tripartite Wages & Productivity Board – NCR)]\nDatos: Nov 1990 = ₱106.00 | Jan 1991 = ₱118.00 | Dec 1993 = ₱135.00 | Apr 1994 = ₱145.00 | May 1996 = ₱165.00 | May 1997 = ₱185.00 | Feb 1998 = ₱198.00 | Oct 1999 = ₱223.50\n\n[QUESTION] Tungkol saan ang grapong nabasa?",
+          "choices": {
+            "A": "Pinakamataas na pasahod sa Maynila sa iba't ibang taon.",
+            "B": "Pinakamababang pasahod sa Maynila sa iba't ibang taon.",
+            "C": "Regional Tripartite Wages and Productivity Board",
+            "D": "Bilang ng mga manggagawang napasahod sa iba't ibang taon."
+          },
+          "correct": "B",
+          "reason": "Ang grapo ay pamagat na 'Minimum Wage in Metro Manila,' kaya tungkol ito sa pinakamababang pasahod sa Maynila sa iba't ibang taon. Ang 'pinakamataas' at 'bilang ng manggagawa' ay hindi ipinapakita."
+        },
+        "22": {
+          "question": "[GRAPO - Minimum Wage] Datos: Nov 1990 = ₱106 | Jan 1991 = ₱118 | Dec 1993 = ₱135 | Apr 1994 = ₱145 | May 1996 = ₱165 | May 1997 = ₱185 | Feb 1998 = ₱198 | Oct 1999 = ₱223.50\n\n[QUESTION] Gaano kalaki ang pagkakaiba ng pasahod noong Oktubre 1999 at noong Mayo 1996?",
+          "choices": {
+            "A": "₱78.50",
+            "B": "₱38.50",
+            "C": "₱388.50",
+            "D": "₱58.50"
+          },
+          "correct": "D",
+          "reason": "Basahin ang grapo: Oct 1999 = ₱223.50 at May 1996 = ₱165.00. Pagkakaiba = 223.50 − 165.00 = ₱58.50."
+        },
+        "23": {
+          "question": "[GRAPO - Minimum Wage] Datos: Nov 1990 = ₱106 | Jan 1991 = ₱118 | Dec 1993 = ₱135 | Apr 1994 = ₱145 | May 1996 = ₱165 | May 1997 = ₱185 | Feb 1998 = ₱198 | Oct 1999 = ₱223.50\n\n[QUESTION] Kailan nagkaroon ng pinakamababang pagtaas ng pasahod ayon sa grapo?",
+          "choices": {
+            "A": "Nobyembre 1990",
+            "B": "Enero 1991",
+            "C": "Disyembre 1993",
+            "D": "Abril 1994"
+          },
+          "correct": "D",
+          "reason": "Hanapin ang pinakamaliit na pagtaas sa pagitan ng magkakasunod na punto: Dec 1993 (₱135) → Apr 1994 (₱145) = ₱10 lang, ang pinakamababa sa lahat. Kaya Abril 1994."
+        },
+        "24": {
+          "question": "[GRAPO - Minimum Wage] Datos: Apr 1994 = ₱145 | May 1996 = ₱165\n\n[QUESTION] Gaano katagal naging pinakamababang pasahod ng mga empleyado ang halagang ₱145?",
+          "choices": {
+            "A": "dalawang buwan",
+            "B": "dalawampu't apat na buwan",
+            "C": "limang buwan",
+            "D": "dalawampu't limang buwan"
+          },
+          "correct": "D",
+          "reason": "Ang ₱145 ay nagsimula noong Apr 1994 hanggang bago tumaas sa ₱165 noong May 1996. Mula Apr 1994 hanggang Apr 1996 ay 24 na buwan; kasama ang Mayo, 25 buwan."
+        },
+        "25": {
+          "question": "[GRAPO - Minimum Wage] Datos: Nov 1990 = ₱106 | Jan 1991 = ₱118 | Dec 1993 = ₱135 | Apr 1994 = ₱145 | May 1996 = ₱165 | May 1997 = ₱185 | Feb 1998 = ₱198 | Oct 1999 = ₱223.50\n\n[QUESTION] Ilang beses nagkaroon ng dalawampung piso (₱20) pagtaas sa minimum wage?",
+          "choices": {
+            "A": "isa",
+            "B": "dalawa",
+            "C": "tatlo",
+            "D": "wala"
+          },
+          "correct": "B",
+          "reason": "Hanapin ang pagtaas na eksaktong ₱20: Apr 1994 (₱145) → May 1996 (₱165) at May 1996 (₱165) → May 1997 (₱185). Dalawang beses."
+        },
+        "26": {
+          "question": "[TSART - Badyet at Katayuang Pangmilitar ng mga Piling Bansa (Asiaweek, June 9, 2000)]\nDatos (Brunei | RP | Japan | China | Malaysia | Thailand | S. Korea | India):\nBadyet Militar: $357M | $1B | $41.1B | $11B | $3.3B | $2B | $13.2B | $10B\n% ng Badyet Militar sa GDP: 6.5% | 1.5% | 1.1% | 1.6% | 3.75% | 1.5% | 3.1% | 2.1%\nBilang ng Tropang Militar: 5,000 | 110,000 | 236,300 | 2,480,000 | 105,000 | 306,000 | 672,000 | 1,173,000\nSasakyang Pandagat: 6 | 88 | 179 | 1,149 | 56 | 149 | 198 | 140\nPangdigmaang Sasakyang Panghimpapawid: 6 | 141 | 517 | 4,086 | 104 | 234 | 568 | 975\n\n[QUESTION] Anong pamagat ang angkop sa tsart sa itaas?",
+          "choices": {
+            "A": "Badyet para sa Militar ng Iba't Ibang Bansa",
+            "B": "Kalagayang Pang-Ekonomiya",
+            "C": "Badyet at Katayuang Pangmilitar ng mga Piling Bansa",
+            "D": "Bilang ng mga Militar sa Iba't Ibang Bansa"
+          },
+          "correct": "C",
+          "reason": "Ang tsart ay nagpapakita ng badyet na pang-militar, porsiyento ng GDP, bilang ng tropa, at mga sasakyang pandagat at panghimpapawid, kaya 'Badyet at Katayuang Pangmilitar ng mga Piling Bansa.'"
+        },
+        "27": {
+          "question": "[TSART - Katayuang Pangmilitar] Bilang ng Tropang Militar: Brunei 5,000 | RP 110,000 | Japan 236,300 | China 2,480,000 | Malaysia 105,000 | Thailand 306,000 | S. Korea 672,000 | India 1,173,000\n\n[QUESTION] Anong bansa ang may pinakamataas na bilang ng tropa?",
+          "choices": {
+            "A": "Japan",
+            "B": "South Korea",
+            "C": "Brunei",
+            "D": "Malaysia"
+          },
+          "correct": "B",
+          "reason": "Sa tsart, ang bilang ng tropa ay: South Korea 672,000, Japan 236,300, Malaysia 105,000, Brunei 5,000. Sa mga choices, ang pinakamataas ay South Korea (B). Ang Malaysia ay 105,000 lang."
+        },
+        "28": {
+          "question": "[TSART - Katayuang Pangmilitar] % ng Badyet Militar sa GDP: Brunei 6.5% | RP 1.5% | Japan 1.1% | China 1.6% | Malaysia 3.75% | Thailand 1.5% | S. Korea 3.1% | India 2.1%\n\n[QUESTION] Anong bansa ang may inilalaang pinakamalaking porsiyento ng GDP para sa badyet militar?",
+          "choices": {
+            "A": "Japan",
+            "B": "South Korea",
+            "C": "Brunei",
+            "D": "Malaysia"
+          },
+          "correct": "C",
+          "reason": "Sa hanay ng '% ng Badyet Militar sa GDP,' ang Brunei ay 6.5%, ang pinakamataas sa mga choices (Japan 1.1%, S. Korea 3.1%, Malaysia 3.75%)."
+        },
+        "29": {
+          "question": "[TSART - Katayuang Pangmilitar] Badyet Militar: Japan $41.1B, S. Korea $13.2B, Malaysia $3.3B, Brunei $357M. % ng GDP: Japan 1.1%, S. Korea 3.1%, Malaysia 3.75%, Brunei 6.5%\n\n[QUESTION] Anong bansa ang may pinakamalaking GDP?",
+          "choices": {
+            "A": "Japan",
+            "B": "Brunei",
+            "C": "Malaysia",
+            "D": "South Korea"
+          },
+          "correct": "A",
+          "reason": "Ang GDP ay makukuha sa pamamagitan ng badyet ÷ porsiyento ng GDP. Japan: $41.1B ÷ 1.1% ≈ $3.7 trilyon; S. Korea ≈ $426B; Malaysia ≈ $88B; Brunei ≈ $5.5B. Kaya Japan ang pinakamalaki."
+        },
+        "30": {
+          "question": "[TSART - Katayuang Pangmilitar] Brunei: Badyet $357M (6.5% ng GDP), Tropa 5,000, Sasakyang Pandagat 6, Panghimpapawid 6.\n\n[QUESTION] Ano ang maaaring dahilan kung bakit mababa lamang ang bilang ng katayuang pangmilitar ng Brunei?",
+          "choices": {
+            "A": "Kulang sila sa pananalapi",
+            "B": "Maliit na bansa lamang ang Brunei",
+            "C": "Hindi nila kailangan ang militar",
+            "D": "Walang nais magsundalo sa kanilang mga tao."
+          },
+          "correct": "B",
+          "reason": "Maliit na bansa lamang ang Brunei, kaya natural na maliit din ang bilang ng sundalo (5,000) at mga sasakyang pandigma. Ang A at C ay hindi sinusuportahan ng tsart (malaki ang 6.5% ng GDP na inilalaan nila)."
+        }
+      }
+    },
+    {
+      "subject": "Filipino",
+      "subject_icon": "🇵🇭",
+      "topic": "Pagtatalata",
+      "topic_order": 6,
+      "questions": {
+        "1": {
+          "question": "[TALATA I]\nA. Ayon sa batas na ito, pagbabayarin ang mga may-ari ng kumpanya at sasakyan na nakapipinsala sa kalidad ng hangin dahil sa mga usok na binubuga nito.\nB. Ang 'Clean Air Act' ay isang batas na naglalayong mapanatiling malinis ang ating hangin.\nC. Sa ibang banda naman, ang mga kumpanyang magkakabit o maglalagay ng mga gamit laban sa polusyon sa kanilang lugar ay bibigyan ng 'tax break'.\nD. Ano nga ba ang 'Clean Air Act'?\n\n[QUESTION] Ano ang wastong ayos ng mga pangungusap na makabubuo ng isang makabuluhang talata?",
+          "choices": {
+            "A": "A-D-B-C",
+            "B": "B-D-A-C",
+            "C": "D-A-B-C",
+            "D": "D-B-A-C"
+          },
+          "correct": "D",
+          "reason": "Ang unang pangungusap ay ang tanong na D ('Ano nga ba ang Clean Air Act?') na naghahanda ng paksa. Sumusunod ang B (kahulugan ng batas), tapos A ('Ayon sa batas na ito...' — ang 'batas na ito' ay tinutukoy ang Clean Air Act mula sa B), at huli ang C na nagsisimula sa 'Sa ibang banda' (kabilang panig). Kaya D-B-A-C."
+        },
+        "2": {
+          "question": "[TALATA I — wastong ayos: D-B-A-C]\nD. Ano nga ba ang 'Clean Air Act'?\nB. Ang 'Clean Air Act' ay isang batas na naglalayong mapanatiling malinis ang ating hangin.\nA. Ayon sa batas na ito, pagbabayarin ang mga may-ari ng kumpanya at sasakyan na nakapipinsala sa kalidad ng hangin dahil sa mga usok na binubuga nito.\nC. Sa ibang banda naman, ang mga kumpanyang magkakabit o maglalagay ng mga gamit laban sa polusyon sa kanilang lugar ay bibigyan ng 'tax break'.\n\n[QUESTION] Kung daragdagan ng isang pangwakas na pangungusap ang mga nasa itaas, alin sa mga sumusunod ang pinaka-angkop?",
+          "choices": {
+            "A": "Ang 'Clean Air Act' ang tamang solusyon sa lahat ng polusyon.",
+            "B": "Alamin ang tungkol sa 'Clean Air Act'.",
+            "C": "Kung ikaw ang may-ari ng kumpanya, sang-ayon ka ba sa 'Clean Air Act'?",
+            "D": "Tumulong mapanatiling malinis ang hangin."
+          },
+          "correct": "C",
+          "reason": "Ang pinakamainam na pangwakas ay tanong na nag-iiwan ng pagninilay (C), dahil sinusundan nito ang istilo ng talata na nagsimula sa tanong. Ang A ay sobrang pagpapahayag ('tamang solusyon sa lahat'), ang B ay panimula sa halip na wakas, at ang D ay panawagan na wala sa talata."
+        },
+        "3": {
+          "question": "[TALATA I — wastong ayos: D-B-A-C]\nD. Ano nga ba ang 'Clean Air Act'?\nB. Ang 'Clean Air Act' ay isang batas na naglalayong mapanatiling malinis ang ating hangin.\nA. Ayon sa batas na ito, pagbabayarin ang mga may-ari ng kumpanya at sasakyan na nakapipinsala sa kalidad ng hangin dahil sa mga usok na binubuga nito.\nC. Sa ibang banda naman, ang mga kumpanyang magkakabit o maglalagay ng mga gamit laban sa polusyon sa kanilang lugar ay bibigyan ng 'tax break'.\n\n[QUESTION] Ano ang pinaka-angkop na pamagat sa nabuong talata?",
+          "choices": {
+            "A": "Ang Kalinisan",
+            "B": "Ang Clean Air Act",
+            "C": "Ang Hangin",
+            "D": "Ang Kumpanya"
+          },
+          "correct": "B",
+          "reason": "Ang buong talata ay tungkol sa batas na Clean Air Act, kaya 'Ang Clean Air Act' ang pinakaangkop. Ang Kalinisan, Ang Hangin, at Ang Kumpanya ay masyadong malawak o makitid."
+        },
+        "4": {
+          "question": "[TALATA II]\nA. Ayon sa saligang batas, maraming mga katangiang dapat taglayin ang sino mang nagnanais na maging Presidente ng bansa.\nB. Ikalawa, nararapat din na siya ay rehistradong botante at marunong bumasa at sumulat.\nC. Isa pang mahalagang katangian ay kinakailangang 40 taon man lamang siya sa araw ng halalan.\nD. Isa sa mga katangiang ito ay nararapat na isa siyang katutubong ipinanganak na mamamayan ng Pilipinas.\nE. At ang huli ay nararapat na siya ay residente ng Pilipinas sa loob ng sampung taon bago dumating ang halalan.\n\n[QUESTION] Ano ang wastong pagkakasunod-sunod ng mga pangungusap na makabubuo ng makabuluhang talata?",
+          "choices": {
+            "A": "A-B-C-D-E",
+            "B": "A-B-D-C-E",
+            "C": "A-D-B-C-E",
+            "D": "A-D-C-B-E"
+          },
+          "correct": "C",
+          "reason": "Ang A ang paksang pangungusap ('maraming katangian'). Sumusunod ang D ('Isa sa mga katangiang ito'), tapos B ('Ikalawa'), C ('Isa pang mahalagang katangian'), at huli ang E ('At ang huli'). Mga hudyat ang 'Isa sa,' 'Ikalawa,' 'Isa pang,' 'At ang huli.' Kaya A-D-B-C-E."
+        },
+        "5": {
+          "question": "[TALATA II — wastong ayos: A-D-B-C-E]\nA. Ayon sa saligang batas, maraming mga katangiang dapat taglayin ang sino mang nagnanais na maging Presidente ng bansa.\nD. Isa sa mga katangiang ito ay nararapat na isa siyang katutubong ipinanganak na mamamayan ng Pilipinas.\nB. Ikalawa, nararapat din na siya ay rehistradong botante at marunong bumasa at sumulat.\nC. Isa pang mahalagang katangian ay kinakailangang 40 taon man lamang siya sa araw ng halalan.\nE. At ang huli ay nararapat na siya ay residente ng Pilipinas sa loob ng sampung taon bago dumating ang halalan.\n\n[QUESTION] Ano ang pamamaraang ginamit upang mabuo ang talata?",
+          "choices": {
+            "A": "pagbibigay ng sanhi at bunga",
+            "B": "paglalarawan",
+            "C": "paghahambing",
+            "D": "pag-iisa-isa o enumerasyon"
+          },
+          "correct": "D",
+          "reason": "Ginamitan ng enumerasyon (pag-iisa-isa) ang talata: inilista ang mga katangian ng Presidente isa-isa (katutubo, botante, 40 taong gulang, residente). Hindi ito sanhi-bunga o paglalarawan."
+        },
+        "6": {
+          "question": "[TALATA II — wastong ayos: A-D-B-C-E]\nA. Ayon sa saligang batas, maraming mga katangiang dapat taglayin ang sino mang nagnanais na maging Presidente ng bansa.\nD. Isa sa mga katangiang ito ay nararapat na isa siyang katutubong ipinanganak na mamamayan ng Pilipinas.\nB. Ikalawa, nararapat din na siya ay rehistradong botante at marunong bumasa at sumulat.\nC. Isa pang mahalagang katangian ay kinakailangang 40 taon man lamang siya sa araw ng halalan.\nE. At ang huli ay nararapat na siya ay residente ng Pilipinas sa loob ng sampung taon bago dumating ang halalan.\n\n[QUESTION] Anong pangungusap ang nagsasabing hindi maaaring maging Presidente ng bansa ang isang dayuhan?",
+          "choices": {
+            "A": "pangungusap B",
+            "B": "pangungusap C",
+            "C": "pangungusap D",
+            "D": "pangungusap E"
+          },
+          "correct": "C",
+          "reason": "Ang D ang nagsasabing 'katutubong ipinanganak na mamamayan ng Pilipinas,' kaya hindi puwedeng maging Presidente ang dayuhan. Ang B (botante), C (edad), at E (residente) ay iba pang katangian."
+        },
+        "7": {
+          "question": "[TALATA III]\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\n[QUESTION] Ano ang wastong pagkakasunud-sunod ng mga pangungusap na makabubuo ng isang makabuluhang talata?",
+          "choices": {
+            "A": "A-B-C-D",
+            "B": "C-A-B-D",
+            "C": "C-B-D-A",
+            "D": "C-B-A-D"
+          },
+          "correct": "B",
+          "reason": "Ang C ang nauna ('pinakaunang pangkat... Ita'), kasunod ang A ('Ang mga ito...' ay tumutukoy sa Ita at kanilang pinagmulan), tapos B ('Sila ay sinundan ng Indones'), at huli ang D ('ang huling pangkat... Malay'). Kaya C-A-B-D."
+        },
+        "8": {
+          "question": "[TALATA III — wastong ayos: C-A-B-D]\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\n[QUESTION] Ano ang pambungad na paksang pangungusap ang angkop para sa talatang nabuo?",
+          "choices": {
+            "A": "May tatlong pangkat ng tao ang dumating rito sa Pilipinas noong unang panahon.",
+            "B": "Tatlong tao lamang ang pangkat ng mga sinaunang Pilipino.",
+            "C": "Tatlong pangkat ang mga Pilipino ngayon.",
+            "D": "May tatlong sinaunang Pilipino."
+          },
+          "correct": "A",
+          "reason": "Ang talata ay naglalahad ng tatlong pangkat (Ita, Indones, Malay) na dumating sa Pilipinas noong unang panahon, kaya A. Ang B, C, at D ay mali dahil hindi tama ang bilang ng 'mga tao' o 'mga Pilipino ngayon.'"
+        },
+        "9": {
+          "question": "[TALATA III — wastong ayos: C-A-B-D]\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\n[QUESTION] Ano ang angkop na pamagat para sa talata?",
+          "choices": {
+            "A": "Ita, Indones at Malay",
+            "B": "Mga Pangkat ng Tao mula sa Asya",
+            "C": "Sino Ako?",
+            "D": "Ang mga Unang Pangkat ng mga Pilipino"
+          },
+          "correct": "D",
+          "reason": "Ang 'Ang mga Unang Pangkat ng mga Pilipino' ang sumasaklaw sa buong talata. Ang Ita, Indones at Malay ay listahan lang, ang Mga Pangkat ng Tao mula sa Asya ay malabo, at ang 'Sino Ako?' ay hindi angkop."
+        },
+        "10": {
+          "question": "[TALATA III — orihinal na ayos: C-A-B-D]\nC. Ang pinakaunang pangkat ng mga tao sa Pilipinas ay ang mga Ita o Negrito.\nA. Ang mga ito ay nagmula sa Gitnang Asya at naglakad sa mga tulay na lupang nagkakabit ng iba't ibang bahagi ng Asya sa Pilipinas.\nB. Sila ay sinundan ng Indones na galing sa Timog Silangang Asya.\nD. Ang huling pangkat naman na dumating upang manirahan dito sa ating bansa ay ang mga Malay na nagmula rin sa Timog Silangang Asya.\n\nBagong pangungusap E: 'Ang mga Indones ay dumating nang dalawang bugso may limang libong taon na ang nakaraan.'\n\n[QUESTION] Kung idaragdag bilang pangungusap E ang nasa itaas, ano ang magiging panibagong pagkakasunud-sunod ng mga pangungusap upang makabuo ng makabuluhang talata?",
+          "choices": {
+            "A": "A-B-E-C-D",
+            "B": "C-A-B-E-D",
+            "C": "C-B-E-D-A",
+            "D": "C-B-E-A-D"
+          },
+          "correct": "B",
+          "reason": "Ang bagong pangungusap E ay tungkol sa Indones, kaya ilalagay ito pagkatapos ng B (na unang nagbanggit sa Indones) at bago ang D (Malay). Kaya C-A-B-E-D."
+        }
+      }
+    },
+    {
+      "subject": "General Information",
+      "subject_icon": "🏛️",
+      "topic": "Philippine Constitution (Extended)",
+      "topic_order": 5,
+      "questions": {
+        "1": {
+          "question": "What do you call the introductory part of the Constitution?",
+          "choices": {
+            "A": "Preface",
+            "B": "Amendments",
+            "C": "Preamble",
+            "D": "Bill of Rights"
+          },
+          "correct": "C",
+          "reason": "Ang Preamble ang panimulang bahagi ng Saligang Batas (nagsisimula sa 'We, the sovereign Filipino people...'). Ang Bill of Rights ay Article III, at ang amendments ay mga pagbabago sa Konstitusyon. Halimbawa: parang 'pambungad na talata' ng buong batas."
+        },
+        "2": {
+          "question": "What form of government does the Philippines adopt?",
+          "choices": {
+            "A": "Republican",
+            "B": "Democratic",
+            "C": "neither a nor b",
+            "D": "both a and b"
+          },
+          "correct": "D",
+          "reason": "Ayon sa Art. II, Sec. 1, 'The Philippines is a democratic and republican State.' Kaya parehong tama ang A at B. Republican = may kinatawan ang mamamayan; democratic = nasa mamamayan ang kapangyarihan."
+        },
+        "3": {
+          "question": "What is the power of the State to take private property for public use upon payment of a just compensation?",
+          "choices": {
+            "A": "right of confiscation",
+            "B": "right of limiting resources",
+            "C": "right of sequestration",
+            "D": "right of eminent domain"
+          },
+          "correct": "D",
+          "reason": "Ang 'eminent domain' ay kapangyarihan ng Estado na kunin ang pribadong ari-arian para sa pampublikong gamit kapalit ng makatarungang bayad (just compensation). Halimbawa: pagkuha ng lupa para sa bagong kalsada, at binabayaran ang may-ari."
+        },
+        "4": {
+          "question": "Who among the following may issue a warrant of arrest or a search warrant?",
+          "choices": {
+            "A": "a senator",
+            "B": "a judge",
+            "C": "a congressman",
+            "D": "the President"
+          },
+          "correct": "B",
+          "reason": "Ayon sa Art. III, Sec. 2, ang warrant of arrest o search warrant ay ipinapalabas lang ng hukom (judge) pagkatapos ng pagtukoy ng probable cause. Hindi ito kapangyarihan ng senador, kongresista, o Pangulo."
+        },
+        "5": {
+          "question": "A foreigner may acquire Filipino citizenship through",
+          "choices": {
+            "A": "naturalization",
+            "B": "extradition",
+            "C": "rebirth",
+            "D": "Visa application"
+          },
+          "correct": "A",
+          "reason": "Ang naturalization ay ang legal na proseso para maging mamamayan ang dayuhan. Ang extradition ay pagpapabalik ng tao sa ibang bansa para litisin, at ang visa ay pahintulot lang na pumasok o manatili, hindi pagkamamamayan."
+        },
+        "6": {
+          "question": "The right to vote is also known as ____________.",
+          "choices": {
+            "A": "suffrage",
+            "B": "naturalization",
+            "C": "democracy",
+            "D": "plebiscite"
+          },
+          "correct": "A",
+          "reason": "Ang suffrage ay karapatang bumoto. Ang plebisito ay pagboto para sa pagtanggap o pagtanggi sa isang panukala, at ang democracy ay uri ng pamahalaan."
+        },
+        "7": {
+          "question": "How many Senators are there in the Senate?",
+          "choices": {
+            "A": "twenty-five",
+            "B": "twenty-four",
+            "C": "twelve",
+            "D": "thirty"
+          },
+          "correct": "B",
+          "reason": "Ang Senado ay binubuo ng 24 na senador (Art. VI, Sec. 2), na inihalal ng buong bansa at may anim na taong termino. Hindi ito 12 (kalahati lang ang inihahalal tuwing eleksyon)."
+        },
+        "8": {
+          "question": "What is the minimum age requirement of a Senator?",
+          "choices": {
+            "A": "thirty",
+            "B": "twenty-five",
+            "C": "twenty",
+            "D": "thirty-five"
+          },
+          "correct": "D",
+          "reason": "Ang senador ay dapat natural-born na Pilipino, hindi bababa sa 35 taong gulang sa araw ng halalan, marunong bumasa at sumulat, at rehistradong botante. Ang 25 ay para sa mga miyembro ng House of Representatives."
+        },
+        "9": {
+          "question": "Which of the following bills do not originate from the House of Representatives?",
+          "choices": {
+            "A": "Appropriation bills",
+            "B": "Revenue or tariff bills",
+            "C": "Amnesty",
+            "D": "Private bills"
+          },
+          "correct": "C",
+          "reason": "Ayon sa Art. VI, Sec. 24, sa House nagmumula ang appropriation, revenue/tariff, public debt, local, at private bills. Ang amnesty ay hindi bill na nagmumula sa House; ito ay ipinagkakaloob ng Pangulo na may pagsang-ayon ng mayorya ng Kongreso. Kaya C."
+        },
+        "10": {
+          "question": "The Members of the Lower House are",
+          "choices": {
+            "A": "elected by region and by party list",
+            "B": "elected by region and appointed by the President",
+            "C": "elected by district and party list",
+            "D": "elected by district and appointed by the Senators"
+          },
+          "correct": "C",
+          "reason": "Ang Mababang Kapulungan (House of Representatives) ay binubuo ng mga kinatawan na inihalal ayon sa distrito at party-list (Art. VI, Sec. 5). Walang appointed na miyembro."
+        },
+        "11": {
+          "question": "The legislative power of the government shall be vested in the",
+          "choices": {
+            "A": "President",
+            "B": "Congress",
+            "C": "Supreme Court",
+            "D": "all of the above"
+          },
+          "correct": "B",
+          "reason": "Ayon sa Art. VI, Sec. 1, ang kapangyarihang lehislatibo ay nasa Kongreso (Senado at House). Ang Pangulo ay ehekutibo at ang Korte Suprema ay hudisyal. Halimbawa: paggawa ng batas ay trabaho ng Kongreso."
+        },
+        "12": {
+          "question": "Which of the following may disqualify a person from running for Presidency?",
+          "choices": {
+            "A": "He is sixty years old on the day of the election.",
+            "B": "He lived abroad five years preceding the election.",
+            "C": "He has Filipino parents but was born in the United States.",
+            "D": "He is a registered voter."
+          },
+          "correct": "B",
+          "reason": "Ang kandidato sa pagka-Pangulo ay dapat natural-born, rehistradong botante, nakababasa at nakasusulat, hindi bababa sa 40 taong gulang, at residente ng Pilipinas nang hindi bababa sa 10 taon bago ang halalan. Ang pagtira sa ibang bansa nang limang taon bago ang halalan ay sisira sa 10-taong residency, kaya ito ang magdidiskuwalipika."
+        },
+        "13": {
+          "question": "Which of the following shows the transfer of power should the President be incapable of discharging his duties?",
+          "choices": {
+            "A": "President → Vice-President → Senate President → House Speaker",
+            "B": "President → Vice-President → Chief Justice → Senate President",
+            "C": "President → Vice-President → Chief Justice → House Speaker",
+            "D": "President → Vice-President → House Speaker → Senate President"
+          },
+          "correct": "A",
+          "reason": "Ayon sa Art. VII, Secs. 7–8, kapag hindi kayang gampanan ng Pangulo ang tungkulin, ang pagkakasunod ay Pangulo → Bise-Presidente → Senate President → Speaker ng House. Hindi kabilang ang Chief Justice."
+        },
+        "14": {
+          "question": "A member of the Supreme Court",
+          "choices": {
+            "A": "must have been for fifteen years or more, a judge of a lower court.",
+            "B": "must have been for ten years, a judge of the Court of Appeals",
+            "C": "may not be a member of the Philippine Bar",
+            "D": "may be a naturalized citizen"
+          },
+          "correct": "A",
+          "reason": "Ayon sa Art. VIII, Sec. 7, ang miyembro ng Korte Suprema ay natural-born na Pilipino, 40 taong gulang pataas, at nakapaglingkod nang hindi bababa sa 15 taon bilang hukom ng mababang hukuman (o naging abogado). Kailangan ding miyembro ng Philippine Bar. Hindi puwede ang naturalized citizen."
+        },
+        "15": {
+          "question": "The Supreme Court is composed of",
+          "choices": {
+            "A": "a Chief Justice and fourteen Associate Justices",
+            "B": "two Chief Justices and fourteen Associate Justices",
+            "C": "a Chief Justice and twelve Associate Justices",
+            "D": "a Chief Justice and an indefinite number of Associate Justices"
+          },
+          "correct": "A",
+          "reason": "Ang Korte Suprema ay binubuo ng isang Chief Justice at 14 na Associate Justices, kabuuang 15 (Art. VIII, Sec. 4)."
+        },
+        "16": {
+          "question": "Which of the following is a Constitutional Commission?",
+          "choices": {
+            "A": "Commission on Human Rights",
+            "B": "Philippine Commission on Good Government",
+            "C": "Civil Service Commission",
+            "D": "Commission on Natural Resources"
+          },
+          "correct": "C",
+          "reason": "Ang tatlong Constitutional Commissions sa Art. IX ay ang Civil Service Commission, Commission on Elections, at Commission on Audit. Ang Commission on Human Rights ay may batayan sa Konstitusyon (Art. XIII) pero hindi kabilang sa tatlo; ang PCGG ay itinatag ng executive order."
+        },
+        "17": {
+          "question": "What branch of government has the sole right to initiate all cases of impeachment?",
+          "choices": {
+            "A": "Senate",
+            "B": "Commission on Elections",
+            "C": "House of Representatives",
+            "D": "Judiciary"
+          },
+          "correct": "C",
+          "reason": "Ang House of Representatives ang may eksklusibong kapangyarihang magsimula ng lahat ng kaso ng impeachment (Art. XI, Sec. 3). Ang Senado ang nagsisilbing hukuman na dumidinig dito."
+        },
+        "18": {
+          "question": "Which of the following is not removable from office by impeachment?",
+          "choices": {
+            "A": "Member of the Supreme Court",
+            "B": "Member of the Constitutional Commissions",
+            "C": "The Ombudsman",
+            "D": "Senators"
+          },
+          "correct": "D",
+          "reason": "Ang mga impeachable officers ay ang Pangulo, Bise-Presidente, miyembro ng Korte Suprema, mga Constitutional Commission, at Ombudsman. Hindi kabilang ang mga senador; sila ay maaaring patalsikin sa pamamagitan ng expulsion ng kanilang kapulungan."
+        },
+        "19": {
+          "question": "The national language of the Philippines is",
+          "choices": {
+            "A": "Pilipino",
+            "B": "English and Filipino",
+            "C": "Tagalog",
+            "D": "Filipino"
+          },
+          "correct": "D",
+          "reason": "Ang pambansang wika ay Filipino (Art. XIV, Sec. 6). Ang English at Filipino ang mga opisyal na wika, pero ang 'pambansang wika' ay Filipino lang."
+        },
+        "20": {
+          "question": "Who may propose any amendment to, or revision of the Constitution?",
+          "choices": {
+            "A": "Congress or a Constitutional Convention",
+            "B": "Congress and a Constitutional Convention",
+            "C": "Judiciary and Congress",
+            "D": "Judiciary and Constitutional Convention"
+          },
+          "correct": "A",
+          "reason": "Ayon sa Art. XVII, ang Kongreso (bilang constituent assembly sa pamamagitan ng boto ng ¾ ng lahat ng miyembro) o ang Constitutional Convention ang maaaring magpanukala ng pagbabago. Pagkatapos, kailangan ng ratipikasyon ng taumbayan sa plebisito. Hindi puwede ang Judiciary."
+        },
+        "21": {
+          "question": "What tax is paid by individuals who derive compensation income?",
+          "choices": {
+            "A": "Value added tax",
+            "B": "Excise tax",
+            "C": "Income tax",
+            "D": "Real estate tax"
+          },
+          "correct": "C",
+          "reason": "Ang income tax ay buwis sa kinikita (kasama ang sahod o compensation income). Ang VAT ay sa pagbebenta ng produkto o serbisyo, at ang real estate tax ay sa ari-arian."
+        },
+        "22": {
+          "question": "When is the deadline for filing income tax returns for every taxable year?",
+          "choices": {
+            "A": "April 15",
+            "B": "April 30",
+            "C": "March 15",
+            "D": "March 30"
+          },
+          "correct": "A",
+          "reason": "Ang karaniwang deadline ng annual income tax return ng indibidwal ay Abril 15 (NIRC)."
+        },
+        "23": {
+          "question": "Which of the following statements is true about taxes?",
+          "choices": {
+            "A": "It is a voluntary payment",
+            "B": "It is payable both in cash and in kind",
+            "C": "It is an enforced contribution",
+            "D": "It is based on one's desire to pay."
+          },
+          "correct": "C",
+          "reason": "Ang buwis ay 'enforced contribution' (sapilitang kontribusyon) na ipinapataw ng Estado at hindi boluntaryo. Karaniwan itong binabayaran sa pera, hindi sa gusto ng nagbabayad."
+        },
+        "24": {
+          "question": "What tax is imposed on one's right to transmit property at death, and is measured by the value of the property?",
+          "choices": {
+            "A": "Excise tax",
+            "B": "Withholding tax",
+            "C": "Donor's tax",
+            "D": "Estate tax"
+          },
+          "correct": "D",
+          "reason": "Ang estate tax ay buwis sa karapatang ipamana ang ari-arian pagkamatay ng may-ari, batay sa halaga ng ari-arian. Ang donor's tax ay para sa ari-ariang ibinigay habang buhay pa ang may-ari."
+        },
+        "25": {
+          "question": "Which of the following is classified as being a 'Head of the Family' for income tax purposes?",
+          "choices": {
+            "A": "a married individual with dependents",
+            "B": "an unmarried individual with dependents",
+            "C": "a married individual without dependents",
+            "D": "an unmarried individual without dependents"
+          },
+          "correct": "B",
+          "reason": "Sa lumang probisyon ng NIRC, ang 'head of the family' ay isang walang-asawa (o hiwalay sa batas) na may mga dependent (hal. anak o magulang na sinusuportahan). Mula nang ipatupad ang TRAIN law, wala nang personal exemption, pero sa historical context ng exam, ito ang sagot."
+        },
+        "26": {
+          "question": "What Act implements the mandate for the 'State to make essential goods, health and other social services available to all the people at affordable cost'?",
+          "choices": {
+            "A": "Land Reform Program",
+            "B": "Generics Act",
+            "C": "Resettlement Act",
+            "D": "Freedom Act"
+          },
+          "correct": "B",
+          "reason": "Ang Generics Act (RA 6675) ang nagpapatupad ng mandato na gawing abot-kaya ang mga gamot at pangkalusugang serbisyo (sa pamamagitan ng generic na gamot). Ang Land Reform ay para sa lupa, ang Resettlement ay para sa paglilipat ng tirahan."
+        },
+        "27": {
+          "question": "Which of the following is true about elective local officials?",
+          "choices": {
+            "A": "The term of office is three years",
+            "B": "Barangay officials' term of office is indefinite",
+            "C": "An official may be reelected indefinitely",
+            "D": "An official may not serve for less than three terms"
+          },
+          "correct": "A",
+          "reason": "Ang mga halal na lokal na opisyal (gobernador, alkalde, atbp.) ay may termino na tatlong taon at hanggang tatlong magkakasunod na termino lamang (Art. X, Sec. 8)."
+        },
+        "28": {
+          "question": "What may be classified as alienable lands of the public domain?",
+          "choices": {
+            "A": "forest",
+            "B": "mineral lands",
+            "C": "national park",
+            "D": "agricultural lands"
+          },
+          "correct": "D",
+          "reason": "Ang agricultural lands ang tanging nabanggit na puwedeng ipamahagi bilang alienable lands of the public domain (Art. XII, Sec. 3). Ang forest, mineral, at national parks ay hindi maaaring ipamigay o ipagbili."
+        },
+        "29": {
+          "question": "What is the maximum equity for aliens in a corporation or association in the exploration, development, and utilization of natural resources?",
+          "choices": {
+            "A": "60%",
+            "B": "40%",
+            "C": "50%",
+            "D": "30%"
+          },
+          "correct": "B",
+          "reason": "Ayon sa Art. XII, Sec. 2, ang paggalugad at paggamit ng likas-yaman ay para sa mga Pilipino o mga korporasyong may hindi bababa sa 60% Pilipino ang puhunan. Kaya ang pinakamataas na bahagi ng dayuhan ay 40%."
+        },
+        "30": {
+          "question": "What is recognized by the State as the foundation of the nation?",
+          "choices": {
+            "A": "barangay",
+            "B": "community",
+            "C": "family",
+            "D": "municipality"
+          },
+          "correct": "C",
+          "reason": "Ayon sa Art. XV, Sec. 1, kinikilala ng Estado ang pamilya bilang pundasyon ng bansa. Halimbawa: ang edukasyon at pagpapalaki ng anak ay nagsisimula sa pamilya."
+        }
+      }
+    }
+  ]
+}

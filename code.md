@@ -24,6 +24,12 @@
       body { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; }
       .safe-top { padding-top: env(safe-area-inset-top); }
     </style>
+      <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="CSE Reviewer" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   </head>
   <body class="bg-parchment text-navy-900 dark:bg-navy-950 dark:text-parchment-50">
     <div id="root"></div>
@@ -42,6 +48,59 @@ export default {
 };
 ```
 
+## File: ./frontend/public/sw.js
+```
+const CACHE = "cse-shell-v2";
+
+self.addEventListener("install", () => self.skipWaiting());
+
+self.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener("fetch", (e) => {
+  const req = e.request;
+  if (req.method !== "GET") return;
+  const url = new URL(req.url);
+  if (url.origin !== location.origin) return;
+
+  if (req.mode === "navigate") {
+    e.respondWith(
+      fetch(req)
+        .then((res) => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put("./index.html", copy));
+          }
+          return res;
+        })
+        .catch(() => caches.match("./index.html", { ignoreVary: true }))
+    );
+    return;
+  }
+
+  if (url.pathname.includes("/assets/")) {
+    e.respondWith(
+      caches.match(req, { ignoreVary: true }).then(
+        (hit) =>
+          hit ||
+          fetch(req).then((res) => {
+            if (res.ok) {
+              const copy = res.clone();
+              caches.open(CACHE).then((c) => c.put(req, copy));
+            }
+            return res;
+          })
+      )
+    );
+  }
+});
+```
+
 ## File: ./frontend/src/App.jsx
 ```
 import { useState, useEffect, useRef, lazy, Suspense } from "react";
@@ -51,7 +110,11 @@ import LibraryBrowser from "./pages/LibraryBrowser";
 import QuizBrowser from "./pages/QuizBrowser";
 import FeesView from "./pages/FeesView";
 import SettingsView from "./pages/SettingsView";
+import InstallView from "./pages/InstallView";
 import AccountButton from "./components/AccountButton";
+import { isNativeApp, useInstallInfo } from "./pwaInstall";
+import { useUpdateAvailable } from "./updateCheck";
+import UpdateBanner from "./components/UpdateBanner";
 
 const DevPanel = import.meta.env.DEV ? lazy(() => import("./pages/DevPanel")) : null;
 
@@ -103,6 +166,13 @@ const IconTool = (p) => (
     <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-.7-.7-2.3 2.7-2.7Z" />
   </svg>
 );
+const IconDownload = (p) => (
+  <svg {...iconProps} {...p}>
+    <path d="M12 4v11" />
+    <path d="m7 11 5 5 5-5" />
+    <path d="M5 20h14" />
+  </svg>
+);
 
 const BASE_TABS = [
   { id: "library", label: "Library", Icon: IconBook },
@@ -121,7 +191,13 @@ export default function App() {
   });
   const mainRef = useRef(null);
 
+  const updateAvailable = useUpdateAvailable();
+  const install = useInstallInfo();
+  const showInstallDot = updateAvailable || (install.canInstall && !install.justInstalled && !install.standalone);
+
   const TABS = [...BASE_TABS];
+  // No "Install" tab on the Android APK build — it's already a real app.
+  if (!isNativeApp()) TABS.push({ id: "install", label: "Install", Icon: IconDownload });
   if (isAdmin) TABS.push({ id: "admin", label: "Admin", Icon: IconCrown });
   if (import.meta.env.DEV) TABS.push({ id: "dev", label: "Dev", Icon: IconTool });
 
@@ -153,11 +229,14 @@ export default function App() {
         </div>
       </header>
 
+      <UpdateBanner />
+
       <main ref={mainRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
         {tab === "library" && <LibraryBrowser nav={nav.library} setNav={navSetter("library")} />}
         {tab === "quiz" && <QuizBrowser nav={nav.quiz} setNav={navSetter("quiz")} />}
         {tab === "fees" && <FeesView />}
         {tab === "settings" && <SettingsView darkMode={dark} setDarkMode={setDark} />}
+        {tab === "install" && <InstallView />}
         {tab === "admin" && isAdmin && (
           <Suspense fallback={loading}>
             <AdminPanel />
@@ -183,7 +262,12 @@ export default function App() {
                   active ? "text-navy-900 dark:text-gold-400" : "text-slate-400 dark:text-slate-500"
                 }`}
               >
-                <Icon className="h-6 w-6" />
+                <span className="relative">
+                  <Icon className="h-6 w-6" />
+                  {id === "install" && showInstallDot && (
+                    <span className="absolute -right-1 -top-0.5 h-2.5 w-2.5 rounded-full border-2 border-parchment-50 bg-amber-500 dark:border-navy-900" />
+                  )}
+                </span>
                 <span className="max-w-full truncate">{label}</span>
               </button>
             );
@@ -1320,6 +1404,109 @@ export function ProgressCircle({ progress, size = 60, strokeWidth = 6, color = "
 }
 ```
 
+## File: ./frontend/src/components/UpdateBanner.jsx
+```
+import { useState } from "react";
+import { useUpdateAvailable, applyUpdate } from "../updateCheck";
+
+export default function UpdateBanner() {
+  const available = useUpdateAvailable();
+  const [busy, setBusy] = useState(false);
+  const [failed, setFailed] = useState(false);
+  if (!available) return null;
+
+  const run = async () => {
+    setBusy(true);
+    setFailed(false);
+    const ok = await applyUpdate();
+    if (ok === false) { setBusy(false); setFailed(true); }
+  };
+
+  return (
+    <div className="flex-shrink-0 border-b border-amber-300 bg-amber-50 dark:border-amber-700 dark:bg-amber-950/40">
+      <div className="mx-auto flex max-w-2xl items-center gap-2 px-3 py-2">
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-bold text-amber-900 dark:text-amber-200">🆕 New version available</p>
+          <p className="text-xs text-amber-800/80 dark:text-amber-300/80">
+            {failed ? "Connect to the internet to update." : "May bagong questions at fixes."}
+          </p>
+        </div>
+        <button
+          onClick={run}
+          disabled={busy}
+          className="flex-shrink-0 rounded-lg bg-navy-900 px-4 py-2 text-sm font-bold text-white active:bg-navy-800 disabled:opacity-60 dark:bg-gold-500 dark:text-navy-900"
+        >
+          {busy ? "Updating…" : "Update now"}
+        </button>
+      </div>
+    </div>
+  );
+}
+```
+
+## File: ./frontend/src/components/VisualQuestion.jsx
+```
+import { quizImageUrl } from "../quizImages";
+
+// Shows an image, or only a slice of it (x0..x1 = 0..1 of the width).
+export function CroppedImage({ img, alt = "" }) {
+  if (!img?.src) return null;
+  const x0 = img.x0 ?? 0;
+  const x1 = img.x1 ?? 1;
+  const span = x1 - x0 || 1;
+  const ratio = img.w && img.h ? `${span * img.w} / ${img.h}` : undefined;
+  return (
+    <div className="overflow-hidden rounded bg-white" style={{ aspectRatio: ratio }}>
+      <img
+        src={quizImageUrl(img.src)}
+        alt={alt}
+        draggable={false}
+        style={{
+          display: "block",
+          maxWidth: "none",
+          width: `${100 / span}%`,
+          marginLeft: `${(-100 * x0) / span}%`,
+        }}
+      />
+    </div>
+  );
+}
+
+export function QuizFigure({ item }) {
+  const f = item?.figure;
+  if (!f) return null;
+  const span = (f.x1 ?? 1) - (f.x0 ?? 0);
+  const maxW = Math.min(384, Math.round(span * (f.w || 300) * 1.5));
+  return (
+    <div
+      className="mx-auto w-full rounded-lg border border-parchment-200 bg-white p-2 dark:border-navy-700"
+      style={{ maxWidth: maxW }}
+    >
+      <CroppedImage img={f} alt="Question figure" />
+    </div>
+  );
+}
+
+export function ChoiceContent({ k, label, item }) {
+  const img = item?.choiceImages?.[k];
+  if (!img) {
+    return (
+      <>
+        <span className="font-semibold">{k}.</span> {label}
+      </>
+    );
+  }
+  return (
+    <div className="flex flex-col items-center gap-1">
+      <span className="self-start font-semibold">{k}.</span>
+      <div className="w-full">
+        <CroppedImage img={img} alt={`Choice ${k}`} />
+      </div>
+    </div>
+  );
+}
+```
+
 ## File: ./frontend/src/contentStore.js
 ```
 // ONE store for Library + Quiz content. Subjects and topics are NOT hard-coded:
@@ -2052,6 +2239,52 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </ErrorBoundary>
   </React.StrictMode>
 );
+
+// Register the service worker (needed for the browser's one-tap install prompt).
+import { isNativeApp } from "./pwaInstall";
+if ("serviceWorker" in navigator && import.meta.env.PROD && !isNativeApp()) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register(import.meta.env.BASE_URL + "sw.js").catch(() => {});
+  });
+}
+
+import { precacheOffline } from "./offlineCache";
+if ("serviceWorker" in navigator && import.meta.env.PROD && !isNativeApp()) {
+  navigator.serviceWorker.ready.then(() => setTimeout(precacheOffline, 3000)).catch(() => {});
+}
+```
+
+## File: ./frontend/src/offlineCache.js
+```
+// Downloads every quiz image + the app's own JS/CSS into the cache while online,
+// so the whole app (including Logical Reasoning pictures) works offline.
+import { allQuizImageUrls } from "./quizImages";
+
+const CACHE = "cse-shell-v2";
+
+export async function precacheOffline() {
+  if (!("caches" in window) || navigator.onLine === false) return;
+  try {
+    const urls = new Set();
+    for (const u of allQuizImageUrls()) {
+      if (u && !u.startsWith("data:")) urls.add(new URL(u, location.href).href);
+    }
+    for (const e of performance.getEntriesByType("resource")) {
+      try {
+        const u = new URL(e.name);
+        if (u.origin === location.origin && u.pathname.includes("/assets/")) urls.add(u.href);
+      } catch (_) {}
+    }
+    const cache = await caches.open(CACHE);
+    for (const u of urls) {
+      if (await cache.match(u, { ignoreVary: true })) continue;
+      try {
+        const res = await fetch(u);
+        if (res.ok) await cache.put(u, res);
+      } catch (_) {}
+    }
+  } catch (_) {}
+}
 ```
 
 ## File: ./frontend/src/pages/AdminOverview.jsx
@@ -3506,6 +3739,179 @@ export default function FeesView() {
 }
 ```
 
+## File: ./frontend/src/pages/InstallView.jsx
+```
+import { useMemo, useState } from "react";
+import { useInstallInfo, promptInstall, detectPlatform } from "../pwaInstall";
+import { useUpdateAvailable, checkForUpdate, getRemoteId, applyUpdate } from "../updateCheck";
+
+const card = "rounded-2xl border border-slate-200 bg-white p-4 shadow-card dark:border-slate-700 dark:bg-slate-800";
+const h2 = "mb-3 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500";
+const bigBtn = "flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-navy-900 px-4 py-3 text-sm font-bold text-white active:bg-navy-800 disabled:opacity-50 dark:bg-navy-700";
+const ghostBtn = "flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-700 active:bg-slate-100 dark:border-slate-600 dark:text-slate-200 dark:active:bg-slate-700";
+
+function Steps({ items }) {
+  return (
+    <ol className="space-y-2.5">
+      {items.map((t, i) => (
+        <li key={i} className="flex gap-3 text-sm text-slate-700 dark:text-slate-200">
+          <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-navy-900 text-xs font-bold text-white dark:bg-navy-700">{i + 1}</span>
+          <span className="pt-0.5">{t}</span>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+export default function InstallView() {
+  const { canInstall, justInstalled, standalone } = useInstallInfo();
+  const p = useMemo(() => detectPlatform(), []);
+  const [dismissed, setDismissed] = useState(false);
+  const [added, setAdded] = useState(false);
+  const [upd, setUpd] = useState("");
+  const updateAvailable = useUpdateAvailable();
+
+  const doInstall = async () => {
+    const r = await promptInstall();
+    if (r === "dismissed") setDismissed(true);
+  };
+
+  const checkUpdate = async () => {
+    setUpd("checking");
+    try {
+      const available = await checkForUpdate(true);
+      if (!getRemoteId()) { setUpd("error"); return; }
+      if (!available) { setUpd("latest"); return; }
+      setUpd("reloading");
+      setTimeout(() => applyUpdate(), 400);
+    } catch (_) {
+      setUpd("error");
+    }
+  };
+
+  const done = justInstalled || added;
+
+  let body;
+  if (standalone) {
+    body = (
+      <section className={card}>
+        <p className="text-lg font-bold text-emerald-600 dark:text-emerald-400">✅ You are using the installed app</p>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">Nothing to install. It opens full screen straight from your Home Screen.</p>
+      </section>
+    );
+  } else if (done) {
+    body = (
+      <section className={card + " text-center"}>
+        <p className="text-4xl" aria-hidden>🎉</p>
+        <p className="mt-2 text-xl font-bold text-emerald-600 dark:text-emerald-400">Done!</p>
+        <p className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+          Check your <b>Home Screen</b>, find the app icon, and open it from there. It opens full screen, like a real app.
+        </p>
+        <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Tapos na! Hanapin ang icon sa Home Screen mo at buksan doon. Puwede mo nang isara ang browser na ito.</p>
+        {added && !justInstalled && (
+          <button onClick={() => setAdded(false)} className="mt-4 text-xs text-slate-400 underline">I did not add it yet</button>
+        )}
+      </section>
+    );
+  } else if (p.inApp) {
+    body = (
+      <section className={card + " border-amber-300 bg-amber-50 dark:border-amber-700 dark:bg-amber-950/20"}>
+        <p className="font-bold text-amber-800 dark:text-amber-300">⚠️ Open this in your browser first</p>
+        <p className="mt-1 text-sm text-slate-700 dark:text-slate-200">
+          You are inside the Facebook / Messenger (or similar) built-in browser, which cannot install apps.
+        </p>
+        <div className="mt-3">
+          <Steps items={[
+            "Tap the ⋯ or ⋮ menu (top right or bottom right).",
+            p.ios ? "Tap \"Open in Safari\"." : "Tap \"Open in Chrome\" (or \"Open in browser\").",
+            "Come back to this Install tab and install from there.",
+          ]} />
+        </div>
+      </section>
+    );
+  } else if (canInstall) {
+    body = (
+      <section className={card}>
+        <h2 className={h2}>Install the app</h2>
+        <p className="mb-3 text-sm text-slate-600 dark:text-slate-300">One tap. It adds the app to your Home Screen and opens full screen, no browser bars.</p>
+        <button onClick={doInstall} className={bigBtn}>📲 Install app</button>
+        {dismissed && (
+          <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">No problem. Tap the button again later, or use your browser menu (⋮) → "Install app".</p>
+        )}
+      </section>
+    );
+  } else if (p.ios) {
+    body = (
+      <section className={card}>
+        <h2 className={h2}>Add to Home Screen (iPhone / iPad)</h2>
+        <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">Apple does not allow one-tap install, so it takes 3 quick steps:</p>
+        <Steps items={[
+          p.browser === "safari"
+            ? "Tap the Share button ⬆️ (the square with an arrow, at the bottom of Safari). On newer iPhones it may be inside the ••• menu."
+            : "Tap the Share button ⬆️ (the square with an arrow). If you cannot find \"Add to Home Screen\", open this page in Safari instead.",
+          "Scroll down and tap \"Add to Home Screen\".",
+          "Tap \"Add\" (top right). The app icon appears on your Home Screen.",
+        ]} />
+        <button onClick={() => setAdded(true)} className={bigBtn + " mt-4"}>✅ I added it</button>
+      </section>
+    );
+  } else if (p.android) {
+    body = (
+      <section className={card}>
+        <h2 className={h2}>Add to Home Screen (Android)</h2>
+        <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
+          {p.browser === "chrome" ? "Your browser did not offer the one-tap install, so use the menu:" : "For one-tap install, open this page in Google Chrome. Or use your browser menu:"}
+        </p>
+        <Steps items={[
+          p.browser === "samsung" ? "Tap the ☰ menu at the bottom right." : "Tap the ⋮ menu at the top right.",
+          p.browser === "samsung" ? "Tap \"Add page to\" → \"Home screen\"." : "Tap \"Install app\" (or \"Add to Home screen\").",
+          "Tap \"Install\" / \"Add\". The app icon appears on your Home Screen.",
+        ]} />
+        <button onClick={() => setAdded(true)} className={bigBtn + " mt-4"}>✅ I added it</button>
+      </section>
+    );
+  } else {
+    body = (
+      <section className={card}>
+        <h2 className={h2}>Install the app</h2>
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          Open this site on your phone to add it to your Home Screen. On a computer, use the install icon in the Chrome / Edge address bar.
+        </p>
+      </section>
+    );
+  }
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-4 pb-10">
+      <div>
+        <h1 className="mb-1 text-2xl font-bold text-slate-900 dark:text-slate-50">Install</h1>
+        <p className="text-sm text-slate-500 dark:text-slate-400">Put the app on your Home Screen and keep it up to date.</p>
+      </div>
+
+      <section className="rounded-2xl border border-amber-300 bg-amber-50 p-4 dark:border-amber-700 dark:bg-amber-950/30">
+        <p className="text-sm font-bold text-amber-800 dark:text-amber-300">🔄 Reminder: check for updates every time you open the app</p>
+        <p className="mt-1 text-sm text-slate-700 dark:text-slate-200">New questions, fixes, and features do not always show up right away. Tap <b>Check for updates</b> below each time you open the app, or tap <b>Update now</b> when the "New version available" banner appears at the top.</p>
+        {updateAvailable && (
+          <button onClick={() => { applyUpdate(); }} className="mt-3 flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl bg-navy-900 px-4 py-2.5 text-sm font-bold text-white active:bg-navy-800 dark:bg-navy-700">🆕 New version available — Update now</button>
+        )}
+      </section>
+
+      {body}
+
+      <section className={card}>
+        <h2 className={h2}>Get the latest version</h2>
+        <p className="mb-3 text-sm text-slate-600 dark:text-slate-300">Fixes and new features load automatically. Tap below if you want to check right now (needs internet).</p>
+        <button onClick={checkUpdate} disabled={upd === "checking" || upd === "reloading"} className={ghostBtn}>
+          {upd === "checking" ? "Checking…" : upd === "reloading" ? "Updating… the app will reload" : "🔄 Check for updates"}
+        </button>
+        {upd === "error" && <p className="mt-2 text-xs text-red-600 dark:text-red-400">Could not check. Please connect to the internet and try again.</p>}
+        {upd === "latest" && <p className="mt-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400">✅ You are on the latest version.</p>}
+      </section>
+    </div>
+  );
+}
+```
+
 ## File: ./frontend/src/pages/LibraryBrowser.jsx
 ```
 import { useState, useEffect, useMemo } from "react";
@@ -4025,6 +4431,7 @@ export default function SettingsView({ darkMode, setDarkMode }) {
 ```
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { ProgressCircle, answersMatch } from "../components/QuizShared";
+import { QuizFigure, ChoiceContent } from "../components/VisualQuestion";
 import {
   getAllEntries, getSortedItemIds, getSubjectStats,
   getSubjectProgress, saveSubjectProgress, resetSubjectProgress,
@@ -4058,6 +4465,7 @@ function FlatQuizQuestion({ item, onAnswer, answered, selected }) {
     return (
       <div className="space-y-4">
         <p className="font-display text-lg font-medium text-navy-900 dark:text-parchment-50">{item?.question || "No question available"}</p>
+      <QuizFigure item={item} />
         <div className="flex gap-2">
           <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSubmit()} disabled={answered} placeholder="Type your answer here…" className="flex-1 rounded-md border border-parchment-200 bg-parchment-50 px-4 py-2 text-navy-900 focus:outline-none focus:ring-2 focus:ring-navy-900 dark:border-navy-700 dark:bg-navy-800 dark:text-parchment-50 dark:focus:ring-gold-500 disabled:opacity-50" />
           <button onClick={handleSubmit} disabled={answered || !inputValue.trim()} className="rounded-md bg-navy-900 px-6 py-2 text-sm font-semibold text-white disabled:opacity-40 dark:bg-navy-700">Submit</button>
@@ -4079,7 +4487,8 @@ function FlatQuizQuestion({ item, onAnswer, answered, selected }) {
   return (
     <div className="space-y-4">
       <p className="font-display text-lg font-medium text-navy-900 dark:text-parchment-50">{item?.question || "No question available"}</p>
-      <div className="space-y-2">
+      <QuizFigure item={item} />
+      <div className={item?.choiceImages ? "grid grid-cols-2 gap-2" : "space-y-2"}>
         {choiceKeys.map((key) => {
           const label = choices[key] || "";
           const isSelected = selected === key;
@@ -4093,7 +4502,7 @@ function FlatQuizQuestion({ item, onAnswer, answered, selected }) {
               : "border-parchment-200 bg-parchment-50 hover:border-navy-700 dark:border-navy-700 dark:bg-navy-800 dark:hover:border-slate-500";
           return (
             <button key={key} onClick={() => !answered && onAnswer(key)} disabled={answered} className={`block w-full rounded-lg border-2 px-4 py-3 text-left text-sm transition-colors ${choiceClass} ${!answered && "cursor-pointer"} disabled:cursor-default`}>
-              <span className="font-semibold">{key}.</span> {label}
+              <ChoiceContent k={key} label={label} item={item} />
             </button>
           );
         })}
@@ -4333,6 +4742,114 @@ export async function submitPendingPurchase(uid, { planId, price, method, refere
 }
 ```
 
+## File: ./frontend/src/pwaInstall.js
+```
+// Install-to-Home-Screen helper (PWA).
+// Imported early (App.jsx) so the browser's "beforeinstallprompt" event is
+// captured at startup (it often fires before the user opens the Install tab).
+import { useEffect, useState } from "react";
+
+let deferred = null;
+let justInstalled = false;
+const subs = new Set();
+const notify = () => subs.forEach((f) => f());
+
+if (typeof window !== "undefined") {
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferred = e;
+    notify();
+  });
+  window.addEventListener("appinstalled", () => {
+    deferred = null;
+    justInstalled = true;
+    notify();
+  });
+}
+
+// Capacitor APK = already a real app.
+export function isNativeApp() {
+  try {
+    return !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+  } catch (_) {
+    return false;
+  }
+}
+
+// Running from the Home Screen icon (no browser bars).
+export function isStandalone() {
+  try {
+    return (
+      window.matchMedia("(display-mode: standalone)").matches ||
+      window.matchMedia("(display-mode: fullscreen)").matches ||
+      window.navigator.standalone === true
+    );
+  } catch (_) {
+    return false;
+  }
+}
+
+export function detectPlatform() {
+  const nav = typeof navigator !== "undefined" ? navigator : {};
+  const ua = nav.userAgent || "";
+  const touchMac = nav.platform === "MacIntel" && nav.maxTouchPoints > 1; // iPadOS
+  const ios = /iPhone|iPad|iPod/.test(ua) || touchMac;
+  const android = /Android/i.test(ua);
+  // Facebook / Messenger / Instagram etc. built-in browsers cannot install apps.
+  const inApp = /FBAN|FBAV|FB_IAB|Messenger|Instagram|Line\/|Snapchat|TikTok|MicroMessenger|Viber/i.test(ua);
+  let browser = "other";
+  if (/SamsungBrowser/i.test(ua)) browser = "samsung";
+  else if (/EdgA|EdgiOS|Edg\//.test(ua)) browser = "edge";
+  else if (/OPR\/|OPiOS/.test(ua)) browser = "opera";
+  else if (/FxiOS|Firefox/.test(ua)) browser = "firefox";
+  else if (/CriOS|Chrome\//.test(ua)) browser = "chrome";
+  else if (/Safari/.test(ua)) browser = "safari";
+  return { ios, android, inApp, browser };
+}
+
+// Android / desktop Chrome: shows the browser's own install dialog (one tap).
+export async function promptInstall() {
+  if (!deferred) return "unavailable";
+  const ev = deferred;
+  try {
+    await ev.prompt();
+    const choice = await ev.userChoice;
+    deferred = null; // the event can only be used once
+    notify();
+    return choice && choice.outcome === "accepted" ? "accepted" : "dismissed";
+  } catch (_) {
+    return "unavailable";
+  }
+}
+
+export function useInstallInfo() {
+  const [, force] = useState(0);
+  useEffect(() => {
+    const f = () => force((n) => n + 1);
+    subs.add(f);
+    return () => { subs.delete(f); };
+  }, []);
+  return { canInstall: !!deferred, justInstalled, standalone: isStandalone() };
+}
+```
+
+## File: ./frontend/src/quizImages.js
+```
+const files = import.meta.glob("./assets/quiz/**/*.{jpg,jpeg,png,webp}", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
+
+export function quizImageUrl(src) {
+  return files[`./assets/quiz/${src}`] || "";
+}
+
+export function allQuizImageUrls() {
+  return Object.values(files).filter(Boolean);
+}
+```
+
 ## File: ./frontend/src/subjectQuizStore.js
 ```
 // Quiz PROGRESS + STATS only. The questions themselves live in contentStore.js.
@@ -4429,6 +4946,97 @@ export function getSubjectTotals(subjectId, topicIds) {
 }
 ```
 
+## File: ./frontend/src/updateCheck.js
+```
+// Detects when a newer build was deployed (compares __BUILD_ID__ with /version.json).
+import { useEffect, useState } from "react";
+import { isNativeApp } from "./pwaInstall";
+
+/* global __BUILD_ID__ */
+export const BUILD_ID = typeof __BUILD_ID__ !== "undefined" ? __BUILD_ID__ : "dev";
+
+let remoteId = null;
+let lastCheck = 0;
+let inflight = null;
+const subs = new Set();
+const notify = () => subs.forEach((f) => f());
+
+export function getRemoteId() { return remoteId; }
+export function isUpdateAvailable() { return !!remoteId && remoteId !== BUILD_ID; }
+
+async function fetchRemoteId() {
+  try {
+    const res = await fetch(import.meta.env.BASE_URL + "version.json?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data && data.id ? String(data.id) : null;
+  } catch (_) {
+    return null;
+  }
+}
+
+// force = true ignores the 60-second throttle.
+export function checkForUpdate(force) {
+  if (import.meta.env.DEV || isNativeApp()) return Promise.resolve(false);
+  if (inflight) return inflight;
+  if (!force && Date.now() - lastCheck < 60000) return Promise.resolve(isUpdateAvailable());
+  inflight = fetchRemoteId().then((id) => {
+    lastCheck = Date.now();
+    inflight = null;
+    if (id) { remoteId = id; notify(); }
+    return isUpdateAvailable();
+  });
+  return inflight;
+}
+
+// Removes the stale page files (index.html etc.) but keeps the big offline
+// files (/assets/, .wasm, .db, fonts), then reloads. Needs internet.
+export async function applyUpdate() {
+  if (typeof navigator !== "undefined" && navigator.onLine === false) return false;
+  try {
+    if ("caches" in window) {
+      const keys = await caches.keys();
+      for (const k of keys) {
+        const cache = await caches.open(k);
+        const reqs = await cache.keys();
+        await Promise.all(reqs.map((r) => {
+          const u = new URL(r.url);
+          const keep = u.origin !== location.origin || u.pathname.includes("/assets/") || /\.(wasm|db)$/.test(u.pathname);
+          return keep ? null : cache.delete(r);
+        }));
+      }
+    }
+  } catch (_) {}
+  try {
+    const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration() : null;
+    if (reg) await reg.update();
+  } catch (_) {}
+  location.reload();
+  return true;
+}
+
+export function useUpdateAvailable() {
+  const [, force] = useState(0);
+  useEffect(() => {
+    const f = () => force((n) => n + 1);
+    subs.add(f);
+    checkForUpdate(false);
+    return () => { subs.delete(f); };
+  }, []);
+  return isUpdateAvailable();
+}
+
+// Re-check when the app opens, comes back to the front, or gets internet again.
+if (typeof window !== "undefined") {
+  const recheck = () => { if (document.visibilityState !== "hidden") checkForUpdate(false); };
+  document.addEventListener("visibilitychange", recheck);
+  window.addEventListener("online", recheck);
+  window.addEventListener("focus", recheck);
+  setInterval(recheck, 30 * 60 * 1000);
+  setTimeout(recheck, 1500);
+}
+```
+
 ## File: ./frontend/tailwind.config.js
 ```
 /** @type {import('tailwindcss').Config} */
@@ -4463,9 +5071,23 @@ export default {
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// Unique ID per build. The app compares its own ID with /version.json
+// on the server to know if a newer version was deployed (see updateCheck.js).
+const BUILD_ID = String(Date.now());
+
+function emitVersionFile() {
+  return {
+    name: "emit-version-json",
+    generateBundle() {
+      this.emitFile({ type: "asset", fileName: "version.json", source: JSON.stringify({ id: BUILD_ID }) });
+    },
+  };
+}
+
 export default defineConfig({
   base: "./",
-  plugins: [react()],
+  define: { __BUILD_ID__: JSON.stringify(BUILD_ID) },
+  plugins: [react(), emitVersionFile()],
 });
 ```
 

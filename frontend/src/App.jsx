@@ -5,7 +5,11 @@ import LibraryBrowser from "./pages/LibraryBrowser";
 import QuizBrowser from "./pages/QuizBrowser";
 import FeesView from "./pages/FeesView";
 import SettingsView from "./pages/SettingsView";
+import InstallView from "./pages/InstallView";
 import AccountButton from "./components/AccountButton";
+import { isNativeApp, useInstallInfo } from "./pwaInstall";
+import { useUpdateAvailable } from "./updateCheck";
+import UpdateBanner from "./components/UpdateBanner";
 
 const DevPanel = import.meta.env.DEV ? lazy(() => import("./pages/DevPanel")) : null;
 
@@ -57,6 +61,13 @@ const IconTool = (p) => (
     <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-.7-.7-2.3 2.7-2.7Z" />
   </svg>
 );
+const IconDownload = (p) => (
+  <svg {...iconProps} {...p}>
+    <path d="M12 4v11" />
+    <path d="m7 11 5 5 5-5" />
+    <path d="M5 20h14" />
+  </svg>
+);
 
 const BASE_TABS = [
   { id: "library", label: "Library", Icon: IconBook },
@@ -75,7 +86,13 @@ export default function App() {
   });
   const mainRef = useRef(null);
 
+  const updateAvailable = useUpdateAvailable();
+  const install = useInstallInfo();
+  const showInstallDot = updateAvailable || (install.canInstall && !install.justInstalled && !install.standalone);
+
   const TABS = [...BASE_TABS];
+  // No "Install" tab on the Android APK build — it's already a real app.
+  if (!isNativeApp()) TABS.push({ id: "install", label: "Install", Icon: IconDownload });
   if (isAdmin) TABS.push({ id: "admin", label: "Admin", Icon: IconCrown });
   if (import.meta.env.DEV) TABS.push({ id: "dev", label: "Dev", Icon: IconTool });
 
@@ -107,11 +124,14 @@ export default function App() {
         </div>
       </header>
 
+      <UpdateBanner />
+
       <main ref={mainRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
         {tab === "library" && <LibraryBrowser nav={nav.library} setNav={navSetter("library")} />}
         {tab === "quiz" && <QuizBrowser nav={nav.quiz} setNav={navSetter("quiz")} />}
         {tab === "fees" && <FeesView />}
         {tab === "settings" && <SettingsView darkMode={dark} setDarkMode={setDark} />}
+        {tab === "install" && <InstallView />}
         {tab === "admin" && isAdmin && (
           <Suspense fallback={loading}>
             <AdminPanel />
@@ -137,7 +157,12 @@ export default function App() {
                   active ? "text-navy-900 dark:text-gold-400" : "text-slate-400 dark:text-slate-500"
                 }`}
               >
-                <Icon className="h-6 w-6" />
+                <span className="relative">
+                  <Icon className="h-6 w-6" />
+                  {id === "install" && showInstallDot && (
+                    <span className="absolute -right-1 -top-0.5 h-2.5 w-2.5 rounded-full border-2 border-parchment-50 bg-amber-500 dark:border-navy-900" />
+                  )}
+                </span>
                 <span className="max-w-full truncate">{label}</span>
               </button>
             );

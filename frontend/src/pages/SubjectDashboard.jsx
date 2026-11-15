@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { ProgressCircle, answersMatch } from "../components/QuizShared";
+import { QuizFigure, ChoiceContent } from "../components/VisualQuestion";
 import {
   getAllEntries, getSortedItemIds, getSubjectStats,
   getSubjectProgress, saveSubjectProgress, resetSubjectProgress,
@@ -33,6 +34,7 @@ function FlatQuizQuestion({ item, onAnswer, answered, selected }) {
     return (
       <div className="space-y-4">
         <p className="font-display text-lg font-medium text-navy-900 dark:text-parchment-50">{item?.question || "No question available"}</p>
+      <QuizFigure item={item} />
         <div className="flex gap-2">
           <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSubmit()} disabled={answered} placeholder="Type your answer here…" className="flex-1 rounded-md border border-parchment-200 bg-parchment-50 px-4 py-2 text-navy-900 focus:outline-none focus:ring-2 focus:ring-navy-900 dark:border-navy-700 dark:bg-navy-800 dark:text-parchment-50 dark:focus:ring-gold-500 disabled:opacity-50" />
           <button onClick={handleSubmit} disabled={answered || !inputValue.trim()} className="rounded-md bg-navy-900 px-6 py-2 text-sm font-semibold text-white disabled:opacity-40 dark:bg-navy-700">Submit</button>
@@ -54,7 +56,8 @@ function FlatQuizQuestion({ item, onAnswer, answered, selected }) {
   return (
     <div className="space-y-4">
       <p className="font-display text-lg font-medium text-navy-900 dark:text-parchment-50">{item?.question || "No question available"}</p>
-      <div className="space-y-2">
+      <QuizFigure item={item} />
+      <div className={item?.choiceImages ? "grid grid-cols-2 gap-2" : "space-y-2"}>
         {choiceKeys.map((key) => {
           const label = choices[key] || "";
           const isSelected = selected === key;
@@ -68,7 +71,7 @@ function FlatQuizQuestion({ item, onAnswer, answered, selected }) {
               : "border-parchment-200 bg-parchment-50 hover:border-navy-700 dark:border-navy-700 dark:bg-navy-800 dark:hover:border-slate-500";
           return (
             <button key={key} onClick={() => !answered && onAnswer(key)} disabled={answered} className={`block w-full rounded-lg border-2 px-4 py-3 text-left text-sm transition-colors ${choiceClass} ${!answered && "cursor-pointer"} disabled:cursor-default`}>
-              <span className="font-semibold">{key}.</span> {label}
+              <ChoiceContent k={key} label={label} item={item} />
             </button>
           );
         })}
